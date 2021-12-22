@@ -3,9 +3,8 @@ public class Homework10 {
 
     public static void main(String[] args) {
         int num = (int)(Math.random() * 58) + 65;
-        boolean res;
 
-        if (res = num > 91 && num < 97){
+        if (num > 91 && num < 97){
             ;
         }
             else{
