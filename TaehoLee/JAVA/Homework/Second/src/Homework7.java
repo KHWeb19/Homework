@@ -8,7 +8,6 @@ public class Homework7 {
             System.out.println("손모가지를 내놔라");
         }
         else{
-            ;
         }
     }
 }

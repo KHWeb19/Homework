@@ -8,7 +8,6 @@ public class Homework6 {
             System.out.println("당첨입니다!");
         }
         else{
-            ;
         }
     }
 }

@@ -5,7 +5,6 @@ public class Homework10 {
         int num = (int)(Math.random() * 58) + 65;
 
         if (num > 91 && num < 97){
-            ;
         }
             else{
                 System.out.println(num);
