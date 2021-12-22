@@ -8,3 +8,4 @@ public class JavaVariable {
         System.out.printf("포맷 지정 숫자 = %d\n", num);
     }
 }
+
