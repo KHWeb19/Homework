@@ -8,6 +8,5 @@ public class JavaVariable {
         // A.
         // Q. printf 와 %d\n의 상관관계는??
         // A.
-        // Q.
     }
 }
