@@ -1,6 +1,8 @@
 public class Homework1 {
     public static void main(String[] args) {
 
+        // 정수형 변수 1개, float 변수 2개, double 변수 3개
+
         int num1 = 3;
 
         float fnum1 = 3.33f , fnum2 = 3.141592f;

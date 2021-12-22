@@ -1,6 +1,7 @@
 public class Homework10 {
-
     public static void main(String[] args) {
+
+        // 65~122까지의 난수 생성 뒤, 65~90 또는 97~122에 해당하는 숫자 출력
 
         int rand = (int)(Math.random() * 58 + 65);
 
@@ -9,5 +10,7 @@ public class Homework10 {
         }
 
 
+        // %% = and 연산자
+        // || = or 연산자
     }
 }
