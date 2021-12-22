@@ -1,4 +1,4 @@
-public class P1 {
+public class P01 {
     public static void main(String[] args) {
         // Java에서 변수를 만드는 방법
         // 1. 데이터타입(자료형)을 적는다.

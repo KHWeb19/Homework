@@ -1,4 +1,4 @@
-public class P5 {
+public class P05 {
     public static void main(String[] args) {
 
         double rand1 = Math.random();

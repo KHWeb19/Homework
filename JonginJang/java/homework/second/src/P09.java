@@ -1,4 +1,4 @@
-public class P9 {
+public class P09 {
     public static void main(String[] args) {
 
         // Math.random으로 나오는 값의 범위 : 0.0 ~ 1.0 미만 (0.9999xxx)

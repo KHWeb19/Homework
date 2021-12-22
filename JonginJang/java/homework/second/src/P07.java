@@ -1,4 +1,4 @@
-public class P7 {
+public class P07 {
     public static void main(String[] args) {
 
         int dice = (int)(Math.random()*6+1);

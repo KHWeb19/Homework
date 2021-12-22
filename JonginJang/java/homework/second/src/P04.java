@@ -1,4 +1,4 @@
-public class P4 {
+public class P04 {
     public static void main(String[] args) {
 
         float rand1 = (float)Math.random();

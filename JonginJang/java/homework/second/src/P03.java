@@ -1,4 +1,4 @@
-public class P3 {
+public class P03 {
     public static void main(String[] args) {
 
         int rand1 = (int)(Math.random()*100);
