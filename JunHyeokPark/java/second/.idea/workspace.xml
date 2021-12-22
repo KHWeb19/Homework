@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ea86908-55e1-4517-a271-c584dd990295" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/src/problem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/src/problem2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/src/problem3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork/Second/src/problem4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FloatDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrintQnA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RelationOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WhyPrintf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaVariable.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22d9GkxLGV6EkaU4NMIXw2Yi42H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.PrintQnA">
+    <configuration name="JavaVariable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaVariable" />
+      <module name="second" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintQnA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrintQnA" />
+      <module name="second" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PrintQnA" />
+        <item itemvalue="Application.JavaVariable" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ea86908-55e1-4517-a271-c584dd990295" name="Changes" comment="" />
+      <created>1640156507725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640156507725</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
