@@ -10,6 +10,5 @@ public class PR {
             System.out.println("숫자 = " + num);
             System.out.printf("포맷 지정 숫자 = %d\n", num);
         }
-    }
-
 }
+
