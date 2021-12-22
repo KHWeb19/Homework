@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java/first/first.iml" filepath="$PROJECT_DIR$/java/first/first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/second/second.iml" filepath="$PROJECT_DIR$/java/second/second.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sknyuki.iml" filepath="$PROJECT_DIR$/.idea/sknyuki.iml" />
+    </modules>
+  </component>
+</project>
