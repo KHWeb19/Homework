@@ -1,2 +1,2 @@
-# Homework
-과제는 여기에 제출합니다.
+# LectureContents
+수업 자료는 모두 여기에 업로드 됩니다.
