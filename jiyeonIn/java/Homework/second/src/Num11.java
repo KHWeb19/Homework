@@ -6,6 +6,9 @@ public class Num11 {
 
         if(num1>=65 && num1 <=90 || num1>=97 && num1<=122){
             System.out.println(num1);
+        }else {
+            int num2 = (int) (Math.random()*58+65);
         }
+
     }
 }
