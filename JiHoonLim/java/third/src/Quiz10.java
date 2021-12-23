@@ -11,6 +11,8 @@ public class Quiz10 {
             sum += rand;
             System.out.println(i+"회차 이동거리는 " +sum);
             System.out.println();
+
+            /// 문제를 제대로 이해못했습니다
         }
     }
 }
