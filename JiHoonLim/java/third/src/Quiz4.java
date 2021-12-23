@@ -1,7 +1,6 @@
 public class Quiz4 {
     public static void main(String[] args) {
-        int i ;
-        i = 7;
+        int i = 7;
 
         System.out.println("구구단 7단");
 
