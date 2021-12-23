@@ -5,6 +5,7 @@ public class HW01 {
         int rand = (int)(Math.random()*58+65);
         if (rand>90 && rand<97) {
             rand = (int) (Math.random() * 58 + 65);
+            //여기서도 소문자나 대문자가 안나오면..?
         }
         System.out.printf("%c\n", rand);
     }
