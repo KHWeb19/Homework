@@ -1,0 +1,11 @@
+<파일 관련 명령어>
+- touch 파일이름 //텍스트파일 생성
+
+<인텔리제이 자동완성 키>
+- psvm public static void main(String[] args) {}
+- sout System.out.println();
+
+<깃허브 협업>
+- 원본에 Fork 하여 사본생성
+- 사본에서 Full requests 하여 병합 요청
+- 원본주인이 fetch upstream 하여 병합
