@@ -23,3 +23,6 @@ public class Homework1 {
         System.out.println("double = "+ num6);
     }
 }
+
+
+
