@@ -7,7 +7,7 @@ public class JavaQuiz11 {
             }else if (rand1>=97){
                 System.out.println("97~122사이의 수 출력 " +rand1);
             }else {
-                System.out.println("해당사항 없음");
+                System.out.println("해당사항 없음.");
             }
         }
     }
