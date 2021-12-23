@@ -14,7 +14,7 @@ public class HW10 {
                 int tmp= movingDistance;
                 movingDistance = 100 - i;
                 i = 100;
-                System.out.printf("추첨된 값은 %d입니다. 목표 도달치를 초과했기에 %d만큼 움직입니다. 현재 위치: %d\n", tmp, movingDistance, i);
+                System.out.printf("추첨된 값은 %d입니다. 목표를 초과했기에 %d만큼 움직입니다. 현재 위치: %d\n", tmp, movingDistance, i);
             }
             else{
                 i = i+movingDistance;
