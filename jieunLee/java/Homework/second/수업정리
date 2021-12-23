@@ -1,3 +1,8 @@
+<터미널에서 커밋>
+- git add .
+- git commit -m "커밋메시지"
+- git push origin main
+
 <파일 관련 명령어>
 - touch 파일이름 //텍스트파일 생성
 
