@@ -1,5 +1,6 @@
 public class JavaQuiz5 {
     public static void main(String[] args) {
+
         double rand1 = Math.random();
         double rand2 = Math.random();
 
