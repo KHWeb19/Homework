@@ -10,7 +10,5 @@ public class Test3 {
         System.out.println("Random = " + num1);
         System.out.println("Random = " + num2);
 
-        //랜덤 값을 할당 하는게 아무 숫자나 넣어 랜덤하게 출력하면 되는거 맞나요?
-        //문제 이해를 잘 못한것 같습니다.
     }
 }

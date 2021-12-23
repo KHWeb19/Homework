@@ -17,9 +17,6 @@ public class Test11 {
             System.out.println("97 ~ 122 의 숫자 : " + num4);
         }
 
-        //num1 ~ num4 의 값이 제대로 설정 된건지
-        //if (num1 <= num2) else 를 제대로 사용한건지
-        //문제에서 원하는 바를 제대로 해낸건지 하나도 모르겠습니다
     }
 }
 

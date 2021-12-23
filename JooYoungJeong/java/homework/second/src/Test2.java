@@ -21,12 +21,5 @@ public class Test2 {
         System.out.printf("변수Double 4 = %.2f\n", fnum4);
         System.out.printf("변수Double 5 = %.2f\n", fnum5);
 
-        //출력시 줄 넘기기 (앤터) 하는법이 따로 있나요?
-        //출력예시)
-        //정수형 = 5
-        //(공란)
-        //변수Float 1 = 2.2
-        //처럼 한줄 더 넘겨 쓰는 법이 궁금합니다
-        //아직 "\n" 를 완벽히 이해하지 못한거 같습니다
     }
 }

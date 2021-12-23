@@ -9,7 +9,5 @@ public class Test4 {
         System.out.println("Random = " +rand1);
         System.out.println("Random = " +rand2);
 
-        //float, double 변수는 랜덤 값을 넣지 않아도 랜덤 출력 가능 한데
-        //넣지 않는 것이 맞나요?
     }
 }
