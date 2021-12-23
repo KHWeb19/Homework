@@ -6,11 +6,11 @@ public class HW02 {
         int fib_b = 1;
 
         System.out.print("1, 1, ");
-        for (int i=0; i<20; i++){
+        for (int i=0; i<18; i++){
             int tmp = fib_a;
             fib_a = fib_a + fib_b;
             fib_b = tmp;
-            if (i != 19) {
+            if (i != 17) {
                 System.out.printf("%d, ",fib_a);
             }
             else{
