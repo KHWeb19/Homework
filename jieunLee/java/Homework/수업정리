@@ -1,3 +1,5 @@
+1일차
+
 <터미널에서 커밋>
 - git add .
 - git commit -m "커밋메시지"
@@ -14,3 +16,14 @@
 - 원본에 Fork 하여 사본생성
 - 사본에서 Full requests 하여 병합 요청
 - 원본주인이 fetch upstream 하여 병합
+
+2일차
+
+데이터타입
+- int num1 = 5;
+- float num2 = 3.3f; //double과 구분하기위해 뒤에 f를 붙임
+- double num3 = 7.7; 
+
+Math.random()
+- 0부터 1미만의 난수를 발생
+- (int)(Math.random()*(최대값-최소값+1)+최소값)
