@@ -4,13 +4,12 @@ public class Quiz3 {
         int j = 1;
         int l = 1;
         int sum ;
-        int k;
 
         System.out.println("1항은 " +i);
         System.out.println("2항은 " +j);
         System.out.println("3항은 " +l);
 
-        for (k=4; k<=25; k++) {
+        for (int k=4; k<=25; k++) {
             sum = i+l;
             System.out.println(k+ "항은 " + sum);
             i = j;

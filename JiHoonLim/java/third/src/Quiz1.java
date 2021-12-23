@@ -1,6 +1,5 @@
 public class Quiz1 {
     public static void main(String[] args) {
-
         boolean isRight = false;
 
         while (!isRight) {

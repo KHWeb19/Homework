@@ -1,10 +1,8 @@
 public class Quiz7 {
     public static void main(String[] args) {
-        int i ,sum;
+        int sum = 0;
 
-        sum = 0;
-
-        for (i = 1; i<=100; i++){
+        for (int i = 1; i<=100; i++){
             if (i % 4 == 0){
                 sum += i;
             }
