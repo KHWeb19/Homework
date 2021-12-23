@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bdad366-de79-4b2f-9c7d-c634eee10e5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/Test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/src/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first/first.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first/src/FirstJavaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaVariable.java" beforeDir="false" />
+    <list default="true" id="26dcad50-15e7-4614-984f-48ed1176cb90" name="Changes" comment="[세키네]문제은행&amp;Homework">
+      <changelist_data name="sknyuki" email="sknyuki009@gmail.com" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +16,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="22dixCz419ARW0qyN1Dhz46T03A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
