@@ -10,7 +10,7 @@ public class Homework10 {
         }
 
 
-        // %% = and 연산자
+        // && = and 연산자
         // || = or 연산자
     }
 }
