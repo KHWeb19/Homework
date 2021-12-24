@@ -10,7 +10,7 @@ public class Homework9 {
         final int MAX = 10, MIN = 2;
         int range = MAX - MIN + 1;
         //int ran = (int) (Math.random() * range + MIN);// 초기화 안 됌
-        int sum = 0;
+        int sum = 0; //초기화 선언 해야함
 
 
        //Q. 안나온 숫자들로만 계속 더해보고싶은데...

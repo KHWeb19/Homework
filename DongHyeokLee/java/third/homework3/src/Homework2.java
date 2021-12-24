@@ -5,7 +5,7 @@ public class Homework2 {
         //어찌합니까~~
 
         int MAX = 25;// Q. 이렇게 지정하면 몇번째 항까지 구할떄 이것만 변경해서 더 좋을라나?? 그럼 final 붙여야하나??
-        int sum ;
+        int sum ; // 초기화 선언 안해도 됌
         int i= 0;//0번쨰 항??
         int j =1;//1번째 항
 
