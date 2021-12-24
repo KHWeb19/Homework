@@ -6,13 +6,29 @@ public class P9 {
     // 5. 출력된 숫자들의 합
 
     public static void main(String[] args) {
-        int sum = 0 , rand, num;
+        final int START = 1;
+        final int END = 100;
+        final int REMAIN = 0;
 
-        for(num = 1; num <= 100; num++){
-            rand = (int)(Math.random() * 10) + 1;
-            System.out.printf("%d번째 루프 : %d\n", num, (num * rand));
-            sum += num * rand;
+        final int MAX = 10;
+        final int MIN = 2;
+
+        int range = MAX - MIN + 1;
+        int sum = 0;
+        int rand = 0;
+        boolean isCheck = false;
+
+        for (int i = START; i <= END; i++){
+            while (!isCheck) {
+                rand = (int)(Math.random() * range) + MIN;
+                isCheck = true;
+            }
+            if (i % rand == REMAIN) {
+                sum += i + rand;
+                System.out.printf("%d의 배수 : %d\n", rand, i);
+                isCheck = false;
+            }
         }
-        System.out.println("루프 숫자들의 합 : " + sum);
+        System.out.printf("\n출력된 숫자들의 합 : %d", sum);
     }
 }

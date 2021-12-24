@@ -5,13 +5,23 @@ public class P10 {
     // 4. 출력된 숫자들의 합
 
     public static void main(String[] args) {
-        int rand, num = 1;
+        final int START = 1;
+        final int END = 100;
 
-        while(num <= 100){
-            rand = (int)(Math.random() * 10) + 1;
-            System.out.printf("현위치 : %d, 출력 값 : %d\n",num, rand);
-            num += rand;
+        final int MAX = 10;
+        final int MIN = 2;
+
+        int range = MAX - MIN + 1;
+        int rand;
+        int i = START;
+        int sum = 0;
+
+        while(i <= END){
+            rand = (int)(Math.random() * range) + MIN;
+            System.out.printf("현위치 : %d, 출력 값 : %d\n",i, rand);
+            sum += i + rand;
+            i += rand;
         }
-        System.out.println("루프 숫자들의 합 : " + (num - 1));
+        System.out.println("\n루프 숫자들의 합 : " + sum);
     }
 }

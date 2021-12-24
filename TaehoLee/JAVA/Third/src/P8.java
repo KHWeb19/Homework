@@ -1,14 +1,22 @@
 public class P8 {
-    // 1. 1 ~ 100 순회,
+    // 1. 1 ~ 100 순회(루프가 이 안에서 돔!!),
+    // 즉, START = 1, END = 100
     // 2. 2 ~ 10 랜덤 숫자 선택
     // 3. 이 숫자의 배수 출력
 
     public static void main(String[] args) {
-        int rand, num;
+        final int START = 1;
+        final int END = 100;
+        final int REMAIN = 0;
 
-        for(num = 1; num <= 100; num++){
-            rand = (int)(Math.random() * 10) + 1;
-            System.out.printf("%d번째 루프 : %d\n", num, (num * rand));
+        final int MAX = 10;
+        final int MIN = 2;
+        int range = MAX - MIN + 1;
+        int rand = (int)(Math.random() * range) + MIN;
+
+        for(int i = START; i <= END; i++){
+            if(i % rand == REMAIN)
+            System.out.printf("%d의 배수 : %d\n", rand, i);
         }
     }
 }

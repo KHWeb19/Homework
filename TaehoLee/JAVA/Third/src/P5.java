@@ -2,11 +2,14 @@ public class P5 {
     // 1~100까지의 숫자중 짝수만 출력
 
     public static void main(String[] args) {
-        int num;
+        final int START = 1;
+        final int END = 100;
+        final int MULTI = 2;
+        final int REMAIN = 0;
 
-        for (num = 1; num <= 100; num++){
-            if (num % 2 == 0) {
-                System.out.println("짝수 : " + num);
+        for (int i = START; i <= END; i++){
+            if (i % MULTI == REMAIN) {
+                System.out.printf("%d의 배수 : %d\n", MULTI, i);
             }
         }
     }
