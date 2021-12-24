@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secend/src/QnA7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/ForIfTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/ForInfiniteLoopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/ForSumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/ForTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/PrePostOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/WhileInfiniteLoopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/WhileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/WhileTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/WhileTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/src/WhileTest4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/third.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secend/src/test10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secend/src/test10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secend/src/test11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secend/src/test11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secend/src/test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secend/src/test6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secend/src/test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secend/src/test8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secend/src/test9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secend/src/test9.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22gajQ1fUeXEKZ8NZCogPCUq3aN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Homework9">
+    <configuration name="Homework5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework5" />
+      <module name="third" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework6" />
+      <module name="third" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework7" />
+      <module name="third" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework8" />
+      <module name="third" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework9" />
+      <module name="third" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Homework9" />
+        <item itemvalue="Application.Homework8" />
+        <item itemvalue="Application.Homework7" />
+        <item itemvalue="Application.Homework6" />
+        <item itemvalue="Application.Homework5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="" />
+      <created>1640261821284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640261821284</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/third$Homework1.ic" NAME="Homework1 Coverage Results" MODIFIED="1640262570847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
