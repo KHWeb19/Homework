@@ -1,0 +1,105 @@
+Index: ../test/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../test/.idea/vcs.xml b/../test/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1640157182579)
++++ b/../test/.idea/vcs.xml	(date 1640157182579)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../test/src/JavaVariable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../test/src/JavaVariable.java b/../test/src/JavaVariable.java
+new file mode 100644
+--- /dev/null	(date 1640157254934)
++++ b/../test/src/JavaVariable.java	(date 1640157254934)
+@@ -0,0 +1,9 @@
++public class JavaVariable {
++    public static void main(String[] args) {
++        int num;
++
++        num = 3;
++        System.out.println("숫자 = " + num);
++        System.out.printf("포맷 지정 숫자 = %d\n", num);
++    }
++}
+Index: src/JavaVariable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/JavaVariable.java b/src/JavaVariable.java
+new file mode 100644
+--- /dev/null	(date 1640156905652)
++++ b/src/JavaVariable.java	(date 1640156905652)
+@@ -0,0 +1,10 @@
++public class JavaVariable {
++    public static void main(String[] args) {
++        int num;
++
++        num = 3;
++        System.out.println("숫자 = " + num);
++        System.out.printf("포맷 지정 숫자 = %d\n", num);
++    }
++
++}
+Index: ../test/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../test/.idea/modules.xml b/../test/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1640157168090)
++++ b/../test/.idea/modules.xml	(date 1640157168090)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../test/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../test/.idea/misc.xml b/../test/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1640157168115)
++++ b/../test/.idea/misc.xml	(date 1640157168115)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="azul-11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../test/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../test/.idea/.gitignore b/../test/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1640157173049)
++++ b/../test/.idea/.gitignore	(date 1640157173049)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml

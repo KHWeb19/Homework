@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class FirstJavaTest {
     //psvm+enter
     public static void main(String[] args) {

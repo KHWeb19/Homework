@@ -9,6 +9,5 @@ public class FirstJavaTest {
         // 문자열은 - ""<<<
         // 쌍따옴표로 감싸진 정보들을 문자열이라고 합니다.
         System.out.println("Hello, Java!");
-
     }
 }
