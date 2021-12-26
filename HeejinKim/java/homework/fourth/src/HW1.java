@@ -24,8 +24,7 @@ public class HW1 {
                if( (condition1)||(condition2) ){ //생성된 rand가 소문자이거나 대문자 이면 if문 안으로 들어감
                    System.out.printf("%c는 문자 입니다.",rand);
                    eng = false;
-                   //문제가 알파벳이 아닌것은 다시 생성해야하니까 빠져나가지말고 다시 들어가서 생성되는게 이 식이 맞나??
-                   //만약92가 나오면 나올때 까지 돌아가는 건가??
+
 
             }
         }
