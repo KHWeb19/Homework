@@ -17,20 +17,24 @@ public class Num8 {
 //
 //        }
 
-        //for이나 while문 안에 랜덤문 생성하면 반복하면서 랜덤값이 바뀌는것같은데,, 넣어서도 할수 있는 방법이 있을까요?
 
         final int MAX = 10;
         final int MIN = 2;
         int rand =(int)(Math.random()*(MAX-MIN+1)+MIN);
-        int num = 0;
+        int num = 1;
+        boolean random = true;
 
-        System.out.println("선택한 값 : "+rand);
-        System.out.println(rand+"의 배수");
 
         while (num++<=100){
-            rand =(int)(Math.random()*(MAX-MIN+1)+MIN);
+            while (random){
+                rand =(int)(Math.random()*(MAX-MIN+1)+MIN);
+                System.out.println(rand+"의 값, 배수 : ");
+                random = false;
+            }
+
             if(num%rand==0){
-                System.out.println(num);
+                System.out.print(num+",");
+
             }
         }
 
