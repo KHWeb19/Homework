@@ -1,0 +1,482 @@
+Index: src/problem1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class problem1 {\r\n    public static void main(String[] args) {\r\n        int num1 = 3;\r\n        float num2 = 2.2f, num3 = 3.3f;\r\n        double num4 = 4.4 , num5 = 5.5, num6 = 6.6;\r\n        System.out.printf(\"num1 = %d,num2 = %f,num3 = %f,num4 = %f,num5 = %f,num6 = %f\",\r\n        num1,num2,num3,num4,num5,num6);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/problem1.java b/src/problem1.java
+--- a/src/problem1.java	(revision e68fcbcfe07cedf1f91e41c2dac0ebbfbb07234d)
++++ b/src/problem1.java	(date 1640180358079)
+@@ -4,6 +4,6 @@
+         float num2 = 2.2f, num3 = 3.3f;
+         double num4 = 4.4 , num5 = 5.5, num6 = 6.6;
+         System.out.printf("num1 = %d,num2 = %f,num3 = %f,num4 = %f,num5 = %f,num6 = %f",
+-        num1,num2,num3,num4,num5,num6);
++                num1,num2,num3,num4,num5,num6);
+     }
+-}
++}
+\ No newline at end of file
+Index: src/problem6.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class problem6 {\r\n    }\r\n    public static void main(String[] args) {\r\n        int dice1 = (int)(Math.random()*6+1);\r\n        if(dice1 % 2==0) {\r\n            System.out.println(\"당첨입니다.\");\r\n        }\r\n\r\n        }\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/problem6.java b/src/problem6.java
+--- a/src/problem6.java	(revision e68fcbcfe07cedf1f91e41c2dac0ebbfbb07234d)
++++ b/src/problem6.java	(date 1640180471426)
+@@ -1,11 +1,12 @@
+ public class problem6 {
+-    }
+     public static void main(String[] args) {
++
++    } {
+         int dice1 = (int)(Math.random()*6+1);
+         if(dice1 % 2==0) {
+             System.out.println("당첨입니다.");
+         }
+ 
+-        }
+-    }
++    }
++}
+ 
+Index: src/problem7.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class problem7 {\r\n    public static void main(String[] args) {\r\n        int dice1 = (int) (Math.random() * 6 + 1);\r\n        if (dice1 % 2 != 0) {\r\n            System.out.println(\"손모가지를 내놔라.\");\r\n        }\r\n        }\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/problem7.java b/src/problem7.java
+--- a/src/problem7.java	(revision e68fcbcfe07cedf1f91e41c2dac0ebbfbb07234d)
++++ b/src/problem7.java	(date 1640180381697)
+@@ -4,6 +4,6 @@
+         if (dice1 % 2 != 0) {
+             System.out.println("손모가지를 내놔라.");
+         }
+-        }
+-    }
++    }
++}
+ 
+Index: src/problem10.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class problem10 {\r\n    public static void main(String[] args) {\r\n        int rand1 = (int) (Math.random() * 58 + 65);\r\n        if (rand1 <= 90) {\r\n            System.out.println(rand1);\r\n        }\r\n        else {\r\n            if(rand1>=97) {\r\n                System.out.println(rand1);\r\n            }\r\n            }\r\n\r\n        }\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/problem10.java b/src/problem10.java
+--- a/src/problem10.java	(revision e68fcbcfe07cedf1f91e41c2dac0ebbfbb07234d)
++++ b/src/problem10.java	(date 1640180465337)
+@@ -8,8 +8,8 @@
+             if(rand1>=97) {
+                 System.out.println(rand1);
+             }
+-            }
++        }
+ 
+-        }
+-    }
++    }
++}
+ 
+Index: Second.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Second.iml b/Second.iml
+new file mode 100644
+--- /dev/null	(date 1640180223299)
++++ b/Second.iml	(date 1640180223299)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../../second/src/WhyPrintf.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../second/src/WhyPrintf.java b/../../second/src/WhyPrintf.java
+new file mode 100644
+--- /dev/null	(date 1640179674331)
++++ b/../../second/src/WhyPrintf.java	(date 1640179674331)
+@@ -0,0 +1,7 @@
++public class WhyPrintf {
++    public static void main(String[] args) {
++        int num1 = 3, num2=7, num3= 33, num4 = 77;
++        System.out.println("");
++
++    }
++}
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1640180223323)
++++ b/.idea/modules.xml	(date 1640180223323)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/Second.iml" filepath="$PROJECT_DIR$/Second.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1640181432525)
++++ b/.idea/workspace.xml	(date 1640181432525)
+@@ -0,0 +1,95 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="7b0360aa-ea67-4229-a01b-cb6935f42418" name="Changes" comment="[박준혁] 문제은행 숙제">
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Second.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../HomeWork1/Second/src/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../HomeWork1/Second/src/.idea/src.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../second/src/FloatDouble.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../second/src/HomeWork.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../second/src/PrintQnA.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../second/src/RelationOperationTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../second/src/WhyPrintf.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../test/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../test/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../../test/.idea/vcs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/problem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem1.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/problem10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem10.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/problem6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem6.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/problem7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem7.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../../second/src/JavaVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../second/src/JavaVariable.java" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="22dvLANr7xU7OcIqgjuEYacH9HI" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
++  </component>
++  <component name="RunManager">
++    <configuration name="problem6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="problem6" />
++      <module name="Second" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.problem6" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="7b0360aa-ea67-4229-a01b-cb6935f42418" name="Changes" comment="" />
++      <created>1640180222878</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1640180222878</updated>
++    </task>
++    <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="[박준혁] 문제은행 숙제" />
++    <option name="LAST_COMMIT_MESSAGE" value="[박준혁] 문제은행 숙제" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1640180223348)
++++ b/.idea/misc.xml	(date 1640180223348)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="azul-11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../second/src/RelationOperationTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../second/src/RelationOperationTest.java b/../../second/src/RelationOperationTest.java
+new file mode 100644
+--- /dev/null	(date 1640179674330)
++++ b/../../second/src/RelationOperationTest.java	(date 1640179674330)
+@@ -0,0 +1,5 @@
++public class RelationOperationTest {
++    public static void main(String[] args) {
++
++    }
++}
+Index: ../../second/src/PrintQnA.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../second/src/PrintQnA.java b/../../second/src/PrintQnA.java
+new file mode 100644
+--- /dev/null	(date 1640179674330)
++++ b/../../second/src/PrintQnA.java	(date 1640179674330)
+@@ -0,0 +1,14 @@
++import java.util.Arrays;
++
++public class PrintQnA {
++    public static void main(String[] args) {
++        int num1 = 3, num2=7, num3= 33;
++        System.out.print("print 엔터 없음");
++        System.out.println("println 엔터 적용");
++        System.out.printf("printf 엔터 없음");
++
++        System.out.print("print 요렇게 엔터 \n");
++        System.out.println("println 쓰면 엔터");
++        System.out.printf("print");
++    }
++}
+Index: ../../second/src/HomeWork.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../second/src/HomeWork.java b/../../second/src/HomeWork.java
+new file mode 100644
+--- /dev/null	(date 1640179674328)
++++ b/../../second/src/HomeWork.java	(date 1640179674328)
+@@ -0,0 +1,8 @@
++public class HomeWork {
++    public static void main(String[] args) {
++        int num1 = 3;
++        float num2 = 2.2f, num3 = 3.3f;
++        double num4 = 4.4 , num5 = 5.5, num6 = 6.6;
++        int rand1 = Math.random();
++    }
++}
+Index: ../../test/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../test/.idea/vcs.xml b/../../test/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1640179674333)
++++ b/../../test/.idea/vcs.xml	(date 1640179674333)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../second/src/FloatDouble.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../second/src/FloatDouble.java b/../../second/src/FloatDouble.java
+new file mode 100644
+--- /dev/null	(date 1640179674328)
++++ b/../../second/src/FloatDouble.java	(date 1640179674328)
+@@ -0,0 +1,12 @@
++public class FloatDouble {
++    public static void main(String[] args) {
++        flaot fnum1 = 3.3f;
++        double fnum2 = 7.7;
++        System.out.println("요런게 편해요 - fnum1: " + fnum1);
++        System.out.println("요런게 편해요 - fnum2: " + fnum2);
++
++        System.out.printf("얜 타입을 알아야함 - fnum1 : %f\n", fnum1);
++        System.out.printf("얜 타입을 알아야함 - fnum2 : %f\n", fnum2);
++
++    }
++}
+Index: ../../test/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../test/.idea/modules.xml b/../../test/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1640179674332)
++++ b/../../test/.idea/modules.xml	(date 1640179674332)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1640180358044)
++++ b/.idea/vcs.xml	(date 1640180358044)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../../../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../second/src/JavaVariable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class JavaVariable {\r\n    public static void main(String[] args) {\r\n        int num;\r\n\r\n        num = 3;\r\n        System.out.println(\"숫자 = \" + num);\r\n        System.out.printf(\"포맷 지정 숫자 = %d\\n\", num);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../second/src/JavaVariable.java b/../../second/src/JavaVariable.java
+--- a/../../second/src/JavaVariable.java	(revision e68fcbcfe07cedf1f91e41c2dac0ebbfbb07234d)
++++ b/../../second/src/JavaVariable.java	(date 1640179674329)
+@@ -1,10 +1,18 @@
+ public class JavaVariable {
+     public static void main(String[] args) {
++        //JAVA에서 변수를 만드는 방법
++        //1. 데이터 타입을 적는다
++        //2. 변수 이름을 작성한다.
++        // 데이터 타입이란
++        //정수형 : int 실수형 float,double
++        // float 는 4 byte double 은 8byte
+         int num;
+ 
+         num = 3;
+         System.out.println("숫자 = " + num);
+-        System.out.printf("포맷 지정 숫자 = %d\n", num);
++        System.out.printf("포맷 지정 숫자 = %d\n",num);
++
++
+     }
+ 
+ }
+Index: ../../HomeWork1/Second/src/.idea/src.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../HomeWork1/Second/src/.idea/src.iml b/../../HomeWork1/Second/src/.idea/src.iml
+new file mode 100644
+--- /dev/null	(date 1640180584485)
++++ b/../../HomeWork1/Second/src/.idea/src.iml	(date 1640180584485)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../../HomeWork1/Second/src/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../HomeWork1/Second/src/.idea/modules.xml b/../../HomeWork1/Second/src/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1640180584496)
++++ b/../../HomeWork1/Second/src/.idea/modules.xml	(date 1640180584496)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../test/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../test/.idea/.gitignore b/../../test/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1640179674332)
++++ b/../../test/.idea/.gitignore	(date 1640179674332)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
