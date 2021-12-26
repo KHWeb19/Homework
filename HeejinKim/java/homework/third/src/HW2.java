@@ -1,22 +1,20 @@
 public class HW2 {
 
-    public static void main(String[] args) {}}
-      /* 하다가 어렵고 헷갈리네요.
-        int x,y,z,n;
+    public static void main(String[] args) {
+
+        int x,y,z;
          x=1;
          y=1;
-         int sum=0;
+         z=2;
+        for(int i=3;i<=19;i++){
 
-        for(int i=3;i<=18;i++){
-            x= n;
-            y= n+1;
-            z= n+2;
+            x= y;
+            y= z;
             z= x+y;
-            sum+=z;
-            System.out.println(sum);
+
+            System.out.println(z);
         }
 
 
     }
 }
-*/
