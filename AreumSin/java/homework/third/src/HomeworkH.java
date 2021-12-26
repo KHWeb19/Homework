@@ -102,9 +102,9 @@ public class HomeworkH {
         for (int i = START; i <= END; i++) { //1~100
 
             // i는 1일때
-            while (!isRandomAllocCheck) { // true일 동안 계속 진행할거야!
+            while (!isRandomAllocCheck) { // false일 동안 계속 진행
                 decision = (int) (Math.random() * range + MIN); // 2~10까지 난수 생성
-                isRandomAllocCheck = true; // 난수 생성해도 true
+                isRandomAllocCheck = true; // 난수 생성하면 true
             }
             /*
              decision은 7 , i는 계속 증가
@@ -127,7 +127,7 @@ public class HomeworkH {
              */
             if (i % decision == REMAIN) { // 생성된 난수의 배수를 구한다.
                 System.out.printf("%d의 배수 i = %d\n", decision, i); // 배수는, i인데..?
-                isRandomAllocCheck = false;
+                isRandomAllocCheck = false;// 배수를 구했으니 랜덤 난수 다시 생성
 
                 sum += i;
             }
