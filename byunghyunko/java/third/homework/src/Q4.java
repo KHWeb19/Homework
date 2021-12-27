@@ -1,4 +1,4 @@
-public class Q4번문제 {
+public class Q4 {
     public static void main(String[] args) {
         // 4. 구구단 7단을 출력해보자!
 

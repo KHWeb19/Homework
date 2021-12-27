@@ -1,4 +1,4 @@
-public class Q5번문제 {
+public class Q5 {
     public static void main(String[] args) {
         // 5. 1 ~ 100까지 숫자중 짝수만 출력해보자.
 
@@ -8,8 +8,6 @@ public class Q5번문제 {
             if (i % 2 == 0) {
                 System.out.println(i);
             }
-
-
         }
     }
 }
