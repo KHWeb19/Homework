@@ -11,7 +11,7 @@ public class FibonacciArray {
         arr[0] =1;
         arr[1] =1;
 
-        for(int i = START; i < END; i++){
+        for(int i = START; i <= END; i++){
             arr[i] = arr[i -1] + arr[i -2];
             System.out.printf("arr[%d] = %d\n", i, arr[i]);
         }
