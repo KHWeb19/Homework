@@ -1,6 +1,7 @@
 public class M10 {
     public static void main(String[] args) {
         //2~10사이의 랜덤 숫자를 추출해내고 0~100까지의 랜덤 숫자를 n번 추가적으로 추출후 더해갔을때 최종 값
+        //내 풀이
         /*int random1=0;
         int sum = 0;
         int sum2 = 0;
@@ -22,11 +23,14 @@ public class M10 {
         final int MIN = 2;
 
         int range = MAX - MIN + 1;
-
-        int decision = 0;
+        //범위 설정
+        int decision= 0;
         int sum = 0;
+        //decision,sum값 초기화
         for (int i = START; i <= END; i += decision) {
-            // 내부에 배치되면 매 반복마다 더하는 값이 바뀜+decision값 만큼 더해감
+            // 내부에 배치되면 매 반복마다 더하는 값이 바뀜
+            // 외부에 배치할시 매 루틴에 새로운 랜덤값이 아닌 처음 부여된 random값으로 무한 돌리게됨
+            // decision값 만큼 더해감
             decision = (int) (Math.random() * range + MIN);
 
             System.out.printf("뽑은 난수 = %d, 현재 이동한 위치 = %d\n", decision, i);
