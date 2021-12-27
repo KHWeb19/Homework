@@ -1,17 +1,24 @@
 public class Homework7 {
     public static void main(String[] args) {
-        //1~100까지 숫자중 4의 배수를 더한 결과를 출력해보자!
-        for (int i = 1; i < 101; i++) {
+        /* 일단 1~100까지 4의 배수를 출력해야 하니 for문으로 1부터 100까지 출력
+        거기서 if문으로 4의 배수를 출력 그리고 그숫자를 전부 더해줘야 하니깐
+        sum변수를 만들어 주고 for문을 빠져 나가서 sum 문 출력
+         */
+        final int START = 1;
+        final int END = 100;
+        final int DECISION = 4;
+        final int REMAIN = 0;
 
-            for (int j = 4; j < 101; j++) {
-                if (j % 4 == 0) {
+        int sum = 0;
 
-
-                    System.out.printf("%d + %d = %d\n", i, j, i + j);
-
-                }
+        for (int i = START; i <= END; i++) {
+            if (i % DECISION == REMAIN) {
+                System.out.printf("%d의 배수 i = %d\n", DECISION, i);
+                sum += i;
             }
-
         }
+
+        System.out.printf("%d ~ %d까지 %d의 배수들의 합은 %d\n",
+                START, END, DECISION, sum);
     }
 }
