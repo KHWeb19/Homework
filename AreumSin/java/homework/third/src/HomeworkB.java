@@ -6,7 +6,7 @@ public class HomeworkB {
         int num2 = 1;
 
         int res = 0;
-        for(int i = 0; i<21; i++){ // 20번 반복
+        for(int i = 2; i<21; i++){ // 20번 반복
 
             res = num1 + num2;
             System.out.printf("%d ,", res);

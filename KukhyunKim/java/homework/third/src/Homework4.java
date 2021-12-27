@@ -1,14 +1,19 @@
 public class Homework4 {
     public static void main(String[] args) {
         // 구구단 7단을 출력해보자!
-        for (int i = 7; i < 70; i = i+7){
-                System.out.println("i = " + i);
+
         /*
-        int a = 7;
-        for (int i = 1; i < 10; i++){
-            System.out.println("i = " + a);
-            a=a+7;
+        1. 상자만들기 (시작숫자, 시작점, 끝점)
+        2. 루프
+        3. 출력
          */
+
+        final int STAGE = 7;
+        final int START = 1;
+        final int END = 10;
+
+        for (int i = START; i < END; i++){
+            System.out.printf("%d X %d = %d\n", STAGE, i, STAGE * i);
         }
     }
 }
