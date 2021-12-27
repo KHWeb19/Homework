@@ -10,7 +10,7 @@ public class Hw8 {
         System.out.println("랜덤한 숫자: " + rand);
         for(i=0;i<101;i++){
             if(i%rand==0){
-                System.out.printf("%d의 배수 = %d\n",rand, i);
+                System.out.printf("%d의 배수  = %d\n",rand, i);
             }
         }
     }
