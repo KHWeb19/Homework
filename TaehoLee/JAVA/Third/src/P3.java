@@ -12,9 +12,9 @@ public class P3 {
         int num2 = 1;
         int num3 = 1;
 
-        final int count = 25;
+        final int COUNT = 25;
 
-        for(int i = 3; i < count; i++) {
+        for(int i = 3; i < COUNT; i++) {
             res = num1 + num3;
             num1 = num2;
             num2 = num3;
