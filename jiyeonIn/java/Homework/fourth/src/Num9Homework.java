@@ -1,4 +1,4 @@
-public class Num9 {
+public class Num9Homework {
     public static void main(String[] args) {
         //9. 1~100까지의 숫자를 순회, 2~10 사이의 랜덤 숫자 선택, 숫자 배수 출력
         //다음 루프에서 다시 랜덤숫자 선택, 해당 숫자 배수 출력~ 다음작업 다시 반복

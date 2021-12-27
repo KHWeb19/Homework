@@ -1,6 +1,4 @@
-import java.lang.management.MonitorInfo;
-
-public class Num1 {
+public class Num1Homework {
     public static void main(String[] args) {
         //1.65~122사이의 랜덤한 문자를 생성하도록 한다.
         //여기서 소문자나 대문자가 아니라면 다시 생성하도록 프로그램을 만들기
@@ -22,12 +20,11 @@ public class Num1 {
 
         final int MAX = 122;
         final int MIN = 65;
-        boolean random = true;
 
         int range = MAX-MIN +1;
 
 
-        while (random){
+        while (true){
             int rand = (int) (Math.random()*range+MIN);
 
             boolean little = rand >=65 && rand <=90;

@@ -1,4 +1,4 @@
-public class Num8 {
+public class Num8Homework {
     public static void main(String[] args) {
         //8. 1~100까지의 숫자를 순회한다.
         // 2~10 사이의 랜덤한 숫자를 선택하고 이 숫자의 배수를 출력해보도록 한다.

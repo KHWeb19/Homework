@@ -1,4 +1,4 @@
-public class Num10 {
+public class Num10Homework {
     public static void main(String[] args) {
         //10. 1~100까지 숫자를 순회, 9번과 유사하게 2~10 랜덤으로 작업 진행
         //다만 이번에는 배수가 아닌 랜덤한 숫자가 나온만큼만 이동하고
@@ -38,8 +38,8 @@ public class Num10 {
         final int MAX = 10;
         final int MIN = 2;
         int range = MAX - MIN +1;
-        int rand = 0;
 
+        int rand =  0;
         int sum = 0;
         final int START = 1;
         final int END = 100;
