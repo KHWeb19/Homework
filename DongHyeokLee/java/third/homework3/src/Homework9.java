@@ -4,35 +4,49 @@ public class Homework9 {
         // 2~10 사이의 랜덤한 숫자 선택 이 숫자의 배수 출력
         // 다음 루프에서 다시 랜덤 숫자 선택 해당 숫자 배수 출력
         //그 다음 루프에서 다시 작업 반복
-        //끝까지 순회 했을때 출력된 숫자들의 합 => 끝까지??
-        //머선소리고...
+        //끝까지 순회 했을때 출력된 숫자들의 합
 
+
+        final int START = 1, END = 100;
+        final int REMAIN = 0;
         final int MAX = 10, MIN = 2;
+        int decision = 0;
         int range = MAX - MIN + 1;
-        //int ran = (int) (Math.random() * range + MIN);// 초기화 안 됌
         int sum = 0; //초기화 선언 해야함
 
 
-       //Q. 안나온 숫자들로만 계속 더해보고싶은데...
-        //Q.무한루프를 어떻게 끝내지
-        int i = 1;
-        while(true){
-            int ran = (int) (Math.random() * range + MIN);
+        // 랜덤 숫자 생성
+        // 랜덤 숫자 생성-> 배수 출력 -> 순회 -> 랜덤 숫자 생성
+        boolean isRandomAllocCheck = false;
+           for(int i = START; i <= END; i++){
 
+                while(!isRandomAllocCheck) {
+                    decision = (int) (Math.random() * range + MIN);
+                    isRandomAllocCheck = true;//방어루틴
+                 }
+                 if(i % decision == REMAIN){
+                     System.out.printf("%d의 배수 %d\n" , decision, i);
+                     isRandomAllocCheck = false;//
 
-            while(i<=100){
-                if(i % ran == 0){
-                    System.out.println(ran + "의 배수 = " + i );
-                    sum += i;
-                }
-                i++;
+                     sum += i;
+                 }
 
-            }
-              i =1; // i 초기화하니 무한루프?함
-            System.out.println("지금 까지 출력된 숫자들의 합" + sum);
         }
-
-
-
+        System.out.println("출력된 숫자 들의 합" + sum);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
