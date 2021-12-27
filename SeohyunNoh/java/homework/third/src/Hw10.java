@@ -3,6 +3,9 @@ public class Hw10 {
         int min = 2;
         int max = 10;
         int range = (max - min) + 1;
+        // 아래의 랜덤지정을 여기다가 하면 랜덤값이 반복되지않고
+        // 예를들어 5 로 고정됨
+        // 랜덤지정은 for문 내부에 할 것 (12.24 feedback)
         int rand = (int)(Math.random() * range + min);
 
         int sum1 = 0;
