@@ -1,13 +1,26 @@
 public class Homework8 {
     public static void main(String[] args) {
-        //1~100까지 숫자를 순회한다.
-        //2~10사이의 랜덤숫자를 선택하고 이 숫자의 배수를 출력해보도록한다.
-        for(int i = 1; i < 101; i++ ) {
-            System.out.printf("1~100 숫자 %d\n",i);
-            int j = (int)(Math.random() * 8 + 2);
-            System.out.printf("2~10 랜덤숫자 : %d\n",j);
-            System.out.printf("결과 %d \n",i*j);
+        /* 일단 1 ~ 100까지 숫자를 순회해야 하기 떄문에 for문을 사용
+        하지만 순서대로 순회하는게 아니기때문에 Math.random 사용
+        for문 만들어주고 Math.random 만들어주고 범위 정해줌
+        그리고 for문에서 Math.random 수를 출력해줘야 하니 for문 if문에서
+        Math.random 숫자를 집어 넣어준다
+        i % decision == 0 거기에 decision = Math.random 숫자를 집어 넣어주고 출력
+         */
+        final int START = 1;
+        final int END = 100;
+        final int REMAIN = 0;
 
+        final int MAX = 10;
+        final int MIN = 2;
+
+        int range = MAX - MIN + 1;
+        int decision = (int) (Math.random() * range + MIN);
+
+        for (int i = START; i <= END; i++) {
+            if (i % decision == REMAIN) {
+                System.out.printf("%d의 배수 i = %d\n", decision, i);
+            }
         }
     }
 }
