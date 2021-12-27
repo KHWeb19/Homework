@@ -5,8 +5,9 @@ public class M7 {
         for (int i = 0; i <= 100; i++) {
             if (i % 4 == 0) {
                 sum += i;
-                System.out.printf("정수 %d까지의 4의 배수의 합은 %d입니다.\n",i, sum);
+
             }
+            System.out.printf("정수 %d까지의 4의 배수의 합은 %d입니다.\n",i, sum);
         }
     }
 }
