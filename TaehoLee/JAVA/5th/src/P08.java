@@ -14,6 +14,10 @@ public class P08 {
             2번, 5번은 그냥 특수 스킬이 동작하지 않고 단순히 더해진다.
      */
    public static void main(String[] args) {
+
+      //// 돌아가게만 만들었는데 최적화가 전혀 안되어있어서 정답이 필요합니다.
+
+
       final int MAX = 6;
       final int MIN = 1;
       final int NUM = 2; // 플레이어 수
@@ -60,13 +64,12 @@ public class P08 {
                break;
             }
             else {
+               arr[i] += 3;
                if(i == 0){
                   arr[i + 1] -= 3;
-                  arr[i] += 3;
                }
                else{
                   arr[i - 1] -= 3;
-                  arr[i] += 3;
                }
             }
          }
