@@ -84,9 +84,9 @@ public class Quiz8 {
         System.out.println("2번 플레이어 최종 점수는 " +sum2);
         if (sum1 == sum2){
             System.out.println("무승부");
-        }else if(sum1 > sum2){
+        }else if(sum1 > sum2 || sum2 < -10){
             System.out.println("1번 승리");
-        }else if (sum1 < sum2){
+        }else if (sum1 < sum2 || sum1 <-10){
             System.out.println("2번 승리");
         }
     }
