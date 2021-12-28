@@ -9,7 +9,7 @@ public class Q4 {
         //30개 배열의 평균값을 구해준다
 
         final int MAX = 100;
-        final int MIN = 61;
+        final int MIN = 60;
         final int NUM = 30;
         int ADD = 0;
 
