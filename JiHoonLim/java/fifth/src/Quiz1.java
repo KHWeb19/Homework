@@ -2,12 +2,10 @@ import java.util.Scanner;
 
 public class Quiz1 {
     public static void main(String[] args) {
-
         /*
         1. 2씩 곱하는 등비수열이므로 앞 항에 2를 곱한 값이 다음 항
         2. for문앞에서 순차적으로 2씩 계속 곱한다.
          */
-
         final int START = 1;
         final int WANT = 2;
 

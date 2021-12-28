@@ -2,32 +2,46 @@ public class Quiz10 {
     public static void main(String[] args) {
         /*
         1. 과일 배열 , 과일 개수 배열
-        2. 사과[0]= 100원 귤[1]=200원 오렌지[2]=300원 수박[3]=400원 메론[4]=500원 포도[5]=600원
-        질문
-        이렇게 푸는게 맞는지 궁금합니다.
+        2. 문제 이해 후 풀이
          */
-        final int frunum = 6;
-        int i,j;
-        int sum =0;
 
-        int [] fru= new int[frunum];
-        int [] fnum = new int[frunum];
-        int [] res = new int[frunum];
+        final int APPLE = 5 ;
+        final int MANDARIN = 5 ;
+        final int ORANGE = 5 ;
+        final int WATERMELON = 5 ;
+        final int MELON = 5 ;
+        final int GRAPE = 5 ;
 
-        for (i =0; i < frunum; i++){
-            fru[i] = 100*(i+1);
-        }
+        final int APPLEBOX = 0;
+        final int MANDARINBOX = 1;
+        final int ORANGEBOX = 2;
+        final int WATERMELONBOX = 3;
+        final int MELONBOX = 4;
+        final int GRAPEBOX = 5;
 
-        fnum[0] = 5;
-        fnum[1] = 3;
-        fnum[2] = 5;
-        fnum[3] = 2;
-        fnum[4] = 3;
-        fnum[5] = 4;
+        final int TOTAL = 6;
 
-        for (j = 0; j < frunum; j++ ){
-            res[j] = fnum[j] * fru[j];
-            sum += res[j];
+        int[] FruitPrice = new int[TOTAL];
+        int[] NumofFruit = new int[TOTAL];
+
+        FruitPrice[APPLEBOX] = 1500;
+        FruitPrice[MANDARINBOX] = 700;
+        FruitPrice[ORANGEBOX] = 2000;
+        FruitPrice[WATERMELONBOX] = 10000;
+        FruitPrice[MELONBOX] = 20000;
+        FruitPrice[GRAPEBOX] = 5000;
+
+        NumofFruit[APPLEBOX] = APPLE;
+        NumofFruit[MANDARINBOX] = MANDARIN;
+        NumofFruit[ORANGEBOX] = ORANGE;
+        NumofFruit[WATERMELONBOX] = WATERMELON;
+        NumofFruit[MELONBOX] = MELON;
+        NumofFruit[GRAPEBOX] = GRAPE;
+
+        int sum = 0;
+
+        for (int i = 0; i < TOTAL; i++){
+            sum += FruitPrice[i] * NumofFruit[i];
         }
         System.out.println("총 가격은 " +sum);
     }

@@ -4,6 +4,7 @@ public class Quiz9 {
     public static void main(String[] args) {
         /*
         1. 피보나치와 비슷원리
+        2. 초기 항값 지정 후 규칙대로 연산
          */
         final int START = 3;
 

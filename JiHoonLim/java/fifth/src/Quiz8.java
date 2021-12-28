@@ -10,7 +10,110 @@ public class Quiz8 {
         3 - 둘다 -6
         4 - 패배
         6 - 상대방 -3 자신 +3
+
+        내가 만든 방식은 2명의 게임에서만 사용가능함 -> 인원을 바꿔도 문제가 없도록 다시 제작
          */
+
+        final int PLAYER = 2;
+        final int DICENUM = 2;
+
+        final int SKILLNUM1 =1;
+        final int SKILLNUM2 =3;
+        final int SKILLNUM3 =4;
+        final int SKILLNUM4 =6;
+
+        final int DEATH = 4444;
+
+        final int MAX = 6;
+        final int MIN = 1;
+
+        int range = MAX - MIN +1;
+
+        int dice;
+        int[] diceSum = new int[PLAYER];
+
+        for (int i = 0; i < PLAYER; i++){
+            for (int j = 0 ; j < DICENUM; j++){
+                dice = (int)(Math.random() * range + MIN);
+                diceSum[i] += dice;
+            }
+            System.out.println(i+1 + "번 플레이어의 주사위값 합은 " +diceSum[i]);
+        }
+
+
+        for (int i =0; i < PLAYER; i++){
+
+            if (diceSum[i] % 2 == 0){
+                System.out.println(i+1 + "번 플레이어가 보너스 기회를 얻습니다.");
+                dice = (int)(Math.random() * range + MIN);
+
+                if (dice == SKILLNUM1){
+                    System.out.println("1번 능력 : 상대방 -2");
+                    for (int j = 0; j < PLAYER; j++){
+                        if (j == i){
+                            continue;
+                        }
+
+                        diceSum[j] -= 2;
+                    }
+                } else if (dice == SKILLNUM2){
+                    System.out.println("2번 능력 : 모두 -6");
+
+                    for (int j =0; j < PLAYER; j++){
+                        diceSum[j] -= 6;
+                    }
+                }else if (dice == SKILLNUM3){
+                    System.out.println("3번 능력 : 잘 죽어~");
+                    diceSum[i] = DEATH;
+                }else if (dice == SKILLNUM4){
+                    System.out.println("4번 능력 : 3씩 가져온다. ");
+
+                    for (int j = 0 ; j < PLAYER; j++){
+                        if ( i == j){
+                            continue;
+                        }
+
+                        diceSum[j] -= 3;
+                        diceSum[i] += 3;
+                    }
+                }else {
+                    diceSum[i] += dice;
+                }
+            }
+        }
+
+        for (int i = 0; i < PLAYER; i ++){
+            if (diceSum[i] <0){
+                diceSum[i] =0;
+            }
+            System.out.printf("%d번 플레이어의 주사위 합은 %d\n", i+1, diceSum[i]);
+        }
+
+        boolean CheckWinner = true;
+
+        for (int i = 0; i < PLAYER; i++) {
+            if (diceSum[i] == DEATH){
+                System.out.printf("플레이어 %d 패배\n", i);
+                CheckWinner = false;
+            }
+        }
+
+        if (CheckWinner){
+            if (diceSum[0] > diceSum[1]){
+                System.out.println("플레이어 1 승리");
+            }else if (diceSum[0] < diceSum[1]){
+                System.out.println("플레이어 2 승리");
+            }else{
+                System.out.println("무승부");
+            }
+        }
+    }
+}
+
+
+
+        /*
+        final int PLAYER = 2;
         final int MAX = 6;
         final int MIN = 1;
         int range = MAX - MIN +1;
@@ -21,7 +124,7 @@ public class Quiz8 {
         int dice1, dice2;
         int sum1 =0, sum2 =0;
 
-            for (int i = 0; i < 2; i++){
+            for (int i = 0; i < PLAYER; i++){
                 dice1 = (int)(Math.random() * range +MIN);
                 ply1[i] = dice1;
                 sum1 += ply1[i];
@@ -86,8 +189,7 @@ public class Quiz8 {
             System.out.println("무승부");
         }else if(sum1 > sum2 || sum2 < -10){
             System.out.println("1번 승리");
-        }else if (sum1 < sum2 || sum1 <-10){
+        }else if (sum2 > sum1 || sum1 < -10){
             System.out.println("2번 승리");
         }
-    }
-}
+        */

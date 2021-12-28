@@ -20,9 +20,9 @@ public class Quiz4 {
         for (int i = 0; i < STU; i++){
             SCO = (int)(Math.random() * range + MIN);
             arr[i] = SCO;
-            System.out.printf("rand: %d arr[rand] = %d\n" , i, arr[i]);
+            System.out.printf("arr[%d] = %d\n" , i,arr[i]);
             sum += SCO;
         }
-        System.out.println("반 평균은 " +sum/STU);
+        System.out.println("반 평균은 " + (float)(sum) /STU);
     }
 }

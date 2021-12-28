@@ -12,29 +12,26 @@ public class Quiz5 {
         final int MIN = 60;
 
         int range = MAX - MIN +1;
-        int sum = 0;
+        double sum = 0;
         int[] scoarr = new int[STU];
-        double[] vararr = new double[STU];
 
         int SCO;
-        double var, stadev;
+        double var =0, stadev=0;
 
 
         for (int i = 0; i < STU; i++){
             SCO = (int)(Math.random() * range + MIN);
             scoarr[i] = SCO;
-            System.out.printf("rand: %d arr[rand] = %d\n" , i, scoarr[i]);
+            System.out.printf("arr[%d] = %d\n" , i, scoarr[i]);
             sum += SCO;
         }
-        int avg = sum/STU;
+        double avg = sum/STU;
         System.out.println("반 평균은 " +avg);
 
         for (int j = 0; j < STU; j++){
-            vararr[j] = scoarr[j] - avg;
-            var = (vararr[j] * vararr[j]) / STU;
+            var += Math.pow(scoarr[j] - avg,2);
             stadev = Math.sqrt(var);
-            System.out.printf("%d번 학생의 분산은 %f , 표준편차는 %f\n", j+1, var, stadev);
         }
-
+            System.out.printf("분산은 %f 표준편차는 %f\n",var/STU,stadev/STU);
     }
 }
