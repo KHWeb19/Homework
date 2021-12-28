@@ -15,8 +15,7 @@ public class problem4 {
             sum += arr[i];
 
         }
-        int average = sum/ARR;
-        System.out.println("학생들의 평균 점수는"+average);
+        System.out.println("학생들의 평균 점수는"+(float) sum/ARR);
 
 
     }
