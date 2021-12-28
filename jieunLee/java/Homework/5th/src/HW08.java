@@ -9,6 +9,11 @@ public class HW08 {
         //4) 다음 유저도 똑같이 진행
         //5) 점수가 0 아래로 떨어지면 0으로 만들기
         //6) 점수에 따라 승패 정하기
+
+        //한명이 주사위를 굴렸을때와 다음사람이 굴렸을때를 따로 구현했는데
+        //인원이 늘면 반복문으로 처리할수가있을까요?
+
+
         boolean lose1 = false;
         boolean lose2 = false;
         int rand1, rand2, rand3;

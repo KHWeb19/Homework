@@ -12,6 +12,9 @@ public class HW06 {
         //2) 자릿수만큼의 갯수를 가진 배열 생성
         //3) for문으로 한자리씩 배열에 넣기
 
+        //BigInteger 1~1000000000를 for문으로 한자리씩 추가하고싶은데
+        //어떻게 하면 좋을지 모르겠습니다!
+
         final int LENGTH = 11;
         BigInteger[] arr = new BigInteger[LENGTH];
 
