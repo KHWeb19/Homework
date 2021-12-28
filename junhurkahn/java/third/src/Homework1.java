@@ -7,25 +7,9 @@ public class Homework1 {
         그리고 if문을 이용하여 두개의 조건중 하나만 충족이 되면 영문자 대소문이 출력되도록 하자
         아니면 문자가 아님으로 빠져 나가게 하자 그럼 else문을 써서 빠져나가게 해애하는 것인가?
          */
-        final int MAX = 122;
-        final int MIN = 65;
-
-        int range = MAX - MIN + 1;
-
-        while (true) {
-            int rand = (int) (Math.random() * range + MIN);
-
-            boolean condition1 = rand >= 65 && rand <= 90;
-            boolean condition2 = rand >= 97 && rand <= 122;
+        final int Max = 122;
+        final int Min = 65;
+        int range = Max - Min + 1;
+        int
 
 
-            if (condition1 || condition2) {
-                System.out.printf("rand는 영문자 대소문자중 하나임: %c(%d)\n", rand, rand);
-
-                break;
-            }
-
-            System.out.printf("문자가 아님: %c(%d)\n", rand, rand);
-        }
-    }
-}
