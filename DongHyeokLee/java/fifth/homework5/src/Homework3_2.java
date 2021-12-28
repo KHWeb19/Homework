@@ -1,0 +1,37 @@
+public class Homework3_2 {
+    public static void main(String[] args) {
+        //배열로 로또 문제를 만들어보기!
+        //   실제 로또 확률은 0.00000023으로 1억명중 23명이 당첨됨
+        //   실제값을 사용하기엔 검토 작업이 너무 고통스러우므로 100명 중 5명을 뽑아보도록 하자! -> 100분의 5확률
+        //   배열값에 당첨되는 자리를 배치해놓고 ---> 이거 랜덤으로 하는건가? 아닌가?
+        //   사용자가 돌려서 당첨되는지 안되는지를 판정하도록 한다.
+
+        // 1.100길이의 배열 생성
+        // 2. 5개의 당첨 자리 생성
+        // 3. 사용자 뽑기
+
+
+        String[] lotto = new String[100];
+
+       lotto[1]="당첨";
+       lotto[44]="당첨";
+       lotto[53]="당첨";
+       lotto[67]="당첨";
+       lotto[99]="당첨";
+
+
+
+       int pick = (int)(Math.random()*100);
+       if(lotto[pick] == "당첨"){
+           System.out.printf("숫자 %d은 %s 입니다\n" , pick , lotto[pick]);
+        }else{
+           System.out.printf("숫자 %d는 꽝입니다\n", pick);
+       }
+
+
+
+
+
+
+    }
+}
