@@ -4,34 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="[김국현] 문제은행2 for/while">
-      <change afterPath="$PROJECT_DIR$/../../fourth/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/fourth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer3_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/Answer9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/QnA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/QnA2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fourth/src/QnA3.java" afterDir="false" />
+    <list default="true" id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="[김국현] 문제은행2 for/while .ver1.1">
+      <change afterPath="$PROJECT_DIR$/../../5th/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/AdvancedFibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/Challenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/FibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/MoreAdvancedFibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/PsuedoCodeHowTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/RandomArrayIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/ScannerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/src/Homework9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/.idea/out.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/third.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Homework10">
+  <component name="RunManager" selected="Application.Homework7">
     <configuration name="Homework10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework10" />
       <module name="third" />
@@ -108,10 +111,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Homework10" />
-        <item itemvalue="Application.Homework9" />
-        <item itemvalue="Application.Homework8" />
         <item itemvalue="Application.Homework7" />
+        <item itemvalue="Application.Homework9" />
+        <item itemvalue="Application.Homework10" />
+        <item itemvalue="Application.Homework8" />
         <item itemvalue="Application.Homework6" />
       </list>
     </recent_temporary>
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640328021454</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[김국현] 문제은행2 for/while .ver1.1">
+      <created>1640585818664</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640585818664</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,7 +158,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[김국현] 문제은행2 for/while" />
-    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행2 for/while" />
+    <MESSAGE value="[김국현] 문제은행2 for/while .ver1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행2 for/while .ver1.1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/third$Homework1.ic" NAME="Homework1 Coverage Results" MODIFIED="1640262570847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../5th/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/AdvancedFibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/Challenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/FibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/MoreAdvancedFibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/PsuedoCodeHowTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/RandomArrayIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5th/src/ScannerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third/out/.idea/out.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third/src/third.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../third/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../third/src/Homework7.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22rthsMficZaKgCacsHgMudkqHN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../third/src" />
+  </component>
+  <component name="RunManager" selected="Application.Homework9">
+    <configuration name="Homework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework1" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework4" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework5" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework7" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework9" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Homework9" />
+        <item itemvalue="Application.Homework7" />
+        <item itemvalue="Application.Homework5" />
+        <item itemvalue="Application.Homework4" />
+        <item itemvalue="Application.Homework1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="" />
+      <created>1640607659496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640607659496</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
