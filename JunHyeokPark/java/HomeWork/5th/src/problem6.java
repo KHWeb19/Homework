@@ -1,0 +1,2 @@
+public class problem6 {
+}
