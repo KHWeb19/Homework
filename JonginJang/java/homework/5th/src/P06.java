@@ -39,7 +39,7 @@ public class P06 {
         }
         System.out.println("originNum = " + originNum);
         for(int i = START ; i<END;i++){
-            System.out.print("sequence["+i+"]의 값은 " + sequence[i]+" \n ");
+            System.out.print("sequence["+i+"]의 값은 " + "10^"+ i+"자리에 해당하는"+ sequence[i]+" \n ");
         }
 
     }
