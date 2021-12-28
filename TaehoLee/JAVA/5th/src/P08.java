@@ -45,14 +45,16 @@ public class P08 {
                arr[i] += rand;
             }
             else if(rand == 3){
-               if(arr[0] >= 0){
+
+               if(arr[0] >= 6){
                   arr[0] -= 6;
                }
                else{
                   arr[0] = 0;
                }
-               if(arr[1] >= 0){
-                  arr[0] -= 6;
+
+               if(arr[1] >= 6){
+                  arr[1] -= 6;
                }
                else{
                   arr[1] = 0;
