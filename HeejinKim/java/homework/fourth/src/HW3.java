@@ -10,7 +10,7 @@ public class HW3 {
 
         final int START=3;
         final int  END=25;
-        // 점화식의 n>=3번째 부터와 같은 상황
+
 
         for(i=START;i<END;i++){
             result=first+third;
