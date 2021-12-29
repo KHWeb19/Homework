@@ -7,8 +7,8 @@ public class P05 {
         final int CLASS = 30;
         final int MIN = 60;
         final int MAX = 100;
-        int sum = 0;
-        double var = 0;
+        float sum = 0;
+        float var = 0;
 
         int range = MAX - MIN + 1;
         int[] arr= new int[CLASS];
@@ -18,10 +18,12 @@ public class P05 {
             arr[i] = rand;
             sum += arr[i];
         }
+        float average = sum/CLASS;
+
         for (int i = 0; i < CLASS; i++){ // 분산 구하기
-            arr[i] -= sum/CLASS;
-            var += arr[i]^2;
+            arr[i] -= average;
+            var += Math.pow(arr[i],2); // Math.pow(a,b) = a^b ---- a가 음수일때 a^b를 계산하면 음수가나옴!!
         }
-        System.out.printf("\n분산 : %f, 표준편차 : %f", var/CLASS, Math.sqrt(var/CLASS));
+        System.out.printf("\n분산 : %f, 표준편차 : %f", var/CLASS, (float)Math.sqrt(var/CLASS));
     }
 }

@@ -23,7 +23,7 @@ public class P10 {
         arr2[5] = 4;
 
         for(int i = 0; i < COUNT; i++){
-            int rand = ((int)(Math.random() * range )+ MIN) * 1000;
+            int rand = ((int)(Math.random() * range) + MIN) * 1000;
             arr1[i] = rand;
             sum += arr1[i] * arr2[i];
         }

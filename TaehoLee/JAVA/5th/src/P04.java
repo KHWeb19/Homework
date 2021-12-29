@@ -7,7 +7,7 @@ public class P04 {
         final int CLASS = 30;
         final int MIN = 60;
         final int MAX = 100;
-        int sum = 0;
+        float sum = 0; // sum값을 float변수로 넣어야 최종값이 float로 나옴!!
 
         int range = MAX - MIN + 1;
         int[] arr= new int[CLASS];
@@ -16,8 +16,8 @@ public class P04 {
             int rand = (int)(Math.random()*range) + MIN;
             arr[i] = rand;
             sum += arr[i];
-            System.out.printf("%d 번째 학생의 점수 : %d\n", i, rand);
+            System.out.printf("%d 번째 학생의 점수 : %d\n", i + 1, rand);
         }
-        System.out.printf("\n학생들의 시험 평균값은 %d", sum/CLASS);
+        System.out.printf("\n학생들의 시험 평균값 : %f", sum/CLASS);
     }
 }

@@ -20,7 +20,12 @@ public class P01 {
         for(i = START; i < end; i++) {
             arr[i] = arr[i - 1] * 2;
         }
+        if(end > 31){
+            System.out.println("값이 너무 큽니다.");
+        }
+        else{
         System.out.printf("등비수열의 %d 번째 항 : %d\n", i, arr[i - 1]);
+        }
 
     }
 }
