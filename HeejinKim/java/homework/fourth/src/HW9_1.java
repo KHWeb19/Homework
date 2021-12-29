@@ -17,6 +17,8 @@ public class HW9_1 {
         int decision;
         int range=MAX-MIN+1;
 
+        //boolean을 설정을 해야 방어루틴으로 랜덤 난수의 무조건적 생성을 막아서 배수가 되기 전까지 생성을 해주지 않음.
+
         boolean check=false;
         for(i=START;i<=END;i++){
             decision=(int)((Math.random()*range)+MIN);
