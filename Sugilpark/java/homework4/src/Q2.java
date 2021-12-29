@@ -24,3 +24,6 @@ public class Q2 {
         }
     }
 }
+// 수가 21억이니 Biglnteger를 이용해 나타낸다.
+// 50번째 항을 입력받아야 하니 Scanner를 적용시킨다.
+// Biglnteger에서 곱하기를 쓰려면.multiply(BigInteger.valueOf(2)를 이용해야 한다.
