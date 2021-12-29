@@ -24,11 +24,12 @@ public class Answer1 {
 
             if(condition1 || condition2){ // ||의 의미는 or 이다. 좌항 우항 중 하나라조 참이면 전체가 참이 되어 값이 출력.
                 System.out.printf("rand는 영어 대소문자 %c(%d)\n", rand, rand);
-                isChar = false;
-                break;
+                isChar = false; // while을 거짓으로 만들어서 while 반복문을 완전히 빠져나가게 해주는 역할
+                break; //이게 없으면 if문 내용을 달성한 후에도 아래 "문자가 아닌 기호" 문구가 출력됨.
             }
 
                 System.out.printf("rand는 문자가 아닌 기호 %c(%d) 영어 대소문자가 나올 때 까지 재출력\n", rand, rand);
+            //break빼고 이걸 else로 감싸도 괜찮음.
         }
     }
 }
