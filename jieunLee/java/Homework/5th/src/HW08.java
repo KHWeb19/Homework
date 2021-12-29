@@ -2,104 +2,77 @@ public class HW08 {
     public static void main(String[] args) {
         //8. 2명이 주사위 게임을 한다. (배열 활용)
 
-        //   인덱스0은 주사위의합 인덱스1은 점수
-        //1) 유저의 배열에 주사위의합, 점수 넣기
+        //1) 유저마다 주사위를 여러개 굴려서 나온 합을 배열에 넣기
         //2) 합이 짝수면 특수 주사위 돌리기
-        //3) 특수값에 따라 유저1과 유저2의 주사위, 점수 변형
-        //4) 다음 유저도 똑같이 진행
-        //5) 점수가 0 아래로 떨어지면 0으로 만들기
-        //6) 점수에 따라 승패 정하기
+        //3) 특수값에 따라 점수 바꾸기
+        //4) 점수가 0 아래로 떨어지면 0으로 만들기
+        //5) 점수에 따라 승패 정하기
 
-        //한명이 주사위를 굴렸을때와 다음사람이 굴렸을때를 따로 구현했는데
-        //인원이 늘면 반복문으로 처리할수가있을까요?
+        final int PLAYER_NUM = 2;
+        final int DICE_NUM = 2;
+        int[] diceSum = new int[PLAYER_NUM];
+        int rand;
+        boolean isWinner = true;
 
-
-        boolean lose1 = false;
-        boolean lose2 = false;
-        int rand1, rand2, rand3;
-        int[] user1 = new int[2];
-        int[] user2 = new int[2];
-        //1)
-        rand1 = (int) (Math.random() * 6 + 1);
-        rand2 = (int) (Math.random() * 6 + 1);
-        user1[0] = rand1 + rand2;
-        rand1 = (int) (Math.random() * 6 + 1);
-        rand2 = (int) (Math.random() * 6 + 1);
-        user2[0] = rand1 + rand2;
         System.out.println("두개의 주사위를 던집니다.");
-        System.out.printf("user1= %d\n", user1[0]);
-        System.out.printf("user2= %d\n", user2[0]);
-        //2)
-        if (user1[0] % 2 == 0) {
-            rand3 = (int) (Math.random() * 6 + 1);
-            System.out.printf("특수 주사위를 던집니다. ");
-            System.out.printf("user1= %d\n", rand3);
-            //3)
-            if (rand3 == 1) {
-                user1[1] = user1[0];
-                user2[0] -= 2;
-            } else if (rand3 == 2 || rand3 == 5) {
-                user1[1] = user1[0] + rand3;
-            } else if (rand3 == 3) {
-                user1[1] = user1[0] - 6;
-                user2[1] = user2[0] - 6;
-            } else if (rand3 == 4) {
-                lose1 = true;
-            } else if (rand3 == 6) {
-                user1[1] = user1[0] + 3;
-                user2[1] = user2[0] - 3;
+        for (int i=0; i<PLAYER_NUM; i++) {
+            for (int j=0; j<DICE_NUM; j++) {
+                rand = (int) (Math.random() * 6 + 1);
+                diceSum[i] += rand;
             }
-        } else {
-            user1[1] = user1[0];
+            System.out.printf("유저%d= %d\n", i, diceSum[i]);
         }
-        //4)
-        if (user2[0] % 2 == 0) {
-            rand3 = (int) (Math.random() * 6 + 1);
-            System.out.printf("특수 주사위를 던집니다. ");
-            System.out.printf("user2= %d\n", rand3);
-            if (rand3 == 1) {
-                user2[1] = user2[0];
-                user1[0] -= 2;
-            } else if (rand3 == 2 || rand3 == 5) {
-                user2[1] = user2[0] + rand3;
-            } else if (rand3 == 3) {
-                user1[1] = user1[0] - 6;
-                user2[1] = user2[0] - 6;
-            } else if (rand3 == 4) {
-                lose2 = true;
-            } else if (rand3 == 6) {
-                user1[1] = user1[0] - 3;
-                user2[1] = user2[0] + 3;
-            }
-        } else {
-            user2[1] = user2[0];
-        }
-        //5)
-        if (user1[1]<0) {
-            user1[1]=0;
-        } else if (user2[1]<0) {
-            user2[1]=0;
-        }
-        //6)
-        if (lose1 && lose2) {
-            System.out.println("무승부입니다.");
-        } else if (lose1) {
-            System.out.println("user1= 패배하였습니다.");
-            System.out.println("user2= 승리하였습니다.");
-        } else if (lose2) {
-            System.out.println("user1= 승리하였습니다.");
-            System.out.println("user2= 패배하였습니다.");
-        } else {
-            if (user1[1]==user2[1]) {
-                System.out.println("무승부입니다.");
-            } else if (user1[1]>user2[1]) {
-                System.out.println("user1= 승리하였습니다.");
-                System.out.println("user2= 패배하였습니다.");
-            } else {
-                System.out.println("user1= 패배하였습니다.");
-                System.out.println("user2= 승리하였습니다.");
+
+        for (int i=0; i<PLAYER_NUM; i++) {
+            if (diceSum[i] % 2 == 0) {
+                rand = (int) (Math.random() * 6 + 1);
+                System.out.printf("특수 주사위를 던집니다. (유저%d= %d)\n", i, rand);
+                if (rand == 1) {
+                    System.out.println("상대방의 주사위 눈금을 2 떨군다.");
+                    for (int j=0; j<PLAYER_NUM; j++) {
+                        if (j != i) {
+                            diceSum[j] -= 2;
+                        }
+                    }
+                } else if (rand == 3) {
+                    System.out.println("다 같이 -6을 적용한다.");
+                    for (int j=0; j<PLAYER_NUM; j++) {
+                        diceSum[j] -= 6;
+                    }
+                } else if (rand == 4) {
+                    System.out.println("DIE");
+                    isWinner = false;
+                } else if (rand == 6) {
+                    System.out.println("모든 상대방에게 3을 뺏어서 내거에 3을 더한다.");
+                    for (int j=0; j<PLAYER_NUM; j++) {
+                        if (j != i) {
+                            diceSum[i] += 3;
+                            diceSum[j] -= 3;
+                        }
+                    }
+                } else {
+                    System.out.println("그냥 특수 스킬이 동작하지 않고 단순히 더해진다.");
+                    diceSum[i] += rand;
+                }
             }
         }
 
+        for (int i=0; i<PLAYER_NUM; i++) {
+            if (diceSum[i]<0) {
+                diceSum[i]=0;
+            }
+        }
+
+        if (isWinner) {
+            if (diceSum[0]>diceSum[1]) {
+                System.out.println("유저0가 승리하였습니다.");
+                System.out.println("유저1가 패배하였습니다.");
+            } else if (diceSum[0]<diceSum[1]) {
+                System.out.println("유저0가 패배하였습니다.");
+                System.out.println("유저1가 승리하였습니다.");
+            } else {
+                System.out.println("무승부입니다.");
+            }
+        }
     }
 }
