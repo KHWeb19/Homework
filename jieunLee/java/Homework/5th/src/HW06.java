@@ -1,4 +1,5 @@
 import java.math.BigInteger;
+import static java.math.BigInteger.*;
 
 public class HW06 {
     public static void main(String[] args) {
@@ -7,77 +8,33 @@ public class HW06 {
         //   ex) 1234 = 1 x 10^3 + 2 x 10^2 + 3 x 10^1 + 4 x 10^0
         //        arr[0] = 4, arr[1] = 3, arr[2] = 2, arr[3] = 1
 
-        //1) 변수 선언
+        //1) 변수의 자릿수구하고 그 크기의 배열 만들기
+        //   ---> 변수를 0과 비교해서 변수가 더 큰 동안에 10^0~10^N까지 나눠서 N을 구함
+        //        BigInteger.* import하면 10=TEN 0=ZERO로 선언가능
         //2) 10의 n승으로 나눠서 각 자리의 숫자 구하기
-        //2) 자릿수만큼의 갯수를 가진 배열 생성
-        //3) for문으로 한자리씩 배열에 넣기
-
-        //BigInteger 1~1000000000를 for문으로 한자리씩 추가하고싶은데
-        //어떻게 하면 좋을지 모르겠습니다!
-
-        final int LENGTH = 11;
-        BigInteger[] arr = new BigInteger[LENGTH];
+        //   for문으로 한자리씩 배열에 넣기
+        //   bigInteger n제곱 구하기 --> .pow(n)
 
         BigInteger num = new BigInteger("45678911234");
-        BigInteger quo = num.divide(new BigInteger("10000000000"));
-        arr[10] = quo;
-        System.out.println(arr[10]);
 
-        num = num.subtract(quo.multiply(new BigInteger("10000000000")));
-        quo = num.divide(new BigInteger("1000000000"));
-        arr[9] = quo;
-        System.out.println(arr[9]);
+        final BigInteger NTEN = TEN;
+        BigInteger pow = ZERO;
+        BigInteger n = num;
 
-        num = num.subtract(quo.multiply(new BigInteger("1000000000")));
-        quo = num.divide(new BigInteger("100000000"));
-        arr[8] = quo;
-        System.out.println(arr[8]);
+        while (n.compareTo(ZERO) == 1) {
+            n = n.divide(NTEN);
+            pow = pow.add(ONE);
+        }
 
-        num = num.subtract(quo.multiply(new BigInteger("100000000")));
-        quo = num.divide(new BigInteger("10000000"));
-        arr[7] = quo;
-        System.out.println(arr[7]);
+        int length = pow.intValue();
+        BigInteger[] arr = new BigInteger[length];
+        BigInteger quo;
 
-        num = num.subtract(quo.multiply(new BigInteger("10000000")));
-        quo = num.divide(new BigInteger("1000000"));
-        arr[6] = quo;
-        System.out.println(arr[6]);
-
-        num = num.subtract(quo.multiply(new BigInteger("1000000")));
-        quo = num.divide(new BigInteger("100000"));
-        arr[5] = quo;
-        System.out.println(arr[5]);
-
-        num = num.subtract(quo.multiply(new BigInteger("100000")));
-        quo = num.divide(new BigInteger("10000"));
-        arr[4] = quo;
-        System.out.println(arr[4]);
-
-        num = num.subtract(quo.multiply(new BigInteger("10000")));
-        quo = num.divide(new BigInteger("1000"));
-        arr[3] = quo;
-        System.out.println(arr[3]);
-
-        num = num.subtract(quo.multiply(new BigInteger("1000")));
-        quo = num.divide(new BigInteger("100"));
-        arr[2] = quo;
-        System.out.println(arr[2]);
-
-        num = num.subtract(quo.multiply(new BigInteger("100")));
-        quo = num.divide(new BigInteger("10"));
-        arr[1] = quo;
-        System.out.println(arr[1]);
-
-        num = num.subtract(quo.multiply(new BigInteger("10")));
-        quo = num.divide(new BigInteger("1"));
-        arr[0] = quo;
-        System.out.println(arr[0]);
-
-
-
-
-
-
-
+        for (int i=length; i>0; i--) {
+            quo = num.divide(NTEN.pow(i-1));
+            num = num.subtract(quo.multiply(NTEN.pow(i-1)));
+            arr[length-i] = quo;
+            System.out.println("arr[" + (length-i) + "] = " + quo);
+        }
     }
 }
