@@ -23,7 +23,7 @@ public class HomeworkI {
 
             System.out.println("지금 나는 어느 자리에 있나요?\n>>"+num2);
             System.out.println("합산한 수: "+res);
-            System.out.println("");
+            System.out.println(" ");
 
         }
 

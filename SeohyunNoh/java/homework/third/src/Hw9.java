@@ -4,6 +4,7 @@ public class Hw9 {
         int min = 2;
         int max = 10;
         int range = (max - min)+ 1;
+       // 여기서부터 전체를 루프로 감쌌으면 될 것 (12.24 feedback)
         int rand = (int)(Math.random() * range + min);
 
         //sum값 지정

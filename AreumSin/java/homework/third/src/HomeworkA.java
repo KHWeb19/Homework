@@ -17,6 +17,11 @@ public class HomeworkA {
                 System.out.printf("num : %c (%d)\n",num, num);
             }
 
+            if(91<=num && num>=96){
+                num = (int)(Math.random()* range + MIN);
+                System.out.println(num);
+            }
+
 
     }
 }
