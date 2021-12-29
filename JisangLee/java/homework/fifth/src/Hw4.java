@@ -18,7 +18,9 @@ public class Hw4 {
         final int MAX = 100; //100점이 최고점이 되므로
         final int MIN = 60;  //60점이 최저점이 되므로 설정
         int range = MAX - MIN +1;
-        int sum = 0; //총합을 0으로 초기화
+        float sum = 0; //총합을 0으로 초기화
+        // sum 을 int 로 잡아주면 avg 를 float 로 잡아줘도 소수점 첫 째자리까지 나오는데 버려버리더라.
+        // 그냥....xx.0으로 나옴, 그래서 sum 을 float 로 잡아주니 잘 됨
 
         int[] sequence; //배열 함수를 선언
 
@@ -33,7 +35,7 @@ public class Hw4 {
             sum += sequence[i];  //각 번지들의 합
         }
         System.out.println("학생들의 점수들의 총합: "+ sum);
-        int avg = sum / END;  //평균값 구하기
+        float avg = sum / END;  //평균값 구하기
         System.out.println("학급의 평균: "+ avg);
     }
 }

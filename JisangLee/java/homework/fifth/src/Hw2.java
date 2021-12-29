@@ -22,7 +22,7 @@ public class Hw2 {
         ;
 
         for (int i = START; i < END; i++) {
-            // BigInteger 는 곱셈을 * 대신에 .multiply로 해줘야 하고
+            // BigInteger 는 곱셈을 * 대신에 .multiply 로 해줘야 하고
             // 안에도 BigInteger 정의한 배열값이 들어가야 한다.
             // sequence[1] = BigInteger 값 2 이므로 숫자 2대신에 sequence[1]를 사용
             sequence[i] = sequence[i - 1].multiply(sequence[1]);
