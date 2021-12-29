@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="[김국현] 문제은행2 for/while .ver1.1">
+    <list default="true" id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="[김국현] 문제은행 3번 배열">
       <change afterPath="$PROJECT_DIR$/../../6th/src/Ans1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../6th/src/Ans10.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../6th/src/Ans2.java" afterDir="false" />
@@ -16,7 +16,18 @@
       <change afterPath="$PROJECT_DIR$/../../6th/src/Ans7.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../6th/src/Ans8.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../6th/src/Ans9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5th/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5th/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../third/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +44,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="22gajQ1fUeXEKZ8NZCogPCUq3aN" />
+  <component name="ProjectId" id="22rthsMficZaKgCacsHgMudkqHN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,50 +57,50 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../5th/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Homework7">
+  <component name="RunManager" selected="Application.Homework10">
     <configuration name="Homework10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework10" />
-      <module name="third" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework3" />
+      <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework6" />
-      <module name="third" />
+      <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Homework7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework7" />
-      <module name="third" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Homework8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework8" />
-      <module name="third" />
+      <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Homework9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework9" />
-      <module name="third" />
+      <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Homework7" />
-        <item itemvalue="Application.Homework9" />
         <item itemvalue="Application.Homework10" />
-        <item itemvalue="Application.Homework8" />
+        <item itemvalue="Application.Homework9" />
+        <item itemvalue="Application.Homework3" />
+        <item itemvalue="Application.Homework7" />
         <item itemvalue="Application.Homework6" />
       </list>
     </recent_temporary>
@@ -105,27 +108,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="" />
-      <created>1640261821284</created>
+      <changelist id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="" />
+      <created>1640607659496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1640261821284</updated>
+      <updated>1640607659496</updated>
     </task>
-    <task id="LOCAL-00001" summary="[김국현] 문제은행2 for/while">
-      <created>1640328021454</created>
+    <task id="LOCAL-00001" summary="[김국현] 문제은행 3번 배열">
+      <created>1640673265402</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1640328021454</updated>
+      <updated>1640673265402</updated>
     </task>
-    <task id="LOCAL-00002" summary="[김국현] 문제은행2 for/while .ver1.1">
-      <created>1640585818664</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640585818664</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,11 +136,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[김국현] 문제은행2 for/while" />
-    <MESSAGE value="[김국현] 문제은행2 for/while .ver1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행2 for/while .ver1.1" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/third$Homework1.ic" NAME="Homework1 Coverage Results" MODIFIED="1640262570847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <MESSAGE value="[김국현] 문제은행 3번 배열" />
+    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행 3번 배열" />
   </component>
 </project>
