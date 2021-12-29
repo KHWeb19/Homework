@@ -8,20 +8,19 @@ public class HW04 {
         //1) 30명 배열만들어서 랜덤값(60~100) 넣기
         //2) 배열의 총합에서 나누기30
 
-        int rand;
-        int sum = 0;
         final int NUM = 30;
         final int MIN = 60;
         final int MAX = 100;
+
+        int sum = 0;
         int[] arr = new int[NUM];
-        //1)
-        for (int i=0; i<NUM; i++) {
-            rand = (int)(Math.random()*(MAX-MIN+1)+MIN);
-            arr[i] = rand;
+
+        for (int i = 0; i < NUM; i++) {
+            arr[i] = (int) (Math.random() * (MAX - MIN + 1) + MIN);
             System.out.printf("arr[%d]= %d\n", i, arr[i]);
             sum += arr[i];
         }
-        //2)
-        System.out.printf("총합: %d, 평균: %d", sum, sum/NUM);
+        System.out.println("총합: " + sum);
+        System.out.println("평균: " + (float)sum/NUM);
     }
 }

@@ -12,11 +12,10 @@ public class HW01 {
         //   다음 항은 앞 항의 두배
         //   입력받은 항까지 출력
 
-        //1)
         System.out.println("등비 수열의 원하는 항을 입력하시오.");
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        //2)
+
         int[] arr = new int[num];
         arr[0] = 1;
         System.out.printf("arr[0]: %d\n", arr[0]);

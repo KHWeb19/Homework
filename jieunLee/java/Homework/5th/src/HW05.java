@@ -7,26 +7,26 @@ public class HW05 {
         //1) 평균 구하고
         //2) 각 값에서 빼준다음에 더하고 나눔
 
-        int rand, average;
-        int sum1 = 0, sum2 = 0;
         final int NUM = 30;
         final int MIN = 60;
         final int MAX = 100;
-        int[] arr1 = new int[NUM];
-        int[] arr2 = new int[NUM];
-        //1)
+
+        float sum, average;
+        int[] arr = new int[NUM];
+
+        sum = 0;
         for (int i=0; i<NUM; i++) {
-            rand = (int)(Math.random()*(MAX-MIN+1)+MIN);
-            arr1[i] = rand;
-            sum1 += arr1[i];
+            arr[i] = (int)(Math.random()*(MAX-MIN+1)+MIN);
+            sum += arr[i];
         }
-        average = sum1/NUM;
-        System.out.printf("평균: %d\n", average);
-        //2)
+        average = sum/NUM;
+        System.out.println("평균: " + average);
+
+        sum = 0;
         for (int i=0; i<NUM; i++) {
-            arr2[i] = arr1[i] - average;
-            sum2 += arr2[i]*arr2[i];
+            sum += (arr[i] - average)*(arr[i] - average);
         }
-        System.out.printf("분산: %d, 표준편차: %f", sum2/NUM, Math.sqrt(sum2/NUM));
+        System.out.println("분산: " + sum/NUM);
+        System.out.println("표준편차: " + Math.sqrt(sum/NUM));
     }
 }
