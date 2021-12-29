@@ -4,8 +4,8 @@ public class Quiz6 {
 
     /*
     1. 강사님이 작성한 코드 복붙한 것입니다.
-    2. 봐도봐도 이해가 어렵다
-    3. 설명이 한번 더 필요 합니다...
+    2. 봐도봐도 이해가 어렵다.
+    3. 로그 표현 이후
      */
     public static void main(String[] args) {
         //  45678911234라는 숫자를 BigInteger에 배치한다.

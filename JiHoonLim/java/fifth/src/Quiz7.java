@@ -21,12 +21,15 @@ public class Quiz7 {
 
         float[] emp = new float[PEO];
 
+        // 첫 연봉 작업
         for (int i = 0; i < PEO; i++){
             emp[i] = START;
         }
-
+        // n년마다
         for (int i =0; i < YEAR; i++){
             System.out.println(i+1 + "년");
+
+            //인상
             for (int j = 0; j < PEO; j++){
                 // 인상률 = (랜덤인상률 / 1000) X 0.01
                 percent = ((int) (Math.random() * range + MIN) /BIAS ) * PERCENT;

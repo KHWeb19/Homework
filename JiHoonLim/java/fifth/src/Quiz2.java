@@ -24,7 +24,7 @@ public class Quiz2 {
         int end = scan.nextInt();
 
         arr = new BigInteger[end];
-
+        // 첫번째 항 출력, 1번과 마찬가지원리
         arr[0]= new BigInteger("1");
         System.out.println("arr[0] = " +arr[0]);
 

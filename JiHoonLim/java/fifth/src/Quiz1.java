@@ -17,7 +17,7 @@ public class Quiz1 {
         int end = scan.nextInt();
 
         arr = new int[end];
-
+        //첫항이 입력될 시 for문은 실행되지 않으므로 여기서 출력
         arr[0]= 1;
         System.out.println("arr[0] = " +arr[0]);
 

@@ -16,6 +16,7 @@ public class Quiz9 {
 
         arr = new int[end];
 
+        // 1, 2, 3 항 값 배정
         arr[0] = 1;
         arr[1] = 1;
         arr[2] = 1;
@@ -23,6 +24,7 @@ public class Quiz9 {
         System.out.println(2+ "항은 " +1);
         System.out.println(3+ "항은 " +1);
 
+        // 4항 부터 계산
         for (int i = START; i < end; i++){
             arr[i] = arr[i-3] + arr[i-1];
             System.out.println(i+1 + "항은 " +arr[i]);

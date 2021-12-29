@@ -32,6 +32,7 @@ public class Quiz8 {
         int dice;
         int[] diceSum = new int[PLAYER];
 
+        // 플레이어가 각각 주사위를 굴려 합산작업
         for (int i = 0; i < PLAYER; i++){
             for (int j = 0 ; j < DICENUM; j++){
                 dice = (int)(Math.random() * range + MIN);
@@ -41,14 +42,16 @@ public class Quiz8 {
         }
 
 
+        // 합산값이 짝수라면 보너스 기회 작업
         for (int i =0; i < PLAYER; i++){
-
+            // 보너스 주사위 굴리기
             if (diceSum[i] % 2 == 0){
                 System.out.println(i+1 + "번 플레이어가 보너스 기회를 얻습니다.");
                 dice = (int)(Math.random() * range + MIN);
 
                 if (dice == SKILLNUM1){
                     System.out.println("1번 능력 : 상대방 -2");
+
                     for (int j = 0; j < PLAYER; j++){
                         if (j == i){
                             continue;
@@ -82,15 +85,17 @@ public class Quiz8 {
             }
         }
 
+        // 음수는 0으로 바꾸기
         for (int i = 0; i < PLAYER; i ++){
             if (diceSum[i] <0){
-                diceSum[i] =0;
+                diceSum[i] =0 ;
             }
             System.out.printf("%d번 플레이어의 주사위 합은 %d\n", i+1, diceSum[i]);
         }
 
         boolean CheckWinner = true;
 
+        // 패배 주사위 작업
         for (int i = 0; i < PLAYER; i++) {
             if (diceSum[i] == DEATH){
                 System.out.printf("플레이어 %d 패배\n", i);
@@ -98,6 +103,7 @@ public class Quiz8 {
             }
         }
 
+        // 승무패 작업
         if (CheckWinner){
             if (diceSum[0] > diceSum[1]){
                 System.out.println("플레이어 1 승리");

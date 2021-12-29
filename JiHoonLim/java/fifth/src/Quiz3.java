@@ -31,6 +31,7 @@ public class Quiz3 {
 
                 isRealloc = false;
 
+                // 중복루틴
                 for (int j = 0; j < allocCnt; j++) {
                     if (selectNum[j] == lottoNum) {
                         System.out.println("중복");
@@ -39,10 +40,12 @@ public class Quiz3 {
                     }
                 }
             }
+            // 로또번호 = true
             lottoBox[lottoNum] = true;
             selectNum[allocCnt++] = lottoNum;
 
             System.out.println("lottoBox[" + lottoNum + "] = " + lottoBox[lottoNum]);
+            //내가 뽑은 숫자와 비교
             if (lottoNum == mynum){
                 System.out.println("당첨입니다.");
             }

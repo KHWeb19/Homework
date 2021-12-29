@@ -17,12 +17,14 @@ public class Quiz4 {
 
         int SCO;
 
+        // 랜덤값 생성 작업 및 평균을 구하기 위한 합산
         for (int i = 0; i < STU; i++){
             SCO = (int)(Math.random() * range + MIN);
             arr[i] = SCO;
             System.out.printf("arr[%d] = %d\n" , i,arr[i]);
             sum += SCO;
         }
+        //평균
         System.out.println("반 평균은 " + (float)(sum) /STU);
     }
 }

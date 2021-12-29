@@ -28,6 +28,7 @@ public class Quiz5 {
         double avg = sum/STU;
         System.out.println("반 평균은 " +avg);
 
+        // 분산, 표준편차 작업
         for (int j = 0; j < STU; j++){
             var += Math.pow(scoarr[j] - avg,2);
             stadev = Math.sqrt(var);
