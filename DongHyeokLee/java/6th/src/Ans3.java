@@ -21,9 +21,9 @@ public class Ans3 {
         boolean isRealloc = true;
 
         int lottoIdx = 0;
-        int allocCnt = 0;
+        //int allocCnt = 0;
 
-        for (int i = 0; i < SELECT; i++) { // 총 다섯개를 뽑아야함
+        for (int i = 0 , allocCnt = 0; i < SELECT; i++) { // 총 다섯개를 뽑아야함
               while(isRealloc){
             lottoIdx = (int) (Math.random() * TOTAL); // 이것을 lottoBox에 넣어야함
 
