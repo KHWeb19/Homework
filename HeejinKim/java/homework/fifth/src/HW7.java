@@ -15,6 +15,10 @@ public class HW7 {
         //4번째--(3번째 연봉*인상률)+ 3번째 연봉
 
 
+        //직원의 숫자만큼 배열을 할당
+        //for문을 사용하여 년수를 i++
+        //중첩 for문 을 사용해서 직원의 숫자를 안에 넣어줌줌
+
         final double MAX = 0.1;
         final double MIN = 0.01;
         final int PEOPLE = 7;
@@ -28,7 +32,7 @@ public class HW7 {
 
         //int up= (int)((Math.random()+MIN)*START);//이번년에 얼마만큼 올랐는지의 연봉인상 값
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 7; i++) { //7명
 
             for (int j = 0; j < 5; j++) {
                  up = ((Math.random() + MIN));
