@@ -4,37 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../5th/5th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/AdvancedFibonacciArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/ArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/Challenge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/FibonacciArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/MoreAdvancedFibonacciArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/PsuedoCodeHowTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/RandomArrayIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/ScannerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third/out/.idea/out.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third/src/third.iml" afterDir="false" />
+    <list default="true" id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="[김국현] 문제은행 3번 배열">
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans3_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../third/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../third/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../third/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../third/src/Homework7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,25 +57,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../third/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Homework9">
-    <configuration name="Homework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework1" />
+  <component name="RunManager" selected="Application.Homework10">
+    <configuration name="Homework10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework10" />
       <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework4" />
+    <configuration name="Homework3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework3" />
       <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework5" />
+    <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework6" />
       <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Homework10" />
         <item itemvalue="Application.Homework9" />
+        <item itemvalue="Application.Homework3" />
         <item itemvalue="Application.Homework7" />
-        <item itemvalue="Application.Homework5" />
-        <item itemvalue="Application.Homework4" />
-        <item itemvalue="Application.Homework1" />
+        <item itemvalue="Application.Homework6" />
       </list>
     </recent_temporary>
   </component>
@@ -121,6 +114,14 @@
       <option name="presentableId" value="Default" />
       <updated>1640607659496</updated>
     </task>
+    <task id="LOCAL-00001" summary="[김국현] 문제은행 3번 배열">
+      <created>1640673265402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640673265402</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,5 +134,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[김국현] 문제은행 3번 배열" />
+    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행 3번 배열" />
   </component>
 </project>

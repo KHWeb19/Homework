@@ -9,38 +9,34 @@ public class Homework1 {
          */
 
         /*
-        1. for문으로 범위 변수지정
-        2. 배열의 베이스가될 인덱스에 엘리먼트 지정
-        3. 베이스를 사용하여 나머지 인덱스에 엘리먼트 자동조정
+        1. 수열만들기 for문(시작점. 끝점. 변수)
+        2. for문에 배열로 인덱스값지정
+        3. 인덱스값 32가 부터 데이터량이 많아진다 표시, 및 출력
         4. 1,2,3이 마친 값중 스캔가능하게 조정
         5. 스캔값 출력
          */
 
-        final int START = 2;
-
-        int[] sequence;
-
-        Scanner scan = new Scanner(System.in);
+        final int MAX = 31;
+        final int START_INX = 2;
+        final int BASE = 2;
 
         System.out.print("수열의 몇 번째 항을 구할까요 ? ");
-        int end = scan.nextInt();
 
-        sequence = new int[end];
+        Scanner scan = new Scanner(System.in);
+        int idx = scan.nextInt();
 
-        sequence[0] = 1;
-        sequence[1] = 2;
+        int[] Sequence = new int[idx];
 
-        for (int i = START; i < end; i++) {
-            sequence[i] = sequence[i - 1] + sequence[i - 2];
-            System.out.printf("arr[%d] = %d\n", i, sequence[i]);
+        Sequence = new int[idx];
+
+        if(idx>MAX){
+            System.out.println("출력가능한 데이터양이 초과되었습니다.");
+        } else{
+            for(int i = START_INX; i < idx; i++){
+                Sequence[i] = (int) Math.pow(BASE, i);
+                System.out.printf("seq[%d] = %d\n", i, Sequence[i]);
+            }
         }
-        // Q1. START 를 0으로 설정후 for문을 시도하니
-        // Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException:
-        // Index 10 out of bounds for length 10 	at Homework1.main(Homework1.java:27)
-        // 라고 나오며 정상작동이 안되는데 이유가 뭘까요?
-        // Q2. START를 2로 설정하고 시작하는이유 0이나 1로 시작하면 안되는이유.
-        // Q3. for문 내부에 sequence[i] = sequence[i - 1] + sequence[i - 2]; 부분을
-        //     간단하게 sequence[i] = sequence[i] * 2; 라는 형식으로는 어떻게 표현해야하는지
     }
 }
 

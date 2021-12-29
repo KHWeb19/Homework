@@ -14,27 +14,32 @@ public class Homework4 {
         4. 출력
         */
 
-        // 1. 시작점 0~29 배열 생성
-        // 2. 인덱스에 60~90까지 엘리멘트 분배
-        // 3. 출력
-        // 4. 출력값들을 평균내기
+        final int STUDENT_NUM = 30;
+        // 학생 넣을 상자 생성
+        final int MAX = 100;
+        final int MIN = 60;
+        // 점수 넣을 상자를위한 범위값 상자 생성
 
-        final int MAX = 30;
-        int[] arr = new int[30];
+        int[] score = new int[STUDENT_NUM];
+        // 배열로 학생들 생성
+
+        int range = MAX - MIN + 1;
+        // 점수 범위값 생성
+
         int sum = 0;
+        // 평균값구하기위한 계산식넣을 상자 생성
 
-        for(int i = 0; i < MAX; i++){
-            arr[i]= i+60;
-            System.out.printf("%d번째 학생 점수 = %d\n", i+1 , arr[i]);
+        for (int i = 0; i < STUDENT_NUM; i++) {
+            score[i] = (int) (Math.random() * range + MIN);
+            // 학생마다 랜덤 점수 부여
+            sum += score[i];
+            // 학생들의 점수 합산
 
-            sum += i; // 모든 i값 덧셈?
-            // 모든 i값을 덧셈한것을 30으로 나누는것을 어떻게표현하지..?
+            System.out.printf("score[%d] = %d\n", i, score[i]);
+            // 출력으로 부여된 학생들 일렬로 세워서 점수확인
         }
 
-        /*
-        출력값들을 평균내기모든 i값을 더한후 30으로 나눈다.
-         */
-        System.out.printf("현재 i값: %d, sum값: %d\n", sum);
-
+        System.out.println("반 평균 = " + (float)(sum) / STUDENT_NUM);
+        // 출력으로 학생들 점수 합산을 학생수로 나눠 평균 표현
     }
 }

@@ -5,36 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d6e3cd5-cca4-455d-a72f-7daee75c4f3c" name="Changes" comment="[김국현] 문제은행2 for/while .ver1.1">
-      <change afterPath="$PROJECT_DIR$/../../5th/5th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/AdvancedFibonacciArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/ArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/Challenge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/FibonacciArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/MoreAdvancedFibonacciArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/PsuedoCodeHowTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/QnA2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/RandomArrayIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5th/src/ScannerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/5th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5th/src/Homework9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/.idea/out.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/third.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans3_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5th/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5th/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../5th/src" />
   </component>
   <component name="RunManager" selected="Application.Homework7">
     <configuration name="Homework10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
