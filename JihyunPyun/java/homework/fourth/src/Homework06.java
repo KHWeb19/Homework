@@ -8,10 +8,15 @@ public class Homework06 {
 //        arr[0] = 4, arr[1] = 3, arr[2] = 2, arr[3] = 1
 
 //        인덱스0에 1의자리, 인덱스1에 10의자리 넣는게 맞나?
+//        BigInteger bigNumber = new BigInteger("45678911234");
+//        int[] arr = {4, 3, 2, 1, 1, 9, 8, 7, 6, 5, 4};
+//        System.out.println(arr[0]);
 
-        BigInteger bigNumber = new BigInteger("45678911234");
-        int[] arr = {4, 3, 2, 1, 1, 9, 8, 7, 6, 5, 4};
+        //선생님 풀이
+        BigInteger testNum = new BigInteger("45678911234");
 
-        System.out.println(arr[0]);
+
+
+
     }
 }
