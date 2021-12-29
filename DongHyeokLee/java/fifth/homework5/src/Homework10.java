@@ -8,6 +8,7 @@ public class Homework10 {
 
         // 과일 바구니 배열
         // 과일 개수 배열
+        //값도 배열?!
         // 시간이 부족해서 못풀었습니다
         //근데 시간이 있어도 못풀거 같습니다
 
@@ -28,5 +29,20 @@ public class Homework10 {
         number[3] = 2;
         number[4] = 3;
         number[5] = 4;
+
+        int[] price = new int[6];
+        price[0] = 1300;
+        price[1] = 600;
+        price[2] = 1800;
+        price[3] = 8000;
+        price[4] = 15000;
+        price[5] = 7000;
+
+        for(int i = 0 ; i<6; i++){
+            System.out.println(fruit[i] + number[i] + "개의 가격은" + number[i]*price[i] + "원 입니다." );
+
+        }
+
+
     }
 }

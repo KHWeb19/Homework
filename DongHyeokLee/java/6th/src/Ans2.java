@@ -1,8 +1,7 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-
-public class Homework2 {
+public class Ans2 {
     public static void main(String[] args) {
         //아래와 같은 등비 수열이 있다.
         //1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...  -> 규칙 2n승
@@ -13,9 +12,9 @@ public class Homework2 {
 
 
         final int START = 1;
-        final BigInteger BASE = new BigInteger("2");
+        final BigInteger BASE = new BigInteger("2");// 진수 final 지정
 
-        int i;
+
         BigInteger[] sequence;
         Scanner scan = new Scanner(System.in);
 
@@ -27,16 +26,15 @@ public class Homework2 {
 
 
 
-        for(i = START; i < end; i++){
-
-
+        for(int i = START; i < end; i++){
             sequence[i] = sequence[i-1].multiply(BASE);
             System.out.println(i+1 +"항의 값은" + sequence[i] + "입니다");
-            
-
 
         }
 
-        
     }
 }
+
+
+
+

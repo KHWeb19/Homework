@@ -1,12 +1,7 @@
-import java.util.Scanner;// alt + enter
+import java.util.Scanner;
 
-public class Homework1 {
+public class Ans1 {
     public static void main(String[] args) {
-           //아래와 같은 등비 수열이 있다.
-           //1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...  -> 규칙 2n승
-           //사용자 입력을 통해 원하는 위치의 값을 뽑아내도록 프로그래밍 해보자! -> Scanner 사용 , end값으로 받아냄(배열길이)
-           //(1 ~ 32번째 혹은 31번째 항까지만 올바른 결과가 나올 것임) -> int 값범위
-
 
         final int MAX = 31;
         final int BASE = 2;// 변수 이름명 해결
@@ -31,18 +26,5 @@ public class Homework1 {
             }
         }
 
-
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
