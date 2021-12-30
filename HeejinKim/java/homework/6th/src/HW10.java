@@ -45,6 +45,6 @@ public class HW10 {//내 풀이
           sum+= num[i] * price[i];
             System.out.printf("%s합계=%d\n", fruit[i], sum);
         }
-     
+
     }
 }
