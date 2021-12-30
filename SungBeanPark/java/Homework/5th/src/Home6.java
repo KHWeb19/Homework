@@ -9,12 +9,13 @@ import java.math.BigInteger;
 //a를 다시 문자열로 바꿔야하는데 어떻게??
 //for문돌리기?
 
+//6번은 그냥 생략,,,,
+
 public class Home6 {
     //45678911234라는 숫자를 BigInteger에 배치한다.
     //각 자리수에 맞는 숫자를 배열에 배치하도록 한다.
 
     public static void main(String[] args) {
-
 
     }
 }
