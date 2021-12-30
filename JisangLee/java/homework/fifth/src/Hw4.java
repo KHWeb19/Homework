@@ -22,17 +22,17 @@ public class Hw4 {
         // sum 을 int 로 잡아주면 avg 를 float 로 잡아줘도 소수점 첫 째자리까지 나오는데 버려버리더라.
         // 그냥....xx.0으로 나옴, 그래서 sum 을 float 로 잡아주니 잘 됨
 
-        int[] sequence; //배열 함수를 선언
+        int[] score; //배열 함수를 선언
 
-        sequence = new int[END];
+        score = new int[END];
 
         for(int i = START-1; i < END; i++){
             //배열은 0부터 시작하므로 START 값에서 1을 빼준다.
             //배열0번지에서 29번지까지 1씩 증가시키며 랜덤값을 형성
             int rand = (int)(Math.random() * range + MIN);
-            sequence[i] = rand;  //각 번지에 랜덤값을 할당
-            System.out.printf("arr[%d] = %d\n", i, sequence[i]);
-            sum += sequence[i];  //각 번지들의 합
+            score[i] = rand;  //각 번지에 랜덤값을 할당
+            System.out.printf("arr[%d] = %d\n", i, score[i]);
+            sum += score[i];  //각 번지들의 합
         }
         System.out.println("학생들의 점수들의 총합: "+ sum);
         float avg = sum / END;  //평균값 구하기
