@@ -15,12 +15,23 @@ public class Num2 {
 
         sequence[0]= new BigInteger("1");
         System.out.printf("arr[%d] 값은 %d\n",0,sequence[0]);
+<<<<<<< HEAD
 //
 //        for(int i = START ; i<END;i++){
 //            sequence[i] = sequence. // 빅인티져의 제곱하는 법을 모르겠습니다.
 //            System.out.printf("arr[%d] 값은 %d\n",i,sequence[i]);
+=======
+
+        for(int i = START ; i<END;i++){
+            sequence[i] = sequence. // 빅인티져의 제곱하는 법을 모르겠습니다.
+            System.out.printf("arr[%d] 값은 %d\n",i,sequence[i]);
+>>>>>>> origin/main
 
         }
 
     }
+<<<<<<< HEAD
 
+=======
+}
+>>>>>>> origin/main
