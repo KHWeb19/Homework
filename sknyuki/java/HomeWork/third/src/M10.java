@@ -24,7 +24,7 @@ public class M10 {
 
         int range = MAX - MIN + 1;
         //범위 설정
-        int decision= 0;
+        int decision = 0;
         int sum = 0;
         //decision,sum값 초기화
         for (int i = START; i <= END; i += decision) {
