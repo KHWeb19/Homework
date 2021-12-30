@@ -15,7 +15,7 @@ public class M4 {
         //average구하기
 
 
-        final int START = 1;
+        final int START = 0;
 
         final int END=30;
         final int MAX=100;
@@ -32,6 +32,7 @@ public class M4 {
             //범위내 랜덤점수 30개
             sum+=score[i];
             //점수 합산
+            System.out.printf("score[%d] = %d\n", i, score[i]);
         }
         double aver = ((double) sum / END);
         System.out.printf("학생수 30명의 임의의 평균 점수는 %f이다",aver);
