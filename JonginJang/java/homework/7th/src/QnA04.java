@@ -10,7 +10,6 @@ public class QnA04 { //for문 작성시 실수 케이스
         for (int i =0; i< 5;i++ );
         {
             System.out.println("5번 반복을 해야 하는데 왜 안되는거야 ?");
-
         }
     }
 }
