@@ -1,5 +1,4 @@
 public class Q10 {
-    /*
     public static void main(String[] args) {
         // 10. 2개의 배열을 만든다.
         //하나는 과일을 담는 장바구니 배열
@@ -7,41 +6,49 @@ public class Q10 {
         //사과 5, 귤 3, 오렌지 5, 수박 2, 메론 3, 포도 4개를 배열로 표현하고
         //적당한 값을 매겨서 합산 가격을 출력하도록 프로그래밍 하시오
 
-        // 사과 귤 오렌지 수박 메론 포도 <-총 6종류
 
-        final int num = 6; // 6종의 최대 범위 지정
+        // 해설강의 참고해서 이해하고 진행했습니다.
 
-        int box1 = new int[num]; // 상자 속의 과일
+        final int APPLE_N = 5;
+        final int TANGERINE_N = 3;
+        final int ORANGE_N = 5;
+        final int WATERMELON_N = 2;
+        final int MELON_N = 3;
+        final int GRAPE_N = 4;
 
-        box1[0] = "사과";
-        box1[1] = "귤";
-        box1[2] = "오렌지";
-        box1[3] = "수박";
-        box1[4] = "메론";
-        box1[5] = "포도";
-
-        int box2 = new int[num]; // 들어간 상자
-
-        box2[0] = 5;
-        box2[1] = 3;
-        box2[2] = 5;
-        box2[3] = 2;
-        box2[4] = 3;
-        box2[5] = 4;
-
-        int box3 = new int[num] // 가격을 지정
-        box3[0] = 10000;
-        box3[1] = 9000;
-        box3[2] = 8000;
-        box3[3] = 7000;
-        box3[4] = 6000;
-        box3[4] = 5000;
-
-        // 적당한 값을 매겨 프로그래밍 하는 코드 질문드립니다.
-        // 저의 수준으로 여기까지 진행했습니다.
+        final int APPLE_I = 0;
+        final int TANGERINE_I = 1;
+        final int ORANGE_I = 2;
+        final int WATERMELON_I = 3;
+        final int MELON_I = 4;
+        final int GRAPE_I = 5;
 
 
+        final int SUM = 6; // 6종의 최대 범위 지정
+
+        int []  A = new int[NUM]; // 과일의 종류
+        int []  B = new int[NUM]; // 과일의 개수
+
+        A[APPLE_I] = 6000;
+        A[TANGERINE_I] = 5000;
+        A[ORANGE_I] = 4000;
+        A[WATERMELON_I] = 3000;
+        A[MELON_I] = 2000;
+        A[GRAPE_I] = 1000;
+
+        B[APPLE_I] = APPLE_N;
+        B[TANGERINE_I] = TANGERINE_N;
+        B[ORANGE_I] = ORANGE_N;
+        B[WATERMELON_I] = WATERMELON_N;
+        B[MELON_I] = MELON_N;
+        B[GRAPE_I] = GRAPE_N;
+
+        int sum = 0;
+
+        for(int i=0; i<SUM; i++){
+            sum + = A[i] + B[i];
+        }
+
+        System.out.println("합산= " +sum);
     }
 }
-
-     */
