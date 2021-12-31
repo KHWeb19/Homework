@@ -13,25 +13,30 @@ public class Homework07 {
 //        4. 최종 연봉 출력
 
         final int MAX = 10, MIN = 1;
+        final int EMPLOYEE = 7;
+        final float BIAS = 1000;
+        final float PERCENT = 1 / 100.f;
+
         int range = MAX - MIN + 1;
         int year = 0;
 
-        int[] employee = new int[7];
 
-        for (int i = 0; i < employee.length; i++){
+        float[] employee = new float[7];
+
+        for (int i = 0; i < EMPLOYEE; i++){
             employee[i] = 3500;
         }
 
         while (year < 6){ //5년 후니까 5번 반복
-            for (int i = 0; i < employee.length; i++){
-                int inc = (int)(Math.random() * range + MIN);
-                employee[i] += (employee[i] * inc) / 100;
+            for (int i = 0; i < EMPLOYEE; i++){
+                float percent = (float)((int)(Math.random() * range + MIN) / BIAS) * PERCENT;
+                employee[i] += (employee[i] * percent);
             }
             year++;
         }
 
-        for (int i = 0; i < employee.length; i++){
-            System.out.printf("%d번 직원 연봉 : %d만원\n", i+1, employee[i]);
+        for (int i = 0; i < EMPLOYEE; i++){
+            System.out.printf("%d번 직원 연봉 : %f만원\n", i+1, employee[i]);
         }
 
     }
