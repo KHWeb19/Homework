@@ -1,162 +1,94 @@
 public class hw8 {
+
     public static void main(String[] args) {
 
         final int MAX = 6, MIN = 1;
         final int range = MAX - MIN;
+        final int game_num = 3;
+        final int user_num = 2;
 
-        int[] dice1 = new int[]{1, 2, 3, 4, 5, 6};
-        int[] dice2 = new int[]{1, 2, 3, 4, 5, 6};
-        int[] diceSpecial = new int[]{1, 2, 3, 4, 5, 6};
+        int [] score_sum = new int [user_num];
 
-        int user1 = 0;
-        int user2 = 0;
+        int a=0;
+        while (a< game_num) {
 
-        boolean user1First = true;
-        boolean user2Second = true;
-        boolean game = true;
+            System.out.printf("\n\n===========%d번째 게임===========\n", a+1);
+            a++;
 
+                for (int i=0; i<user_num; i++) {
+                    int dice1 = (int) (Math.random() * range + MIN);
+                    int dice2 = (int) (Math.random() * range + MIN);
 
+                    score_sum[i] += dice2+ dice1;
+                    System.out.printf("<User%d차례> 주사위2개를 굴리세요 : %d + %d = %d\n", i+1, dice1, dice2, (dice1 + dice2));
 
-        for (int i = 1; i < 4; i++) {
+                    if ((dice1 + dice2) % 2 == 0) {
+                            int diceSpecial = (int) (Math.random() * range + MIN);
+                            System.out.printf("짝수입니다!특별한 주사위를 굴리세요 : %d\n", diceSpecial);
 
-            System.out.printf("\n\n===========%d번째 게임===========\n",i);
-
-            while (user1First) {
-                int rand1 = (int) (Math.random() * range + MIN);
-                int rand2 = (int) (Math.random() * range + MIN);
-
-                System.out.printf("<User1차례> 주사위2개를 굴리세요 : %d + %d = %d\n", dice1[rand1], dice2[rand2], (dice1[rand1]+dice2[rand2]));
-                user1 += (dice1[rand1]+dice2[rand2]);
-                System.out.printf("user1의 점수 : %d\n", user1);
-
-                if ((dice1[rand1]+dice2[rand2]) % 2 == 0) {
-                    while (game) {
-                        int rand3 = (int) (Math.random() * range + MIN);
-                        System.out.printf("짝수입니다!특별한 주사위를 굴리세요 : %d\n", diceSpecial[rand3]);
-                        game = false;
-
-                        if (diceSpecial[rand3] == 1) {
-                            user2 -= 2;
-                            System.out.printf("user1의 점수 : %d\n", user1);
-                            game = false;
-
-                        } else if (diceSpecial[rand3] == 3) {
-                            user1 -= 6;
-                            user2 -= 6;
-                            if (user1<0 ){
-                                user1 =0;
+                            if (diceSpecial == 1) {
+                                for(int j=0; j<user_num; j++){
+                                    if (j==i) {
+                                        break;
+                                    }
+                                    else
+                                        score_sum[j] -=2;
+                                }
+                                System.out.printf("상대방을 -2점 하세요. user%d 점수 : %d\n", i+1, score_sum[i]);
                             }
-                            else if (user2<0){
-                                user2=0;
+                            else if (diceSpecial == 3) {
+                                for (int j =0; j<user_num; j++){
+                                    score_sum[j] -=6;
+                                    if (score_sum[j] < 0) {
+                                        score_sum[j] = 0;
+                                    }
+                                }
+                                System.out.printf("모두 -6을 하세요. user%d의 점수 : %d\n", i+1, score_sum[i]);
+
                             }
-                            System.out.printf("user1의 점수 : %d\n", user1);
-                            game = false;
+                            else if (diceSpecial == 4) {
+                                System.out.printf("*****USER %d 패배\n", i+1);
 
-                        } else if (diceSpecial[rand3] == 4) {
-                            System.out.println("*****USER1 패배");
-                            System.out.printf("user1의 점수 : %d\n", user1);
-                            game = false;
-
-                        } else if (diceSpecial[rand3] == 6) {
-                            user2 -= 3;
-                            user1 += 3;
-                            if (user2<0 ){
-                                user2 =0;
                             }
-                            System.out.printf("user1의 점수 : %d\n", user1);
-                            game = false;
+                            else if (diceSpecial == 6) {
+                                for(int j=0; j<user_num; j++){
+                                    if (j==i){
+                                        score_sum[j] +=3;
+                                    }
+                                    else{
+                                        score_sum[j] -=3;
+                                    }
+                                }
+                                System.out.printf("user%d의 점수 : %d\n",i+1, score_sum[i]);
 
-                        }
-                        else{
-                            user1 +=diceSpecial[rand3];
-                            System.out.printf("user1의 점수 : %d\n", user1);
-                            game = false;
-                        }
-
-                        user1First = false;
-                        user2Second = true;
+                            }
+                            else{
+                                score_sum[i] += diceSpecial;
+                                System.out.printf("user%d의 점수 : %d\n",i+1, score_sum[i]);
+                            }
+                    }
+                    else {
+                        System.out.printf("user%d의 점수 : %d\n", i+1, score_sum[i]);
+                    }
 
                     }
-                } else {
-                    user1 = user1;
-                    System.out.printf("user1의 최종점수 : %d\n", user1);
-                    user1First = false;
-                    user2Second = true;
-
-                }
-
-            }
-
-            while (user2Second) {
-                int rand1 = (int) (Math.random() * range + MIN);
-                int rand2 = (int) (Math.random() * range + MIN);
-
-                int sum_user2 = (dice1[rand1] + dice2[rand2]);
-                System.out.printf("<User2차례> 주사위2개를 굴리세요 : %d + %d = %d\n", dice1[rand1], dice2[rand2], sum_user2);
-                user2 += sum_user2;
-                System.out.printf("user2의 점수 : %d\n", user2);
-
-                if (sum_user2 % 2 == 0) {
-                    while (game) {
-                        int rand3 = (int) (Math.random() * range + MIN);
-                        System.out.printf("짝수입니다!특별한 주사위를 굴리세요 : %d\n", diceSpecial[rand3]);
-                        game = false;
-
-                        if (diceSpecial[rand3] == 1) {
-                            user1 -= 2;
-                            System.out.printf("user2의 점수 : %d\n", user2);
-                            game = false;
-
-                        } else if (diceSpecial[rand3] == 3) {
-                            user1 -= 6;
-                            user2 -= 6;
-                            if (user1<0 ){
-                                user1 =0;
-                            }
-                            else if (user2<0){
-                                user2=0;
-                            }
-                            System.out.printf("user2의 점수 : %d\n", user2);
-                            game = false;
-
-                        } else if (diceSpecial[rand3] == 4) {
-                            System.out.println("*****USER2 패배");
-                            System.out.printf("user1의 점수 : %d\n", user2);
-                            game = false;
-
-                        } else if (diceSpecial[rand3] == 6) {
-                            user1 -= 3;
-                            user2 += 3;
-                            if (user1<0 ){
-                                user1 =0;
-                            }
-                            System.out.printf("user2의 점수 : %d\n", user2);
-                            game = false;
-
-                        }
-                        else{
-                            user2 +=diceSpecial[rand3];
-                            System.out.printf("user2의 점수 : %d\n", user2);
-                            game = false;
-                        }
-
-                        user2Second = false;
-                        user1First = true;
-
-
-                    }
-                } else {
-
-                    System.out.printf("user2의 최종점수 : %d\n", user2);
-                    user1First = true;
-                    user2Second = false;
-
-                }
-
-            }
-
 
 
             }
+        System.out.println("\n\n===최종점수===");
+        System.out.printf("user1 점수 : %d\n user2 점수 : %d\n",score_sum[0], score_sum[1]);
+
+        boolean winnerCheck = true;
+        if (winnerCheck){
+           if(score_sum[0] > score_sum[1]){
+               System.out.println("user1 승리");
+           }
+           else if (score_sum[0] < score_sum[1]){
+               System.out.println("user2 승리");
+           }
+           else{
+               System.out.println("무승부");
+           }
+        }
         }
     }
