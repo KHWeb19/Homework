@@ -29,14 +29,14 @@ public class Hw1 {
 
         for (int i = START; i < end; i++) {
             //sequence[i] = 2 ^ i; 제곱이 ^인 줄 알고 왜 안되지...한 참 헤멨다...Math.pow 라고 따로 함수가 있을 줄이야...
-            //sequence[i] = (int)Math.pow(2,i); 이 함수 식이 2의 i승 이다...이렇게 하니 되더라...
+            //sequence[i] = (int)Math.pow(2,i); //이 함수 식이 2의 i승 이다...이렇게 하니 되더라...
             sequence[i] = sequence[i - 1] * 2;  //바로 전 항의 2배씩 증가하므로...
             //System.out.printf("arr[%d] = %d\n", i, sequence[i]);
             if (i == end - 1) {  //배열은 0부터 시작하므로 END 값에 -1을 해준다.
                 System.out.printf("arr[%d] = %d\n", i, sequence[i]);
             }
         }
-        //System.out.printf("arr[%d] = %d\n", "end", "sequence[end]");
+        //System.out.printf("arr[%d] = %d\n", "i", "sequence[i]");
     }
 }
 

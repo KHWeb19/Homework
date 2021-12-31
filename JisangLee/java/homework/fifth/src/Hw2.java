@@ -18,14 +18,15 @@ public class Hw2 {
         sequence = new BigInteger[END];  //  BigInteger 를 선언...
 
         sequence[0] = new BigInteger("1");
-        sequence[1] = new BigInteger("2");
-        ;
+        //sequence[1] = new BigInteger("2");
+
 
         for (int i = START; i < END; i++) {
             // BigInteger 는 곱셈을 * 대신에 .multiply 로 해줘야 하고
             // 안에도 BigInteger 정의한 배열값이 들어가야 한다.
             // sequence[1] = BigInteger 값 2 이므로 숫자 2대신에 sequence[1]를 사용
-            sequence[i] = sequence[i - 1].multiply(sequence[1]);
+            //sequence[i] = sequence[i - 1].multiply(sequence[1]);
+            sequence[i] = sequence[i - 1].multiply(BigInteger.valueOf(2));//숫자 2를 BigInteger 값으로 변환
 
             if (i == END - 1) {  //배열은 0부터 시작하므로 END 값에 -1을 해준다.
                 System.out.printf("arr[%d] = %d\n", i, sequence[i]);

@@ -14,39 +14,38 @@ public class Hw3 {
         final int TOTAL = 100;   //총 100개의 자리 중
         final int SELECT = 5;    //5개의 당첨 자리 선택
 
-        boolean[] lottoBox = new boolean[TOTAL];  //전체 자리 지정
+        boolean[] lottoBox = new boolean[TOTAL]; //전체 자리 중 참,거짓할 배열
         int[] selectIdx = new int[SELECT];  // 당첨 선택된 자리 지정
+        System.out.println("당첨 자리를 선택합니다!!!");
 
         boolean isRealloc = true; //재할당을 참으로 지정
 
-        int lottoIdx = 0; //할당될 로또 당첨 자리 초기화
-        int allocCnt = 0;  //할당될 로또 자리 횟수 초기화
+        int lottoIdx = 0; //할당된 로또 당첨 자리 초기화
+        int allocCnt = 0;  //할당된 로또 자리 횟수 초기화
 
         //while (isRealloc){
-        for(int i = 0; i < SELECT; i++){ // 5개 당첨 자리 배치
-            while (isRealloc){
-                lottoIdx = (int)(Math.random()* TOTAL ); // 배열 자리 할당이므로 0 ~ 99까지 중 당첨 자리 배치
+        for(int i = 0; i < SELECT; i++){ // 배열은 0부터 시작하므로 초기값을 0으로 설정, 5번의 루프를 돈다.
+            while (isRealloc){   // isRealloc 이 참이나 거짓인 동안
+                lottoIdx = (int)(Math.random()* TOTAL ); // 당첨 자리를 100개 중 랜덤으로 할당(0 ~ 99까지이므로 TOTAL - 1을 할 필요가 없음)
 
-                isRealloc = false;// 자리를 막 할당 받았으므로 와일 구문을 거짓으로 지정
+                isRealloc = false;// 당첨 자리를 막 할당 받았으므로 와일 구문을 거짓으로 지정
 
                 for (int j =0; j < allocCnt; j++){  //5번 배치되어야 하므로 제대로 당첨 자리가 배치될 때마다 카운트 횟 수 1증가
                     if (selectIdx[j] == lottoIdx){ //당첨 자리가 이 전에 할당된 당첨 자리면....
-                        System.out.println("당첨 자리를 재할당합니다!");
-                        isRealloc = true; //중복이 발생하였으므로 와일 구문을 재실행
+                        System.out.println("당첨 자리를 재할당합니다!");  //중복이므로 당첨 자리를 재할당
+                        isRealloc = true; //중복이 발생하였으므로 와일 구문을 참으로 바꿔 재실행
                         break;
                     }
                 }
             }
             lottoBox[lottoIdx] = true;  //당첨 자리를 참으로 설정
-            selectIdx[allocCnt++] = lottoIdx;  // 0부터 1씩 올라가며 할당된 당첨 자리 횟수가 5까지 올라간다.
+            selectIdx[allocCnt++] = lottoIdx;  // 0부터 1씩 올라가며 할당된 당첨 자리 횟수가 4까지 올라간다.
 
             System.out.println("lottoBox["+lottoIdx+"] = "  + lottoBox[lottoIdx]);
 
                     isRealloc = true;
         }
     }
-
-
 }
 
 

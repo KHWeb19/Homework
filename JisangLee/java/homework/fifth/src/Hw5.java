@@ -8,8 +8,8 @@ public class Hw5 {
         //n-1로 나누는 경우는 모든 데이터를 가지고 있는 경우가 아니라 샘플만 가지고 있을 때이다.
         //그렇다면 표준 편차는 분산 값에 루트를 씌워주면 된다.
 
-        final int START = 1;
-        final int END = 30;
+        //final int START = 1;
+        final int STUDENT_NUM = 30;
 
         final int MAX = 100; //100점이 최고점이 되므로
         final int MIN = 60;  //60점이 최저점이 되므로 설정
@@ -18,27 +18,27 @@ public class Hw5 {
         float avg = 0;
         float variance = 0; //소수점을 나타내기 위해...int 형 대신 float 형으로..
 
-        int[] score; //배열 함수를 선언
+        int[] score = new int[STUDENT_NUM] ; //배열 함수를 선언
 
-        score = new int[END];
+        //score = new int[STUDENT_NUM];
 
-        for(int i = START-1; i < END; i++){
+        for(int i = 0; i < STUDENT_NUM; i++){
             //배열은 0부터 시작하므로 START 값에서 1을 빼준다.
             //배열0번지에서 29번지까지 1씩 증가시키며 랜덤값을 형성
             int rand = (int)(Math.random() * range + MIN);
             score[i] = rand;  //각 번지에 랜덤값을 할당
             System.out.printf("arr[%d] = %d\n", i, score[i]);
             sum += score[i];  //각 번지들의 합
-            avg = sum / END;  //평균값 구하기
+            avg = sum / STUDENT_NUM;  //평균값 구하기
         }
 
         //분산 구하기...
         sum = 0;
-        for(int i = START-1; i < END; i++){
+        for(int i = 0; i < STUDENT_NUM; i++){
             float square = (score[i] - avg) * (score[i] - avg) ;  //제곱
             sum += square; //제곱의 합
-            variance = sum / END;  //모든 데이터를 가지고 있으므로 제곱의 합을 학생수로 나누어줌
-            //variance = ss / (END-1);  샘플인 경우 제곱의 합을 학생수-1로 나누어줌
+            variance = sum / STUDENT_NUM;  //모든 데이터를 가지고 있으므로 제곱의 합을 학생수로 나누어줌
+            //variance = ss / (STUDENT_NUM-1);  샘플인 경우 제곱의 합을 학생수-1로 나누어줌
         }
         System.out.println("학생들의 점수들의 총합: "+ sum);
         System.out.printf("학급의 평균: %f\n ",avg);

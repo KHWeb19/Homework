@@ -73,7 +73,7 @@ public class Hw8 {
                         diceSum[i] += 3;
                     }
                 } else {
-                    diceSum[i] += dice;
+                    diceSum[i] += dice; //주사위 2와 5가 나왔을 때 기존 주사위 합에서 더해진다.
                 }
             }
         }
