@@ -1,33 +1,38 @@
-import java.math.BigInteger;
 import java.util.Scanner;
+import java.math.BigInteger;
+
 
 public class Homework2 {
     public static void main(String[] args) {
-        /* 1번 문제에서 32번째 항이 21억 정도가 나올 것이다.
-   BigInteger를 통해서 50번째 항을 구해보자!*/
+    /*  1번 문제에서 32번째 항이 21억 정도가 나올 것이다.
+            BigInteger를 통해서 50번째 항을 구해보자! */
 
-  /* 이문제도 1번문제에서 BigInteger[] 만 추가 하면 될것같다*/
+        // 1 일단 MAX = 31 MIN = 2을 지워주자
+        // 2 BigInteger를 만들자
+        // 3 for조건문을 바꾸자
 
-        final int START = 2;
+        //int 정수 for문 증가 지정
+        //  BigInteger 정수지정
+        final int START = 0;
+        final BigInteger BASE = new BigInteger("2");
 
-        BigInteger[] sequence;
+        System.out.print("찾고자하는 수열의 항을 입력해주세요: ");
 
         Scanner scan = new Scanner(System.in);
+        //scanner 쓴 데이터값 idx에 집어넣기
+        int idx = scan.nextInt();
 
-        System.out.print("등수의 수열의 몇 번째 항을 구할까요 ? ");
-        int end = scan.nextInt();
+        // idx 배열에 집어넣기
+        BigInteger[] seq = new BigInteger[idx];
+        seq[START] = new BigInteger("1");
 
-        sequence = new BigInteger[end];
-
-        sequence[0] = new BigInteger("1");
-        sequence[1] = new BigInteger("2");
-
-        for (int i = START; i < end; i++) {
-            // 여기에서 .add(sequence[i * 2]); 바꿔 보았지만 출력이 되지않는다//
-            sequence[i] = sequence[i - 1].add(sequence[i * 2]);
-            System.out.println("arr[" + i + "] = " + sequence[i]);
+        //for 반목문 생성
+        for (int i = START + 1; i < idx; i++) {
+            // 배열에다 BASE = 2 ^ i 집어넣기
+            seq[i] = seq[i - 1].multiply(BASE);
+            // i증감하고 2 ^ i 출력
+            System.out.println("seq[" + i + "] = " + seq[i]);
         }
     }
 }
-
 
