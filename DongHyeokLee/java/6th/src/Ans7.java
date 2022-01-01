@@ -32,7 +32,9 @@ public class Ans7 {
         //int[] people = new int[END];
         float[] emp = new float[EMP_NUM];
 
-
+        for(int i = 0; i < EMP_NUM; i++){
+            emp[i] = INIT_PAY;
+        }
 
         for(int i = 0; i < END_YEAR; i++){ //연차당 개인의 연봉인상률을 구하면 되니깐 중복 for문을 활용
             //people[num] = pay;
