@@ -1,7 +1,9 @@
 public class multiArray {
 
-    private final int rowLength;
-    private final int  columnLength;
+    //4. 1번 문제를 클래스화 해봅시다.
+    //[출처] 문제 은행 [ 4 ] (에디로봇아카데미) | 작성자 링크쌤
+
+    private final int rowLength, columnLength;
 
     private final String[][] myArray;
 
