@@ -33,6 +33,7 @@ public class Homework04 {
 
         }
 
-        System.out.println("학생들의 평균 = " + sum/STUDENTS);
+                // 평균에 소수점도 표현을 해야하므로.. float로 변형을 해준다.
+        System.out.println("학생들의 평균 = " + (float)(sum)/STUDENTS);
     }
 }
