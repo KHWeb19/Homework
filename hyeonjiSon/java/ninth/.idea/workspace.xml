@@ -4,20 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00fe10ba-75a3-4cee-b906-09081f1653e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../homework/fifth/src/Practice1_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ninth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Answer8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RePractice1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RePractice3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RePractice8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework/fifth/src/Chamgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/fifth/src/Chamgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework/fifth/src/Practice3_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/fifth/src/Practice3_2.java" afterDir="false" />
+    <list default="true" id="00fe10ba-75a3-4cee-b906-09081f1653e9" name="Changes" comment="[손현지]문제은행 [3] 복습 + 질문">
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/CatInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice1and2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice5to10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/tenth/tenth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DiceClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EntityExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IfRangData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QnA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SwitchRangData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SwitchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,24 +51,49 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="22zhBY2GozUnOxQDF5xJWdSzvjV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework/tenth" />
   </component>
-  <component name="RunManager" selected="Application.RePractice1">
+  <component name="RunManager" selected="Application.EntityExample">
     <configuration name="Answer8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Answer8" />
+      <module name="ninth" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EntityExample" />
+      <module name="ninth" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IfRangData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IfRangData" />
       <module name="ninth" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,6 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EntityExample" />
+        <item itemvalue="Application.IfRangData" />
         <item itemvalue="Application.RePractice1" />
         <item itemvalue="Application.RePractice8" />
         <item itemvalue="Application.Answer8" />
@@ -88,6 +132,21 @@
       <option name="presentableId" value="Default" />
       <updated>1640846187709</updated>
     </task>
+    <task id="LOCAL-00001" summary="[손현지]문제은행 [3] 복습 + 질문">
+      <created>1640929570442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640929570442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[손현지]문제은행 [3] 복습 + 질문">
+      <created>1640929740856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640929740856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +159,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[손현지]문제은행 [3] 복습 + 질문" />
+    <option name="LAST_COMMIT_MESSAGE" value="[손현지]문제은행 [3] 복습 + 질문" />
   </component>
 </project>
