@@ -14,4 +14,8 @@ public class M9 {
             System.out.printf("seq[%d] = %d\n", i + 1, seq[i]);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
