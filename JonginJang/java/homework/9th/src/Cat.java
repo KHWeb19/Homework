@@ -2,25 +2,23 @@ public class Cat {
     //문제 3
     private String name;
     private int age;
-    private String act;
 
-    public void setName(String name){
-        this.name = name;
+    Catinfo catinfo;
+    Catbehavior catbehavior;
+
+    public void initCat(){
+        catinfo = new Catinfo();
+        this.name = catinfo.setName();
+        this.age = catinfo.setAge();
+        getInfo();
     }
-    public  void setAge(int age){
-        this.age = age;
+    public void setAct(){
+        catbehavior = new Catbehavior();
+        catbehavior.catAct();
     }
-    public String getName(){
-        return name;
-    }
-    public int getAge(){
-        return age;
-    }
-    public void setAct(String act){
-        this.act = act;
-    }
-    public String act(){
-        return act;
+
+    public void getInfo(){
+        System.out.printf("이름: %s, 나이: %d\n", name,age);
     }
 
 }

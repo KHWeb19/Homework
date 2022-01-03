@@ -1,12 +1,14 @@
 public class Catinfo {
     //문제 3
-    public static void main(String[] args) {
+    final String catName = "야옹이";
+    final int catAge = 1;
 
-        Cat cat = new Cat();
-        cat.setName("야옹이");
-        cat.setAge(1);
+    public String setName(){
+        return catName;
 
-        System.out.printf("이름: %s, 나이: %d\n", cat.getName(),cat.getAge());
+    }
+    public int setAge(){
+        return catAge;
     }
 
 }

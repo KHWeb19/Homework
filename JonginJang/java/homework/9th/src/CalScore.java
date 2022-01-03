@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CalScore {//문제5,6,7,9,10
     //표준편차 : 분산에 루트
     //분산: 각 편차들(값과 평균치의 차이)들을 제곱한 다음 더해주고 전체 숫자로 나눈다.  */
