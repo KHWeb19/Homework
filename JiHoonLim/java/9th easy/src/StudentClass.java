@@ -24,7 +24,7 @@ public class StudentClass {
     public void systemInit(){
 
         putScore();
-        System.out.printf("수학 = %d 영어 = %d 국어 = %d\n",score[0],score[1],score[2]);
+        printScore();
 
         StudentOperation studentOperation = new StudentOperation();
         studentOperation.initOp();
@@ -44,6 +44,10 @@ public class StudentClass {
         System.out.print("국어 점수를 입력하세요.");
         koreanscore = scan.nextInt();
         score[2] = koreanscore;
+    }
+
+    public void printScore(){
+        System.out.printf("수학 = %d 영어 = %d 국어 = %d\n",score[0],score[1],score[2]);
     }
 
 }

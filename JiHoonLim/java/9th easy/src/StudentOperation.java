@@ -11,18 +11,15 @@ public class StudentOperation {
         var = 0 ;
         stand = 0 ;
 
+        systemInit();
+        printScore();
+
+    }
+
+    public void systemInit(){
         for (int i =0; i < StudentClass.classNum; i++ ){
             sum += StudentClass.score[i];
         }
-
-        avgScore();
-        System.out.println("평균은 " +avg);
-
-        varScore();
-        System.out.println("분산은 " +var);
-
-        standScore();
-        System.out.println("표준편차는 " +stand);
     }
 
     public void avgScore(){
@@ -39,5 +36,16 @@ public class StudentOperation {
 
     public void standScore(){
         stand = (float) Math.sqrt(var);
+    }
+
+    public void printScore(){
+        avgScore();
+        System.out.println("평균은 " +avg);
+
+        varScore();
+        System.out.println("분산은 " +var);
+
+        standScore();
+        System.out.println("표준편차는 " +stand);
     }
 }
