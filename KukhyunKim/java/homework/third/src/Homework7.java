@@ -9,7 +9,7 @@ public class Homework7 {
         3. 출력
          */
 
-        final int Start = 0;
+        final int Start = 1;
         final int End = 100;
         final int Decision = 4;
         final int Remain = 0;

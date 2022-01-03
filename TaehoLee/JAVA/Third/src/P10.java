@@ -5,6 +5,7 @@ public class P10 {
     // 4. 출력된 숫자들의 합
 
     public static void main(String[] args) {
+
         final int START = 1;
         final int END = 100;
 
