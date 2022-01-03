@@ -5,7 +5,10 @@ public class HW5 {
         Student student = new Student();
 
         student.setScore();
-        System.out.printf("평균=%d",student.average());
+        System.out.printf("평균=%.2f\n",student.average());
+        System.out.printf("분산=%.2f\n",student.disperse());
+        System.out.printf("표준편차=%.2f",student.stand());
+
 
     }
 }

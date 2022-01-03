@@ -27,7 +27,7 @@ public class HW1_HW2 {
                 System.out.printf("scoreNew[%d][%d]=%d\n", i, j, scoreNew[i][j]);
             }
         }
-
+        //구구단을 만들어보려고 했으나 실패
         /*final int DAN = 3;
         final int NUM = 4;
         int i,j;

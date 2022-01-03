@@ -10,14 +10,12 @@ public class MenuEx {//메뉴를 추가하는 기능 넣음
     private boolean initNotFinish;
 
     public void initMenu() {
-
         String[][] menu = new String[MealEx.MEAL_TIME_COUNT][SIDE_DISH_MAX + MAIN_DISH];
         scan = new Scanner(System.in);
 
         initNotFinish = true;
         systemInit(); //객체내에서 매서드 호출 가능
     }
-
     private void systemInit() {
         while (initNotFinish) {
             addMenu();                           // addMenu 매서드를 호출함
