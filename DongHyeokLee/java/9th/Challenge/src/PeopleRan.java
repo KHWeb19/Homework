@@ -41,7 +41,6 @@ public class PeopleRan {
                 }
                 avoidDuplication[lotto.allCnt++] = people[i];
                     lotto.isRealloc = true;
-                //System.out.println(people[i]);
             }
 
         }
