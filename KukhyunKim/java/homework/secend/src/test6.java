@@ -13,6 +13,6 @@ public class test6 {
         1. System.out.printf
         2. System.out.println
         Q1. 1번가 2번의 차이점과 어디서 사용하는지
-         */
+        */
     }
 }
