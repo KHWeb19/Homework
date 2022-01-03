@@ -12,4 +12,13 @@ public class Dice {
      public int rollDice (){
             return (int)(Math.random()*range+MIN);
         }
+
+    @Override
+    public String toString() {
+        return "Dice{" +
+                "MAX=" + MAX +
+                ", MIN=" + MIN +
+                ", range=" + range +
+                '}';
+    }
 }

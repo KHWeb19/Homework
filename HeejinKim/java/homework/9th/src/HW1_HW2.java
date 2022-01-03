@@ -21,12 +21,21 @@ public class HW1_HW2 {
 
         final int RINE=3;
         final int ROW=3;
-
+        System.out.println("행렬 출력");
         for (int i = 0; i < RINE ; i++) {
             for (int j = 0; j <ROW ; j++) {
-                System.out.printf("scoreNew[%d][%d]=%d\n", i, j, scoreNew[i][j]);
+                //System.out.printf("scoreNew[%d][%d]=%d\n", i, j, scoreNew[i][j]); //나의 출력
+
+
+                System.out.printf("%3d",scoreNew[i][j]);//행렬식 출력
+
             }
+            System.out.println();
         }
+        System.out.println();
+
+
+
         //구구단을 만들어보려고 했으나 실패
         /*final int DAN = 3;
         final int NUM = 4;

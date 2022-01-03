@@ -16,7 +16,11 @@ public class MealEx {                    //메뉴자체를 여기 집어 넣어�
     }
     //public void randomMealAlloc(){
 
+
+
     }
+
+
 
 
 

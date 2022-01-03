@@ -5,6 +5,7 @@ public class HW3Cat {
 
 
     public void setCat(String cat){
+
         this.cat= cat;
     }
 
@@ -13,11 +14,13 @@ public class HW3Cat {
     }
 
 
-    public String getCat(){
+    public String getCat()
+    {
         return cat;
     }
 
-    public int getAge(){
+    public int getAge()
+    {
         return age;
     }
 

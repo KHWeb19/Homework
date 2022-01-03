@@ -12,6 +12,7 @@ public class HW4Class {
         scoreNew = new int[][]{{10, 20, 30},
                                {40, 50, 60},
                                {70, 80, 90}};
+
     }
     public void printScore() {
         initScore();
