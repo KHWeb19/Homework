@@ -16,7 +16,6 @@ public class Test11 {
         } else {
             System.out.println("97 ~ 122 의 숫자 : " + num4);
         }
-
     }
 }
 

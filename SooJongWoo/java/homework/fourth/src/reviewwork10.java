@@ -1,0 +1,45 @@
+public class reviewwork10 {
+    public static void main(String[] args) {
+        final int START = 1;
+        final int END = 100;
+
+        final int MAX = 10;
+        final int MIN = 2;
+
+        int range = MAX - MIN + 1;
+        /* 1~100까지의 숫자를 순회한다
+           9번과 유사하게 2~10을 가지고 작업을 진행한다
+           다만 이번에는 배수를 찾는게 아니라 랜덤한 숫자가 나온만큼만 이동하고
+           이동했을때 나온 숫자들의 합을 계산하도록 만들어보자!
+         */
+
+        int decision = 0;
+        int sum = 0;
+
+        // final int DEATH = 44;
+
+        /* decision = (int) (Math.random() * range + MIN);
+            이 코드가 for 밖으로 나오면
+            한 번 할당된 난수를 기반으로 코드가 동작함
+         */
+
+        for (int i = START; i <= END; i += decision) {
+            // 내부에 배치되면 매 반복마다 더하는 값이 바뀜
+            decision = (int) (Math.random() * range + MIN);
+
+            System.out.printf("뽑은 난수 = %d\n", decision, i);
+
+            /* id (i == DEATH) {
+                   i = START;
+               }
+             */
+
+            sum += i;
+        }
+
+        System.out.println("현재까지 나타난 숫자들의 합 = " + sum);
+    }
+}
+/* final int 및 각 지정한 이름(ex START, END, ...등)의 중요도에 대해
+   파악하였고 원래 풀이에서 빠진 부분에 대해 복습하였습니다.
+ */
