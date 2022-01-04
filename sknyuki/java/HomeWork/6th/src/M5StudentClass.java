@@ -25,15 +25,15 @@ public class M5StudentClass {
         System.out.println("수학 점수를 입력하세요");
         int score3 = scan.nextInt();}
 
-    public void initaver(){
+    public void initaver(){//평균
             average = new M5StudentAverage();
             average.initaverage();
         }
-    public void initdev(){
+    public void initdev(){//표준편차
         deviation = new Deviation();
         deviation.initDeviationScore();
     }
-    public void initvar(){
+    public void initvar(){//분산
         variance = new Variance();
         variance.initVariancescore();
     }

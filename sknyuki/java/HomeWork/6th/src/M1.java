@@ -14,6 +14,7 @@ public class M1 {
                 for (int j = 0; j < END; j++) {
                     System.out.printf("array[%d][%d]=%d\n", i, j, array[i][j]);
                 }
+
             }
 
         }

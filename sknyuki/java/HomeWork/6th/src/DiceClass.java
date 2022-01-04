@@ -11,4 +11,5 @@ public class DiceClass {
         public int rollDice () {
             return (int) (Math.random() * range + MIN);
         }
+
     }
