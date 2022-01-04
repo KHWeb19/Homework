@@ -24,7 +24,6 @@ public class Num8Dice {
     public void rollDice() {
         dice = (int) (Math.random() * range + MIN);
     }
-    //말씀을 해주셨지만, return을 쓸 때를 잘 모르겠습니다.
 
 
     public void rollArry() {

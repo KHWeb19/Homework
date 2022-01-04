@@ -35,7 +35,7 @@ public class Num3Cat {
             if (num >= 1 && num <= 9) {
                 System.out.println(num+"시에는 그루밍하기");
             } else if (num >= 10 && num <= 16) {
-                System.out.println(num+"시에는 장판긁기");
+                System.out.println(num+" 시에는 장판긁기");
             }else if (num >= 17 && num <= 24) {
                 System.out.println(num+"시에는 창 밖보기");
             } else {

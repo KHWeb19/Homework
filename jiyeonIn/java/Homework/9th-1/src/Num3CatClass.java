@@ -11,7 +11,7 @@ public class Num3CatClass {
         System.out.print("지연이의 집에 고양이가 몇마리야?");
         cat.cat();
 
-        System.out.print("지연이가 집에 (1.나갔다 / 2. 들어왔다)");
+        System.out.print("지연이가 집에 ( 1.나갔다 / 2. 들어왔다)");
         cat.cry();
 
         System.out.print("고양이가 응가 싸고난 후 행동 시간 별(24시간 중 입력해보시오)");

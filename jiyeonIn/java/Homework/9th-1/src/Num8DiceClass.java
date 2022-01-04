@@ -8,7 +8,7 @@ public class Num8DiceClass {
 
         System.out.println("각 친구의 주사위 합 :");
         dice.playSum();
-
+ 
         dice.speacialDice();
 
         for (int i = 0; i < Num8Dice.PLAYER_NUM; i++) {

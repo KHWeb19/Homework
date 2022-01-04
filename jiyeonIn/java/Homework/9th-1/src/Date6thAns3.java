@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Date6thAns3 {
-    static int maxNum = 5;
+    static int max_Num = 5;
 
     static int[] selectedLotto;
 
@@ -17,11 +17,11 @@ public class Date6thAns3 {
         return random;
     }
     public void randomArry(){
-        selectedLotto = new int[maxNum];
+        selectedLotto = new int[max_Num];
     }
 
     public void playRandom(){
-        for (int i = 0; i < maxNum; i++) {
+        for (int i = 0; i < max_Num; i++) {
         selectedLotto[i] = random();
         System.out.printf("당첨 번호: %d\n", selectedLotto[i]);
     }

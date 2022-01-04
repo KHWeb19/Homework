@@ -8,7 +8,7 @@ public class Date6thAns2Class {
         d6.initSequence();
 
         Date6thAns2.seq[Date6thAns2.START_IDX] = new BigInteger("1");
-        System.out.println("seq[0] = " +1);
+        System.out.println("seq[ 0 ] = " +1);
         d6.process();
 
 

@@ -31,7 +31,7 @@ public class Date6Ans4 {
         return sum;
     }
     public float studentAvg(){
-        avg = (float) (sum) / studentNum;
+        avg = (float) (sum) /studentNum;
         return avg;
     }
     public float dispersion(){

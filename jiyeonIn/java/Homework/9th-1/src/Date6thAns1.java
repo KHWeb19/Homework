@@ -26,7 +26,7 @@ public class Date6thAns1 {
             System.out.println("낵아 표현이 으앙돼 ㅠ 프로그램을 종료합니다.");
         } else {
             for (int i = START_IDX; i < num; i++) {
-                sep[i] = (int) Math.pow(BASE, i);
+                sep[i] = (int) Math.pow( BASE, i );
                 System.out.printf("seq[%d] = %d\n", i, sep[i]);
             }
         }

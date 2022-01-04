@@ -8,20 +8,20 @@ public class Num1 {
     private int [][] arrytwo;
     private int output;
     private int END = 2;
+    int num;
 
     public void initArry(){
         scan = new Scanner(System.in);
+        num = scan.nextInt();
         arrytwo  = new int [END][END];
 
     }
     public void show(){
-        initArry();
-        System.out.print("값을 입력해봐");
         for(int i=0;i<END;i++){
             for(int j = 0; j<END;j++){
-                output = scan.nextInt();
-                arrytwo[i][j] = output;
-                System.out.println(i+"번째"+j+"값 : " +output);
+                initArry();
+                arrytwo[i][j] = num;
+                System.out.println(i+"번째"+j+"값 : " +num);
             }
         }
     }

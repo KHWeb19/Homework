@@ -7,6 +7,15 @@ public class Num5StudentClass {
           10. 7번 문제에서 표준 편차를 구해봅시다.*/
 
         Num5Student n5 = new Num5Student();
+
+        System.out.print("수학 점수 입력");
+        n5.math();
+        System.out.print("영어 점수 입력");
+        n5.english();
+        System.out.print("국어 점수 입력");
+        n5.korean();
+
+        n5.avg();
         n5.dispersion();
     }
 }

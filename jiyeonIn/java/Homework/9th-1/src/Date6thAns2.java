@@ -15,7 +15,7 @@ public class Date6thAns2 {
 
     public void process(){
         for (int i = START_IDX + 1; i < idx; i++) {
-            seq[i] = seq[i - 1].multiply(BASE);
+            seq[i] = seq[ i - 1 ].multiply(BASE);
             System.out.println("seq[" + i + "] = " + seq[i]);
         }
     }
