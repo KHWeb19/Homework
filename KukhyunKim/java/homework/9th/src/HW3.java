@@ -4,7 +4,6 @@ public class HW3 {
     public static void main(String[] args) {
 
         Cat CatAccount = new Cat();
-
         CatAccount.initMyCat();
     }
 }

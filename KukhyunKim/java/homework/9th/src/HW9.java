@@ -1,7 +1,6 @@
 // 문제은행[4] - 9. 7번 문제에서 분산을 구해봅시다.
 // 분산에서 필요한것 = 합, 평균
 /*
-
 public class HW9 {
     private float sum;
     private float average;

@@ -10,7 +10,6 @@ public class HW2 {
             for (int j = START; j < NUM; j++) {
                 array[i][j] = (int) (Math.random() * 10);
                 array[i][j] = 0;
-                // Q1. 초기화 하라는게 이거말씀하시는게 맞나요??
             }
         }
         for (int i = START; i < NUM; i++) {

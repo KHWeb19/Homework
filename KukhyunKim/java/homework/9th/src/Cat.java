@@ -24,21 +24,17 @@ public class Cat {
 
         initcat_Account();
     }
-
     public void initcat_Account() {
         putCat_name();
       //  System.out.println("고양이 이름 = " + cat_Account[0]);
 
-
         System.out.printf("고양이 나이 = %d 고양이 무게 = %d\n",
                 cat_Account[0], cat_Account[1]);
     }
-
     public void putCat_name() {
       //  System.out.println("고양이 이름 : ");
       //  name = scan.next();
       //  cat_Account[0] =   Integer.parseInt(name);
-
 
         System.out.print("고양이 나이 : ");
         age = scan.nextInt();

@@ -28,7 +28,7 @@ public class HW6 {
                 score[0],score[1],score[2]);
 
         HW7_9_10 calculation = new HW7_9_10();
-        calculation.initOp();
+        calculation.initcal();
     }
 
     public void putScore(){

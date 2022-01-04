@@ -3,7 +3,6 @@
 public class HW8 {
     public static void main(String[] args) {
         DiceClass dice = new DiceClass();
-
         dice.initDice();
         System.out.println("주사위의 눈금은? : " + dice.rollDice());
     }
