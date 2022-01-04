@@ -12,11 +12,9 @@ public class HW4 {
 
         putArr();
     }
-
     public void putArr() {
         printArr();
     }
-
     public void printArr() {
         for (int i = START; i <NUM; i++){
             for (int j = START; j < NUM; j++){

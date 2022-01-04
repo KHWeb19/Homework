@@ -3,7 +3,6 @@
 public class HW1 {
     public static void main(String[] args) {
         HW4 Hw4 = new HW4();
-
         Hw4.initArr();
     }
 }

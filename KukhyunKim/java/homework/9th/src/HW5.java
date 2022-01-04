@@ -6,7 +6,6 @@
 public class HW5 {
     public static void main(String[] args) {
         HW6 score = new HW6();
-
         score.initScore();
     }
 }

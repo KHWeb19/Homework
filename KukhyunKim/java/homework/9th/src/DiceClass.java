@@ -1,7 +1,6 @@
 public class DiceClass {
     final int MAX = 6;
     final int MIN = 1;
-
     int range;
 
     public void initDice () {

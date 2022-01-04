@@ -1,6 +1,7 @@
 // 문제은행[4] - 10. 7번 문제에서 표준 편차를 구해봅시다.
 
 /*
+
 public class HW10 {
     private float sum, variance, deviation;
 

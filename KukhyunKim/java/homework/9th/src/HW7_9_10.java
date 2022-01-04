@@ -5,7 +5,7 @@ public class HW7_9_10 {
 
     private float sum, average, variance, deviation;
 
-    public void initOp(){
+    public void initcal(){
         sum = 0 ;
         average = 0 ;
         deviation = 0 ;
@@ -17,7 +17,7 @@ public class HW7_9_10 {
         varScore();
         System.out.println("분산 : " + variance);
         standScore();
-        System.out.println("표준편차 : " + deviation);
+        System.out.println("표준편차 : " +deviation);
     }
     public void avgScore(){
         average = sum / HW6.classNum;
