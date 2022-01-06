@@ -9,10 +9,12 @@ public class Quiz11 {
     public void initQuiz11(){
         range = MAX - MIN + 1 ;
 
+        condition = rand > 90 && rand < 97;
+
         putQuiz11();
         printQuiz11();
 
-        condition = rand > 90 && rand < 97;
+
     }
 
     public void putQuiz11(){
