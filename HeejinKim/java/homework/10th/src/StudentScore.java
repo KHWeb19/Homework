@@ -20,8 +20,6 @@ public class StudentScore {
         scan = new Scanner(System.in);
 
         avg();
-
-
     }
     public void printScore(){
         addScore();
