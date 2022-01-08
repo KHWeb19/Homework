@@ -1,4 +1,4 @@
-public class SequenceGenerator {
+public class SequenceGenerator1 {
     int start;
     int end;
 
@@ -8,7 +8,7 @@ public class SequenceGenerator {
 
     int[] seqArr;
 
-    public SequenceGenerator (final int start, final int end){
+    public SequenceGenerator1(final int start, final int end){
         this.start = start;
         this.end = end;
 
@@ -83,7 +83,9 @@ public class SequenceGenerator {
                 -> 이렇게 하면 조금 쉽게 가능하지않을까...?
                  */
                 tmp = (seqArr[i] / rand +1) * rand - seqArr[i];
+
                 // 연산의 우선순위 생각하기
+
                 i+= tmp;
             }
             if(i < 100) {

@@ -2,7 +2,7 @@ public class Bank2Ans5to10Test {
     static final int EVEN = 0; // 나머지가 0
     static final int ODD = 1; // 나머지가 1
     public static void main(String[] args) {
-        SequenceGenerator sg = new SequenceGenerator(1, 100);
+        SequenceGenerator1 sg = new SequenceGenerator1(1, 100);
         sg.createSequence();
         System.out.println("짝수");
         sg.printCondition(EVEN);
