@@ -5,8 +5,8 @@ public class M2Class {
     int fibo1 = 1;
     int fibo2 = 1;
 
-    public void printNum() {
-        for (int i = 1; i <= 20 - 2; i++) {
+    public void printNum(int Num) {
+        for (int i = 1; i <= Num - 2; i++) {
             sum = fibo1 + fibo2;
             fibo1 = fibo2;
             fibo2 = sum;
