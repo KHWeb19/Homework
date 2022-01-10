@@ -1,5 +1,6 @@
-public class Practice3_2 {
-    public static void main(String[] args) { //Answer을 참고하여 제대로 된 버전을 만들어보자
+public class RePractice3 {
+    public static void main(String[] args) {
+        //Answer을 참고하여 제대로 된 버전을 만들어보자
         //배열로 로또 문제를 만들어보기!
         //   10명 중 5명이 당첨되도록 만들어보자!
         //   배열값에 당첨되는 자리를 배치해놓고 사용자가 돌려서 당첨되는지 안되는지를 판정하도록 한다.
