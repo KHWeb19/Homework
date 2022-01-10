@@ -28,7 +28,7 @@ public class M9 {
         for (int i = START; i <= END; i++) {
             //언제까지 루프를 돌릴지 범위 지정
             while (!isRandomAllocCheck) {
-                //while 문을 돌리기 위해 boolean값을 true로 설정
+                //while 문을 돌리기 위해 최종 boolean값을 true로 설정
                 decision = (int) (Math.random() * range + MIN);
                 //while 내부에 decision을 위치 시키는것으로 매 루틴 새로운 랜덤 값 부여
                 System.out.printf("%d번째 반복\n",i);

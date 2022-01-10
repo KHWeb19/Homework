@@ -15,7 +15,7 @@ public class M1 {
             int[] array=new int[end];
 
 
-            for (int i=START;i<= end;i++){
+            for (int i=START;i<end;i++){
                 array[i]=(int)Math.pow(2,i);
                 //제곱 구하는식 Math.pow(밑항,제곱근)
                 System.out.printf("%d의 제곱의 값은 %d이다\n",i,array[i]);
