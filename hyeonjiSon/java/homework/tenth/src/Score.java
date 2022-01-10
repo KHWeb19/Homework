@@ -8,10 +8,11 @@ public class Score {
     int range;
 
     public void initScore() {
-        range = MAX - MIN + 1;
+        printScore();
     }
 
     public int printScore() {
+        range = MAX - MIN + 1;
         return (int) (Math.random() * range + MIN);
     }
 }

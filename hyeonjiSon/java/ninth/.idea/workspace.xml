@@ -5,35 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00fe10ba-75a3-4cee-b906-09081f1653e9" name="Changes" comment="[손현지]문제은행 [3] 복습 + 질문">
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/ArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/CatInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice1and2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice5to10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework/tenth/tenth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiceClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IfRangData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Meal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QnA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SwitchRangData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SwitchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/DiceGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/DiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/MyCustomDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/MyCustomDataTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/RandomGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11th/src/RandomGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chamgo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/tenth/src/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/tenth/src/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/tenth/src/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/tenth/src/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/tenth/src/Practice1and2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice1and2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/tenth/src/Practice5to10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/tenth/src/Practice5to10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/tenth/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/tenth/src/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework/tenth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.EntityExample">
     <configuration name="Answer8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

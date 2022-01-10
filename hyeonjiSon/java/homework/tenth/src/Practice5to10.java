@@ -1,14 +1,15 @@
 public class Practice5to10 {
-    //문제5. 학생 클래스를 만들어봅시다.
-       // 1_1.Student 라는 클래스를 만든다.
-       // 1_2. Practice5to10에서 Student 클래스를 사용할 수 있도록 객체화 한다.
-    Student student = new Student();
+    public static void main(String[] args) {
+        //문제5. 학생 클래스를 만들어봅시다.
+        // 1_1.Student2 라는 클래스를 만든다.
+        // 1_2. Practice5to10에서 Student 클래스를 사용할 수 있도록 객체화 한다.
 
-    //student.initStudent();
+        Student student = new Student();
+        //School 객체 내부에 있는 initStudent()메서드를 실행하세요.
 
-    //School 객체 내부에 있는 initStudent()메서드를 실행하세요.
+        student.initStudent();
 //  이 initStudent() 메서드를 실행시키면 무엇이 되도록 만들 것인가.
-
+    }
 }
 
 //문제 6. 학생 클래스에 수학, 영어, 국어 점수를 입력받도록 개조합니다.
@@ -33,6 +34,7 @@ public class Practice5to10 {
 //11. 마지막으로 Practice5to10에서 클래스들을 객체화하여 실행시킨다.
 //11_1. 학생 클래스의 Scanner가 가장 먼저 나오도록 한다.
 //11_2. Scanner에 수학/영어/국어 중 한가지 과목을 선택하여 입력하면 30명의 점수가 배열되도록 한다.
+                    //Scanner를 우선 빼고 완성했다!
 //11_3. 또한 점수의 평균, 표준편차, 분산까지도 출력되도록 한다.
 //11_4. 현재의 클래스에서 성적(Grade)를 객체화 시키고 initGrade를 실행시켰을 때
       //위의 계획이 잘 실행되는지 확인한다.
