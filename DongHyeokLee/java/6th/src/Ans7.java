@@ -30,15 +30,17 @@ public class Ans7 {
         float percent;
 
         //int[] people = new int[END];
-        int[] emp = new int[EMP_NUM];
+        float[] emp = new float[EMP_NUM];
 
-
+        for(int i = 0; i < EMP_NUM; i++){
+            emp[i] = INIT_PAY;
+        }
 
         for(int i = 0; i < END_YEAR; i++){ //연차당 개인의 연봉인상률을 구하면 되니깐 중복 for문을 활용
             //people[num] = pay;
             for(int j = 0; j < EMP_NUM; j++) {
                 //int rate = (int) (Math.random() * range + MIN); // 0 <= rate < 1 0<= rate < 9 1<= rate < 10 1/100
-                percent = (float) ((int) (Math.random() * range + MIN / BIAS) * PERCENT);
+                percent = (float) ((int) (Math.random() * range + MIN) / BIAS) * PERCENT;
                /* rise = pay * rate / 100; // 계속 0으로 작동
                 risePay = (int) pay + rise; // 인상된 연봉에서 또 인상?? 이렇게 되면 소수점 까지 뜨게됨 근데 오른거에서 오르는게 당연하자나 그럼 doulbe형을 int형으로 바꿔야되나
                 pay = risePay; // pay를 final로 고정시키니 작동이 안됐음*/
