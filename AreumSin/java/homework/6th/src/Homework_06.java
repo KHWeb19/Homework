@@ -34,7 +34,7 @@ public class Homework_06 {
         BigInteger[] arr = new BigInteger[length];
 
         //BigInteger result = new BigInteger("0");
-        for (int i =0; i < length; i++){
+        for (int i =0; i < length; i++){ // 내려가도록 -- 
             arr[i] = number.remainder(numTen);
             number = number.divide(numTen);
             System.out.printf("arr[%d]에 들어있는 값은 %d\n",i,arr[i]);
