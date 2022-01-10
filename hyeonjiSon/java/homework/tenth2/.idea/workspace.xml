@@ -5,53 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27d853a8-41b0-41e7-b23f-172340d4e941" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../11th/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/11th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/DiceGameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/DiceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/MyCustomDataType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/MyCustomDataTypeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/RandomGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11th/src/RandomGeneratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/src/Bank2Ans5to10Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/src/InitialSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/src/MyCustomSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/src/MyCustomSequenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/src/PrivateComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../13th/src/SequanceGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../14th/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../14th/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../14th/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../14th/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../14th/14th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tenth/src/Student2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice1and2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice5to10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ordinarytest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenth2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ninth/src/chamgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tenth/src/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tenth/src/Dice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tenth/src/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tenth/src/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tenth/src/Practice1and2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tenth/src/Practice1and2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tenth/src/Practice5to10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tenth/src/Practice5to10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tenth/src/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tenth/src/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tenth/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tenth/src/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ninth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ninth/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
