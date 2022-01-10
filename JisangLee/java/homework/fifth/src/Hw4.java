@@ -12,30 +12,30 @@ public class Hw4 {
         //for 문 이용해서 0 ~ 29 까지 반복하며 랜덤값을 넣어주면 되겠구나..
         //이 후 각 배열값들의 합을 구해 학생 수만큼 나누어주면 평균값이 나오겠네..
 
-        final int START = 1;
-        final int END = 30;
+        //final int START = 1;
+        final int STUDENT_NUM = 30;
 
         final int MAX = 100; //100점이 최고점이 되므로
         final int MIN = 60;  //60점이 최저점이 되므로 설정
-        int range = MAX - MIN +1;
+        int range = MAX - MIN + 1;
         float sum = 0; //총합을 0으로 초기화
         // sum 을 int 로 잡아주면 avg 를 float 로 잡아줘도 소수점 첫 째자리까지 나오는데 버려버리더라.
         // 그냥....xx.0으로 나옴, 그래서 sum 을 float 로 잡아주니 잘 됨
 
-        int[] sequence; //배열 함수를 선언
+        int[] score = new int[STUDENT_NUM];; // 30개의 배열을 지정
 
-        sequence = new int[END];
+        //score = new int[STUDENT_NUM];
 
-        for(int i = START-1; i < END; i++){
+        for(int i = 0; i < STUDENT_NUM; i++){
             //배열은 0부터 시작하므로 START 값에서 1을 빼준다.
             //배열0번지에서 29번지까지 1씩 증가시키며 랜덤값을 형성
             int rand = (int)(Math.random() * range + MIN);
-            sequence[i] = rand;  //각 번지에 랜덤값을 할당
-            System.out.printf("arr[%d] = %d\n", i, sequence[i]);
-            sum += sequence[i];  //각 번지들의 합
+            score[i] = rand;  //각 번지에 랜덤값을 할당
+            System.out.printf("score[%d] = %d\n", i, score[i]);
+            sum += score[i];  //각 번지들의 합
         }
         System.out.println("학생들의 점수들의 총합: "+ sum);
-        float avg = sum / END;  //평균값 구하기
-        System.out.println("학급의 평균: "+ avg);
+        //float avg = sum / STUDENT_NUM;  //평균값 구하기
+        System.out.println("학급의 평균: "+ (float)(sum) / STUDENT_NUM );
     }
 }
