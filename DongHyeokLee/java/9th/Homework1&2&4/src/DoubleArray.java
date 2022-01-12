@@ -14,15 +14,26 @@ public class DoubleArray {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
+
                 arr[i][j] = (int) (Math.random() * NUM);
-
-                System.out.println("arr[" + i + "][" + j + "] = " + arr[i][j]);
-
-
+                //출력을 메소을 따로 메소드화 해야될것 같음
             }
         }
     }
-}
+    public void output(){
+        for(int i = 0 ; i < arr.length; i++)
+          for(int j = 0 ; j < arr[i].length; j++){
+
+        System.out.println("arr[" + i + "][" + j + "] = " + arr[i][j]);
+                }
+
+
+
+
+        }
+    }
+
+
 
 
 

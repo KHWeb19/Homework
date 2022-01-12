@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Score {
 
     private Scanner scan;
-    static int sum = 0;
+    int sum = 0;
 
     public void initScore(){
 
@@ -21,6 +21,8 @@ public class Score {
         int englishScore = scan.nextInt();
 
        sum = mathScore + koreanScore + englishScore;
+
+
 
 
 

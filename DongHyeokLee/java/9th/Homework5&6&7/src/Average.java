@@ -8,11 +8,16 @@ public class Average {
 
     public void initavg() {
 
+
         score.initScore();
+
+
 
         //score객체내의 sum변수를 가지고 오고싶다
         //int sum 에 static을 붙이니 되었다
+        //return 값으로 만들어도 나온다
         avg = (float) score.sum / SUBJECT_NUM;
+
 
 
 

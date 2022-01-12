@@ -1,18 +1,13 @@
 public class StudentClass {
     public static void main(String[] args) {
 
-    /* 분산
-    Variance var = new Variance();
 
-    var.initvar();
 
-    var.var();
-    */
+        Student student = new Student();
+        student.initStudent("박봉자", 2,"영어");
 
-        //표준편차
-        StandardDeviation sd = new StandardDeviation();
 
-        sd.initsd();
+
 
     }
 }

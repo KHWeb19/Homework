@@ -1,31 +1,70 @@
-import java.util.Scanner;
-
-public class Score {
-
-    private Scanner scan;
-    static double sum = 0;
-    static double mathScore = 0 , koreanScore = 0 , englishScore = 0 ;
-
-    public void initScore(){
 
 
-        System.out.print("수학 점수를 입력하시오 : ");
-         scan = new Scanner(System.in);
-           mathScore = scan.nextInt();
+public class Score{
 
-        System.out.print("국어 점수를 입력하시오 : ");
-        scan = new Scanner(System.in);
-          koreanScore = scan.nextInt();
+    final int SCORE_MAX = 100;
+    final int SCORE_MIN = 30;
 
-        System.out.print("영어 점수를 입력하시오 : ");
-        scan = new Scanner(System.in);
-          englishScore = scan.nextInt();
+    int range = SCORE_MAX - SCORE_MIN +1;
 
-       sum = mathScore + koreanScore + englishScore;
+    Subject subject = new Subject();
+    int[] score;
+    int sum = 0;
+    float avg ,var, stdDev;
+
+    public void initScore() {
+
+        subject.selectSubject();
+
+        score = new int[subject.SELECT_MAX];
+        System.out.println();
+        System.out.println("=======수강 과목 성적=======");
+
+        for (int i = 0; i < subject.cnt; i++) {
+            score[i] = (int) (Math.random() * range + SCORE_MIN);
+            System.out.print(score[i] + " ");
+
+            sum += score[i];
 
 
 
+
+        }
 
 
     }
+ //이 부분에서 멸망!
+    public void average(){
+
+        avg = (float) sum / subject.cnt;
+
+
+        }
+    public void Variance(){
+
+        for (int i = 0; i < subject.cnt; i++) {
+            var += Math.pow(score[i] - avg, 2);
+        }
+
+        var /= subject.cnt;
+    }
+
+    public void StandardDeviation(){
+
+        stdDev = (float) Math.sqrt(var);
+
+    }
+
+    public void outputScore(){
+
+        initScore();
+        average();
+        Variance();
+        StandardDeviation();
+
+        System.out.println();
+        System.out.println("평균 = " + avg + " 분산 = " + var + " 표준편차 =" + stdDev);
+    }
+
+
 }
