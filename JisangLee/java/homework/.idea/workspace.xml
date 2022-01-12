@@ -2,7 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b47222cf-64f5-4245-9631-799e3093e6dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/second/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/second/src/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/CatClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/DiceClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Hw1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Hw2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Hw4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz110.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz110Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz111.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz111Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz12Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz13Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz14Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz15Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz16Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz17Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz18Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Quiz19Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/StudentClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6th/src/StudentManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fifth/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="22dkWTWzOzPRtIdpe8pZn8Ddyhg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/6th" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

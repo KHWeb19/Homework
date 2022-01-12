@@ -1,0 +1,2 @@
+public class HW10 {
+}
