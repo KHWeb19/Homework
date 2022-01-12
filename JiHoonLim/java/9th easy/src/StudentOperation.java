@@ -4,6 +4,8 @@ public class StudentOperation {
      */
 
 
+    int classNum;
+    int[] score ;
     private float sum, avg, var, stand;
 
     public void initOp(){
@@ -15,23 +17,27 @@ public class StudentOperation {
         printScore();
 
     }
+    public StudentOperation(int classNum, int[] score){
+        this.classNum = classNum;
+        this.score = score;
+    }
 
     public void systemInit(){
-        for (int i =0; i < StudentClass.classNum; i++ ){
-            sum += StudentClass.score[i];
+        for (int i =0; i < classNum; i++ ){
+            sum += score[i];
         }
     }
 
     public void avgScore(){
-        avg = sum / StudentClass.classNum;
+        avg = sum / classNum;
     }
 
     public void varScore(){
         sum = 0 ;
-        for (int i =0; i < StudentClass.classNum; i++){
-            sum += Math.pow(StudentClass.score[i] - avg, 2);
+        for (int i =0; i < classNum; i++){
+            sum += Math.pow(score[i] - avg, 2);
         }
-        var = sum / StudentClass.classNum;
+        var = sum / classNum;
     }
 
     public void standScore(){
