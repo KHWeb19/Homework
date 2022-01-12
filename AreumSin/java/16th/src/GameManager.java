@@ -1,7 +1,7 @@
 public class GameManager extends Player implements Comparable {
     private int playerId;
 
-    public GameManager(final int playerId, final int diceCnt) {
+    public GameManager (final int playerId, final int diceCnt) {
         super(diceCnt);
 
         System.out.printf("GameManager(): playerId - %d, diceCnt - %d\n", playerId, diceCnt);
