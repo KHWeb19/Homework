@@ -1,6 +1,8 @@
-public class StandardDeviation {
+public class StandardDeviation{
 
-    public void initsd(){
+
+
+    /*public void initsd(){
         Variance var = new Variance();
 
         var.initvar();
@@ -10,5 +12,5 @@ public class StandardDeviation {
         System.out.println("표준편차는" + Math.sqrt(var.sum / var.SUBJECT_NUM));
 
 
-    }
+    }*/
 }

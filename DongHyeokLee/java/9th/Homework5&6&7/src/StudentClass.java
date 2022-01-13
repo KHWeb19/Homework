@@ -3,6 +3,7 @@ public class StudentClass {
 
 
         Average average = new Average();
+        Score scr = new Score();
 
         average.initavg();
 

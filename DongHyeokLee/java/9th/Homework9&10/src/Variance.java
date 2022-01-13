@@ -1,9 +1,9 @@
-public class Variance {
+/*public class Variance {
     final int SUBJECT_NUM = 3;
     Score score = new Score();
-    double avg ,sum;
+    double avg ,sum;*/
 
-    public void initvar() {
+    /*public void initvar() {
 
         //분산 각 점수에 평균뺀 값에서 더한 제곱
         score.initScore();
@@ -31,4 +31,4 @@ public class Variance {
 
 
     }
-}
+}*/
