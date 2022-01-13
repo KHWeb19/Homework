@@ -5,14 +5,16 @@ public class StudentClass {
     1. 수학, 영어, 국어 점수를 입력 받는다 -> Scanner 이용
      */
 
-    public static final int classNum = 3;
+    public final int classNum = 3;
 
     public Scanner scan;
-    public static int mathscore;
-    public static int englishscore;
-    public static int koreanscore;
+    public int mathscore;
+    public int englishscore;
+    public int koreanscore;
 
-    public static int[] score;
+    public int[] score;
+
+
 
     public void initScore(){
         score = new int[classNum];
@@ -21,13 +23,14 @@ public class StudentClass {
         systemInit();
     }
 
+
     public void systemInit(){
 
         putScore();
         printScore();
 
-        StudentOperation studentOperation = new StudentOperation();
-        studentOperation.initOp();
+        StudentOperation sop = new StudentOperation(classNum, score);
+        sop.initOp();
 
     }
 
