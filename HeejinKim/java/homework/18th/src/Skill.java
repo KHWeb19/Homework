@@ -1,6 +1,5 @@
 public interface Skill {
-    public void attack();
-    public void qSkill();
-
-    public void wSkill();
+    public int attack (SelectedCharacter monsterSc);
+    public int qSkill (SelectedCharacter monsterSc);
+    public int wSkill (SelectedCharacter monsterSc);
 }

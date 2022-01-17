@@ -1,8 +1,5 @@
 public class Adventurer implements Skill {
-        // 기본 스탯 (phy atk, mag atk, hp, mp, phy def, mag def,
-        //          str(완력), con(vit:체력), dex(재주), agi(민첩), iq(지능), men(정신))
-        //          경험치 바와 레벨 정보 추가
-        // 누락: 체력 재생률, 마나 재생률
+
         protected float pAtk, mAtk;
         protected float hp, mp;
         protected float pDef, mDef;
@@ -53,7 +50,9 @@ public class Adventurer implements Skill {
         }
 
         public int calcAttackDamage (DamageCalcRequestObject dcro) {
+
             return (int) (pAtk * (str + 0.3 * dex));
+
         }
 
         @Override
@@ -67,6 +66,7 @@ public class Adventurer implements Skill {
         }
 
         public int calcQuackDamage (DamageCalcRequestObject dcro) {
+
             return (int) (pAtk * (0.6 * str + 0.3 * dex));
         }
 
@@ -221,4 +221,4 @@ public class Adventurer implements Skill {
                     '}';
         }
     }
-}
+

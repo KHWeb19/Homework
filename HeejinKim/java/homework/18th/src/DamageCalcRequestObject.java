@@ -4,7 +4,7 @@ public class DamageCalcRequestObject {
     private float pDef, mDef;
     private float str, con, dex, agi, iq, men;
 
-    public void procDamageCalcRequestObject (SelectedCharacter monsterSc) {
+    public void procDamageCalcRequestObject (SelectedCharacter monsterSc) { //select에는 번호와 객체정보가 저장되어있음
         switch (monsterSc.getSelectedNum()) {
             case MonsterNumber.FENRYL:
                 procAllData((Fenryl) monsterSc.getCharacter());
