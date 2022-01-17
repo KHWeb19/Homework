@@ -1,7 +1,7 @@
 public class LottoIdx {
 
-    static final int TOTAL = 100;
-    final int SELECT= 5;
+    static final int TOTAL = 45;
+    final int SELECT= 6;
 
     static int lottoIdx = 0;
     static boolean[] lottoBox = new boolean[TOTAL];
