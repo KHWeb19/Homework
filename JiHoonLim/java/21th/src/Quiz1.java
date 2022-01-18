@@ -46,6 +46,7 @@ public class Quiz1 extends Thread {
 
             for (int i = 0 ; i < widthCnt; i ++){
                 sumarea += area[i];
+                System.out.println(sumarea);
             }
         } catch (Exception e){
             e.printStackTrace();
