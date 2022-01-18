@@ -56,9 +56,11 @@ import java.util.Scanner;
         }
 
         public void raidTurnStart (CharacterManager cm) {
+            //파라메터로 넘겨주었기 때문에 bm에서 사용가능
+            //캐릭터 매니저라는 타입이 레이드 턴 스타트로 입력되어 들어가고 있다 .클래스로 들고왔다도 무방함
             switch (sc.getSelectedNum()) {
                 case MonsterNumber.FENRYL:
-                    ((Fenryl) sc.getCharacter()).raidTurnStart(cm);
+                    ((Fenryl) sc.getCharacter()).raidTurnStart(cm);//저 cm을 던저줌 .저게 필요하기 때문이다
                     break;
             }
         }
