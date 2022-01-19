@@ -20,5 +20,6 @@ public class ThreadTest1 {
         Thread t1 = new Thread(new Square(2));
 
         t1.start();
+
     }
 }

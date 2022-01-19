@@ -30,9 +30,7 @@ public class Square implements Runnable {
             for (int i = 0; i < squareArr.length; i++) {
 
                 squareArr[i] = 0.001f;
-
                 tmp = squareArr[i] * height;
-
                 area += tmp;
 
             }
