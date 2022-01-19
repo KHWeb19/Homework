@@ -27,7 +27,7 @@ public class SquaredAndSum implements Runnable {
             float multy =0;
             for(int i=0 ; i < count ; i++){
                 multy = (float) (Math.pow(squaredArr[i],2));
-                System.out.printf("squaredArr[%d] = %.4f,, 제곱 값 = %.3f\n",i,squaredArr[i],multy);
+                System.out.printf("x = %.4f,, y 값 = %.3f\n",i,squaredArr[i],multy);
 
                 Thread.sleep(5);
             }

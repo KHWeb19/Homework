@@ -1,47 +1,47 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class XYvalue {
-    private float xline;
-    private float yline;
+public class Xvalue {
+    private float x1line;
+    private float x2line;
     private Lock lock;
 
-    public XYvalue() {
+    public Xvalue() {
         lock = new ReentrantLock();
     }
 
-    public float xlineValue(){
+    public float x1lineValue(){
         try {
             lock.lock();
             float sum = 0;
             sum += SquaredAndSum2.BASIC;
-            xline += sum;
+            x1line += sum;
         }catch (Exception e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
         }
-        return xline;
+        return x1line;
     }
 
-    public float ylineValue(){
+    public float x2lineValue(){
         try {
             lock.lock();
             float sum = 0;
             sum += SquaredAndSum2.BASIC;
-            yline += sum;
+            x2line += sum;
         }catch (Exception e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
         }
 
-        return yline;
+        return x2line;
 
     }
 
     public float multyValue() {
-        return  xline * yline;
+        return  x1line * x2line;
 
     }
 }
