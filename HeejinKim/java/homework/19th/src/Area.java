@@ -26,6 +26,7 @@ public class Area {
        // sumArea(); //여기를 해제하고 주석처리한 값과 주석처리하지 않은 값이 다름
     }
 
+
     public void isDivide () {
         divide = width / slice;
     }

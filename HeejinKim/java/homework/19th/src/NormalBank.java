@@ -42,6 +42,9 @@ public class NormalBank { //생성자 호출, 입금 메서드 ,출금 메서드
 
 
         }
+    public static BigInteger getMoney(){
+          return money;
+    }
 
 
 }
