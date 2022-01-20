@@ -5,7 +5,7 @@ public class Student {
     final int subjectnum = 3;
 
     // 입력 받는다 = Scanner
-    public Scanner scan = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
 
     // 과목을 저장하는 배열하나, 과목 점수를 저장하는 배열하나
     public String[] subject = {"수학", "영어", "국어"};
