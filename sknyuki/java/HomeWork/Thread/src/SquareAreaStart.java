@@ -27,8 +27,8 @@ public class SquareAreaStart {
 
        Thread t1=new Thread( new CalculateManager(2,2));
        Thread t2=new Thread( new CalculateManager(2,2));
-        t1.start();
-        t2.start();
+        t1.run();
+        t2.run();
 
     }
 }
