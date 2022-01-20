@@ -1,0 +1,5 @@
+ DiscorruptBankSituationExample에서  money가 있는 DiscorrputBank 객체를 static으로 고정시켰기 때문??
+ -> 모든게 다 그런건가?
+
+
+ 임계 영역 -> 쓰레드에서 같은 전역변수를 공유하고 있는게 있으면 Critical Section
