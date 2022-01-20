@@ -2,7 +2,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Quiz1to2 extends Thread {
-    final double DIVISION = 0.01 ;
+    final double DIVISION = 0.001 ;
 
     private int width;
     private int column;
