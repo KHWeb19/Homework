@@ -1,5 +1,4 @@
 public class hw8 {
-
     public static void main(String[] args) {
 
         final int MAX = 6, MIN = 1;
@@ -10,10 +9,8 @@ public class hw8 {
         int [] score_sum = new int [user_num];
 
         int a=0;
-        while (a< game_num) {
-
+        while ( a++ < game_num) {
             System.out.printf("\n\n===========%d번째 게임===========\n", a+1);
-            a++;
 
                 for (int i=0; i<user_num; i++) {
                     int dice1 = (int) (Math.random() * range + MIN);
@@ -44,11 +41,9 @@ public class hw8 {
                                     }
                                 }
                                 System.out.printf("모두 -6을 하세요. user%d의 점수 : %d\n", i+1, score_sum[i]);
-
                             }
                             else if (diceSpecial == 4) {
                                 System.out.printf("*****USER %d 패배\n", i+1);
-
                             }
                             else if (diceSpecial == 6) {
                                 for(int j=0; j<user_num; j++){
@@ -60,7 +55,6 @@ public class hw8 {
                                     }
                                 }
                                 System.out.printf("user%d의 점수 : %d\n",i+1, score_sum[i]);
-
                             }
                             else{
                                 score_sum[i] += diceSpecial;
@@ -70,11 +64,8 @@ public class hw8 {
                     else {
                         System.out.printf("user%d의 점수 : %d\n", i+1, score_sum[i]);
                     }
-
-                    }
-
-
-            }
+                }
+        }
         System.out.println("\n\n===최종점수===");
         System.out.printf("user1 점수 : %d\n user2 점수 : %d\n",score_sum[0], score_sum[1]);
 
@@ -90,5 +81,5 @@ public class hw8 {
                System.out.println("무승부");
            }
         }
-        }
     }
+}

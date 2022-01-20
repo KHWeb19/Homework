@@ -1,15 +1,25 @@
 public class third1 {
     public static void main(String[] args) {
-        int alpa = (int) (Math.random() * 58 + 65);
+        final int max = 122, min = 65;
+        final int range = (max - min + 1);
 
-        if (91 <= alpa && alpa <= 96) {
-            System.out.printf("특수문자를 출력하시오 : %c", alpa);
-        } else {
-            System.out.printf("알파벳을 출력하시오 : %c", alpa);
+        boolean isChar = true;
+
+        while (isChar) {
+            int rand = (int) (Math.random() * range + min);
+
+            boolean condition1 = (65 <= rand && rand <= 90);
+            boolean condition2 = (97 <= rand && rand <= 122);
+
+            if (condition1 || condition2) {
+                System.out.printf("알파벳을 출력하시오 : %c\n", rand);
+                isChar = false;
+                break;
+            }
+            System.out.printf("알파벳이 아니다. : %c\n", rand);
+
         }
-
     }
 }
-
 
 
