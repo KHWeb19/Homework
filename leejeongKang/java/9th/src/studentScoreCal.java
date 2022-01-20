@@ -1,8 +1,10 @@
 public class studentScoreCal {
 
+
     public static void avgCal() {                           /////평균 구하기
         int sum=0;
-        for (int i = 0; i < student.subjectNum; i++) {
+
+        for (int i = 0; i <student.subjectNum; i++) {
             sum += student.score[i];
         }
         float avg = (float)sum /student.subjectNum;
