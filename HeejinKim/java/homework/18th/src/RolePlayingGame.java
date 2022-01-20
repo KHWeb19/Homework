@@ -13,7 +13,7 @@ import java.util.ArrayList;
         public RolePlayingGame () {
             // 몬스터 관리 객체
             bm = new MonsterManager();
-            // 캐릭터 관리 객체
+            // 일단 이렇게 만들어놓았는데
             cm = new CharacterManager();
 
             range = MAX - MIN + 1;

@@ -113,10 +113,12 @@ import java.util.Scanner;
             }
         }
         public int memberSize () {
+
             return member.size();
         }
-        public ArrayList<SelectedCharacter> getMemberArrayList () {
-            return member;
+        public ArrayList<SelectedCharacter> getMemberArrayList () {//멤버 자체의 사이즈값을 반환하거나 .(17.07)
+            return member; //어떤 것이든 들어갈수 있음.arrlaylist<안에는 어떤것이든 가능>
+
         }
     }
 
