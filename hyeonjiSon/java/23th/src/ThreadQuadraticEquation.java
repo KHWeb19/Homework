@@ -1,35 +1,13 @@
-public class ThreadQuadraticEquation extends Thread {
-    final static float dx = 0.001f;
-    private int xStart, xEnd;
-    static int threadCnt = 0;
-    private int localThreadId;
-
-    float sum = 0;
-
-    static final int THREAD_MAX = 4;
-    static int total;
+public class ThreadQuadraticEquation extends ThreadManager implements Runnable {
 
     public ThreadQuadraticEquation(){
-        localThreadId = threadCnt++;
-        xStart = 0 + total * localThreadId;
-        xEnd = total * (localThreadId +1) -1 ;
-
-        sum = 0;
-
-        System.out.printf("'Xstart = %4d, xEnd = %4d, thread ID = %4d, thread Cnt = %4d\n",
-                xStart, xEnd, localThreadId, threadCnt);
+        super();
     }
 
     public static void calcEachThreadTotal(int start, int end){
-        //ceil() 천정 함수: 즉 올림
-        int realTotal = (int)(Math.ceil((end - start) / dx));
-        System.out.println("realTotal = " + realTotal);
-
-        total = realTotal / THREAD_MAX;
-
-        //return realTotal / THREAD_MAX;
-        System.out.println("total = " + total);
+        ThreadManager.calQuadraticThreadTotal(start, end);
     }
+
 
     public float getSum() {
         return sum;
@@ -56,5 +34,6 @@ public class ThreadQuadraticEquation extends Thread {
 
         System.out.printf("sum = %.12f\n", sum);
     }
+
 
 }

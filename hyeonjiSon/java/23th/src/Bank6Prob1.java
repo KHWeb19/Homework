@@ -3,11 +3,12 @@ import java.sql.SQLOutput;
 public class Bank6Prob1 {
     public static void main(String[] args) throws InterruptedException {
 
-        ThreadRectangle.calcEachThreadTotal();
+        ThreadRectangle.calEachThread();
 
         ThreadRectangle[] rect = new ThreadRectangle[ThreadRectangle.THREAD_MAX];
 
         //스레드 준비
+
         for(int i = 0; i < ThreadRectangle.THREAD_MAX; i++){
             rect[i] = new ThreadRectangle();
         }
