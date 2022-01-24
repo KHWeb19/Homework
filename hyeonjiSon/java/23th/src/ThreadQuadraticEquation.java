@@ -16,7 +16,6 @@ public class ThreadQuadraticEquation extends ThreadManager implements Runnable {
     @Override
     public void run() {
         float curX = dx * xStart;
-
         // y = x^2  높이값 curX * curX
         // 사각형의 넓이는 dx * y = dx * curX * curX
         for (int i = xStart; i <= xEnd; i++, curX += dx) {
@@ -31,9 +30,9 @@ public class ThreadQuadraticEquation extends ThreadManager implements Runnable {
             // 납득하기 어려운 오차를 유발할 수 있다.
             sum += dx * curX * curX;
         }
-
         System.out.printf("sum = %.12f\n", sum);
     }
+
 
 
 }
