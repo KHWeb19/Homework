@@ -52,10 +52,13 @@ public class ThreadCommon extends Thread {
         xEnd = new int[threadNum];
         xStart = new int[threadNum];
 
+        /*
         for(int i = 0; i < threadNum; i++){
             xStart[i] = 0;
             xEnd[i] = 0;
         }
+
+         */
 
     }
 
