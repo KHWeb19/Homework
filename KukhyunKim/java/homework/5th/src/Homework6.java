@@ -27,7 +27,7 @@ public class Homework6 {
 
         BigInteger mantissa = ZERO;
         // 나머지값을 없애려고? 상자를 만듦 <----- 이게 맞나..?
-        // mantissa = 소수 이니깐 맞는것 같음
+        // mantissa = 가수 이니깐 맞는것 같음
 
         BigInteger n = testNum.divide(TEN);
         // 표현할 숫자를 베이스(TEN)로 나눠서 확인하기 위해 상자 n을 만듦
