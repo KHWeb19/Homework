@@ -7,6 +7,7 @@ public class Homework9 {
 
         //출력이 잘 되지않는다
         //변수설정도 수열 규칙도 맞게 세운거 같은데 왜 결과가 안나오지
+        // --> 마지막 출력문구를 for문 외부에 해야하기 때문!
 
 
         final int START = 3;
@@ -26,7 +27,8 @@ public class Homework9 {
 
         for(int i = START ; i < end; i++){
             sequence[i] = sequence[i - 1] + sequence[i - 3];
-            System.out.println(sequence[i]);
+            //System.out.println(sequence[i]);
         }
+        System.out.println(sequence[end - 1]);
     }
 }
