@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Square {
+public abstract class Square {
 
     //사각형을 담당하는 클래스를 만든다.
     //가로변과 세로변의 변수를 만들어준다.
@@ -20,4 +20,6 @@ public class Square {
         this.Height = Height;
         this.Width = Width;
     }
+
+
 }
