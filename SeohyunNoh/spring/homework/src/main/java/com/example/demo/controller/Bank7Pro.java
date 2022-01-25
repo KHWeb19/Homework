@@ -32,6 +32,7 @@ public class Bank7Pro {
     public String homework2(Model model){
         // 스프링부트에 스레드 구현하는 방법 구글링해보니
         // 내 방법은 완전 틀렸는데...?
+        // 일단 클래스 만들어서 작성
 
         logger.info("client entered /homework2");
 
