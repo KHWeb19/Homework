@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.utility.Dice;
+import com.example.demo.utility.thread.ThreadTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,15 +19,12 @@ public class Bank7Pro {
     public String homework1(Model model){
         logger.info("client entered /homework1");
 
-        final int MAX = 6;
-        final int MIN = 1;
+        Dice dice = new Dice();
+        dice.rollDice();
 
-        int range = MAX - MIN + 1;
-        int rand = (int)(Math.random() * range + MIN);
+        model.addAttribute("diceGame", dice.getRand());
 
-        model.addAttribute("diceGame", rand);
-
-        return "Bank7/homework1";
+        return "Bank7/pro1";
     }
 
     @RequestMapping("/homework2")
@@ -36,8 +35,8 @@ public class Bank7Pro {
 
         logger.info("client entered /homework2");
 
-        model.addAttribute("varTest", ThreadTest.test);
+        model.addAttribute("varTest", ThreadTest.getSyncTest());
 
-        return "Bank7/homework2";
+        return "Bank7/pro2";
     }
 }
