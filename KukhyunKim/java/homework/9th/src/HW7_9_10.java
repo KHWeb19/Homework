@@ -33,3 +33,5 @@ public class HW7_9_10 {
         deviation = (float) Math.sqrt(variance);
     }
 }
+// 7, 9, 10 문제 나눠놓으셨었는데 7평균, 9분산, 10표준편차 나눠보려고했는데 잘안되서
+// 나누는것 한번 보여주실수잇으실까요?

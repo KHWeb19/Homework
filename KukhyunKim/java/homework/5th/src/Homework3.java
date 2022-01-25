@@ -1,6 +1,3 @@
-import java.math.BigInteger;
-import java.util.Scanner;
-
 public class Homework3 {
     public static void main(String[] args) {
         /* 문제 3. 배열로 로또 문제를 만들어보기!

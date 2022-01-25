@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="545d4644-afb5-4fba-9868-c67842ee4b14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../6th/6th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/7th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7th/src/QnA9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8th/8th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8th/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8th/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8th/src/QnA3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8th/src/QnA4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EntityExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IfRangeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SwitchRangeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SwitchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/5th/out/production/5th/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/5th/src/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/DiceClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/9th/src/HW9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/5th/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/5th/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/5th/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/5th/src/Homework1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/5th/src/Homework3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/5th/src/Homework3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/5th/src/Homework6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/5th/src/Homework6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/5th/src/Homework8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/5th/src/Homework8.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="232Wx80gTCeEL5VoMOaE9Bu6GrD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="EntityExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EntityExample" />
+      <module name="9th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EntityExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="545d4644-afb5-4fba-9868-c67842ee4b14" name="Changes" comment="" />
+      <created>1640932907668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640932907668</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
