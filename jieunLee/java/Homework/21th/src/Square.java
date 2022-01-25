@@ -1,45 +1,47 @@
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
-//(0.001 x 2)사각형을 2000번 더하면 4
-//가로 0.001
+//가로 2 / 0.001
 //높이 2
-//횟수 2000 (더할때마다 출력)
-//합 4
-//lock은 필요한건지 아닌지 잘모르겠습니다
+//횟수 2000 (500*4)
+//(1) 4개의 스레드로 분할해서 각 영역을 합하자
+//--> 0.001*2*500*4 = 합 4
+//    0~499 500~999 1000~1499 1500~1999 영역구하기
+//    클래스배열에 넣어서 반복문으로 하나씩 출력하도록 만들기
+//(2) 1번과 2번 문제의 중복부분을 클래스로 만들어서 상속시키자
 
+public class Square extends Thread {
+    final float TINY = 0.001f;
+    final int X = 2;
+    final int Y = 2;
 
-public class Square implements Runnable {
-    private final float TINY = 0.001f;
-    private final float HEIGHT = 2;
-    private static float width;
-    private static float sum;
-    public static int count;
-    private Lock lock;
+    //static 붙이니까 Test에서 불러올 수 있음
+    final static int THREAD_MAX = 4;
+    static int thread_cnt = 0;
+    int thread_ID;
+
+    int total;
+    int xStart, xEnd;
+    float sum;
 
     public Square () {
-        width = TINY;
+        total = ((int)(Math.ceil(X/TINY)))/THREAD_MAX;
+        thread_ID = thread_cnt++;
+        xStart = thread_ID*total;
+        xEnd = (thread_ID+1)*total-1;
+        System.out.printf("thread%d: xStart= %4d, xEnd= %4d\n", thread_ID, xStart, xEnd);
+
         sum = 0;
-        count = (int)(2/TINY);
-        lock = new ReentrantLock();
     }
 
-    public void add() {
-        try {
-            lock.lock();
-            sum += (width * HEIGHT);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            lock.unlock();
-        }
+    public float getSum() {
+        return sum;
     }
 
     @Override
     public void run() {
-        for (int i=0; i<count; i++) {
-            add();
-            System.out.println(sum);
+
+        for (int i=xStart; i<xEnd; i++) {
+            sum += (TINY*Y);
+//            System.out.printf("thread%d: %.12f\n", thread_ID, sum);
         }
+        System.out.printf("thread%d: %.12f\n", thread_ID, sum);
     }
 }
