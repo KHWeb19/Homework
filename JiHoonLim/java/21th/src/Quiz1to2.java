@@ -78,7 +78,6 @@ public class Quiz1to2 extends Thread {
 
             for (int i = 0 ; i < widthCnt; i ++){
                 sumarea += area[i];
-                System.out.println(sumarea);
             }
         } catch (Exception e){
             e.printStackTrace();
@@ -89,6 +88,7 @@ public class Quiz1to2 extends Thread {
     }
 
 
+    @Override
     public void run(){
         divisionWidth();
         quizChoice();
