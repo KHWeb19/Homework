@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- h1, h2, h3... h6까지 있으며 글자 크기를 크게 작게 만들 수 있다. -->
+    <h1> Hello!!! Spring Test !!!! Web Server Test</h1>
+
+    <!-- p도 마찬가지로 글자를 출력하는 용도로 활욯함.
+         추가적으로 th:text라는 부분이 보임.
+         thymeleaf 라는 녀석을 활요한 부분
+         html을 쉽게 할 수 있도록 도와주는 라이브러리! (thymeleaf)
+
+         앞서 model.addAttribute("servTime", value)했던 부분이 연동됨.
+         servTime이라는 key 값을 통해 저장된 value 값을 출력함. -->
+    <p th:text="${servTime}">Server Time: ${servTime}</p>
+    <!-- th를 변경하면 안된다. -->
+</body>
+</html>
