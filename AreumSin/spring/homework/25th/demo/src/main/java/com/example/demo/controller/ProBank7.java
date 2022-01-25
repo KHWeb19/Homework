@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 @Controller
@@ -31,7 +32,37 @@ public class ProBank7 {
         return "25th/homework1";
     }
 
+    public int home(Model model){
+        int num = 0;
+
+        for(int i = 0; i < 5; i++){ // 일단 보자
+            try {
+                lock.lock();
+                num++;
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }finally {
+                lock.unlock();
+            }
+            return num;
+        }
+        return num;
+    }
+
     @RequestMapping("/homework2")
+    public String homework2(Model model) {
+        logger.info("homework2");
+        lock = new ReentrantLock();
+
+        int num = home(model);
+
+        model.addAttribute("number", num);
+
+        return "25th/homework2";
+    }
+    /*
+        @RequestMapping("/homework2")
     public String homework2(Model model) {
         logger.info("homework2");
 
@@ -55,5 +86,6 @@ public class ProBank7 {
 
         return "25th/homework2";
     }
+     */
 
 }
