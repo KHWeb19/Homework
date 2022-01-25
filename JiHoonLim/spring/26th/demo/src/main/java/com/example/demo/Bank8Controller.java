@@ -32,6 +32,6 @@ public class Bank8Controller {
 
         model.addAttribute("number",stu.ScoreAvg());
 
-        return "26th/homework1";
+        return "26th/homework2";
     }
 }
