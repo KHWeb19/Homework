@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e85bc57c-5b25-41ef-93e4-313db61c0a68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24th.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bank6ProbIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreadCalculation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreadCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreadManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreadQuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreadRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../23th/src/Bank6Prob1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23th/src/Bank6Prob1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../23th/src/ThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23th/src/ThreadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../23th/src/ThreadQuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23th/src/ThreadQuadraticEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../23th/src/ThreadRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23th/src/ThreadRectangle.java" afterDir="false" />
-    </list>
+    <list default="true" id="e85bc57c-5b25-41ef-93e4-313db61c0a68" name="Changes" comment="[손현지] 문제은행[6] 24일차 수업 복습하기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +56,14 @@
       <option name="presentableId" value="Default" />
       <updated>1642991348485</updated>
     </task>
+    <task id="LOCAL-00001" summary="[손현지] 문제은행[6] 24일차 수업 복습하기">
+      <created>1643005792381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643005792381</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +76,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[손현지] 문제은행[6] 24일차 수업 복습하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="[손현지] 문제은행[6] 24일차 수업 복습하기" />
   </component>
 </project>
