@@ -1,4 +1,4 @@
-public class BeginnerLevel extends CharacterLevel{
+public class BeginnerLevel  extends CharacterLevel{
 
     public void qSkil(){
         System.out.println("q스킬을 사용 합니다.");

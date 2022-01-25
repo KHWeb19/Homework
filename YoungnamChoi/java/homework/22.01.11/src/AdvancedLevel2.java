@@ -1,4 +1,4 @@
-public class AdvancedLevel2 extends CharacterLevel{
+public class AdvancedLevel2 extends CharacterLevel {
 
         public void qSkil(){
             System.out.println("q스킬이 강화 됩니다..");
