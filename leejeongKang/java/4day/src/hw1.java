@@ -8,7 +8,7 @@ public class hw1 {
         final int MAX = 32;
 
         int [] arr = new int[MAX];
-        arr[0]=1;
+        arr[0]=START;
         for (int i=START; i <END; i++){
             arr[i] = arr[i-1]*2;
             System.out.printf("%d항 = %d\n", i, arr[i]);

@@ -10,6 +10,16 @@ public class second3 {
         else {
             System.out.println("꽝");
         }
+
+
+
+
+        int c = 1000;
+        double num = 46.89;
+        int num2 = (int) num;
+
+
+        System.out.printf("%d", num2);
     }
 }
 

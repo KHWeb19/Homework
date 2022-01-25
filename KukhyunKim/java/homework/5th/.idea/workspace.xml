@@ -4,30 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="[김국현] 문제은행 3번 배열">
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans3_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../6th/src/Ans9.java" afterDir="false" />
+    <list default="true" id="663f831e-b6f1-413f-bbb2-588334313171" name="Changes" comment="[김국현] 문제은행 3번 배열.ver.1.1">
+      <change afterPath="$PROJECT_DIR$/../../6th/6th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/7th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7th/src/QnA9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8th/8th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8th/src/QnA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8th/src/QnA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8th/src/QnA3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8th/src/QnA4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/ClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/EntityExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/IfRangeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/SwitchRangeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9th/src/SwitchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/5th.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../third/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../third/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +57,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,7 +80,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Homework10">
+  <component name="RunManager" selected="Application.Homework8">
+    <configuration name="Homework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework1" />
+      <module name="5th" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Homework10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework10" />
       <module name="5th" />
@@ -74,15 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework6" />
-      <module name="5th" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Homework7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework7" />
+    <configuration name="Homework8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework8" />
       <module name="5th" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Homework10" />
+        <item itemvalue="Application.Homework8" />
+        <item itemvalue="Application.Homework1" />
         <item itemvalue="Application.Homework9" />
         <item itemvalue="Application.Homework3" />
-        <item itemvalue="Application.Homework7" />
-        <item itemvalue="Application.Homework6" />
+        <item itemvalue="Application.Homework10" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640673265402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[김국현] 문제은행 3번 배열.ver.1.1">
+      <created>1640767660634</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640767660634</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[김국현] 문제은행 3번 배열" />
-    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행 3번 배열" />
+    <MESSAGE value="[김국현] 문제은행 3번 배열.ver.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[김국현] 문제은행 3번 배열.ver.1.1" />
   </component>
 </project>

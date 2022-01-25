@@ -7,7 +7,8 @@ public class third3 {
         int num3=1;
         System.out.println("3번째 항 : "+ num1);
 
-        for ( int i=4; i<26; i++) {
+
+        for (int i=4; i<26; i++) {
             int result = num1 + num3;
             System.out.printf("%d번째 항 : %d\n", i, result);
                 num1= num2;

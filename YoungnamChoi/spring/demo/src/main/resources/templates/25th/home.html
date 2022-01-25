@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+        <!--  -->
+        <h1> Hello spring Test~~!!~! Web Server Test</h1>
+        <!-- p 글다를 출력하는 용도로 사용
+             th:text  thymeleaf 라는 녀석을 활용한 부분이며
+             앞서 model.addA..했던 부분이 연동됨
+             servtime이라는 key값을 통해 지정된 value값을 출력함-->
+        <p th:text="${servTime}"> server Time: ${servTime}</p>
+</body>
+</html>

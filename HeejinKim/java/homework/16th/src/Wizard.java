@@ -10,15 +10,18 @@ public class Wizard extends Adventurer {
 
     }
 
+
+
+
     @Override
     public void skillQ() {
         super.skillQ();
-        System.out.println("파이어:"+ attack+fire);
+        System.out.println("파이어: "+ attack+fire);
     }
 
     @Override
     public void skillW() {
         super.skillW();
-        System.out.println("일렉트로:"+attack+electro);
+        System.out.println("일렉트로: "+attack+electro);
     }
 }

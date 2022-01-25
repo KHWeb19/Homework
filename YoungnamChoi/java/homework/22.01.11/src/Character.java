@@ -2,7 +2,7 @@ public class Character {
     private CharacterLevel level;
 
     public Character(){
-        level= new BeginnerLevel();
+        level= new CharacterLevel();
         level.showLevelMessage();
     }
 

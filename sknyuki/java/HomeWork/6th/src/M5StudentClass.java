@@ -17,13 +17,13 @@ public class M5StudentClass {
     public void setscore1() {
 
         System.out.println("국어 점수를 입력하세요");
-        int score1 = scan.nextInt();
+        score1 = scan.nextInt();
 
         System.out.println("영어 점수를 입력하세요");
-        int score2 = scan.nextInt();
+        score2 = scan.nextInt();
 
         System.out.println("수학 점수를 입력하세요");
-        int score3 = scan.nextInt();}
+        score3 = scan.nextInt();}
 
     public void initaver(){//평균
             average = new M5StudentAverage();

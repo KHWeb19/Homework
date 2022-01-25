@@ -10,7 +10,7 @@ public class Score {
 
     float sum;
     float average;
-
+    
     public void initScore() {
         // 수학, 영어, 국어 성적 입력하는 enterScore매서드 호출
 

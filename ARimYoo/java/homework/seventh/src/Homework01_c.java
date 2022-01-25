@@ -1,5 +1,7 @@
 public class Homework01_c {
 
+    // static은 전역변수. 프로젝트 안에서 다른 클래스나 main에도 이 변수를 사용하려면 있어야함.
+    // 이럴땐 static을 안 써도 무방함.
     static final int arr1 = 2;
     static final int arr2 = 2;
 

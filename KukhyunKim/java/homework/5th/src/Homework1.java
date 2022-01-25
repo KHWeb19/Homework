@@ -17,7 +17,7 @@ public class Homework1 {
          */
 
         final int MAX = 31;
-        final int START_INX = 2;
+        final int START_INX = 0;
         final int BASE = 2;
 
         System.out.print("수열의 몇 번째 항을 구할까요 ? ");

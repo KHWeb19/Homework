@@ -28,8 +28,18 @@ public class GameTest {
 
     public static void main(String[] args) {
 
-        Adventurer ch =new Adventurer("해리포터",20,1,10,5);
-        Wizard wi=new Wizard("해리포터",20,10,20,20,20,20);
+       // Game game= new Game();
+      //  game.GameStart();
+        CharactorManager cm=new CharactorManager();
+        cm.selectJob();
+        Adventurer adventurer = new Adventurer("해리포터",20,1,10,10);
+        for(;;){
+            adventurer.skillQ();
+            adventurer.skillW();
+
+        }
+
+
     }
 
 
