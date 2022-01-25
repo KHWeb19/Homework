@@ -2,9 +2,11 @@ public class AreaThread implements Runnable {
 
     Area area;
 
+
+
     public AreaThread() {
 
-        area=new Area(2,2,0.001);
+        area= new Area(2,2,0.001);
 
     }
 
