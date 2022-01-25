@@ -7,6 +7,7 @@
 <body>
     <!-- h1, h2, h3, .... h6까지 있으며 글자 크기를 크게 작게 만들 수 있음-->
     <h1>Hello Spring Test ~~~! Web server Test</h1>
+
     <!-- p도 마찬가지로 글자를 출력하는 용도
          추가적으로 th:text라는 부분이 보임 (Map)
          thymeleaf라는 녀석을 활용한 부분이며 (라이브러리)
@@ -14,5 +15,6 @@
          servTime이라는 key 값을 통해 저장된 value값을 출력함 -->
     <p th:text="${servTime}">Server Time: ${servTime}</p>
     <!-- import의 역할 : 기본적으로 제공하는 class 라이브러리를 사용할 수 있게한다 -->
+
 </body>
 </html>

@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 서버(Server)와 고객(client) [공급자와 수요자]
 우리가 구동시킨 Spring Boot 서버 (Server)는 말 그대로 Server에 해당함
 우리가 만든 Controller에 URL을 요청하는 모든 사용자들
-
  */
+
 @SpringBootApplication
 public class DemoApplication {
 

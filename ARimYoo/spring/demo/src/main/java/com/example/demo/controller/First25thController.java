@@ -45,6 +45,7 @@ public class First25thController {
         return  "25th/home";
     }
 
+    // "/"의 의미 명확화 하기 위한 테스트
     @RequestMapping("/test")
     public String test (Model model){
         logger.info("client entered /test");
