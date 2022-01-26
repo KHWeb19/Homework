@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.utility.Dice;
+import com.example.demo.utility.thread.ThreadWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -9,21 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.text.DateFormat;
 import java.util.Date;
 
-/*
-Controller는 사용자가 웹상에서 URL(주소)를 요청할 때 동작함 (물론 자신에게 요청할 때만)
+@Controller //쓰레드화, controller는 controller의 역할만 하도록
+            // 다른 기능들은 별도로 클래스화한다.
+public class Bank7Dash26thController {
 
- */
-@Controller
-public class First25thController {
+    private final static Logger logger =
+            LoggerFactory.getLogger(Bank7Dash26thController.class);
 
-    // Logger(로거)로 상태값을 확인할 수 있는 기록을 남기는 녀석임
-    private static final Logger logger = LoggerFactory.getLogger(First25thController.class);
-    private final int MAX = 6;
-    private final int MIN = 1;
-    private int range = MAX - MIN + 1;
-
-
-    private  int cNum = 1;
     // 현재 서버는 localhost:8080 으로 구동되고 있음
     // 즉 localhost:8080/ 디폴트로 요청하면 이 코드가 동작하는 것임
     @RequestMapping("/")
@@ -60,17 +54,24 @@ public class First25thController {
 
         return "25th/test";
     }
-
     @RequestMapping("/homework1")
-    public String homework1 (Model model1) {
-        logger.info("client entered /homework1");
+    public String bank7Homework1 (Model model) {
+        logger.info("homework1");
+        Dice dice = new Dice(); //Dice타입의 객체를 생성한다.
+        dice.rollDice();
 
-        int dNum = (int)(Math.random()*range+MIN);
-
-        model1.addAttribute("number", dNum);
+        model.addAttribute("diceNum", dice.getDiceNum());
+        // //Dice클래스의 lombok.DATa에서 자동게터를 제공하기 때문에 Getter 안 만들고 바로 사용
 
         return "25th/homework1";
     }
 
+    @RequestMapping("/homework2")
+    public String bank7Homework2 (Model model) {
+        logger.info("homework2");
 
+        model.addAttribute("threadNum", ThreadWorker.getSyncLockTest());
+        //threadNum을 키값으로 현재 값 가져오도록 설정
+        return "25th/homework2";  //리턴이 있기 때문에 RequestMapping에서는 무한반복이 동작하지 X
+    }
 }
