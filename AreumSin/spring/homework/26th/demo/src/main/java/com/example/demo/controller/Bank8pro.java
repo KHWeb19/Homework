@@ -38,8 +38,8 @@ public class Bank8pro {
     public String Homework3(Model model){
         logger.info("entered / homework3");
 
-        model.addAttribute("threadNum", RaitoThread.addNum());
-        //model.addAttribute("threadNum", RaitoThread.getNumber());
+        //model.addAttribute("threadNum", RaitoThread.addNum());
+        model.addAttribute("threadNum", RaitoThread.getNumber());
 
         return "26th/homework3";
     }

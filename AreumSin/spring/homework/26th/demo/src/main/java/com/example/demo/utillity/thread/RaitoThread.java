@@ -15,7 +15,7 @@ public class RaitoThread extends Thread {
     private static Lock lock;
 
     public RaitoThread(){
-        RaitoThread.number = 0;
+        RaitoThread.number = 1;
 
         System.out.print("Number : ");
         num = scanner.nextInt();
@@ -40,19 +40,18 @@ public class RaitoThread extends Thread {
             try {
                 lock.lock();
                 RaitoThread.number *= 2;
+                Thread.sleep(3000);
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
                 lock.unlock();
             }
-            Thread.sleep(3000);
+
         }
     }
 
-    /*
     public static int getNumber() {
         return number;
     }
 
-     */
 }
