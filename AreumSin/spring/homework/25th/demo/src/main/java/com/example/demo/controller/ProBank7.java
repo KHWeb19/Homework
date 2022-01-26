@@ -55,10 +55,11 @@ public class ProBank7 {
         logger.info("homework2");
         lock = new ReentrantLock();
 
-        int num = home(model);
-
-        model.addAttribute("number", num);
-
+        int[] num = new int[5];
+        for(int i = 0; i< 5; i++) {
+             num[i] = home(model);
+            model.addAttribute("number", num);
+        }
         return "25th/homework2";
     }
     /*
