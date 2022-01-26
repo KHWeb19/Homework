@@ -11,7 +11,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class StudentScore implements Runnable{
-    Thread thread;
     protected int studentCount;
     protected float[] studentScore;
     protected int minScore;
