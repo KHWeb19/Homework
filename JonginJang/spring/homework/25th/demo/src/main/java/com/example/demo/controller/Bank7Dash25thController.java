@@ -13,10 +13,10 @@ import java.util.Date;
 
 @Controller //쓰레드화, controller는 controller의 역할만 하도록
             // 다른 기능들은 별도로 클래스화한다.
-public class Bank7Dash26thController {
+public class Bank7Dash25thController {
 
     private final static Logger logger =
-            LoggerFactory.getLogger(Bank7Dash26thController.class);
+            LoggerFactory.getLogger(Bank7Dash25thController.class);
 
     // 현재 서버는 localhost:8080 으로 구동되고 있음
     // 즉 localhost:8080/ 디폴트로 요청하면 이 코드가 동작하는 것임
