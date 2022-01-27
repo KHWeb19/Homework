@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b47222cf-64f5-4245-9631-799e3093e6dc" name="Changes" comment="">
+    <list default="true" id="b47222cf-64f5-4245-9631-799e3093e6dc" name="Changes" comment="Changes">
       <change afterPath="$PROJECT_DIR$/16th/src/CharacterMaker.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/16th/src/Dice.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/16th/src/DiceGameTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/16th/src/DiceManager.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/16th/src/ExtendClassDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16th/src/InterfaceProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21th/src/QuadRangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21th/src/QuadRangleClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/demo/src/main/java/com/example/demo/controller/First25thController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/demo/src/main/resources/templates/25th/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/demo/src/main/resources/templates/25th/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/demo/src/main/resources/templates/package.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/homework/demo/src/main/java/com/example/demo/controller/First25thController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/homework/demo/src/main/resources/templates/25th/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/homework/demo/src/main/resources/templates/25th/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/homework/demo/src/main/resources/templates/package" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/java/com/example/demo/utility/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/26th/demo/src/main/java/com/example/demo/controller/Bank8n26thController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/26th/demo/src/main/java/com/example/demo/utility/GeometricSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/26th/demo/src/main/java/com/example/demo/utility/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/26th/demo/src/main/resources/templates/26th/homework1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/26th/demo/src/main/resources/templates/26th/homework2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/homework/26th/demo/src/main/resources/templates/package.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6th/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/6th/src/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/java/com/example/demo/controller/SquareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/java/com/example/demo/controller/DiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/java/com/example/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/java/com/example/demo/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/resources/templates/25th/homework1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/homework/25th/demo/src/main/resources/templates/25th/homework1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/6th" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
