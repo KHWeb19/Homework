@@ -1,4 +1,4 @@
-package com.example.demo.utility;
+package com.example.demo.utility.Thread;
 
 import lombok.SneakyThrows;
 
@@ -11,6 +11,7 @@ public class Test extends Thread{
     private static Lock lock;
 
     public Test (){
+        // 클래스.변수명을 하는 이유 : 전역변수이기 때문에, 이를 명시하기 위해
         Test.test = 0;
         lock = new ReentrantLock();
     }
