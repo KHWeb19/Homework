@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf823484-0121-4f82-9e26-255d8e33688c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/10th/src/SStest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10th/src/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10th/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10th/src/eqaulratioArrTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10th/src/equalratioArr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10th/src/lotto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10th/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/EmployeeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/EmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/NonPirvateClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/NonPrivateClassEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/PrivateClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/PrivateClassEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/RandomGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11th/src/RandomGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16th/src/Comparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16th/src/ComparableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16th/src/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16th/src/DiceGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16th/src/DiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16th/src/JavaStrcmp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17th/src/Adventurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17th/src/InterfaceProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17th/src/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/ForEachTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/HashSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/JavaVectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/JavaVectorTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/MapBasedDuplicateCheckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/ShuffleMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20th/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/DiscorruptBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/DiscorruptBankSituationEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/HorseRacing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/NormalBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/NormalBankEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21th/src/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4day/src/MoreAdvancedFibonacciArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4day/src/ScannerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4day/src/hw3_answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4day/src/hw6_answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4day/src/hw8_answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9th/src/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/CardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/MemberCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/OverloadingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/PrimitiveparamEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/ReferenceParmaEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/Tv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/TvTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/src/student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/test/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/test/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/4day.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/src/hw1.java" beforeDir="false" afterPath="$PROJECT_DIR$/4day/src/hw1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/src/hw2.java" beforeDir="false" afterPath="$PROJECT_DIR$/4day/src/hw2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/src/hw3.java" beforeDir="false" afterPath="$PROJECT_DIR$/4day/src/hw3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/src/hw5.java" beforeDir="false" afterPath="$PROJECT_DIR$/4day/src/hw5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/src/hw6.java" beforeDir="false" afterPath="$PROJECT_DIR$/4day/src/hw6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4day/src/hw8.java" beforeDir="false" afterPath="$PROJECT_DIR$/4day/src/hw8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/10th/10th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/10th/src/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents/java/10th/src/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/11th/11th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/13th/13th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/14th/14th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/15th/15th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/16th/src/Comparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents/java/16th/src/Comparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/17th/17th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/18th/18th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/19thRefactor/19thRefactor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/5th/5th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/5th/src/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents/java/5th/src/ArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/6th/6th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/7th/7th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/8th/8th.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/9th/src/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents/java/9th/src/ClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/9th/src/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents/java/9th/src/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/9th/src/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureContents/java/9th/src/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureContents/java/fourth/fourth.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first/first.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/homework.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/second3.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/second3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/third1.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/third1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/third3.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/third3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/third9.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/third9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second/second.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/second/src/random.java" beforeDir="false" afterPath="$PROJECT_DIR$/second/src/random.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third/third.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23s2VJ8xyxh4ftdkAwDN2iEc4ex" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LectureContents" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf823484-0121-4f82-9e26-255d8e33688c" name="Changes" comment="" />
+      <created>1642508496216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642508496216</updated>
+    </task>
+    <servers />
+  </component>
+</project>
