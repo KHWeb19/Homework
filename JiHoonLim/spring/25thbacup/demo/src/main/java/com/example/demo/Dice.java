@@ -1,7 +1,6 @@
-package com.example.demo.controller;
+package com.example.demo;
 
-public class homework25th {
-    int test =0;
+public class Dice {
     public int rollDice(){
         final int MAX = 6;
         final int MIN = 1;

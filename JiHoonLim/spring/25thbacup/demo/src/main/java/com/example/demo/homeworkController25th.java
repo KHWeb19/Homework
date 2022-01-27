@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,14 +12,14 @@ public class homeworkController25th {
 
     private static final Logger logger = LoggerFactory.getLogger(homeworkController25th.class);
 
-    homework25th hw = new homework25th();
+    Dice dice = new Dice();
 
     @RequestMapping("/homework1")
     public String homework1(Model model) {
         logger.info("client entered / (homework1)");
 
-        model.addAttribute("comment",hw.printDice());
-        model.addAttribute("number", hw.rollDice());
+        model.addAttribute("comment",dice.printDice());
+        model.addAttribute("number", dice.rollDice());
 
         return "25th/homework1";
     }
@@ -28,8 +28,7 @@ public class homeworkController25th {
     public String homework2(Model model) throws InterruptedException {
         logger.info("client entered / (homework2)");
 
-
-        // model.addAttribute("number", );
+        model.addAttribute("number", CalcTest.getTest());
 
         return "25th/homework2";
     }
