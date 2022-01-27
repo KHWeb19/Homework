@@ -29,7 +29,6 @@ public class ConHomework1 {
 
     @RequestMapping("/homework1")
     public String geo(Model model) {
-        // 여기에 메소드 실행?
         logger.info("client entered / geo");
 
         geoSeq gs = new geoSeq();

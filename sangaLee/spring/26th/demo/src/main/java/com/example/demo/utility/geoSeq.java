@@ -16,7 +16,7 @@ public class geoSeq {
         int[] seq = new int[idx];
 
         if (idx > MAX) {
-            System.out.println("31이 최대여");
+            System.out.println("31이 최대여!!!");
         } else {
             for (int i = START_IDX; i <idx; i++) {
                 seq[i] = (int) Math.pow(BASE, i);
