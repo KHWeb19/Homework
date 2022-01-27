@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/26th")
 public class First26thController {
 
     private static final Logger logger = LoggerFactory.getLogger(First26thController.class);

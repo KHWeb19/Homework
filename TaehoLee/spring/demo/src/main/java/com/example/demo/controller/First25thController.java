@@ -10,6 +10,7 @@ import java.text.DateFormat;
 import java.util.Date;
 
 @Controller
+@RequestMapping("/25th")
 public class First25thController {
 
     private static final Logger logger = LoggerFactory.getLogger(First25thController.class);

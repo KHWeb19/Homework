@@ -19,9 +19,14 @@ public class Sequence {
         return arr[numSelect - 1];
     }
 
+    public int getNumSelect(){
+        return numSelect;
+    }
+
     public void selectSequence(){
         for(int i = 0; i < numSelect; i++){
             arr[i] = startNum.multiply((multipleNum).pow(i));
+            System.out.printf("수열의 %d 번째 값은 : %s\n", i+1, arr[i]);
         }
     }
 

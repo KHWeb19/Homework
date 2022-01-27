@@ -53,7 +53,7 @@ public class StudentScore implements Runnable{
                 studentScore[i] = random;
                 lock.lock();
                 sum += studentScore[i];
-                System.out.println(sum);
+                System.out.printf("%d번째 학생의 점수는 : %s\n", i + 1, studentScore[i]);
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
@@ -61,6 +61,6 @@ public class StudentScore implements Runnable{
             }
         }
         calcAvgScore();
-        System.out.println(average);
+        System.out.println("평균값 : " + average);
     }
 }
