@@ -26,10 +26,10 @@ public class Homework {
     /* @RequestMapping("/homework2")
     public static String main(String []args) {
         Plus myplus = Plus.getDefaultPlus();
-        for(int i )
+        for()
 
 
         return "25th/homework2";
-    } 
+    }
      */
 }
