@@ -1,6 +1,6 @@
 import java.sql.SQLOutput;
 
-public class ThreadRectangle extends ThreadManager implements Runnable {
+public class ThreadRectangle extends ThreadManager {
     final int Y = 2;
     final static int X = 2;
     // 사각형은 덜 쪼갤수록 정밀도가 올라가는 현상이 발생함 (float이나 double의 오차 때문에 그럼)
@@ -8,6 +8,7 @@ public class ThreadRectangle extends ThreadManager implements Runnable {
     public ThreadRectangle() {
         super();
         sum = 0;
+        System.out.println("ThreadRectangle()");
     }
 
     public static void calEachThread(){
@@ -15,6 +16,7 @@ public class ThreadRectangle extends ThreadManager implements Runnable {
     }
 
     public float getSum() {
+        System.out.println("getSum(): + sum");
         return sum;
     }
 

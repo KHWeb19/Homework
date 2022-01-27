@@ -1,8 +1,8 @@
 package com.example.homework.controller;
 
+import com.example.homework.utilityBank7.Dice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +18,12 @@ public class Bank7thController {
     public String homework1 (Model model){
         logger.info("client entered / homework1");
 
-        int dice = (int)(Math.random()*6+1);
+        Dice dice = new Dice();
+        dice.rollDice();
 
-        model.addAttribute("dice", dice);
+        model.addAttribute("dice", dice.getDiceNum());
 
-        return "7th/homework1";
+        return "Bank7/homework1";
     }
 
     //2. 3초마다 test라는 변수의 값을 1씩 증가시키도록 한다.
@@ -32,21 +33,14 @@ public class Bank7thController {
     @RequestMapping("/homework2")
     public String homework2(Model model) throws InterruptedException {
         logger.info("client entered / homework2");
+            //lock이 필요하지 않은 상황이기 때문에
+            //수길씨 코드를 보며 연습하는 편이 가장 깔끔할 것 같음.
 
-        int counter = 0;
 
-        while(true){
-            model.addAttribute("counter", counter);
-
-            //3초마다 +1씩 counter의 값 증가
-            Thread.sleep(3000);
-            counter++;
-            System.out.println(counter);
-
-            return "7th/homework2";
+        //model.addAttribute("testTimer", timer);
+            return "Bank7/homework2";
         }
     }
-}
 
 //timer.schedule()을 사용.
 //schedule(TimerTask task, Date firstTime, long period)

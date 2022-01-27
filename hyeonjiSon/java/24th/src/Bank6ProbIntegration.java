@@ -6,7 +6,7 @@ public class Bank6ProbIntegration {
         ThreadManager tm1 = new ThreadManager(6, 2, 2, ThreadCalculation.SQUARE);
                                                                      //ThreadCalculation의 전역변수 SQUARE의 값을
                                                                      //                          입력하겠다는 뜻.
-        System.out.println("계산된 값 = " + tm1.calcArea());
+        System.out.println("계산된 값 = " + tm1.calcArea()); //tm1(ThreadManager)의 calcArea메서드 실행
 
        // ThreadManager tm2 = new ThreadManager(4, 0, 3, ThreadCalculation.QUADRATIC);
        // System.out.println("계산된 값 = " + tm2.calcArea());
