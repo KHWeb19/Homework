@@ -19,8 +19,4 @@ public class Student {
         }
         average = sum/STUDENT_NUM;
     }
-
-    public int getAverage() {
-        return average;
-    }
 }
