@@ -1,6 +1,6 @@
 package com.example.bank;
 
-import com.example.bank.controller.HomeworkController;
+import com.example.bank.controller.Bank7Controller;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,7 +9,10 @@ public class BankApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BankApplication.class, args);
-		HomeworkController hwController = new HomeworkController();
+
+
+
+		Bank7Controller hwController = new Bank7Controller();
 		hwController.run();
 	}
 
