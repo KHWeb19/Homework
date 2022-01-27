@@ -1,4 +1,4 @@
-public class ThreadManager {
+public class ThreadManager extends Thread {
 
     final static float dx = 0.001f;
     protected int xStart, xEnd;
@@ -16,6 +16,7 @@ public class ThreadManager {
     //1. 등분 했을 경우 스레드 각각이 돌려야 하는 전체 숫자를 먼저 파악
     //2. 이것을 베이스로 시작과 끝 값을 정하면 됨
     public ThreadManager() {
+        System.out.println("ThreadManager()");
         localThreadId = threadCnt++;
         xStart = 0 + total * localThreadId;
         xEnd = total * (localThreadId + 1) - 1;
@@ -48,10 +49,5 @@ public class ThreadManager {
         System.out.println("total = " + total);
     }
 
-    public void start() {
-    }
-
-    public void join() {
-    }
 
 }
