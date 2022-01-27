@@ -9,9 +9,8 @@ public class Sequence {
     final BigInteger INIT = new BigInteger("1");
     final BigInteger BASE = new BigInteger("2");
 
-    int length;
     BigInteger[] seq;
-
+    int length;
 
     public Sequence(int idx) {
         length = idx;

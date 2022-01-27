@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomeworkController implements Runnable {
+public class Bank7Controller implements Runnable {
 
     //요청하면 랜덤값 생성
     @RequestMapping("/homework1")
