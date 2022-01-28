@@ -6,13 +6,13 @@ public class AvgTest {
     // 이 상태에서 학생들의 점수를 임의로 배치하고
     // 학급의 평균값을 구해보도록 한다.
 
-    private static final int STUDENT = 30;
-    private static final int SCORE_MAX = 100;
-    private static final int SCORE_MIN = 60;
-    private static int range = SCORE_MAX - SCORE_MIN + 1;
-    private static int score;
-    private static int scoreArr[];
-    private static float sum;
+    private final int STUDENT = 30;
+    private final int SCORE_MAX = 100;
+    private final int SCORE_MIN = 60;
+    private int range = SCORE_MAX - SCORE_MIN + 1;
+    private int score;
+    private int scoreArr[];
+    private float sum;
    // private static float avg;
 
 
@@ -22,7 +22,7 @@ public class AvgTest {
         sum = 0;
     }
 
-    public static float calcTotalScore(){
+    public float calcTotalScore(){
 
         for(int i = 0; i < scoreArr.length ; i++){
             score = (int)(Math.random() * range + SCORE_MIN);
@@ -34,8 +34,7 @@ public class AvgTest {
        return sum;
     }
 
-    public static float calcAvgScore(){
-        calcTotalScore();
+    public float calcAvgScore(){
         return sum / STUDENT;
     }
 }

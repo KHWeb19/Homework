@@ -1,0 +1,23 @@
+package com.example.demo.utility.school;
+
+import lombok.Getter;
+
+@Getter
+public class Student {
+    private int engScore;
+    protected int minScore;
+    private final int MAX = 100;
+    private int range;
+
+    public Student(int minScore){
+        this.minScore = minScore;
+
+        range = MAX - minScore + 1;
+    }
+
+    public void doEnglishExam (){
+        engScore = (int)(Math.random() * range + minScore);
+    }
+
+
+}

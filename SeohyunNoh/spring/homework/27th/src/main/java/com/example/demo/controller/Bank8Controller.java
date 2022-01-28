@@ -27,8 +27,14 @@ public class Bank8Controller {
     public String bank8homework2(Model model){
         logger.info("homework2");
 
-        model.addAttribute("totalScore", AvgTest.calcTotalScore());
-        model.addAttribute("avgScore", AvgTest.calcAvgScore());
+//        AvgTest at1 = new AvgTest();
+//        at1.calcTotalScore();
+//
+//        AvgTest at2 = new AvgTest();
+//        at2.calcAvgScore();
+
+        //model.addAttribute("totalScore", at1.calcTotalScore());
+        //model.addAttribute("avgScore", at2.calcAvgScore());
         return "27th/homework2";
     }
 }
