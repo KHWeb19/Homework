@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controller.order28th;
 
 import com.example.demo.utility.Dice;
 import com.example.demo.utility.school.SchoolClass;
