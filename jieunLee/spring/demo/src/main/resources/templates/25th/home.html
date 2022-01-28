@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- html의 주석 -->
+    <h1>
+        Hello Spring Test~~~~!!!
+    </h1>
+    <!--th:text
+        thymeleaf 라이브러리를 활용한 부분
+        컨트롤러의 model.addAttribute(key, value) 부분이 연동됨
+        key를 통해 저장된 value를 출력함
+    -->
+    <p th:text="${servTime}">
+        Server Time: ${servTime}
+    </p>
+</body>
+</html>
