@@ -17,7 +17,7 @@ public class DemoApplication {
 
 	Sequence sq=new Sequence(2,21); //여기서 값을 넣게 된다
 
-	Average avg= new Average();
+
 
 	}
 }
