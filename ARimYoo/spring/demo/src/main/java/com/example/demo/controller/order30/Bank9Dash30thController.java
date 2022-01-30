@@ -1,10 +1,14 @@
 package com.example.demo.controller.order30;
 
 
+import com.example.demo.utility.product.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Slf4j
 @Controller
@@ -23,7 +27,26 @@ public class Bank9Dash30thController {
     // 3. 오늘의 추천상품을 누르면 랜덤하게 3개의 상품을 골라 POST값으로 전송
 
     @GetMapping("/product")
-    public String Product(){
+    public String main(Model model){
 
+        log.info("store main");
+
+        Product product = new Product();
+
+        model.addAttribute("kindOfGame", product.getGame());
+
+        return "30th/product/main";
     }
+
+    // Post쪽에서 알아서 상품이 들어간다는 의미가 무엇일까 .. ?
+
+    @PostMapping("/product/todayGame")
+    public String todayGame () {
+        log.info("today Game Recommend");
+
+        return "30th/product/todayGame";
+    }
+
+    @ResponseBody
+    @GetMapping("")
 }

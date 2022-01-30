@@ -12,8 +12,9 @@ public class Price {
         range = MAX - MIN + 1;
     }
 
-    public void RandPrice () {
+    public int RandPrice () {
 
         price = (int)(Math.random() * range + MIN);
+        return price;
     }
 }

@@ -8,9 +8,11 @@ import java.util.ArrayList;
 public class Product extends Price {
 
     private ArrayList<String> game = new ArrayList<>();
+    private int [] randPrice;
 
     public Product(){
 
+        super();
         game.add("It take two");
         game.add("Stardew Vally");
         game.add("SIMS4");
@@ -19,7 +21,16 @@ public class Product extends Price {
 
     }
 
+    public void getPrice (){
 
+        randPrice = new int [game.size()];
+        Price price = new Price ();
 
+        for (int i = 0; i < game.size(); i++){
+
+            randPrice[i] = price.RandPrice();
+
+        }
+    }
 
 }
