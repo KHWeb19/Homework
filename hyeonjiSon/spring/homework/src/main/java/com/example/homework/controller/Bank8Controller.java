@@ -39,6 +39,8 @@ public class Bank8Controller {
         //단, 학생들의 점수는 60점 이하가 없다.
         Score score = new Score(30, 60);
         //학생 수를 매개변수로 넣을 수 있도록 만들자.
+        score.doEnglishExam();
+        score.getScore();
 
         model.addAttribute("average", score.getAverage());
 

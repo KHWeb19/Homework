@@ -1,5 +1,8 @@
 package com.example.demo.utility.school;
 
+import lombok.Getter;
+
+@Getter
 public class Student {
     private int engScore;
     private final int MAX = 100;
@@ -13,6 +16,6 @@ public class Student {
     }
 
     public void doEnglishExam(){
-        engScore = (int)(Math.random() * range + minScore)
+        engScore = (int)(Math.random() * range + minScore);
     }
 }

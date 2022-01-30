@@ -1,6 +1,5 @@
 package com.example.homework.utility.school;
 
-import lombok.Data;
 import lombok.Getter;
 
 @Getter
@@ -22,27 +21,27 @@ public class Score {
     private Student[] studArr;
 
     public Score(int studNum, int minscore){
-        this.studArr = new Student[studNum];
+        studArr = new Student[studNum];
 
-        for(int i = 0; i <=studNum; i++){
+        for(int i = 0; i < studNum; i++){
             studArr[i] = new Student(minscore);
         }
+        this.studNum = studNum;
     }
 
     //학생수 만큼 배열을 만들고 배열에 랜덤값을 주는 메서드
     public void doEnglishExam(){
-        this.studNum = studNum;
-
-        for(int i = 0; i <=studNum; i++){
+        for(int i = 0; i < studNum; i++){
             studArr[i].doEnglishExam();
         }
+
     }
 
     //랜덤값을 모두 더하고 학생 수만큼 나눠주는 메서드
     public void getScore(){
         float sum = 0;
 
-        for(int i = 0; i <=studNum; i++){
+        for(int i = 0; i < studNum; i++){
             sum += studArr[i].getEngScore();
         }
         average = sum / studNum;

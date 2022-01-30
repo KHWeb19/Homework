@@ -1,10 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.controller.order28;
 
-import com.example.demo.utility.Dice;
 import com.example.demo.utility.school.SchoolClass;
 import com.example.demo.utility.series.KindsOfSequence;
 import com.example.demo.utility.series.MySequence;
-import com.example.demo.utility.thread.ThreadWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -12,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/28")
+@RequestMapping("/28th")
 public class Bank8Dash28thController {
 
     private final static Logger logger =
@@ -37,9 +35,11 @@ public class Bank8Dash28thController {
         logger.info("homework4");
 
         SchoolClass sc = new SchoolClass(30, 60);
+        sc.doEnglishExam();
+        sc.calcClassMean();
 
-        model.addAttribute();
+        model.addAttribute("classMean", sc.getClassMean());
 
-        return "28th/homework2";
+        return "28th/homework4";
     }
 }
