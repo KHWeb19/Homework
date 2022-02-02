@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>ShopMain</h1>
+<p> 상품 목록 </p>
+<p1 th:text="${productList}"></p1>
+
+
+
+<!-- 기본적으로 form 이라는 녀석은 GET 요청을 함 ,  POST는 별도 요청을 해야 한다.-->
+
+<!-- th:action은 Spring의 Controller URL과 input type="submit"에 대한 부분을 연결시킨다.
+     즉 버튼 누르면 해당 URL로 연결시킴을 의미한다. -->
+
+<!--Post: 주소창에 http://localhost:8080/shop/showSelectedProduct가 나옴-->
+<form th:action="@{/shop/showSelectedProduct}" method="post">
+    <input type="submit" value="오늘의 추천 상품">
+</form>
+
+<!--Get: 주소창에 http://localhost:8080/shop/showSelectedProduct?가 나옴 -->
+<!--
+<form th:action="@{/shop/showSelectedProduct}" >
+    <input type="submit" value="오늘의 추천 상품">
+</form>
+-->
+
+</body>
+</html>
