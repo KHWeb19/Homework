@@ -1,7 +1,6 @@
-package com.example.homework.utility.product;
+package com.example.homework.entity.order9;
 
 public class ProductNumber {
-    static final int RANDNUM = 3;
     public static final int CLOTH = 0;
     public static final int BOOK = 1;
 }

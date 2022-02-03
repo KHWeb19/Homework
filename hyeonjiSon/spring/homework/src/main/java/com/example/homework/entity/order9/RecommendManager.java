@@ -1,9 +1,10 @@
-package com.example.homework.utility.product;
+package com.example.homework.entity.order9;
 
+import com.example.homework.entity.order9.ProductNumber;
 import com.example.homework.entity.order9.RecommendBook;
 import com.example.homework.entity.order9.RecommendCloth;
 
-public class ProductManager {
+public class RecommendManager {
 
     private RecommendCloth[] rCloth;
     private RecommendBook[] rBook;
@@ -11,16 +12,16 @@ public class ProductManager {
     private final int CHOOSENUM = 3;
     private int serviceCode;
 
-    public ProductManager(int serviceCode){
+    public RecommendManager(int TOTAL, int MAX, int serviceCode){
 
         this.serviceCode = serviceCode;
-        randomRecommand();
+        randomRecommend();
     }
 
-    //recommendProduct를 실행 하면 랜덤 추천 상품이 3개 나오도록 만들자
+    //recommendProduct를 실행 하면 랜덤 추천 상품이 MAX개 나오도록 만들자
     //전역 변수를 사용해서 1번 상품(의류)나 2번 상품(책)이 나오게 해볼까
     //쓰레드는 필요없고 상속까진 잘 활용하면 좋을 것 같다.
-    public void randomRecommand(){
+    public void randomRecommend(){
         switch(serviceCode){
             //일반 배열이 아니라 MAP 배열을 쓰고 싶음...
             case ProductNumber.CLOTH:

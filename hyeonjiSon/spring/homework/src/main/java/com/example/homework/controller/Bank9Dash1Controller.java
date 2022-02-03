@@ -1,7 +1,7 @@
 package com.example.homework.controller;
 
-import com.example.homework.utility.product.ProductManager;
-import com.example.homework.utility.product.ProductNumber;
+import com.example.homework.entity.order9.RecommendManager;
+import com.example.homework.entity.order9.ProductNumber;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,13 +35,12 @@ public class Bank9Dash1Controller {
 
         //사용자가 랜덤 추천 상품을 요청
         //상품을 관리하는 ProductManager를 객체화
+          // MAX는 추천 상품 갯수
+
           //public static final int로 상품 품목별로 번호를 매겨준다.
           //0 = CLOTH, 1 = BOOK
-        ProductManager pm1 = new ProductManager(ProductNumber.CLOTH);
-        //pm내의 recommendProduct를 실행 하면 랜덤 추천 상품이 3개 나오도록 만들자
-
-       //지금까지 그냥 만들고 있었는데... 배열을 어느 클래스에 만들면 좋을지 헷갈린다는 생각이 들어서...
-        //3개로 나눠 돌아가는 스레드를 만들면 편하지 않을까 생각도 든다.
+        RecommendManager p1 = new RecommendManager(5,2, ProductNumber.CLOTH);
+                    //총 Total개의 상품 중에, MAX개의 추천 상품을, 상품 품목의 전역변수 넘버
 
         return "9th/board/productViewInfo";
     }
