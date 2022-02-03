@@ -1,15 +1,13 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.utility.ClassAverage;
-import com.example.demo.utility.GeometricSequence;
+import com.example.demo.utility.proBank8.ClassAverage;
+import com.example.demo.utility.proBank8.GeometricSequence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.lang.management.GarbageCollectorMXBean;
 
 @Controller
 public class ProBank8Controller {
@@ -26,7 +24,7 @@ public class ProBank8Controller {
                 //구하고 싶은 등비수열 위치 입력하는 부분에서 작동이안됨
                 //어떻게 해야할까
                 seq.selectSequenceNum();
-                seq.geometricSequenceGenerate();
+
 
                 model.addAttribute("sequenceValue" , seq.getSequenceValue());
 

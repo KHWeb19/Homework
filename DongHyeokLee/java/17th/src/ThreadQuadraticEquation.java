@@ -1,5 +1,9 @@
 public class ThreadQuadraticEquation extends ThreadManager implements Runnable {
 
+    public ThreadQuadraticEquation(){
+        super();
+    }
+
 
 
     public static void calcEachThreadTotal (int start, int end) {

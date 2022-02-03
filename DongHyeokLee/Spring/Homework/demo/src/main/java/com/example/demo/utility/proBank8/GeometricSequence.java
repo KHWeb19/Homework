@@ -1,4 +1,4 @@
-package com.example.demo.utility;
+package com.example.demo.utility.proBank8;
 
 
 
@@ -38,6 +38,7 @@ public class GeometricSequence {
 
         System.out.println("원하는 항의 위치를 입력하시오");
         num = sc.nextInt();
+        geometricSequenceGenerate();
 
     }
 

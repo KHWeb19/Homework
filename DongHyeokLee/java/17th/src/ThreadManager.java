@@ -4,10 +4,10 @@ public class ThreadManager extends Thread {
     final static int THREAD_MAX = 4;
 
     static int total;
-    int xStart, xEnd;
-    int localThreadId;
+    protected int xStart, xEnd;
+    protected int localThreadId;
     int threadCnt = 0;
-    float sum;
+    protected float sum;
 
     public ThreadManager () {
         localThreadId = threadCnt++;
