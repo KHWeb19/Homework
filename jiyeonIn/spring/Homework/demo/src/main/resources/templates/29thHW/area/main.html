@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>어떤 모형의 값을 원하시나요?</h2>
+
+<form th:action="@{/bank9_3/triangle}" method="post" >
+    <input type="submit" value="정삼각형">
+</form>
+
+<form th:action="@{/bank9_3/square}" method="post">
+    <input type="submit" value="정사각형">
+</form>
+
+<form th:action="@{/bank9_3/hexagon}" method="post">
+    <input type="submit" value="정육각형">
+</form>
+
+</body>
+</html>

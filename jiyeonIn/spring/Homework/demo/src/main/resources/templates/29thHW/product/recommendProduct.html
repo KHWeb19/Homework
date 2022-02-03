@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>!오늘의 추천 상품!</h3>
+<p> 오늘만 최상급 상품 -> 1~5만원 안으로 구매 할 수 있는 특가!<br>
+    상품 : 사과, 배, 곶감, 포도, 귤<br>
+    오늘의 상품을 보고 싶으시다면 아래 버튼을 눌러주세요.<br>
+</p>
+
+<!-- action링크에 map주소 적으니까 변환이 됨-->
+<form th:action="@{/bank9_1/showMapProduct}" >
+    <input type="submit" value="오늘의 추천상품보기">
+</form>
+</body>
+</html>
