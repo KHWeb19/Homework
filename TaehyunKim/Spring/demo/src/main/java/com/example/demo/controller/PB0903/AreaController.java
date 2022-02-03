@@ -35,6 +35,19 @@ public class AreaController {
         return "PB0903/triangle";
     }
 
+    @PostMapping("rectangle")
+    public String rectangle(@RequestParam(name = "length") String l, @RequestParam( name = "height") String h, Model model)
+    {
+        log.info("rectangle");
+
+        int length = Integer.parseInt(l);
+        int height = Integer.parseInt(h);
+
+        AreaCalculator ac = new AreaCalculator(2,length,height);
+
+        model.addAttribute("area", ac.getArea());
+        return "PB0903/rectangle";
+    }
 
 
 }

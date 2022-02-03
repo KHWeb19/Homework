@@ -7,7 +7,7 @@ public class TriangleCalculator {
     private float area;
 
     public TriangleCalculator(int length, int height){
-        area = length * height / 2;
+        area = ((float)length * height) / 2;
 
     }
 }
