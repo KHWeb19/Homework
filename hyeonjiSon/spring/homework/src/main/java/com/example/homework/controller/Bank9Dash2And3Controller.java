@@ -4,17 +4,13 @@ import com.example.homework.utility.area.Hexagon;
 import com.example.homework.utility.area.Rectangle;
 import com.example.homework.utility.area.Triangle;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.text.AttributedString;
 
 @Slf4j
 @Controller
 @RequestMapping("/9th/area")
-public class Bank9Dash3Controller {
+public class Bank9Dash2And3Controller {
 
     @RequestMapping("/triangle")
     public String triangle() {

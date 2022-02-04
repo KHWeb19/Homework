@@ -29,7 +29,7 @@ public class Bank9Dash1Controller {
     //근데 이게 Post쪽에 JSON 형태로 들어오도록 해야 맞는 건가?
     //화면상에 JSON viewer로 출력되게 해야하니까 GetMapping에 하는 게 맞겠지?
     @ResponseBody
-    @GetMapping("/productGet")
+    @PostMapping("/productGet")
     public String productGet(){
         log.info("productGet()");
 
