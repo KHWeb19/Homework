@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.demo.controller.order26th;
 
 //import com.example.demo.utility26th.AddNum;
-import com.example.demo.utility26th.Dice;
+import com.example.demo.utility.utility26th.Dice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -16,7 +16,7 @@ public class First26thController {
 
     @RequestMapping("/homework1")
     public String homework1(Model model) {
-        logger.info("client entered / homework1");
+        logger.info("client entered /homework1");
 
         Dice dice = new Dice(1,6);
         dice.rollDice();

@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.example.demo.controller.order27th;
 
 
-import com.example.demo.utility27th.scoreCalc.Exam;
-import com.example.demo.utility27th.scoreCalc.Subject;
-import com.example.demo.utility27th.Sequence;
-import com.example.demo.utility27th.StudentScore;
+import com.example.demo.utility.utility27th.scoreCalc.Exam;
+import com.example.demo.utility.utility27th.scoreCalc.Subject;
+import com.example.demo.utility.utility27th.Sequence;
+import com.example.demo.utility.utility27th.StudentScore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -21,12 +21,15 @@ public class First27thController {
 
     @RequestMapping("/homework1")
     public String homework1(Model model){
-        logger.info("client entered / 27th /homework1");
+        logger.info("client entered /27th /homework1");
 
-        Sequence sequence = new Sequence(1,2,40);
+        int rand = (int)(Math.random() * 99) + 1;
+
+        Sequence sequence = new Sequence(1,2,rand);
         sequence.selectSequence();
-        BigInteger selectedNumber = sequence.getArrNumber();
-        int numSelect = sequence.getNumSelect();
+
+        BigInteger selectedNumber = sequence.getNum();
+        int numSelect = rand;
 
         model.addAttribute("number", selectedNumber);
         model.addAttribute("numSelect", numSelect);
@@ -36,11 +39,18 @@ public class First27thController {
 
     @RequestMapping("/homework2")
     public String homework2(Model model){
-        logger.info("client entered / 27th / homework2");
+        logger.info("client entered /27th / homework2");
 
         StudentScore studentscore = new StudentScore(30,60,100);
         Thread t1 = new Thread(studentscore);
         t1.start();
+
+        //thread.join() ----- 쓰레드 종료될때까지 기다림!
+        try{
+            t1.join();
+        } catch(InterruptedException e){
+            e.printStackTrace();
+        }
 
         float average = studentscore.getAverage();
         model.addAttribute("averageNum",average);
@@ -50,7 +60,7 @@ public class First27thController {
 
     @RequestMapping("/fix/homework2")
     public String homework2_fix(Model model){
-        logger.info("client entered / 27th / fix /homework2");
+        logger.info("client entered /27th /fix /homework2");
 
         Exam exam = new Exam(30,60,100);
         Subject subject = new Subject();

@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controller.order25th;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +17,7 @@ public class First25thController {
 
     @RequestMapping("/")
     public String home(Model model) {
-        logger.info("client entered / (home)");
+        logger.info("client entered /(home)");
 
         Date date = new Date();
         DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.LONG);

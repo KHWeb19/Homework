@@ -1,4 +1,4 @@
-package com.example.demo.utility27th.scoreCalc;
+package com.example.demo.utility.utility27th.scoreCalc;
 
 /* 4. 반 학생이 30명이 있다.
         이들은 모두 시험을 치뤘고 모든 학생들은 60점 미만이 없다고 한다.

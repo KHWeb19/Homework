@@ -1,4 +1,4 @@
-package com.example.demo.utility27th.scoreCalc;
+package com.example.demo.utility.utility27th.scoreCalc;
 
 public class Subject {
     final int SUBJECTCOUNT = 3;
