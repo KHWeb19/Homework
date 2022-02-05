@@ -1,55 +1,65 @@
 package com.example.homework.controller;
 
-import com.example.homework.utility.area.Hexagon;
-import com.example.homework.utility.area.Rectangle;
-import com.example.homework.utility.area.Triangle;
+import com.example.homework.utility.area.BaseCalc;
+import com.example.homework.utility.area.PolygonResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Slf4j
 @Controller
-@RequestMapping("/9th/area")
+@RequestMapping("/9th3")
 public class Bank9Dash2And3Controller {
 
-    @RequestMapping("/triangle")
-    public String triangle() {
+    @GetMapping("/prob")
+    public String getBank9Prob3 () {
+        log.info("get getBank9Prob3()");
+
+        return "9th3/prob/prob";
+    }
+
+    @ResponseBody
+    @PostMapping("/triangle")
+    public PolygonResponse triangle() {
         log.info("triangle");
 
-        Triangle tri = new Triangle(2, 2);
-        tri.calcTriArea();
+        BaseCalc bc = new BaseCalc(2);
+        bc.calcTriangleArea();
 
-        model.addAttribute("triangle", tri.getTriArea());
-        //왜 빨갛게 나오는 건지 모르겠음...
-        //alt+Enter 누르면 create local variable 'model' 이라는 문구가 뜬다.
-        // AttributedString model; <만들어주면
-        //"triangle"이 attribute: 라고 뜨지만 빨간 밑줄이 뜨면서
-        //'addAttribute(java.text.AttributedCharacterIterator.Attribute, java.lang.Object)' in 'java.text.AttributedString' cannot be applied to '(java.lang.String, int)'
-        //라는 문구가 뜬다. int형이 아니라 string형으로 입력하라는 뜻인지... triangle이라는 int 변수를 만든 적도 없는데 왜 뜨는지 모르겠음...
+        PolygonResponse pr = new PolygonResponse(bc);
 
-        return "9th/triangle";
+        return pr;
     }
 
-    @RequestMapping("/rectangle")
-    public String rectangle(){
+    @ResponseBody
+    @PostMapping("/rectangle")
+    public PolygonResponse rectangle() {
         log.info("rectangle");
 
-        Rectangle rect = new Rectangle(2, 2);
+        BaseCalc bc = new BaseCalc(2);
+        bc.calcSquareArea();
 
-        model.addAttribute("rectangle", rect.getAreaBase());
-        return "9th/rectangle";
+        PolygonResponse pr = new PolygonResponse(bc);
+
+        return pr;
     }
 
-    @RequestMapping("/hexagon")
-    public String hexagon(){
+    @ResponseBody
+    @PostMapping("/hexagon")
+    public PolygonResponse hexagon() {
         log.info("hexagon");
 
-        Hexagon hex = new Hexagon(2, 2);
+        BaseCalc bc = new BaseCalc(2);
+        bc.calcHexagonArea();
 
-        model.addAttribute("hexagon", rect.getAreaBase());
+        PolygonResponse pr = new PolygonResponse(bc);
 
-        return "9th/hexagon";
+        return pr;
     }
+
 }
 
 /*
@@ -66,5 +76,9 @@ public class Bank9Dash2And3Controller {
    올바른 넓이값을 화면상에 출력할 수 있도록 만들어봅시다!
    (이번 케이스는 구지 적분 방식으로 미소 면적을 모두 합산하지 않아도 됩니다)
             //그럼 스레드 없이 만드는 게 낫겠다.
+
+          → 정육각형을 구성하는 삼각형 6개는 정삼각형의 형태가 아니므로 위의 공식을 사용하면
+            정확한 넓이를 구할 수가 없다.
+            선생님이 활용한 방식을 사용해 복습해보자.
 
  */
