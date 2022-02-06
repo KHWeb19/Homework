@@ -23,7 +23,7 @@ public class HW3Controller {
     @GetMapping("/area")
     public Area area()  {
 
-        log.info("area()");
+       // log.info("area()");
 
         Area area=new Area();
         Hexagon he=new Hexagon();

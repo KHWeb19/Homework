@@ -4,11 +4,14 @@ import lombok.Data;
 
 @Data
 public class Area {
+    Hexagon  he;
+    Square   sq;
+    Triangle tr;
 
     public Area(){
-        Hexagon  he= new Hexagon();
-        Square   sq= new Square();
-        Triangle tr= new Triangle();
+         he= new Hexagon();
+         sq= new Square();
+         tr= new Triangle();
     }
 
 
