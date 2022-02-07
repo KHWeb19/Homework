@@ -4,6 +4,8 @@ package com.example.demo.controller;
 import com.example.demo.entity.bankNum1.ProductBank;
 import com.example.demo.entity.num2.Lotto;
 import com.example.demo.entity.num2.LottoPlay;
+import com.example.demo.entity.num3.Area;
+import com.example.demo.entity.num3.AreaPlay;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,7 +52,50 @@ public class Bank9Controller {
         return lp;
     }
 
+    /*@ResponseBody
+    @PostMapping("/t3tri")
+    public AreaPlay postArea(){
+
+        log.info("post post3tri()");
+        Area area = new Area();
+
+        AreaPlay ap = new AreaPlay();
+
+
+        return ap;
+    }
+
+    @ResponseBody
+    @PostMapping("/t3rect")
+    public AreaPlay postArea(){
+
+        log.info("post post3rect()");
+        Area area = new Area();
+
+        AreaPlay ap = new AreaPlay();
+
+
+        return ap;
+    }
+    @ResponseBody
+    @PostMapping("/t3hexa")
+    public AreaPlay postArea(){
+
+        log.info("post post3hexa()");
+        Area area = new Area();
+
+        AreaPlay ap = new AreaPlay();
+
+
+        return ap;
+    }*/
+
+
+
 
 
 
 }
+
+
+
