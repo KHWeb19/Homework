@@ -57,17 +57,28 @@ public class Bank9_1 {
 
     //map방법으로 풀어보기
     // 오늘의 추천상품을 누르면 post가 알아서 상품이 들어간다는게 이해가 되지 않습니다.
-    @ResponseBody
-    @GetMapping ("/showMapProduct")
-    public Map<String, Integer> showMapProduct(){
-        log.info("showMapProduct()");
+//    @ResponseBody
+//    @PostMapping ("/showMapProduct")
+//    public Map<String, Integer> showMapProduct(){
+//        log.info("showMapProduct()");
+//
+//        Map<String, Integer> map = new HashMap<>();
+//
+//        Product product = new Product();
+//        map.put(product.showName(),product.showPrice());
+//
+//        return map;
+//
+//    }
 
-        Map<String, Integer> map = new HashMap<>();
+    @ResponseBody
+    @PostMapping ("/showObjectProduct")
+    public Product showObjectProduct(){
+        log.info("showObjectProduct()");
 
         Product product = new Product();
-        map.put(product.showName(),product.showPrice());
 
-        return map;
+        return product;
 
     }
 

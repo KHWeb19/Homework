@@ -1,12 +1,11 @@
 package com.example.demo.entity.order29.Area;
 
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 public class Area {
     private int square;
-    private double triangleNum;
-    private double hexagon;
+    private double area;
     private double heightBasic;
 
 
@@ -33,14 +32,14 @@ public class Area {
 
         double height = heightBasic*(side)/2;
 
-        triangleNum = (height*side)/2;
+        area = (height*side)/2;
     }
     public void findSquare(int side) {
-        square = side*side;
+        area = side*side;
     }
 
     public void findHexagon(int side) {
-        hexagon = (3*heightBasic*(side*side))/2;
+        area = (3*heightBasic*(side*side))/2;
     }
 
 }
