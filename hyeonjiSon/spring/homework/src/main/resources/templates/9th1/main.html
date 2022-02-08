@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h3> Product Main </h3>
+
+<!-- 기본적으로 form 이라는 녀석은 GET 요청을 한다 -->
+<form th:action="@{/>9th/product/productGet}">
+    <input type="submit" value="product(GET)">
+</form>
+
+  <!-- Post는 method로 별도 요청을 해야한다. -->
+  <!-- 근데 이렇게 요청을 하는 건 URL 노출 안되는건가? -->
+  <form th:action="@{/>9th/product/productPost}" method="post">
+      <input type="submit" value="product(Post)">
+  </form>
+
+</body>
+</html>

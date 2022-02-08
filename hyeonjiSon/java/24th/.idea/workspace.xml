@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e85bc57c-5b25-41ef-93e4-313db61c0a68" name="Changes" comment="[손현지] 문제은행[6] 24일차 수업 복습하기" />
+    <list default="true" id="e85bc57c-5b25-41ef-93e4-313db61c0a68" name="Changes" comment="[손현지] 문제은행[6] 24일차 수업 복습하기">
+      <change afterPath="$PROJECT_DIR$/../../spring/demo/src/main/java/com/example/demo/controller/Bank7Dash26thController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/demo/src/main/java/com/example/demo/utility/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/demo/src/main/java/com/example/demo/utility/thread/ThreadWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/demo/src/main/resources/templates/26th/homework1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank6ProbIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank6ProbIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreadManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework/bank6" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

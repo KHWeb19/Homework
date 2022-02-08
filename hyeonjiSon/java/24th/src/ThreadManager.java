@@ -61,7 +61,7 @@ public class ThreadManager {
         switch (serviceCode) {
             case ThreadCalculation.SQUARE:
                 for (int i = 0; i < threadNum; i++) {
-                    tRect[i].start();
+                    tRect[i].start(); //스레드 스타트
                 }
                 break;
 
@@ -77,7 +77,7 @@ public class ThreadManager {
         switch (serviceCode) {
             case ThreadCalculation.SQUARE:
                 for (int i = 0; i < threadNum; i++) {
-                    tRect[i].join();
+                    tRect[i].join(); // 메서드 종료 후에도 스레드 값이 사라지지 않도록 대기시킴
                 }
                 break;
 
@@ -89,13 +89,15 @@ public class ThreadManager {
         }
     }
 
+    //↑배열을 만들어주고 일단 배열 대기시키기 위한 과정?
+
     public float sumEachThreadResult () {
         float sum = 0;
 
         switch (serviceCode) {
             case ThreadCalculation.SQUARE:
                 for (int i = 0; i < threadNum; i++) {
-                    sum += tRect[i].getSum();
+                    sum += tRect[i].getSum(); // tRect[i] 주소값마다 저장된
                 }
                 break;
 
@@ -110,8 +112,9 @@ public class ThreadManager {
     }
 
     public float calcArea () throws InterruptedException {
-        eachThreadStartWork();
-        eachThreadWaitFinish();
-        return sumEachThreadResult();
+        eachThreadStartWork(); //메서드 실행
+        eachThreadWaitFinish(); //메서드 실행
+        return sumEachThreadResult(); //sumEachTreadResults()메서드의 sum값을
+                         //계산된 값 = 으로 return 함
     }
 }

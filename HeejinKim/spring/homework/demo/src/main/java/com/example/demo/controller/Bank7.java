@@ -16,8 +16,8 @@ public class Bank7  {
     public String homework1 (Model model){
         logger.info("client entered /homework1");
 
-        int MIN=1;
-        int MAX=6;
+        final int MIN=1;
+        final int MAX=6;
         int range=MAX-MIN+1;
 
         int num =(int)(Math.random()*range)+MIN;

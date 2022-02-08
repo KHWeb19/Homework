@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class TestController {
-    private static final Logger logger = LoggerFactory.getLogger(SquareController.class);
+    private static final Logger logger = LoggerFactory.getLogger(DiceController.class);
     private int i;
 
     @RequestMapping("/homework2")

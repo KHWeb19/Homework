@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e53b44ee-756f-4e3f-befe-4c717ed64943" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../java/16th/src/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/16th/src/DiceMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/16th/src/GameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/16th/src/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/20th/src/ForEachTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/20th/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/22th/src/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/22th/src/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/22th/src/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/22th/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/11th/11th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/11th/src/MyCustomSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/13th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/13th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/13th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/13th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/13th/13th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/13th/src/Seqeunce21to3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/14th/14th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/16th/src/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/16th/src/InterfaceProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/16th/src/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/16th/src/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/21th/src/Bank6Prob1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/21th/src/Bank6Prob2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/21th/src/ThreadQuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/21th/src/ThreadRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/23th/src/Bank6Prob1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/23th/src/Bank6Prob2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/23th/src/ThreadManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/23th/src/ThreadQuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/23th/src/ThreadRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/9th/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/9th/src/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/9th/src/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/9th/src/out/production/9th/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/Second/Second.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/fifth/fifth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q03_EX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/fourth/fourth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/second/src/FloatDoublePrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/second/src/PrintQnA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/second/src/WhyPrintf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/test/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/controller/First25thController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/resources/templates/25th/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/resources/templates/25th/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/resources/templates/Package.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/9th/src/BeginnerQ5to10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/9th/src/BeginnerQ5_6_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/9th/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/9th/src/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/9th/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/9th/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/Third/src/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/Third/src/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q08.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/Homework/fifth/src/Q08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/second/src/JavaVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/second/src/JavaVariable.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="248mJzzGf6oid84y7vajXoSnkO5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.HW25th" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DemoApplication">
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <module name="demo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.demo.DemoApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoApplication" />
+        <item itemvalue="Gradle.DemoApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e53b44ee-756f-4e3f-befe-4c717ed64943" name="Changes" comment="" />
+      <created>1643020519858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643020519858</updated>
+    </task>
+    <servers />
+  </component>
+</project>
