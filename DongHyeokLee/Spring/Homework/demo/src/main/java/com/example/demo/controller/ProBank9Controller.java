@@ -2,18 +2,17 @@ package com.example.demo.controller;
 
 
 import com.example.demo.utility.proBank9.Lotto;
-import com.example.demo.utility.proBank9.Lotto2;
 import com.example.demo.utility.proBank9.Product;
+import com.example.demo.utility.proBank9.response.LottoResponse;
+import com.example.demo.utility.proBank9.response.ProductResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
-
 
 @Slf4j
-@RestController
+@Controller
 @RequestMapping("/27th")
 public class ProBank9Controller {
 
@@ -24,47 +23,34 @@ public class ProBank9Controller {
         return "27th/homework1";
     }
 
-
-   @PostMapping("/recommend")
-    //public String todayRecommend(Model model) {
-    //public Product todayRecommend() {
-    public void todayRecommend(Model model) {
+    @ResponseBody
+    @PostMapping("/recommend")
+    public ProductResponse todayRecommend(Model model) {
         log.info("recommend");
 
-        Product s = new Product();
+        Product s = new Product(3,5);
 
-        model.addAttribute("s" , s);
+        ProductResponse pr = new ProductResponse(s);
 
-        //return "27th/recommend";
-        //return s;
+        return pr;
+
     }
 
-    //배열화 된걸 웹상에 출력을 못하겠음
-    //Collection을 사용해야되는건가싶은데
-    //그럼 애초에 유틸리티에 만든것에 List나 Map을 활용하면 되는것인지도 모르겠음
-    @GetMapping("/lotto")
-    public Lotto lottoDrawing(Model model){
+    @ResponseBody
+    @PostMapping("/lotto")
+    public LottoResponse lottoDrawing(Model model){
         log.info("drawing");
 
         Lotto lot = new Lotto(100,5);
-        lot.allocPeopleNumber();
-        lot.raffle();
+        lot.raffle2();
 
-        return lot;
+        LottoResponse lr = new LottoResponse(lot);
 
+        return lr;
 
-    }
-
-
-    @GetMapping("/lotto2")
-    public Map<Integer, Integer> draw() {
-        log.info("ss");
-
-        Lotto2 lot2 = new Lotto2();
-
-        return lot2.people();
 
 
     }
 
 }
+

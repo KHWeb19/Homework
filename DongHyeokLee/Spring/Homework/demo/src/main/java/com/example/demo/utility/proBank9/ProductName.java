@@ -1,15 +1,12 @@
 package com.example.demo.utility.proBank9;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProductName {
 
-        List<String> goodsName;
+    static List<String> goodsName = Arrays.asList("사과" , "바나나" , "수박" , "멜론" , "오렌지");
 
-    public ProductName(){
+    /*public List<String> ProductName(){
         goodsName = new ArrayList<>();
 
         goodsName.add("사과");
@@ -17,5 +14,9 @@ public class ProductName {
         goodsName.add("수박");
         goodsName.add("멜론");
         goodsName.add("오렌지");
-    }
+
+        return goodsName;
+
+    }*/
+
 }
