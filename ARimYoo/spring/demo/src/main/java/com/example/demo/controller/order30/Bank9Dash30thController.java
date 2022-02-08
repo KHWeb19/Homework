@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import static com.example.demo.utility.Product.game;
-import static com.example.demo.utility.Product.price;
-import static com.example.demo.utility.product.Product.game;
-import static com.example.demo.utility.product.Product.price;
-
 @Slf4j
 @Controller
 @RequestMapping("/30th")
@@ -36,11 +31,28 @@ public class Bank9Dash30thController {
 
         log.info("store main");
 
-        Product product = new Product ();
+        Product product = new Product();
 
-        model.addAttribute("kindOfGame", game());
-        model.addAttribute("price", price());
+        model.addAttribute("kindOfGame", product.getGame());
 
         return "30th/product/main";
+    }
+
+    // Post쪽에서 알아서 상품이 들어간다는 의미가 무엇일까 .. ?
+
+    @PostMapping("/product/todayGame")
+    public String todayGame () {
+        log.info("today Game Recommend");
+
+        return "30th/product/todayGame";
+    }
+
+    @ResponseBody
+    @GetMapping("/product/todayGame")
+    public Product todayGame (){
+        log.info("today Game Recommend");
+
+        Product product = new Product();
+
     }
 }
