@@ -2,6 +2,7 @@ package com.example.bank;
 
 import com.example.bank.controller.Bank7Controller;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
