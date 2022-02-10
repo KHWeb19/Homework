@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>나는 목록을 볼거야</title>
+</head>
+<body>
+
+<h2>게시물 보기</h2>
+
+<a th:href="@{/board/register}">글쓰기</a>
+
+<table border="1">
+
+    <tr>
+
+        <th align="center" width = "80">번호</th>
+        <th align="center" width = "320">제목</th>
+        <th align="center" width = "100">작성자</th>
+        <th align="center" width = "100">등록일자</th>
+
+    </tr>
+
+    <tr th:if="${#lists.isEmpty(list)}">
+        <td colspan="4">현재 게시물이 없다! </td>
+    </tr>
+
+    <tr th:each="board : ${list}">
+        <td align="center" th:text="${board.boardNo}">
+            ${board.boardNo}
+        </td>
+        <td align="left">
+            <!-- Spring 에서 PathVariable의 역할을 수행함 boardNo는 가변적이니까 -->
+            <a th:href="@{|/32th/board/read?boardNo=${board.boardNo}|}" th:text="${board.title}">
+            </a>
+        </td>
+        <td align="right" th:text="${board.writer}">
+        </td>
+        <!-- dates.format(A, B)는 A를 B형식에 맞춰 날자 표기함 -->
+        <td align="center"
+            th:text="${#dates.format(board.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
