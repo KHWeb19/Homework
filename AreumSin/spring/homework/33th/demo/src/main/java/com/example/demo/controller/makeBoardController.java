@@ -40,4 +40,40 @@ public class makeBoardController {
         model.addAttribute("list" , boardService.list());
         return "/board/list";
     }
+
+    @GetMapping("/read")
+    public String read(int boardNo, Model model){
+        log.info("read()");
+
+        model.addAttribute( boardService.read(boardNo));
+        return "/board/read";
+    }
+
+    @GetMapping("/modify")
+    public String modifyForm (int boardNo, Model model) {
+        log.info("modifyForm");
+
+        model.addAttribute(boardService.read(boardNo));
+
+        // 수정 페이지 HTML (화면)
+        return "/board/modify";
+    }
+
+    @PostMapping("/modify")
+    public String modify(Model model, Board board){
+        log.info("modify()");
+
+        boardService.modify(board);
+        return "/board/success";
+    }
+
+
+    @PostMapping("/remove")
+    public String remove(int boardNo, Board board){
+        log.info("remove()");
+
+        boardService.remove(boardNo);
+
+       return "/board/success";
+    }
 }

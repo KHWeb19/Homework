@@ -22,4 +22,19 @@ public class BoardServiceImpl implements BoardService{
     public List<Board> list() {
         return repository.list();
     }
+
+    @Override
+    public void remove(Integer boardNo) {
+        repository.remove(boardNo);
+    }
+
+    @Override
+    public void modify(Board board) {
+        repository.modify(board);
+    }
+
+    @Override
+    public Board read(Integer boardNo) {
+        return repository.read(boardNo);
+    }
 }

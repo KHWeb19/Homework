@@ -31,7 +31,7 @@
         </td>
         <td align="left">
             <!-- Spring 에서 PathVariable의 역할을 수행함 boardNo는 가변적이니까 -->
-            <a th:href="@{|/32th/board/read?boardNo=${board.boardNo}|}" th:text="${board.title}">
+            <a th:href="@{|/board/read?boardNo=${board.boardNo}|}" th:text="${board.title}">
             </a>
         </td>
         <td align="right" th:text="${board.writer}">
