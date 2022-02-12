@@ -1,7 +1,11 @@
 package com.example.homework.controller;
 
-import com.example.homework.entity.order9.RecommendManager;
-import com.example.homework.entity.order9.ProductNumber;
+import com.example.homework.entity.order9th.RecommendManager;
+import com.example.homework.entity.order9th.ProductNumber;
+import com.example.homework.utility.area.BaseCalc;
+import com.example.homework.utility.area.PolygonResponse;
+import com.example.homework.utility.lottoProb.Lotto;
+import com.example.homework.utility.lottoProb.LottoResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 //RestController보다는 Controller를 사용하는 편이 좋을 것 같다.
 @Controller
 @RequestMapping("/9th")
-public class Bank9Dash1Controller {
+public class Bank9Controller {
 
     @GetMapping("/prob")
     public String getBank9Prob () {
@@ -48,5 +52,57 @@ public class Bank9Dash1Controller {
  */
 
 //일단 GetMapping과 PostMapping 페이지를 만들기 위한 기본적인 내용들 부터 적자.
+
+    @ResponseBody
+    @PostMapping("/prob2")
+    public LottoResponse postBank9Prob2(){
+        log.info("post postBank9Prob2()");
+
+        Lotto lotto = new Lotto(100, 5); //100명 중, 다섯명이 당첨되는 로또
+        lotto.raffle();
+
+        LottoResponse lr = new LottoResponse(lotto);
+
+        return lr;
+    }
+
+    @ResponseBody
+    @PostMapping("/triangle")
+    public PolygonResponse triangle() {
+        log.info("triangle");
+
+        BaseCalc bc = new BaseCalc(2);
+        bc.calcTriangleArea();
+
+        PolygonResponse pr = new PolygonResponse(bc);
+
+        return pr;
+    }
+
+    @ResponseBody
+    @PostMapping("/rectangle")
+    public PolygonResponse rectangle() {
+        log.info("rectangle");
+
+        BaseCalc bc = new BaseCalc(2);
+        bc.calcSquareArea();
+
+        PolygonResponse pr = new PolygonResponse(bc);
+
+        return pr;
+    }
+
+    @ResponseBody
+    @PostMapping("/hexagon")
+    public PolygonResponse hexagon() {
+        log.info("hexagon");
+
+        BaseCalc bc = new BaseCalc(2);
+        bc.calcHexagonArea();
+
+        PolygonResponse pr = new PolygonResponse(bc);
+
+        return pr;
+    }
 
 }

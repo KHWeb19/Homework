@@ -1,4 +1,4 @@
-package com.example.homework.entity.order9;
+package com.example.homework.entity.order9th;
 
 import java.util.HashMap;
 import java.util.Map;

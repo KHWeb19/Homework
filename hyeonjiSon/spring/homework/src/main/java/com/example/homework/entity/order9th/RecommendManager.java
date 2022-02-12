@@ -1,8 +1,4 @@
-package com.example.homework.entity.order9;
-
-import com.example.homework.entity.order9.ProductNumber;
-import com.example.homework.entity.order9.RecommendBook;
-import com.example.homework.entity.order9.RecommendCloth;
+package com.example.homework.entity.order9th;
 
 public class RecommendManager {
 

@@ -1,4 +1,4 @@
-package com.example.homework.entity.order9;
+package com.example.homework.entity.order9th;
 
 public class ProductNumber {
     public static final int CLOTH = 0;

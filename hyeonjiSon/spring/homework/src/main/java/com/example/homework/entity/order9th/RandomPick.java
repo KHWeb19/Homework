@@ -1,4 +1,4 @@
-package com.example.homework.entity.order9;
+package com.example.homework.entity.order9th;
 
 import lombok.Data;
 
