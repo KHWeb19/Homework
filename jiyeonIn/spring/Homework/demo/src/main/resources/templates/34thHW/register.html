@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#product34th");
+
+        $("#btnRegister").on("click",function(){
+            formObj.attr("action","/bank10/register");
+            formObj.attr("method","post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click",function(){
+            self.location = "/bank10/list";
+        });
+    });
+</script>
+<body>
+    <h2>상품업데이트</h2>
+    <form id="product34th" th:object="${product34th}">
+        <table>
+            <tr>
+                <td>상품명</td>
+                <td>
+                    <input type="text" name="product_name" th:field="*{product_name}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>업체명</td>
+                <td>
+                    <input type="text" name="writer" th:field="*{writer}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>상품설명</td>
+                <td>
+                    <input type="text"  name="content" th:field="*{content}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>가격</td>
+                <td>
+                    <input type="text" name="price" size=10 th:field="*{price}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnRegister">등록</button>
+        <button type="submit" id="btnList">돌아가기</button>
+    </div>
+</body>
+</html>

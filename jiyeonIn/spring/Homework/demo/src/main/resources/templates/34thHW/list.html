@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>상품내역</h2>
+    <a th:href="@{/bank10/register}">글쓰기</a>
+    <table border="1">
+        <tr>
+            <th align="center" width="80">번호</th>
+            <th align="center" width="320">물품 내역</th>
+            <th align="center" width="100">가격</th>
+            <th align="center" width="130">글쓴이</th>
+            <th align="center" width="180">등록일자</th>
+        </tr>
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td align="center" colspan="5">현재 게시물이 없습니다.</td>
+        </tr>
+        <tr th:each="product34th : ${list}">
+            <td align="center" th:text="${product34th.board_no}"></td>
+            <td align="left">
+                <a th:href="@{|/bank10/read?board_no=${product34th.board_no}|}" th:text="${product34th.product_name}"></a>
+            </td>
+            <td align="center" th:text="${product34th.price}"></td>
+            <td align="right" th:text="${product34th.writer}"></td>
+            <td align="center" th:text="${#dates.format(product34th.reg_date,'yyyy-MM-dd HH:mm:ss')}"></td>
+        </tr>
+    </table>
+</body>
+</html>
