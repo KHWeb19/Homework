@@ -15,14 +15,28 @@ public class Product {
     public Product(){
         price = new Price();
         productName = new ProductName();
+
+        showPriceAndName();
+    }
+    public void showPriceAndName(){
+        productPrice = price.getPriceRandom();
+        proName = productName.getProductName();
     }
 
 
-    public Integer showPrice(){
-        return productPrice = price.priceRandom();
+    public void showPrice(){
+        productPrice = price.getPriceRandom();
     }
 
-    public String showName(){
-        return proName = productName.checkProductName();
+    public void showName(){
+        proName = productName.getProductName();
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productPrice=" + productPrice +
+                ", proName='" + proName + '\'' +
+                '}';
     }
 }

@@ -51,7 +51,7 @@ public class Lotto {
     }
 
 
-    public String getLottoWinner(int number) {
+    public String drawLottoWinner(int number) {
         //controller for문에서 i 값이 들어갈때마다 배열의 값이 도출 될 것임.
         return peopleArr[number];
     }

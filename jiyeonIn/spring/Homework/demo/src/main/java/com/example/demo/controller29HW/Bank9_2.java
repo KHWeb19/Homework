@@ -1,9 +1,11 @@
 package com.example.demo.controller29HW;
 
 import com.example.demo.entity.order29.lotto.Lotto;
+import com.example.demo.entity.order29.response.LottoResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -31,20 +33,16 @@ public class Bank9_2 {
     }
 
     @ResponseBody
-    @GetMapping("/lotto")
-    public Map<Integer,String> lottoInfo(){
-        log.info("/lotto");
+    @PostMapping("/lotto")
+    public LottoResponse lottoInfo(){
+        log.info("post lotto");
 
-        Map<Integer,String> map = new HashMap<>();
         Lotto lotto = new Lotto(30,5);
-        //30명이든,40명이든 굴러간다. 한가지 아쉬운점은 for 조건에도 최대값을 수정 해 줘야하는 점.
         lotto.calcRandom();
         lotto.findWinner();
 
-        for(int i=0; i<30;i++){
-            map.put(i+1,lotto.getLottoWinner(i));
-        }
-        return map;
+        LottoResponse ls = new LottoResponse(lotto);
+        return ls;
 
     }
 }

@@ -1,22 +1,23 @@
 package com.example.demo.entity.order29.product;
 
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 public class ProductName {
     private String productName;
-    private int productRange;
     private int productRandom;
 
     public ProductName(){
-        productRange = Product.MAX-Product.MIN+1;
+        productRandom();
+        checkProductName();
     }
     public void productRandom() {
+        int productRange = Product.MAX-Product.MIN+1;
         productRandom = (int) (Math.random() * productRange + Product.MIN);
     }
 
     
-    public String checkProductName(){
+    public void checkProductName(){
         productRandom();
         switch (productRandom){
             case 1 :
@@ -35,7 +36,6 @@ public class ProductName {
                 productName = "귤";
                 break;
         }
-        return productName;
     }
 
 }
