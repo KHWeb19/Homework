@@ -7,13 +7,13 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() {
-        var formObj = $("#product34th");
+        var formObj = $("#productList");
 
         $("#btnModify").on("click", function(){
             var boardNo = $("#board_no");
             var boardNoVal = boardNo.val();
 
-            self.location = "/bank10/modify?boardNo=" + boardNoVal;
+            self.location = "/bank10/modify?board_no=" + boardNoVal;
         });
 
         $("#btnRemove").on("click", function() {
@@ -30,24 +30,24 @@
 </script>
 
 <body>
-<h2>상품 상세보기</h2>
-    <form id="product34th" th:object="${product34th}">
+<h2>상제 정보</h2>
+    <form id="productList" th:object="${productList}">
         <input type="hidden" name="board_no" th:field="*{board_no}"/>
         <table>
             <tr>
-                <td>상품명</td>
+                <td>제목</td>
                 <td>
                     <input type="text" name="product_name" th:field="*{product_name}" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
-                <td>업체명</td>
+                <td>글쓴이</td>
                 <td>
                     <input type="text" name="writer" th:field="*{writer}" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
-                <td>상품설명</td>
+                <td>설명</td>
                 <td>
                     <input type="text"  name="content" th:field="*{content}" readonly="readonly"/>
                 </td>

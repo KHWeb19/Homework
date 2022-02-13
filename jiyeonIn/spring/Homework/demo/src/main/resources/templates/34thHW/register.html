@@ -7,7 +7,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() {
-        var formObj = $("#product34th");
+        var formObj = $("#productList");
 
         $("#btnRegister").on("click",function(){
             formObj.attr("action","/bank10/register");
@@ -22,7 +22,7 @@
 </script>
 <body>
     <h2>상품업데이트</h2>
-    <form id="product34th" th:object="${product34th}">
+    <form id="productList" th:object="${productList}">
         <table>
             <tr>
                 <td>상품명</td>

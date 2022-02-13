@@ -8,7 +8,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() {
-        var formObj = $("#product34th");
+        var formObj = $("#productList");
 
         $("#btnModify").on("click", function() {
             formObj.attr("action", "/bank10/modify");
@@ -25,7 +25,7 @@
 <body>
     <h2>상품 수정하기</h2>
 
-    <form id="product" th:object="${product34th}" method="post">
+    <form id="productList" th:object="${productList}">
         <input type="hidden" name="board_no" th:field="*{board_no}">
 
         <table>
