@@ -22,12 +22,12 @@ public class Lotto {
         range = MAX - MIN + 1;
         totalArr = new int[totalNum];
         selectArr = new int[selectNum];
+
         //peopleNumber();
-        // selNumber();
+        //selNumber();
         //raffle();
 
     }
-
 
     public boolean duplicate(int rand, int[] arr, int cnt) {
         //중복검사
@@ -82,5 +82,7 @@ public class Lotto {
        peopleNumber();
        selNumber();
    }
+
+
 
 }
