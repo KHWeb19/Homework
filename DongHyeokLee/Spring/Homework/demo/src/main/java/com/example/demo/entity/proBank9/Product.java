@@ -1,4 +1,4 @@
-package com.example.demo.utility.proBank9;
+package com.example.demo.entity.proBank9;
 
 //Product 클래스를 만들어보자
 //Random을 활용하여 임의의 상품과 가격들이 들어갈 수 있도록 만들도록 한다.
@@ -20,7 +20,6 @@ package com.example.demo.utility.proBank9;
 import lombok.Data;
 
 
-import java.util.Arrays;
 import java.util.Random;
 
 @Data

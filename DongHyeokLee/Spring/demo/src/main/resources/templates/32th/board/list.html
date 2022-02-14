@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>게시판</h2>
+
+<form th:action="@{/32th/board/register}">글쓰기</form>
+<table>
+  <tr>
+    <th align="center" width="50">번호</th>
+    <th align="center" width="320">제목</th>
+    <th align="center" width="100">작성자</th>
+    <th align="center" width="100">시간</th>
+  </tr>
+  <tr th:if="${#lists.isEmpty{list}">
+      <td colspan="4">
+      글이 없습니다
+      </td>
+  </tr>
+
+
+</table>
+
+</body>
+</html>

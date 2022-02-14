@@ -1,6 +1,6 @@
-package com.example.demo.utility.proBank9.response;
+package com.example.demo.entity.proBank9.response;
 
-import com.example.demo.utility.proBank9.Lotto;
+import com.example.demo.entity.proBank9.Lotto;
 import lombok.Data;
 
 import java.util.HashMap;

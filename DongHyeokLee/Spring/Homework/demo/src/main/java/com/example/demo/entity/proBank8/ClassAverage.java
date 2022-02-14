@@ -1,4 +1,4 @@
-package com.example.demo.utility.proBank8;
+package com.example.demo.entity.proBank8;
 
 import lombok.Data;
 

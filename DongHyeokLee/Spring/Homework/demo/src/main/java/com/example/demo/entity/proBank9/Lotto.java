@@ -1,9 +1,6 @@
-package com.example.demo.utility.proBank9;
+package com.example.demo.entity.proBank9;
 
 import lombok.Data;
-
-import java.util.Arrays;
-import java.util.Random;
 
 //문제은행 [ 3 ]의 3번 문제를 여태까지 배운 내용들을 결합하여 풀어보자!
 //JSON Viewer 상에서 로또에 당첨된 사람들은 부여받은 번호와 O가 표기되도록 만들어보자!
@@ -13,14 +10,14 @@ import java.util.Random;
 @Data
 public class Lotto {
 
-    int totalNum;
-    int selectNum;
+    private int totalNum;
+    private int selectNum;
 
-    int[] peopleArr;
-    int[] selectArr;
+    private int[] peopleArr;
+    private int[] selectArr;
 
-    int max, range;
-    final int MIN = 1;
+    private int max, range;
+    private final int MIN = 1;
 
     public Lotto(final int totalNum, final int selectNum) {
         this.totalNum = totalNum;

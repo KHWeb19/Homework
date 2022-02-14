@@ -1,4 +1,4 @@
-package com.example.demo.utility.proBank9;
+package com.example.demo.entity.proBank9;
 
 import java.util.*;
 

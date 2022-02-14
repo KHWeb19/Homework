@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.controller.proBank8;
 
 
-import com.example.demo.utility.proBank8.ClassAverage;
-import com.example.demo.utility.proBank8.GeometricSequence;
+import com.example.demo.entity.proBank8.ClassAverage;
+import com.example.demo.entity.proBank8.GeometricSequence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -28,7 +28,7 @@ public class ProBank8Controller {
 
                 model.addAttribute("sequenceValue" , seq.getSequenceValue());
 
-                return "26th/homework3";
+                return "8th/homework3";
             }
 
             @RequestMapping("/homework4")
@@ -40,7 +40,7 @@ public class ProBank8Controller {
 
                 model.addAttribute("classAvg", avg.getAvg());
 
-                return "26th/homework4";
+                return "8th/homework4";
 
 
 

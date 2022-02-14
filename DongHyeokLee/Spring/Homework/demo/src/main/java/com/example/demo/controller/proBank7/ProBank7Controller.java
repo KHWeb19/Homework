@@ -1,13 +1,10 @@
-package com.example.demo.controller;
+package com.example.demo.controller.proBank7;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 
 @Controller
@@ -29,7 +26,7 @@ public class ProBank7Controller {
 
         model.addAttribute("diceNum" , rollDice);
 
-        return "25th/homework1";
+        return "7th/homework1";
     }
 
     @RequestMapping("/homework2")
@@ -65,7 +62,7 @@ public class ProBank7Controller {
 
             model.addAttribute("addThree", test);
 
-            return "25th/homework2";
+            return "7th/homework2";
         }
 
     }

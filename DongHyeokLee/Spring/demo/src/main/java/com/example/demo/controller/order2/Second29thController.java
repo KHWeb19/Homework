@@ -37,7 +37,7 @@ public class Second29thController {
     public String read (@PathVariable("boardNo") int boardNo) {
         log.info("read: " + boardNo);
 
-        return "29th/board/read";
+        return "29th/read";
     }
 
 
