@@ -20,7 +20,9 @@ public class MarketServiceImpl implements MarketService { //서비스 시행용 
     }
 
     @Override
-    public List<Market> list() {return repository.list();}
+    public List<Market> list() {
+        return repository.list();
+    }
 
     @Override
     public Market read(Integer productNo){

@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface MarketService {
     public void register (Market market);
-    public List<Market> list();
+    public List<Market> list ();
     public Market read(Integer productNo);
     public void modify (Market market);
     public void remove (Integer productNo);

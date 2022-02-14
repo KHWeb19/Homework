@@ -48,22 +48,14 @@ public class Bank10Controller {
         return"/10th/market/success";
     }
 
-    //다음으로 url요청을 받을 list 페이지를 만들어준다.
     @GetMapping("/list")
-    public String list(Model model){
+    public String list (Model model) {
         log.info("list");
 
-        //DB에 저장된 데이터를 읽어서 list속성에 설정한다.
         model.addAttribute("list", marketService.list());
-             //MarketService에 저장된 list를 value값으로 가져올 것이다.
 
         return "/10th/market/list";
     }
-    //Model객체: HashMap형태를 갖고 있으며 key값과 value값처럼 사용할 수 있다.
-    //          addAttribute는 Map의 put과 같은 기능이라,
-    //          이를 통해 해당 모델에 원하는 속성과
-    //          그것에 대한 값을 주어 데이터를 전달할 수 있다.
-
 
     //list에서 제목을 눌러서 본문을 읽기 위한 연동
     // 읽기는 사용자가 Url을 요청할 수 있어야하니까 Get
