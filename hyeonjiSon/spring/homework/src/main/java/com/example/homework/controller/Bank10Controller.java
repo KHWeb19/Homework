@@ -49,7 +49,7 @@ public class Bank10Controller {
     }
 
     //다음으로 url요청을 받을 list 페이지를 만들어준다.
-    @GetMapping("list")
+    @GetMapping("/list")
     public String list(Model model){
         log.info("list");
 

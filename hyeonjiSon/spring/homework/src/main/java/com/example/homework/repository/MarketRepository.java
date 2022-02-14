@@ -23,11 +23,11 @@ public class MarketRepository { //관리 데이터베이스
     //@Repository를 넣고나니 Alt+Enter로 생성할 수 있었다. 해결!
 
     public void create(Market market) {
-        String query = "insert into market (title, content) values(?, ?)";
+        String query = "insert into market (title, content, seller) values(?, ?, ?)";
         //market에 삽입해라(title, content)에 values(?, ?)를
 
         //↓위의 DB쿼리에 대응하는 녀석들이 이것들이다.
-        jdbcTemplate.update(query, market.getTitle(), market.getContent());
+        jdbcTemplate.update(query, market.getTitle(), market.getContent(), market.getSeller());
     }
 
     public List<Market> list() {
@@ -37,7 +37,9 @@ public class MarketRepository { //관리 데이터베이스
         // 현재 RowMapper가 이 정보를 하나하나 처리해주고 있음
         // 모든 데이터를 싹 다 가져오게 되어있음
         List<Market> results = jdbcTemplate.query(
-                "select product_no, title, content, seller", //이게 A
+                "select * from market" +
+                        "where product_no > 0 order by product_no desc", //이게 A
+                //이 근처가 문제인 거 같은데 도저히 원인을 못찾겠다
 
                 //RowMapper란? 원하는 형태의 결과값을 반환하게 해주는 인터페이스.
                 new RowMapper<Market>() {
@@ -60,7 +62,8 @@ public class MarketRepository { //관리 데이터베이스
 
     public Market read(Integer productNo) {
         List<Market> results = jdbcTemplate.query(
-                "select product_no, title, content, seller", //이게 A
+                "select * from market " +
+                        "where product_no = ?", //이게 A
 
                 //RowMapper란? 원하는 형태의 결과값을 반환하게 해주는 인터페이스.
                 new RowMapper<Market>() {

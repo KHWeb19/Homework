@@ -1,0 +1,7 @@
+create table market(
+    product_no int not null auto_increment,
+    title varchar(200) not null,
+    content text null,
+    seller varchar(50) not null,
+    primary key(product_no)
+);
