@@ -1,0 +1,12 @@
+여기있는 내용은 적용안되는 것임
+직접 터미널에서 작성해야함
+
+create table product(
+    product_no int not null auto_increment,
+    title varchar(200) not null,
+    description text null,
+    price int not null,
+    writer varchar(50) not null,
+    reg_date timestamp not null default now(),
+    primary key(product_no)
+);

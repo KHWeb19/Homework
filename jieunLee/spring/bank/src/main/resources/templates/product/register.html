@@ -8,23 +8,23 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() {
-        var formObj = $("#board");
+        var formObj = $("#productBoard");
 
         $("#btnRegister").on("click", function() {
-            formObj.attr("action", "/32th/board/register");
+            formObj.attr("action", "/product/register");
             formObj.attr("method", "post");
             formObj.submit();
         });
 
         $("#btnList").on("click", function() {
-            self.location = "/32th/board/list";
+            self.location = "/product/list";
         });
     });
 </script>
 
 <body>
     <h2>글쓰기 페이지</h2>
-    <form id="board" th:object="${board}">
+    <form id="productBoard" th:object="${productBoard}">
         <table>
             <tr>
                 <td>제목</td>
@@ -35,13 +35,19 @@
             <tr>
                 <td>작성자</td>
                 <td>
-                    <input type="text" name="title" th:field="*{writer}"/>
+                    <input type="text" name="writer" th:field="*{writer}"/>
                 </td>
             </tr>
             <tr>
                 <td>본문</td>
                 <td>
-                    <input type="text" name="title" th:field="*{content}"/>
+                    <input type="text" name="description" th:field="*{description}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>가격</td>
+                <td>
+                    <input type="text" name="price" th:field="*{price}"/>
                 </td>
             </tr>
         </table>

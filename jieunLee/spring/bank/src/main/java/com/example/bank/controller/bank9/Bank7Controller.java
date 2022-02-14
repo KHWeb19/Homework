@@ -1,4 +1,4 @@
-package com.example.bank.controller;
+package com.example.bank.controller.bank9;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,4 @@
-package com.example.bank.controller;
+package com.example.bank.controller.bank9;
 
 import com.example.bank.utility.Sequence;
 import com.example.bank.utility.Student;
