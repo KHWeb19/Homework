@@ -5,26 +5,26 @@
     <title>Title</title>
 </head>
 
-<script type="test/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function(){
-        var formObj = $("#board");
+        var formObj = $("#productBoard");
 
         $("#btnRegister").on("click", function(){
-            formObj.attr("action", "/32th/productboard/register");
+            formObj.attr("action", "/32th/productBoard/register");
             formObj.attr("method", "post");
             formObj.submit();
         });
 
         $("#btnList").on("click", function(){
-            self.location = "/32th/productboard/list";
+            self.location = "/32th/productBoard/list";
         });
     });
 </script>
 <body>
     <h2>상품 등록 페이지</h2>
 
-    <form id="board" th:object="${productBoard}">
+    <form id="productBoard" th:object="${productBoard}">
         <table>
             <tr>
                 <td>상품</td>

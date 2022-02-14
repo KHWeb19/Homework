@@ -7,32 +7,40 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
-     $(document).ready(function() {
-        var formObj = $("#board");
+    $(document).ready(function(){
+        var formObj = $("#productBoard");
 
-        $("#btnModify").on("click", function() {
-            formObj.attr("action", "/32th/productBoard/modify");
-            formObj.attr("method", "post");
+        $("#btnModify").on("click", function(){
+            var boardNo = $("#boardNo");
+            var boardNoVal = boardNo.val();
+
+            self.location = "/32th/productBoard/modify?boardNo=" + boardNoVal;
+        });
+
+        $("#btnRemove").on("click", function(){
+            formObj.attr("action", "/32th/productBoard/remove");
             formObj.submit();
         });
 
-        $("#btnList").on("click", function() {
+        $("#btnList").on("click", function(){
             self.location = "/32th/productBoard/list";
         });
     });
 </script>
 
-<body>
-    <h2>상품 수정</h2>
 
-    <form id="board" th:object="${productBoard}" method="post">
+
+<body>
+    <h2>상품 상세 보기</h2>
+
+    <form id="productBoard" th:object="${productBoard}" method="post">
         <input type="hidden" name="boardNo" th:field="*{boardNo}">
 
         <table>
             <tr>
                 <td>상품</td>
                 <td>
-                    <input type="text" name="product" th:field="*{product}"/>
+                    <input type="text" name="product" th:field="*{product}" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
@@ -44,24 +52,22 @@
             <tr>
                 <td>정보</td>
                 <td>
-                    <input type="text" name="information" th:field="*{information}"/>
+                    <input type="text" name="information" th:field="*{information}" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
                 <td>가격</td>
                 <td>
-                    <input type="text" name="price" th:field="*{price}"/>
+                    <input type="text" name="price" th:field="*{price}" readonly="readonly"/>
                 </td>
             </tr>
         </table>
-
     </form>
 
     <div>
-        <button type="submit" id="btnModify">수정완료</button>
+        <button type="submit" id="btnModify">수정</button>
+        <button type="submit" id="btnRemove">삭제</button>
         <button type="submit" id="btnList">돌아가기</button>
     </div>
-
-
 </body>
 </html>

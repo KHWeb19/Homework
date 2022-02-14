@@ -18,7 +18,7 @@ public class BoardRepository {
     private JdbcTemplate jdbcTemplate;
 
     public void create(ProductBoard productBoard) {
-        String query = "insert into productboard (product, shop, information, price) values(?, ?, ?, ?)";
+        String query = "insert into productBoard (product, shop, information, price) values(?, ?, ?, ?)";
 
         jdbcTemplate.update(query, productBoard.getProduct(), productBoard.getShop(), productBoard.getInformation(), productBoard.getPrice());
 
@@ -75,13 +75,13 @@ public class BoardRepository {
     }
 
     public void delete(Integer boardNo) {
-        String query = "delete from productboard where board_no = ?";
+        String query = "delete from productBoard where board_no = ?";
 
         jdbcTemplate.update(query, boardNo);
     }
 
     public void update(ProductBoard productBoard) {
-        String query = "update productboard set product = ?, shop = ?, information = ?, price = ?, where board_no = ?";
+        String query = "update productBoard set product = ?, shop = ?, information = ?, price = ? where board_no = ?";
 
         jdbcTemplate.update(query, productBoard.getProduct(), productBoard.getShop(), productBoard.getInformation(), productBoard.getPrice(), productBoard.getBoardNo());
     }
