@@ -5,11 +5,11 @@ import com.example.homework.entity.order10th.Market;
 import java.util.List;
 
 public interface MarketService {
-   // public void register (Product product);
+    public void register (Market market);
     public List<Market> list();
-   // public Product read(Integer productNo);
-   // public void modify (Product product);
-   // public void remove (Integer productNo);
+    public Market read(Integer productNo);
+    public void modify (Market market);
+    public void remove (Integer productNo);
 
 }
 

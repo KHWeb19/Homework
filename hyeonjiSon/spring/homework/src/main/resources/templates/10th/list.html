@@ -33,11 +33,11 @@
           <td align="left">
               <!-- | |사이에 넣으면 가변인자로 취급한다.
  Spring에서 pathVariable의 역할을 수행한다. 상품번호는 가변적이니까-->
-              <a th:href="@{|/10th/market/read?productNo=${market.productNo}|}" th:text="${board.title}">
+              <a th:href="@{|/10th/market/read?productNo=${market.productNo}|}" th:text="${market.title}">
               </a>
           </td>
 
-          <td align="center" th:text="${board.writer}">
+          <td align="center" th:text="${market.seller}">
           </td>
 
       </tr>
