@@ -14,11 +14,11 @@
           var itemNo =$("#itemNo");       // itemNo 에 대한 객체를 획득
           var itemNoVal = itemNo.val();   // 해당 정보를 숫자로 만든다
 
-          self.location = "/34th/item/modify?itemNo=" + itemNoVal;
+          self.location = "/34th/fruit/modify?itemNo=" + itemNoVal;
         });
 
         $("#btnRemove").on("click", function() {
-            formObj.attr("action", "/34th/item/remove");
+            formObj.attr("action", "/34th/fruit/remove");
             formObj.submit();
         });
 

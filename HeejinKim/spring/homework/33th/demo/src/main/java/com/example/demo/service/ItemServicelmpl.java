@@ -26,16 +26,17 @@ public class ItemServicelmpl implements ItemService {
 
     @Override
     public Item read(Integer itemNo) {
-        return null;
+        return repository.read(itemNo);
     }
 
     @Override
     public void modify(Item item) {
-
+        repository.update(item);
     }
 
     @Override
     public void remove(Integer itemNo) {
+        repository.delete(itemNo);
 
     }
 }
