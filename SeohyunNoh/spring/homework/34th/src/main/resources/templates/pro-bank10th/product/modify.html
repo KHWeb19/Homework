@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+     $(document).ready(function() {
+        var formObj = $("#product");
+
+        $("#btnModify").on("click", function() {
+            formObj.attr("action", "/pro-bank10th/product/modify");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/pro-bank10th/product/list";
+        });
+    });
+</script>
+
+<body>
+<h2>등록된 상품 수정</h2>
+
+<form id="product" th:object="${product}" method="post">
+    <input type="hidden" name="boardNo" th:field="*{boardNo}">
+
+    <table>
+        <tr>
+            <td>상품명</td>
+            <td>
+                <input type="text" name="prodName" th:field="*{prodName}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>가격</td>
+            <td>
+                <input type="text" name="prodPrice" th:field="*{prodPrice}"/>
+            </td>
+        </tr>
+    </table>
+</form>
+<br>
+<div>
+    <button type="submit" id="btnModify">수정완료</button>
+    <button type="submit" id="btnList">돌아가기</button>
+</div>
+</br>
+</body>
+</html>
