@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>성공</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        var formObj = $("#product");
+
+        $("#btnList").on("click", function() {
+            self.location = "/product/list";
+        });
+    });
+</script>
+
+<body>
+<button type="submit" id="btnList">목록보기</button>
+</body>
+</html>
