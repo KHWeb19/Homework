@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>상품 보기</h2>
+    <a th:href="@{/32th/productboard/register}">상품 등록</a>
+    <table border="1">
+        <tr>
+            <th align="center" width="50">번호</th>
+            <th align="center" width="200">상품</th>
+            <th align="center" width="100">판매처</th>
+            <th align="center" width="200">정보</th>
+            <th align="center" width="100">가격</th>
+        </tr>
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="5">
+                현재 등록된 상품이 없습니다!
+            </td>
+
+        </tr>
+
+        <tr th:each="productBoard : ${list}">
+            <td align="center" th:text="${productBoard.boardNo}">
+            </td>
+            <td align="center">
+                <a th:href="@{|/32th/productBoard/read?boardNo=${productBoard.boardNo}|}"
+                   th:text="${productBoard.product}">
+                </a>
+            <td align="center" th:text="${productBoard.shop}">
+            </td>
+            <td align="center" th:text="${productBoard.information}">
+            </td>
+            <td align="center" th:text="${productBoard.price}">
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
