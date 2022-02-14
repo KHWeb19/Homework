@@ -5,43 +5,39 @@
     <title>Title</title>
 </head>
 <body>
-  <h2>상품 게시판</h2>
-  <!-- 링크 걸기 a 태그 -> 대상: 10th/market/register -->
-  <a th:href="@/10th/market/register">상품등록</a>
+<h2>상품 게시판 보기</h2>
+<!-- 링크 걸기 a 태그 -> 대상: 32th/board/register -->
+<a th:href="@{/10th/market/register}">글쓰기</a>
+<!-- table은 표 만들기, border는 두께 -->
+<table border="1">
+    <!-- tr -> row로 가로 -->
+    <tr>
+        <!-- th 혹은 td는 세로 형태라고 보면됨 -->
+        <th align="center" width="80">번호</th>
+        <th align="center" width="320">제목</th>
+        <th align="center" width="100">작성자</th>
+    </tr>
+    <!-- addAttribute에서 전달한 list가 비었는지 체크하는 부분임 -->
+    <tr th:if="${#lists.isEmpty(list)}">
+        <!-- colspan 은 위쪽의 세로 4개를 하나로 병합함 -->
+        <td colspan="4">
+            현재 게시물이 없습니다!
+        </td>
+    </tr>
+    <!-- list에 있는 여러 목록들을 한개씩 가져와서 board에 설정
+         HTML 상에서 활용할 수 있는 foreach 구문이라고 보면됨 -->
+    <tr th:each="market : ${list}">
+        <td align="center" th:text="${market.productNo}">
+            ${market.productNo}
+        </td>
+        <td align="left">
+            <!-- Spring 에서 PathVariable의 역할을 수행함 boardNo는 가변적이니까 -->
+            <a th:href="@{|/10th/market/read?productNo=${market.productNo}|}" th:text="${market.title}">
+            </a>
+        </td>
+        <td align="right" th:text="${market.seller}">
+        </td>
 
-  <table border="1">
-      <tr>
-          <th align="center" width="80">상품번호</th>
-          <th align="center" width="250">상품명</th>
-          <th align="center" width="100">판매자</th>
-      </tr>
-
-      <!-- addAttribute에서 전달한 list가 비었는지 체크하는 부분임
-           그래서 만약 list가 비었다면 이 문구가 출력된다.-->
-      <tr th:if="${#lists.isEmpty(list)}">
-          <td colspan="4"> 현재 게시물이 없습니다!</td>
-      </tr>
-
-      <!-- list에 있는 여러 목록들을 한개씩 가져와서 board에 설정
-           HTML 상에서 활용할 수 있는 foreach 구문이라고 보면됨 -->
-      <tr th:each="market : ${list}">
-
-          <td align="center" th:text="${market.productNo}">
-              ${market.productNo}
-          </td>
-
-          <td align="left">
-              <!-- | |사이에 넣으면 가변인자로 취급한다.
- Spring에서 pathVariable의 역할을 수행한다. 상품번호는 가변적이니까-->
-              <a th:href="@{|/10th/market/read?productNo=${market.productNo}|}" th:text="${market.title}">
-              </a>
-          </td>
-
-          <td align="center" th:text="${market.seller}">
-          </td>
-
-      </tr>
-  </table>
-
+    </tr>
+</table>
 </body>
-</html>
