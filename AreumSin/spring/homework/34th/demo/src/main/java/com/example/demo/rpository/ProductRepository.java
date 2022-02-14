@@ -31,7 +31,6 @@ public class ProductRepository {
                 "select product_no , title, price, content, writer, reg_date from producttest " +
                         "where product_no > 0 order by product_no desc",
 
-                // 요놈이 하나씩 넘겨줌
                 new RowMapper<Product>() {
                     @Override
                     public Product mapRow(ResultSet rs, int rowNum) throws SQLException {
