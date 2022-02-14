@@ -18,7 +18,7 @@ public class BoardRepository {
     private JdbcTemplate jdbcTemplate;
 
     public void create(ProductBoard productBoard) {
-        String query = "insert into productBoard (product, shop, information, price) values(?, ?, ?, ?)";
+        String query = "insert into productboard (product, shop, information, price) values(?, ?, ?, ?)";
 
         jdbcTemplate.update(query, productBoard.getProduct(), productBoard.getShop(), productBoard.getInformation(), productBoard.getPrice());
 
@@ -26,7 +26,7 @@ public class BoardRepository {
 
     public List<ProductBoard> list() {
         List<ProductBoard> results = jdbcTemplate.query(
-                "select board_no, product, shop, information, price from board " +
+                "select board_no, product, shop, information, price from productboard " +
                         "where board_no > 0 order by board_no desc",
 
                 new RowMapper<ProductBoard>() {
@@ -51,7 +51,7 @@ public class BoardRepository {
 
     public ProductBoard read(Integer boardNo) {
         List<ProductBoard> results = jdbcTemplate.query(
-                "select * from board " +
+                "select * from productboard " +
                         "where board_no = ?",
 
                 new RowMapper<ProductBoard>() {
@@ -75,13 +75,13 @@ public class BoardRepository {
     }
 
     public void delete(Integer boardNo) {
-        String query = "delete from board where board_no = ?";
+        String query = "delete from productboard where board_no = ?";
 
         jdbcTemplate.update(query, boardNo);
     }
 
     public void update(ProductBoard productBoard) {
-        String query = "update productBoard set product = ?, shop = ?, information = ?, price = ?, where board_no = ?";
+        String query = "update productboard set product = ?, shop = ?, information = ?, price = ?, where board_no = ?";
 
         jdbcTemplate.update(query, productBoard.getProduct(), productBoard.getShop(), productBoard.getInformation(), productBoard.getPrice(), productBoard.getBoardNo());
     }

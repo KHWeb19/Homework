@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>상품 보기</h2>
-    <a th:href="@{/32th/productBoard/register}">상품 등록</a>
+    <a th:href="@{/32th/productboard/register}">상품 등록</a>
     <table border="1">
         <tr>
             <th align="center" width="50">번호</th>
@@ -24,10 +24,10 @@
 
         <tr th:each="productBoard : ${list}">
             <td align="center" th:text="${productBoard.boardNo}">
-                ${productBoard.boardNo}
             </td>
             <td align="center">
-                <a th:href="@{|/32th/productBoard/read?boardNo=${productBoard.boardNo}|}" th:text="${productBoard.product}">
+                <a th:href="@{|/32th/productBoard/read?boardNo=${productBoard.boardNo}|}"
+                   th:text="${productBoard.product}">
                 </a>
             <td align="center" th:text="${productBoard.shop}">
             </td>

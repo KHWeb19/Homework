@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Slf4j
 @Controller
-@RequestMapping("/32th/productBoard")
+@RequestMapping("/32th/productboard")
 public class Bank10n32thController {
 
     @Autowired
@@ -23,7 +23,7 @@ public class Bank10n32thController {
     public String registerForm (ProductBoard productBoard){
         log.info("registerForm");
 
-        return "/32th/productBoard/register";
+        return "/32th/productboard/register";
     }
 
     @PostMapping("/register")
@@ -32,7 +32,7 @@ public class Bank10n32thController {
 
         boardService.register(productBoard);
 
-        return "/32th/productBoard/success";
+        return "/32th/productboard/success";
 
     }
 
@@ -41,7 +41,7 @@ public class Bank10n32thController {
         log.info("list");
 
         model.addAttribute("list", boardService.list());
-        return "/32th/productBoard/list";
+        return "/32th/productboard/list";
     }
 
     @GetMapping("/read")
@@ -50,7 +50,7 @@ public class Bank10n32thController {
 
         model.addAttribute(boardService.read(boardNo));
 
-        return "/32th/productBoard/read";
+        return "/32th/productboard/read";
     }
 
     @GetMapping("/modify")
@@ -59,7 +59,7 @@ public class Bank10n32thController {
 
         model.addAttribute(boardService.read(boardNo));
 
-        return "32th/productBoard/modify";
+        return "/32th/productboard/modify";
     }
 
     @PostMapping("/modify")
@@ -68,7 +68,7 @@ public class Bank10n32thController {
 
         boardService.modify(productBoard);
 
-        return "32th/productBoard/success";
+        return "/32th/productboard/success";
     }
 
     @PostMapping("/remove")
@@ -77,6 +77,6 @@ public class Bank10n32thController {
 
         boardService.remove(boardNo);
 
-        return "32th/productBoard/success";
+        return "/32th/productboard/success";
     }
 }

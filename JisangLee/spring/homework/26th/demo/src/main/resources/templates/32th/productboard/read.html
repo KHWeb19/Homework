@@ -8,22 +8,22 @@
 <script type="test/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function(){
-        var formObj = $("#productBoard");
+        var formObj = $("#board");
 
         $("#btnModify").on("click", function(){
             var boardNo = $("#boardNo");
             var boardNoVal = boardNo.val();
 
-            self.location = "/32th/productBoard/modify?boardNo=" + boardNoVal;
+            self.location = "/32th/productboard/modify?boardNo=" + boardNoVal;
         });
 
         $("#btnRemove").on("clock", function(){
-            formObj.attr("action", "/32th/productBoard/remove");
+            formObj.attr("action", "/32th/productboard/remove");
             formObj.submit();
         });
 
         $("#btnList").on("click", function(){
-            self.location = "/32th/productBoard/list";
+            self.location = "/32th/productboard/list";
         });
     });
 </script>
@@ -33,7 +33,7 @@
 <body>
     <h2>상품 상세 보기</h2>
 
-    <form id="productBoard" th:object="${productBoard}" method="post">
+    <form id="board" th:object="${productBoard}" method="post">
         <input type="hidden" name="boardNo" th:field="*{boardNo}">
 
         <table>

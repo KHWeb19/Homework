@@ -8,23 +8,23 @@
 <script type="test/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function(){
-        var formObj = $("#productBoard");
+        var formObj = $("#board");
 
         $("#btnRegister").on("click", function(){
-            formObj.attr("action", "/32th/productBoard/register");
+            formObj.attr("action", "/32th/productboard/register");
             formObj.attr("method", "post");
             formObj.submit();
         });
 
         $("#btnList").on("click", function(){
-            self.location = "/32th/productBoard/list";
+            self.location = "/32th/productboard/list";
         });
     });
 </script>
 <body>
     <h2>상품 등록 페이지</h2>
 
-    <form id="productBoard" th:object="${productBoard}">
+    <form id="board" th:object="${productBoard}">
         <table>
             <tr>
                 <td>상품</td>
