@@ -1,0 +1,18 @@
+.box{
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    width: 100px;
+    height: 60px;
+    background: pink;
+    border: 2px solid lightCyan;
+    text-align: center;
+    line-height: 60px;
+}
+.box:hover{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

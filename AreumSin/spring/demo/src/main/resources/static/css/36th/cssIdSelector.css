@@ -1,0 +1,16 @@
+*{
+    margin: 20px auto
+}
+body {
+    color: skyblue;
+}
+#container {
+    width: 600px;
+    padding : 15px;
+    border: 1px dotted yellow;
+}
+h2{
+
+    color: brown !important
+}
+
