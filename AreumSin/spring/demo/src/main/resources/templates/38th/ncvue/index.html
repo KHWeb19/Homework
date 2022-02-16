@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{ message }}</h1>
+</div>
+
+<!-- 어떤 라이브러리를 사용하려고 하는지 웹상에서 가지고옴 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
+<!-- VUE 객체를 생섬함
+     ID가 APP인 것과 연결됨.
+     그러므로 h1 쪽의 message는 이 녀석이 가지고 있는 message가 된다.-->
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: '정말 짧아졌다'
+      }
+    })
+  </script>
+</body>
+</html>

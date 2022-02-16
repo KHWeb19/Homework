@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="dataType">
+
+        <p>
+            {{ length }}, {{ lastName }}, {{ x.toString() }}.
+        </p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
+    <script>
+    var app = new Vue({
+      el: '#dataType',
+      data: {
+        length: 7,
+        lastName: '김준면 제대하셨단다~',
+        //x: {firstName: "수호", lastName: "제대하셨당"},
+        message: '정말 짧아졌다'
+      }
+    })
+  </script>
+</body>
+</html>
