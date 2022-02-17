@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db99aa0d-c99e-467d-bb6a-a1138a3bf9fc" name="Default Changelist" comment="[이지은] 문제은행[4] 챌린저용1">
+      <change afterPath="$PROJECT_DIR$/../../5th/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5th/5th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th/9th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9th1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/A01_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/ASequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/B03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/BLotto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/C04_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/CStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/D06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/DBigInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/E07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/ECompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/F08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9th3/src/FDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forth/forth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third/third.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../third/third.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="23B1Q3kSMb2R5ZtqXr3AUEzdE1P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+  </component>
+  <component name="RunManager" selected="Application.A091011">
+    <configuration name="A02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A02" />
+      <module name="9th1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A06_07_08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A06_07_08" />
+      <module name="9th1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A091011" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A091011" />
+      <module name="9th1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.A091011" />
+        <item itemvalue="Application.A02" />
+        <item itemvalue="Application.A06_07_08" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db99aa0d-c99e-467d-bb6a-a1138a3bf9fc" name="Default Changelist" comment="" />
+      <created>1641192649154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641192649154</updated>
+      <workItem from="1641192650340" duration="10376000" />
+      <workItem from="1641205981936" duration="1148000" />
+      <workItem from="1641209175561" duration="123000" />
+      <workItem from="1641209308596" duration="1432000" />
+      <workItem from="1641215445548" duration="99000" />
+      <workItem from="1641797813796" duration="12000" />
+    </task>
+    <task id="LOCAL-00001" summary="[이지은] 문제은행[4] 챌린저용1">
+      <created>1641206771009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641206771009</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[이지은] 문제은행[4] 챌린저용1">
+      <created>1641207015581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641207015581</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[이지은] 문제은행[4] 챌린저용1/3" />
+    <MESSAGE value="[이지은] 문제은행[4] 챌린저용1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[이지은] 문제은행[4] 챌린저용1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="105" key="#Project_Structure" timestamp="1641192661481">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state x="413" y="105" key="#Project_Structure/0.25.1792.1004@0.25.1792.1004" timestamp="1641192661481" />
+    <state x="934" y="296" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1641199403884">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state x="934" y="296" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641199403884" />
+    <state width="930" height="270" key="GridCell.Tab.0.bottom" timestamp="1641207140485">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state width="930" height="270" key="GridCell.Tab.0.bottom/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641207140485" />
+    <state width="930" height="270" key="GridCell.Tab.0.center" timestamp="1641207140484">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state width="930" height="270" key="GridCell.Tab.0.center/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641207140484" />
+    <state width="930" height="270" key="GridCell.Tab.0.left" timestamp="1641207140484">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state width="930" height="270" key="GridCell.Tab.0.left/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641207140484" />
+    <state width="930" height="270" key="GridCell.Tab.0.right" timestamp="1641207140485">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state width="930" height="270" key="GridCell.Tab.0.right/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641207140485" />
+    <state x="804" y="163" key="SettingsEditor" timestamp="1641205581726">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state x="804" y="163" key="SettingsEditor/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641205581726" />
+    <state x="895" y="264" key="Vcs.Push.Dialog.v2" timestamp="1641215465714">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state x="895" y="264" key="Vcs.Push.Dialog.v2/0.25.1792.1004@0.25.1792.1004" timestamp="1641215465714" />
+    <state x="895" y="264" key="Vcs.Push.Dialog.v2/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641207031251" />
+    <state x="604" y="146" key="new project wizard" timestamp="1641206348808">
+      <screen x="0" y="25" width="1792" height="1004" />
+    </state>
+    <state x="604" y="146" key="new project wizard/1792.25.1920.1055/0.25.1792.1004@0.25.1792.1004" timestamp="1641206348808" />
+  </component>
+</project>
