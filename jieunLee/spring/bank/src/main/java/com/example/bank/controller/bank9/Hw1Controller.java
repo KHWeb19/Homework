@@ -1,7 +1,7 @@
 package com.example.bank.controller.bank9;
 
-import com.example.bank.entity.Product;
-import com.example.bank.entity.ViewRandomProduct;
+import com.example.bank.entity.bank9.Product;
+import com.example.bank.entity.bank9.ViewRandomProduct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,8 +1,8 @@
 package com.example.bank.controller.bank9;
 
-import com.example.bank.entity.Lotto;
-import com.example.bank.entity.ViewLottoPlacement;
-import com.example.bank.entity.ViewMyLotto;
+import com.example.bank.entity.bank9.Lotto;
+import com.example.bank.entity.bank9.ViewLottoPlacement;
+import com.example.bank.entity.bank9.ViewMyLotto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

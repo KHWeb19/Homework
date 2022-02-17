@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- div 부분만 Html 코드임 -->
+<div id="app">
+    <h1>{{ message }}</h1>
+    <h1>{{ length }}</h1>
+</div>
+
+<!-- 컨트롤러가 아닌 프론트에서 바로 출력할 수 있도록 해주는 라이브러리 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
+<!-- Vue 라는 객체 생성
+     div의 id값과 app의 el가 동일하여 data가 연결됨
+-->
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue.js - 흐접한 jsp는 끄지라!',
+            length: 7
+        }
+    })
+</script>
+
+</body>
+</html>

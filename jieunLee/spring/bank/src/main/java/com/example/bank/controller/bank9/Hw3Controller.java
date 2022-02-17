@@ -1,6 +1,6 @@
 package com.example.bank.controller.bank9;
 
-import com.example.bank.utility.Area;
+import com.example.bank.utility.bank9.Area;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
