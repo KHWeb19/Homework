@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var formObj = $("#user");
+
+            $("#btnModify").on("click", function() {
+                var userNo = $("#userNo");
+                var userNoVal = userNo.val();
+
+                self.location = "/user/modify?userNo=" + userNoVal;
+            });
+
+            $("#btnRemove").on("click", function() {
+                formObj.attr("action", "/user/remove");
+                formObj.submit();
+            });
+
+            $("#btnList").on("click", function() {
+                self.location = "/user/list";
+            });
+        });
+    </script>
+
+<body>
+    <h2>읽기</h2>
+
+    <form id="user" th:object="${user}" method="post">
+        <input type="hidden" name="userNo" th:field="*{userNo}">
+
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="id" th:field="*{id}" readonly="readonly"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="text" name="passwd" th:field="*{passwd}" readonly="readonly"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="name" th:field="*{name}" readonly="readonly"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <button type="submit" id="btnModify">수정</button>
+    <button type="submit" id="btnRemove">삭제</button>
+    <button type="submit" id="btnList">리스트보기</button>
+</body>
+</html>

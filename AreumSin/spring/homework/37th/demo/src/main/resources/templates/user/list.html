@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>회원 관리</h2>
+    <a th:href="@{/user/register}">회원가입</a>
+
+    <table border="1">
+
+        <tr>
+            <th align="center" width="100">가입 번호</th>
+            <th align="center" width="200">아이디</th>
+            <th align="center" width="200">비밀번호</th>
+            <th align="center" width="200">이름</th>
+            <th align="center" width="200">등록일자</th>
+        </tr>
+
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="5">
+                현재 게시물이 없습니다!
+            </td>
+        </tr>
+
+        <tr th:each="user : ${list}">
+            <td align="center" th:text="${user.userNo}"></td>
+            <td align="center">
+                <a th:href="@{|/user/read?userNo=${user.userNo}|}" th:text="${user.id}"></a>
+            </td>
+            <td align="center" th:text="${user.passwd}"></td>
+            <td align="center" th:text="${user.name}"></td>
+            <td align="center" th:text="${#dates.format(user.regDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+        </tr>
+    </table>
+</body>
+</html>
