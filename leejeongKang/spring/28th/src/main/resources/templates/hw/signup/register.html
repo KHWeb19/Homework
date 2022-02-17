@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src = "http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var formObj = $("#member");
+
+    $("#btnRegister").on("click", function(){
+        formObj.attr("action", "/hw/signup/register");
+        formObj.attr("method", "post");
+        formObj.submit();
+    });
+
+     $("#btnLogin").on("click", function() {
+        self.location = "/hw/signup/login";
+        });
+        });
+
+</script>
+<body>
+    <h2>회원 가입</h2>
+    <form id="member" th:object="${member}">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="id" th:field="*{id}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="text" name="password" th:field="*{password}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="name" th:field="*{name}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td>
+                    <input type="text" name="phoneNo" th:field="*{phoneNo}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<div>
+    <button type="submit" id="btnRegister">가입</button>
+    <button type="submit" id="btnLogin">로그인</button>
+</div>
+
+</body>
+</html>
