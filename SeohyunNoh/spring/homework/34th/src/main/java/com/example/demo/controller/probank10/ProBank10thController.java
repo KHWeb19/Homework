@@ -32,8 +32,6 @@ public class ProBank10thController {
         return "/pro-bank10th/product/login";
     }
 
-
-
     @GetMapping("/register")
     public String registerForm(Product product){
         log.info("registerForm");
