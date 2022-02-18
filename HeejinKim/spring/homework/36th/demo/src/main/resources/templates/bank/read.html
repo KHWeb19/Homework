@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#bankBoard");
+
+        $("#btnModify").on("click", function() {
+
+            var memberNo = $("#memberNo");
+
+            var memberNoVal = memberNo.val();
+
+            self.location = "/bank/page/modify?memberNo=" + memberNoVal;
+        });
+
+        $("#btnRemove").on("click", function() {
+            formObj.attr("action", "/bank/page/remove");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/bank/page/list";
+        });
+    });
+</script>
+
+<body>
+<h2>게시물 읽기</h2>
+
+
+<form id="bankBoard" th:object="${bankBoard}" method="post">
+
+    <input type="hidden" name="memberNo" th:field="*{memberNo}">
+
+    <table>
+        <tr>
+            <td>아이디</td>
+            <td>
+                <input type="text" name="bank_Id" th:field="*{bank_Id}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td>
+                <input type="text" name="bankPassword" th:field="*{bankPassword}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td>
+                <input type="text" name="address" th:field="*{address}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>전화번호</td>
+            <td>
+                <input type="text" name="phoneNum" th:field="*{phoneNum}" readonly="readonly"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<div>
+    <button type="submit" id="btnModify">수정</button>
+    <button type="submit" id="btnRemove">삭제</button>
+    <button type="submit" id="btnList">돌아가기</button>
+</div>
+
+
+</body>
+</html>
