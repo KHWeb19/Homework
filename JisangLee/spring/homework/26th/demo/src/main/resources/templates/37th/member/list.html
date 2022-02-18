@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>가입된 회원 리스트 보기</h2>
+    <a th:href="@{/37th/member/join}">회원 가입</a>
+    <table border="1">
+        <tr>
+            <th align="center" width="50">번호</th>
+            <th align="center" width="200">이름</th>
+            <th align="center" width="100">나이</th>
+            <th align="center" width="50">성별</th>
+            <th align="center" width="250">연락처</th>
+        </tr>
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="5">
+                현재 가입된 회원이 없습니다!
+            </td>
+
+        </tr>
+
+        <tr th:each="memberManagementSystem : ${list}">
+            <td align="center" th:text="${memberManagementSystem.memberNo}">
+            </td>
+            <td align="center">
+                <a th:href="@{|/37th/member/read?memberNo=${memberManagementSystem.memberNo}|}"
+                   th:text="${memberManagementSystem.name}">
+                </a>
+            <td align="center" th:text="${memberManagementSystem.age}">
+            </td>
+            <td align="center" th:text="${memberManagementSystem.gender}">
+            </td>
+            <td align="center" th:text="${memberManagementSystem.phoneNumber}">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var formObj = $("#memberManagementSystem");
+
+        $("#btnModify").on("click", function(){
+            var memberNo = $("#memberNo");
+            var memberNoVal = memberNo.val();
+
+            self.location = "/37th/member/modify?memberNo=" + memberNoVal;
+        });
+
+        $("#btnRemove").on("click", function(){
+            formObj.attr("action", "/37th/member/remove");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function(){
+            self.location = "/37th/member/list";
+        });
+    });
+</script>
+
+
+
+<body>
+    <h2>회원 상세 정보 보기</h2>
+
+    <form id="memberManagementSystem" th:object="${memberManagementSystem}" method="post">
+        <input type="hidden" name="memberNo" th:field="*{memberNo}">
+
+        <table>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="name" th:field="*{name}" readonly="readonly"/>
+                </td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td>
+                    <input type="text" name="age" th:field="*{age}" readonly="readonly"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for = "gender1"></label>성별</td>
+                <td>
+                    <input type="radio" name="gender" value = "남" checked id="gender1" readonly="readonly"/>남자
+                    <input type="radio" name="gender" value = "여" checked id="gender2" readonly="readonly"/>여자
+                </td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td>
+                    <input type="text" name="phoneNumber" th:field="*{phoneNumber}" readonly="readonly"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnModify">수정</button>
+        <button type="submit" id="btnRemove">삭제</button>
+        <button type="submit" id="btnList">돌아가기</button>
+    </div>
+</body>
+</html>

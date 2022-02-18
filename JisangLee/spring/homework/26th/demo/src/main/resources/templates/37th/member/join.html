@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#memberManagementSystem");
+
+        $("#btnJoin").on("click", function() {
+            formObj.attr("action", "/37th/member/join");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+        $("#btnLogin").on("click", function() {
+            formObj.attr("action", "/37th/member/login");
+            formObj.attr("method", "get");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/37th/member/list";
+        });
+    });
+</script>
+
+
+<body>
+    <h2>회원 가입 페이지</h2>
+
+    <form id="memberManagementSystem" th:object="${memberManagementSystem}">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="id" th:field="*{id}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="password" name="password" th:field="*{password}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="name" th:field="*{name}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td>
+                    <input type="text" name="age" th:field="*{age}"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for = "gender1"></label>성별</td>
+                <td>
+                    <input type="radio" name="gender" value = "남" checked id="gender1"/>남자
+                    <input type="radio" name="gender" value = "여" checked id="gender2"/>여자
+                </td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td>
+                    <input type="text" name="phoneNumber" th:field="*{phoneNumber}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnJoin">회원 가입</button>
+        <button type="submit" id="btnLogin">로그인</button>
+        <button type="submit" id="btnList">돌아가기</button>
+    </div>
+</body>
+</html>
