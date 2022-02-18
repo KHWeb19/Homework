@@ -27,7 +27,7 @@ public class BoardController {
         model.addAttribute("list" , boardService.list());
 
 
-        return "32th/board/list";
+        return "/32th/board/list";
     }
 
     @GetMapping("/register")
@@ -35,7 +35,7 @@ public class BoardController {
         log.info("register");
 
 
-        return "32th/board/register";
+        return "/32th/board/register";
     }
 
 
@@ -44,6 +44,6 @@ public class BoardController {
     public String registerDb(){
         log.info("registerDb");
 
-        return "32th/board/success";
+        return "/32th/board/success";
     }
 }

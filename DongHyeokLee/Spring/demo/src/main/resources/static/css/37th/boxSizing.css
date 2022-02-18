@@ -1,0 +1,22 @@
+div {
+    float: left;
+    margin-right: 40px;
+}
+
+.box1 {
+    box-sizing: content-box;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid red;
+}
+
+.box2 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid red;
+}

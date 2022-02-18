@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/css/11th/section.css">
+
+    <style>
+        label{
+            font-size: 16px;
+            line_height: 25px;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    $(document).ready(function(){
+          var formObj = $("#userCheck");
+
+          $("#btnSignUp").on("click", function(){
+           self.location = "/11th/register";
+        });
+
+         $("#btnSignIn").on("click", function(){
+            formObj.attr("action","/11th/login");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+    });
+    </script>
+
+
+</head>
+<body>
+
+    <h2>로그인</h2>
+    <div id="container1">
+        <section>
+    <form id="userCheck" th:object="${userCheck}">
+        <fieldset>
+            <label>아이디: <input type="text" size="16" name="checkUserId"  th:field="*{checkUserId}"/></label>
+            <label>패스워드: <input type="password" size="16" name="checkUserPw" th:field="*{checkUserPw}"/></label>
+        </fieldset>
+    </form>
+        </section>
+    </div>
+
+    <div>
+
+        <button type="submit" id="btnSignIn" >로그인</button>
+        <button type="submit" id="btnSignUp">회원가입</button>
+        </form>
+    </div>
+
+</body>
+</html>

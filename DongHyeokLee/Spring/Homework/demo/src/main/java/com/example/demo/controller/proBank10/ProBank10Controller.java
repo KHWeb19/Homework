@@ -2,7 +2,7 @@ package com.example.demo.controller.proBank10;
 
 
 import com.example.demo.entity.proBank10.Product;
-import com.example.demo.service.ProductService;
+import com.example.demo.service.proBank10.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

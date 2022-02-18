@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.demo.service.proBank10;
 
 import com.example.demo.entity.proBank10.Product;
-import com.example.demo.repository.ProductRepository;
+import com.example.demo.repository.proBank10.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

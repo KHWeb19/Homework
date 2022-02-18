@@ -1,0 +1,16 @@
+div {
+    width: 125px;
+    height: 150px;
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 75px/100px;
+}
+#mario {
+    background:url(../../img/mario.png) no-repeat;
+    background-size: cover;
+}
+#akmu {
+    background:url(../../img/akmu.jpg) no-repeat;
+    background-size: cover;
+}

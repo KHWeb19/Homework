@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.proBank10;
 
 import com.example.demo.entity.proBank10.Product;
 

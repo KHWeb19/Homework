@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.demo.repository.proBank10;
 
 
 import com.example.demo.entity.proBank10.Product;
