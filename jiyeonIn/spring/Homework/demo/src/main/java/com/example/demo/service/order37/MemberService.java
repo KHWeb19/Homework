@@ -11,6 +11,6 @@ public interface MemberService {
     public void modify(Member member);
     public void remove(Integer memberNo);
     public Member read(Integer memberNo);
-    public boolean loginCheck(Member member);
+    public Integer loginCheck(Member member);
 
 }

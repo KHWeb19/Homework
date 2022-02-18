@@ -38,15 +38,15 @@ public class MemberServiceImpl implements MemberService{
     }
 
     @Override
-    public boolean loginCheck(Member member) {
-        Member findId = repository.findId(member.getId());
-        if(findId == null){
+    public Integer loginCheck(Member member) {
+        Member checkId = repository.findId(member);
+
+        if(checkId == null){
             return 0;
-        }
-        if(!findId.getPassword().equals(member.getPassword())){
-            return -1;
-        }else{
+        }else if (checkId.getPassword().equals(member.getPassword())){
             return 1;
+        }else {
+            return -1;
         }
     }
 }

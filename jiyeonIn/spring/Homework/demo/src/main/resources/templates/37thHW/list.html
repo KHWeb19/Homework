@@ -6,10 +6,9 @@
 
     <link rel="stylesheet" href="/css/37th/cssElementSelector.css">
 </head>
+
 <body>
     <h2>회원관리 시스템</h2>
-    <a th:href="@{/bank11/register}">회원 가입</a>
-    <a th:href="@{/bank11/login}">로그인</a>
     <table border="1">
         <tr>
             <th align="center" width="100">회원 번호</th>
@@ -26,6 +25,7 @@
             </td>
             <td align="center" th:text="${#dates.format(member.regDate,'yyyy-MM-dd HH:mm:ss')}"></td>
         </tr>
+        <a th:href="@{/bank11/main}">메인으로 가기</a>
     </table>
 </body>
 </html>

@@ -1,19 +1,14 @@
 package com.example.demo.controller37HW;
 
-import com.example.demo.entity.order37.LoginPage;
 import com.example.demo.entity.order37.Member;
-import com.example.demo.entity.order37.MemberLogin;
 import com.example.demo.service.order37.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 @Slf4j
 @Controller
@@ -22,6 +17,13 @@ public class Bank11Controller {
 
     @Autowired
     private MemberService memberService;
+
+    @GetMapping("/main")
+    public String main(){
+        log.info("main");
+
+        return "/37thHW/main";
+    }
 
     @GetMapping("/register")
     public String registerForm(Member member){
@@ -99,22 +101,21 @@ public class Bank11Controller {
     }
 
     @GetMapping("/login")
-    public String loginForm(Member member, Model model){
+    public String loginForm(Member member){
         log.info("loginForm");
 
         return "/37thHW/login";
     }
 
     @PostMapping("/login")
-    public String login(@ModelAttribute Member member){
+    public String login(Member member){
         log.info("login");
 
-        if(memberService.loginCheck(member)){
-            return "/37thHW/list";
-        }
-
-        return "/37thHW/success";
+        if(memberService.loginCheck(member) == 1){
+            return "/37thHW/successLogin";
+        }else if(memberService.loginCheck(member) == 0){
+            return "/37thHW/fail";
+        }else
+            return "/37thHW/fail1";
     }
-
-
 }
