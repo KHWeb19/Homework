@@ -12,13 +12,13 @@
         var formObj = $("#productBoard");
 
         $("#btnRegister").on("click", function() {
-            formObj.attr("action", "/product/register");
+            formObj.attr("action", "/bank10/register");
             formObj.attr("method", "post");
             formObj.submit();
         });
 
         $("#btnList").on("click", function() {
-            self.location = "/product/list";
+            self.location = "/bank10/list";
         });
     });
 </script>

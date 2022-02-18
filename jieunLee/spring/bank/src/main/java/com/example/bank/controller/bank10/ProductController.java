@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Slf4j
 @Controller
-@RequestMapping("/product")
+@RequestMapping("/bank10")
 public class ProductController {
 
     @Autowired
@@ -22,7 +22,7 @@ public class ProductController {
     public String registerForm (ProductBoard productBoard, Model model) {
         log.info("registerForm check");
 
-        return "/product/register";
+        return "/bank10/register";
     }
 
     @PostMapping("/register")
@@ -30,7 +30,7 @@ public class ProductController {
         log.info("register check");
 
         productBoardService.register(productBoard);
-        return "/product/register";
+        return "/bank10/success";
     }
 
     @GetMapping("/list")
@@ -39,7 +39,7 @@ public class ProductController {
 
         model.addAttribute("list", productBoardService.list());
 
-        return "/product/list";
+        return "/bank10/list";
     }
 
     @GetMapping("/read")
@@ -47,7 +47,7 @@ public class ProductController {
         log.info("read check");
 
         model.addAttribute(productBoardService.read(productNo));
-        return "/product/read";
+        return "/bank10/read";
     }
 
     @GetMapping("/modify")
@@ -55,7 +55,7 @@ public class ProductController {
         log.info("modifyForm check");
 
         model.addAttribute(productBoardService.read(productNo));
-        return "/product/modify";
+        return "/bank10/modify";
     }
 
     @PostMapping("modify")
@@ -63,7 +63,7 @@ public class ProductController {
         log.info("modify check");
 
         productBoardService.modify(productBoard);
-        return "/product/success";
+        return "/bank10/success";
     }
 
     @PostMapping("/remove")
@@ -71,6 +71,6 @@ public class ProductController {
         log.info("remove");
 
         productBoardService.remove(productNo);
-        return "/product/success";
+        return "/bank10/success";
     }
 }

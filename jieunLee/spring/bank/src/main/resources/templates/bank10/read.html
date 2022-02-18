@@ -13,16 +13,16 @@
         $("#btnModify").on("click", function() {
             var productNo = $("#productNo")
             var productNoVal = productNo.val();
-            self.location = "/product/modify?productNo=" + productNoVal;
+            self.location = "/bank10/modify?productNo=" + productNoVal;
         });
 
         $("#btnRemove").on("click", function() {
-            formObj.attr("action", "/product/remove");
+            formObj.attr("action", "/bank10/remove");
             formObj.submit();
         });
 
         $("#btnList").on("click", function() {
-            self.location = "/product/list";
+            self.location = "/bank10/list";
         });
     });
 </script>

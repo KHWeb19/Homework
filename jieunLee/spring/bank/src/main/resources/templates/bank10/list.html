@@ -9,7 +9,7 @@
 
 <section>
     <h2>게시물 보기</h2>
-    <a th:href="@{/product/register}">상품 등록하기</a>
+    <a th:href="@{/bank10/register}">상품 등록하기</a>
     <table border="1">
         <tr>
             <th align="center" width="80">번호</th>
@@ -29,7 +29,7 @@
             </td>
             <td align="left">
                 <!-- |사이에 들어가있으면 가변인자 처리| -->
-                <a th:href="@{|/product/read?productNo=${product.productNo}|}" th:text="${product.title}"></a>
+                <a th:href="@{|/bank10/read?productNo=${product.productNo}|}" th:text="${product.title}"></a>
             </td>
             <td align="right" th:text="${product.writer}">
             </td>

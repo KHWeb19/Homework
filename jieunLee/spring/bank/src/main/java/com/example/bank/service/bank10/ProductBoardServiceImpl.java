@@ -36,7 +36,4 @@ public class ProductBoardServiceImpl implements ProductBoardService {
     public void remove(Integer productNo) {
         repository.delete(productNo);
     }
-
-
-
 }

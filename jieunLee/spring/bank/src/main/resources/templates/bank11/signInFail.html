@@ -9,13 +9,18 @@
 <script>
     $(document).ready(function() {
         $("#btnList").on("click", function() {
-            self.location = "/bank10/list";
+            self.location = "/bank11/list";
+        });
+        $("#btnSignIn").on("click", function() {
+            self.location = "/bank11/signIn";
         });
     });
 </script>
 
 <body>
-    <h2>성공!</h2>
+    <h2>실패!</h2>
     <button type="submit" id="btnList">돌아가기</button>
+    <button type="submit" id="btnSignIn">다시시도</button>
 </body>
+
 </html>

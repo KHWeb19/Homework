@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $("#btnSignIn").on("click", function() {
+            self.location = "/bank11/signIn";
+        });
+        $("#btnSignUp").on("click", function() {
+            self.location = "/bank11/signUp";
+        });
+    });
+</script>
+
+<body>
+<div>
+    <button type="submit" id="btnSignIn">로그인</button>
+    <button type="submit" id="btnSignUp">회원가입</button>
+</div>
+
+<h2>회원 목록</h2>
+<table border="1">
+    <tr>
+        <th align="center" width="80">번호</th>
+        <th align="center" width="100">이름</th>
+        <th align="center" width="100">아이디</th>
+        <th align="center" width="100">가입날짜</th>
+    </tr>
+    <tr th:if="${#lists.isEmpty(list)}">
+        <td colspan="4">
+            현재 유저가 없습니다!
+        </td>
+    </tr>
+    <tr th:each="user : ${list}">
+        <td align="center" th:text="${user.userNo}">
+        </td>
+        <td align="center">
+            <a th:href="@{|/bank11/read?userNo=${user.userNo}|}" th:text="${user.userName}"></a>
+        </td>
+        <td align="center" th:text="${user.userId}">
+        </td>
+        <td align="center"
+            th:text="${#dates.format(user.signUpDate, 'yyyy-MM-dd HH:mm:ss')}">
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
