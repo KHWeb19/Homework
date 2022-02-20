@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#member");
+
+        $("#btnMain").on("click", function() {
+            self.location = "/40th/prob11/main";
+        });
+
+        $("#btnModify").on("click", function() {
+            formObj.attr("action", "/40th/prob11/modify");
+            formObj.attr("method", "get");
+            formObj.submit();
+        });
+
+        $("#btnDelete").on("click", function() {
+            formObj.attr("action", "/40th/prob11/delete");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+    });
+</script>
+
+<body>
+    <h2>게시물 읽기</h2>
+
+    <form id="member" th:object="${member}" method="post">
+        <input type="hidden" name="memberNo" th:field="*{memberNo}">
+
+        <table>
+            <tr>
+                <td>아 이 디</td>
+                <td>
+                    <input type="text" name="id" th:field="*{id}" readonly="readonly"/>
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="text" name="pw" th:field="*{pw}"  readonly="readonly"/>
+                </td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td>
+                    <input type="text" name="intro" th:field="*{intro}" readonly="readonly"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnMain">돌아가기</button>
+        <button type="submit" id="btnModify">수정</button>
+        <button type="submit" id="btnDelete">삭제</button>
+    </div>
+</body>
+</html>
