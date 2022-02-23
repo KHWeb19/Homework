@@ -6,12 +6,11 @@
 </head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
-
     $(document).ready(function() {
         var formObj = $("#bankBoard");
 
-        $("#btnRegister").on("click", function() {
-            formObj.attr("action", "/bank/page/register");
+        $("#btnLogin").on("click", function() {
+            formObj.attr("action", "/bank/page/login");
             formObj.attr("method", "post");
             formObj.submit();
         });
@@ -21,15 +20,13 @@
         });
     });
 </script>
-
 <body>
-<h2>회원가입 페이지</h2>
-
+<h2>로그인</h2>
 
 <form id="bankBoard" th:object="${bankBoard}">
     <table>
         <tr>
-            <td>아이디</td>
+            <td>아 이 디</td>
             <td>
                 <input type="text" name="bank_Id" th:field="*{bank_Id}"/>
             </td>
@@ -37,31 +34,15 @@
         <tr>
             <td>비밀번호</td>
             <td>
-                <input type="text" name="bankPassword" th:field="*{bankPassword}"/>
-            </td>
-        </tr>
-        <tr>
-            <td>주소</td>
-            <td>
-                <input type="text" name="address" th:field="*{address}"/>
-            </td>
-        </tr>
-        <tr>
-            <td>전화번호</td>
-            <td>
-                <input type="text" name="phoneNum" th:field="*{phoneNum}"/>
+                <input type="password" name="bankPassword" th:field="*{bankPassword}"/>
             </td>
         </tr>
     </table>
 </form>
 
-
 <div>
-    <button type="submit" id="btnRegister">가입</button>
+    <button type="submit" id="btnLogin">로그인</button>
     <button type="submit" id="btnMain">돌아가기</button>
 </div>
-
-
-
 </body>
 </html>

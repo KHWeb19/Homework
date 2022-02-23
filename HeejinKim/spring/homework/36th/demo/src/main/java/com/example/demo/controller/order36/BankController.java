@@ -18,6 +18,13 @@ public class BankController {
     @Autowired
     private BankBoardService bankBoardService;
 
+    @GetMapping("/main")
+    public String mainPage () {
+        log.info("mainPage()");
+
+        return "/bank/main";
+    }
+
     @GetMapping("/list")
     public String list (Model model){
         log.info("list");
@@ -65,7 +72,7 @@ public class BankController {
 
 
     @PostMapping("/modify")
-    public String modify (BankBoard bankBoard, Model model) {
+    public String modify (BankBoard bankBoard) {
         log.info("modify");
 
         bankBoardService.modify(bankBoard);
@@ -79,6 +86,22 @@ public class BankController {
 
         bankBoardService.remove(memberNo);
 
+
+        return "/bank/success";
+    }
+
+    @GetMapping ("/login")
+    public String loginForm (BankBoard bankBoard){
+        log.info("loginForm()");
+
+        return "/bank/login";
+    }
+
+    @PostMapping("/login")
+    public String login (BankBoard bankBoard, Model model) {
+        log.info("login: " + bankBoard);
+
+        System.out.println("Login res: " + bankBoardService.login(bankBoard));
 
         return "/bank/success";
     }

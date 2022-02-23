@@ -12,5 +12,6 @@ public interface BankBoardService {// 서비스에  들어가는 것---목록,�
     public BankBoard read (Integer memberNo);
     public void modify (BankBoard bankBoard);
     public void remove (Integer memberNo);
+    public Boolean login (BankBoard bankBoard);
 
 }

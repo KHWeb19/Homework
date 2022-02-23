@@ -44,4 +44,22 @@ public class BankBoardServiceImpl implements BankBoardService { //저장소랑 �
         bankBoardRepository.delete(memberNo);
 
     }
+
+    @Override
+    public Boolean login(BankBoard bankBoard) {
+        BankBoard findMember = bankBoardRepository.findMemberById(bankBoard);
+
+        if (findMember == null) {
+            System.out.printf("There are no %s id\n", bankBoard.getBank_Id());
+            return false;
+        }
+
+        System.out.println("Check Password Only: " + findMember);
+        Boolean loginSuccess = findMember.getBankPassword().equals(bankBoard.getBankPassword());
+
+        return loginSuccess;
+    }
 }
+
+
+

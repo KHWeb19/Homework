@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+</head>
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
 
     $(document).ready(function() {
         var formObj = $("#bankBoard");
 
-        $("#btnRegister").on("click", function() {
+        $("#btnModify").on("click", function() {
             formObj.attr("action", "/bank/page/modify");
             formObj.attr("method", "post");
             formObj.submit();
         });
 
-        $("#btnList").on("click", function() {
-            self.location = "/bank/page/list";
+        $("#btnMain").on("click", function() {
+            self.location = "/bank/page/main";
         });
     });
 </script>
-
+<body>
 
 <h2>회원정보 수정 페이지</h2>
 
@@ -58,14 +60,14 @@
 
 <div>
     <button type="submit" id="btnModify">수정완료</button>
-    <button type="submit" id="btnList">돌아가기</button>
+    <button type="submit" id="btnMain">돌아가기</button>
 </div>
 
 
 
 
-</head>
-<body>
+
+
 
 </body>
 </html>

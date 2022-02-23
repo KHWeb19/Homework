@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 @Repository
@@ -82,15 +81,39 @@ public class BankBoardRepository { //저장소에 저장하기, 목록 불러오
     }
 
     public void update(BankBoard bankBoard) {
-        String query = "update bankBoard set bank_Id = ?, bankPassword = ?, address = ?,phoneNum = ?, where member_no = ?";
+        String query = "update bankBoard set bank_Id = ?, bankPassword = ?, address = ?, phoneNum = ? where member_no = ?";
 
-        jdbcTemplate.update(query,bankBoard.getBank_Id(), bankBoard.getBankPassword(), bankBoard.getAddress(), bankBoard.getPhoneNum(),bankBoard.getMemberNo());
+        jdbcTemplate.update(query,bankBoard.getBank_Id(), bankBoard.getBankPassword(),
+                bankBoard.getAddress(), bankBoard.getPhoneNum(),bankBoard.getMemberNo());
+    }
+
+    public BankBoard findMemberById(BankBoard bankBoard){
+        List<BankBoard> results = jdbcTemplate.query(
+                "select * from bankBoard where bank_Id = ?",
+
+                new RowMapper<BankBoard>() {
+                    @SneakyThrows
+                    @Override
+                    public BankBoard mapRow(ResultSet rs, int rowNum) throws SQLException {
+                        BankBoard  bankBoard = new BankBoard();
+
+                        bankBoard.setBankPassword(rs.getString("bankPassword"));
+
+                        return bankBoard;
+                    }
+                }, bankBoard.getBank_Id()
+        );
+
+        return results.isEmpty() ? null : results.get(0);
     }
 
 
-
-
 }
+
+
+
+
+
 
 
 
