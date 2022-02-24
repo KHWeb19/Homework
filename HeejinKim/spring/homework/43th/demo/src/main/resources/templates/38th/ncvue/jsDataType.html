@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/DataType.js"></script>
+
+</head>
+<body>
+    <div className="DataType">
+        <p>
+         {length}, {lastName} ,{x.toString()}
+        </p>
+    </div>
+
+    <div id="tete">
+    </div>
+
+    <input type="button" onclick="DataType()" value="Display">
+    <!--- 자바 스크립트는 templates,js에서도 작업을 하고 버튼을 생성해야 값을 보여줌(바로 보여주지 x)
+          그러나 vue는 바로 결과를 출력함--->
+
+    <script>
+        var name = "이렇게 바로 출력된다"
+        document.getElementById("tete").innerHTML = name
+    </script>
+</body>
+</html>
