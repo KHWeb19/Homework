@@ -31,6 +31,20 @@ public class PlayVueController {
         return "/38th/ncvue/jsDataType";
     }
 
+    @GetMapping("/doNotUseVar")
+    public String doNotUseVar(){
+        log.info("doNotUseVar()");
+
+        return "/38th/ncvue/doNotUseVar";
+    }
+
+    @GetMapping("/jsArrowStyle")
+    public String jsArrowStyle(){
+        log.info("jsArrowStyle()");
+
+        return "/38th/ncvue/jsArrowStyle";
+    }
+
 
 
 }
