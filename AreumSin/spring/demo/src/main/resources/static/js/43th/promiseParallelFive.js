@@ -39,10 +39,13 @@ function multiply (num1, num2) {
 }
 
 async function asyncProcess () {
-    const p1 = plus(100, 200)
-    const p2 = minus(100, 200)
-    const p3 = multiply(100, 200)
-    const p4 = divide(100, 200)
+    const p1 = plus(100, 200) // 쓰레드 1
+    const p2 = minus(100, 200) // 쓰레드 2
+    const p3 = multiply(100, 200) // 쓰레드 3
+    const p4 = divide(100, 200) // 쓰레드 4
+
+    // 쓰레드는 한번에 실행이 됨.
+    // 하지만 async 때문에 결과가 한번에 몰아서 나온다.
 
     const res1 = await p1
     const res2 = await p2

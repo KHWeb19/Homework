@@ -39,14 +39,18 @@ function multiply (num1, num2) {
 }
 
 async function asyncProcess () {
-    const res1 = await plus(100, 200)
-    console.log(res1)
+    const res1 = await plus(100, 200) // 쓰레드 1 생성
+    console.log(res1) // 바로 응답값 출력
     const res2 = await minus(100, 200)
     console.log(res2)
     const res3 = await multiply(100, 200)
     console.log(res3)
     const res4 = await divide(100, 200)
     console.log(res4)
+
+    // 그럼 멀티 쓰레드가 아닌건가요?
+    // 순차적이다 -> 멀티쓰레드를 사용하지 않는다?
+    // 순차적이다 -> 쓰레드를 사용할 필요가 없다? X -> 쓰레드는 어디서나 사용중
 }
 
 function PromiseParallelFour () {
