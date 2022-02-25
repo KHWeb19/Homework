@@ -18,7 +18,10 @@ function PromiseSix () {
             }, 1000)
         })
     }).then(
-        (response) => console.log("응답: " + response)
+        //(response) => console.log("응답: " + response)
+        function (response){
+            console.log("응답: "+response);
+        }
     )
 
     console.log("작업 완료!")
