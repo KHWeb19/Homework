@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#addScore");
+
+        $("#btnRegister").on("click", function() {
+            formObj.attr("action", "/prob11/register");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/prob11/list";
+        });
+    });
+</script>
+
+<body>
+학생 성정 입력
+<form id="addScore" th:object ="${score}">
+    <table>
+        <tr>
+            <td>이름</td>
+            <td>
+                <input type="text" name="name" th:field="*{name}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>국어</td>
+            <td>
+                <input type="text" name="korean" th:field="*{korean}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>수학</td>
+            <td>
+                <input type="text" name="math" th:field="*{math}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>영어</td>
+            <td>
+                <input type="text" name="english" th:field="*{english}"/>
+            </td>
+        </tr>
+    </table>
+
+    <button type="submit" id="btnRegister">등록</button>
+    <button type="submit" id="btnList">리스트 보기</button>
+
+</form>
+</body>
+</html>

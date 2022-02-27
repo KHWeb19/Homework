@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/prob11/register}">성적 입력</a>
+
+<h2>성적표</h2>
+    <table border="1">
+        <tr>
+            <th align="center" width="80">번호</th>
+            <th align="center" width="100">이름</th>
+            <th align="center" width="100">국어</th>
+            <th align="center" width="100">수학</th>
+            <th align="center" width="100">영어</th>
+            <th align="center" width="100">개인 평균</th>
+        </tr>
+
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="6">
+                입력된 성적은 없음
+            </td>
+        </tr>
+
+        <tr th:each="score: ${list}">
+            <td align="center" th:text="${score.studentNo}"></td>
+            <td align="center">
+                <a th:href="@{|read?studentNo=${score.studentNo}|}"
+                   th:text="${score.name}"></a>
+            </td>
+            <td align="center" th:text="${score.korean}"></td>
+            <td align="center" th:text="${score.math}"></td>
+            <td align="center" th:text="${score.english}"></td>
+            <td align="center" th:text="${score.scoreAvg}"></td>
+        </tr>
+
+    </table>
+
+    <br/>
+    <br/>
+
+    <h2>평균 성적 확인</h2>
+    <table border ="1">
+        <tr>
+            <th align="center" width="120">국어 평균</th>
+            <th align="center" width="120">수학 평균</th>
+            <th align="center" width="120">영어 평균</th>
+            <th align="center" width="120">반 평균</th>
+        </tr>
+
+        <tr th:if="${#lists.isEmpty(list2)}">
+            <td colspan="4">
+                입력된 성적은 없음
+            </td>
+        </tr>
+        <tr th:each="score: ${list2}">
+            <td align="center" th:text="${score.koreanAvg}"></td>
+            <td align="center" th:text="${score.mathAvg}"></td>
+            <td align="center" th:text="${score.englishAvg}"></td>
+            <td align="center" th:text="${score.classAvg}"></td>
+        </tr>
+
+    </table>
+</body>
+</html>

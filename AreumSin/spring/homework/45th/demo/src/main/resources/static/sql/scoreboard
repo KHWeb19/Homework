@@ -1,0 +1,9 @@
+create table scoreboard(
+   student_no int not null auto_increment,
+   name varchar(20) not null,
+   korean int not null,
+   math int not null,
+   english int not null,
+   score_avg int,
+   primary key(student_no)
+);
