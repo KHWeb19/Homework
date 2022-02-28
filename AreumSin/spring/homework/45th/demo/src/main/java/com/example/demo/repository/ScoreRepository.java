@@ -39,7 +39,7 @@ public class ScoreRepository {
                 }
         );
 
-        return results;
+        return results; // null
     }
 
     public void register(Score score) {
@@ -100,7 +100,9 @@ public class ScoreRepository {
                     }
                 }
         );
-        return result;
+        //return result; // undefined 였다.
+
+        return null;
     }
 
 }
