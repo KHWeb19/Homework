@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank9;
+package com.example.bank.controller.homework.bank9;
 
 import com.example.bank.entity.bank9.Product;
 import com.example.bank.entity.bank9.ViewRandomProduct;
@@ -19,7 +19,7 @@ public class Hw1Controller {
     public String homework1 (Model model) {
         log.info("homework1 check");
 
-        return "bank9/homework1";
+        return "/homework/bank9/homework1";
     }
 
     @ResponseBody

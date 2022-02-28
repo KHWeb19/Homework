@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank8;
+package com.example.bank.controller.homework.bank8;
 
 import com.example.bank.utility.bank8.Sequence;
 import com.example.bank.utility.bank8.Student;
@@ -19,7 +19,7 @@ public class Bank8Controller {
 
         Sequence sequence = new Sequence(31);
         model.addAttribute("result", sequence.initSeq());
-        return "bank8/homework1";
+        return "/homework/bank8/homework1";
     }
 
     @RequestMapping("/homework2")
@@ -29,6 +29,6 @@ public class Bank8Controller {
         Student std = new Student();
         std.initAverage();
         model.addAttribute("average", std.getAverage());
-        return "bank8/homework2";
+        return "/homework/bank8/homework2";
     }
 }

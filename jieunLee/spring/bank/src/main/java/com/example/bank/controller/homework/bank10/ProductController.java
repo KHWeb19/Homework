@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank10;
+package com.example.bank.controller.homework.bank10;
 
 import com.example.bank.entity.bank10.ProductBoard;
 import com.example.bank.service.bank10.ProductBoardService;
@@ -22,7 +22,7 @@ public class ProductController {
     public String registerForm (ProductBoard productBoard, Model model) {
         log.info("registerForm check");
 
-        return "/bank10/register";
+        return "/homework/bank10/register";
     }
 
     @PostMapping("/register")
@@ -30,7 +30,7 @@ public class ProductController {
         log.info("register check");
 
         productBoardService.register(productBoard);
-        return "/bank10/success";
+        return "/homework/bank10/success";
     }
 
     @GetMapping("/list")
@@ -39,7 +39,7 @@ public class ProductController {
 
         model.addAttribute("list", productBoardService.list());
 
-        return "/bank10/list";
+        return "/homework/bank10/list";
     }
 
     @GetMapping("/read")
@@ -47,7 +47,7 @@ public class ProductController {
         log.info("read check");
 
         model.addAttribute(productBoardService.read(productNo));
-        return "/bank10/read";
+        return "/homework/bank10/read";
     }
 
     @GetMapping("/modify")
@@ -55,7 +55,7 @@ public class ProductController {
         log.info("modifyForm check");
 
         model.addAttribute(productBoardService.read(productNo));
-        return "/bank10/modify";
+        return "/homework/bank10/modify";
     }
 
     @PostMapping("modify")
@@ -63,7 +63,7 @@ public class ProductController {
         log.info("modify check");
 
         productBoardService.modify(productBoard);
-        return "/bank10/success";
+        return "/homework/bank10/success";
     }
 
     @PostMapping("/remove")
@@ -71,6 +71,6 @@ public class ProductController {
         log.info("remove");
 
         productBoardService.remove(productNo);
-        return "/bank10/success";
+        return "/homework/bank10/success";
     }
 }

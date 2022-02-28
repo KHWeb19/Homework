@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank9;
+package com.example.bank.controller.homework.bank9;
 
 import com.example.bank.entity.bank9.Lotto;
 import com.example.bank.entity.bank9.ViewLottoPlacement;
@@ -19,7 +19,7 @@ public class Hw2Controller {
     public String homework2 () {
         log.info("homework2 check");
 
-        return "bank9/homework2";
+        return "/homework/bank9/homework2";
     }
 
     @ResponseBody

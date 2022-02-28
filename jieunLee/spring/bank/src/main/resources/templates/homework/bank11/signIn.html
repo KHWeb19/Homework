@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() {
         var formObj = $("#user");
 
-        $("#btnSignUp").on("click", function() {
-            formObj.attr("action", "/bank11/signUp");
+        $("#btnSignIn").on("click", function() {
+            formObj.attr("action", "/bank11/signIn");
             formObj.attr("method", "post");
             formObj.submit();
         });
@@ -23,25 +22,19 @@
 </script>
 
 <body>
-    <h2>회원가입 페이지</h2>
+    <h2>로그인 페이지</h2>
     <form id="user" th:object="${user}">
         <table>
             <tr>
                 <td>아이디</td>
                 <td>
-                    <input type="text" name="userId" th:field="*{userId}"/>
+                    <input type="text" name="userId"/>
                 </td>
             </tr>
             <tr>
                 <td>비밀번호</td>
                 <td>
-                    <input type="text" name="userPassword" th:field="*{userPassword}"/>
-                </td>
-            </tr>
-            <tr>
-                <td>이름</td>
-                <td>
-                    <input type="text" name="userName" th:field="*{userName}"/>
+                    <input type="password" name="userPassword"/>
                 </td>
             </tr>
         </table>
@@ -49,7 +42,7 @@
 
     <div>
         <button type="submit" id="btnList">돌아가기</button>
-        <button type="submit" id="btnSignUp">완료</button>
+        <button type="submit" id="btnSignIn">완료</button>
     </div>
 
 </body>

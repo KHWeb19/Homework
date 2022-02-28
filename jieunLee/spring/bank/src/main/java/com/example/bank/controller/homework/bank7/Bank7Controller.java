@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank7;
+package com.example.bank.controller.homework.bank7;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ public class Bank7Controller implements Runnable {
     public String homework1 (Model model) {
         int rand = (int)(Math.random()*6+1);
         model.addAttribute("dice", rand);
-        return "bank7/homework1";
+        return "/homework/bank7/homework1";
     }
 
     //값이 유지되어야하니까 전역변수로
@@ -34,6 +34,6 @@ public class Bank7Controller implements Runnable {
     @RequestMapping("/homework2")
     public String homework2 (Model model) {
         model.addAttribute("test", test);
-        return "bank7/homework2";
+        return "/homework/bank7/homework2";
     }
 }

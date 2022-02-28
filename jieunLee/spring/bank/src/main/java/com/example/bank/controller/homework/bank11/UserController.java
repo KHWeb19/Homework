@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank11;
+package com.example.bank.controller.homework.bank11;
 
 import com.example.bank.entity.bank11.User;
 import com.example.bank.service.bank11.UserService;
@@ -18,19 +18,26 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/main")
+    public String main () {
+        log.info("main check");
+
+        return "/homework/bank11/main";
+    }
+
     @GetMapping("/list")
     public String list (Model model) {
         log.info("list check");
 
         model.addAttribute("list", userService.list());
-        return "/bank11/list";
+        return "/homework/bank11/list";
     }
 
     @GetMapping("/signUp")
     public String signUpForm (User user) {
         log.info("signUpForm check");
 
-        return "/bank11/signUp";
+        return "/homework/bank11/signUp";
     }
 
     @PostMapping("/signUp")
@@ -38,7 +45,7 @@ public class UserController {
         log.info("signUp check");
 
         userService.signUp(user);
-        return "/bank11/success";
+        return "/homework/bank11/success";
     }
 
     @GetMapping("/read")
@@ -46,7 +53,7 @@ public class UserController {
         log.info("read check");
 
         model.addAttribute(userService.read(userNo));
-        return "/bank11/read";
+        return "/homework/bank11/read";
     }
 
     @GetMapping("/modify")
@@ -54,7 +61,7 @@ public class UserController {
         log.info("modifyForm check");
 
         model.addAttribute(userService.read(userNo));
-        return "/bank11/modify";
+        return "/homework/bank11/modify";
     }
 
     @PostMapping("/modify")
@@ -62,7 +69,7 @@ public class UserController {
         log.info("modify check");
 
         userService.modify(user);
-        return "/bank11/success";
+        return "/homework/bank11/success";
     }
 
     @PostMapping("/remove")
@@ -70,14 +77,14 @@ public class UserController {
         log.info("remove check");
 
         userService.remove(userNo);
-        return "/bank11/success";
+        return "/homework/bank11/success";
     }
 
     @GetMapping("/signIn")
     public String signInForm () {
         log.info("signIn check");
 
-        return "/bank11/signIn";
+        return "/homework/bank11/signIn";
     }
 
     @PostMapping("/signIn")
@@ -87,6 +94,6 @@ public class UserController {
         if(userService.signIn(user)){
             return "/bank11/success";
         }
-        return "/bank11/signInFail";
+        return "/homework/bank11/signInFail";
     }
 }

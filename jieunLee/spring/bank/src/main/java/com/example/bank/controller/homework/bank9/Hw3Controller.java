@@ -1,4 +1,4 @@
-package com.example.bank.controller.bank9;
+package com.example.bank.controller.homework.bank9;
 
 import com.example.bank.utility.bank9.Area;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +16,7 @@ public class Hw3Controller {
     public String homework3 () {
         log.info("homework3 check");
 
-        return "/bank9/homework3";
+        return "/homework/bank9/homework3";
     }
 
     Area area = new Area(9);
