@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #submit{
+        width:300px;
+        margin:auto;
+    }
+</style>
+
+<body>
+<h1>포트폴리오 문제</h1>
+<p>설명 : '*'이 붙은 문구 및 현재 작성된 이 문구는 화면구현 시 구현을 안해도 됩니다. 설명을 위해 작성한 구문입니다.</p>
+<hr>
+<form action="/insert.no" method="post">
+    <fieldset>
+            <legend>공지사항 작성하기</legend>
+        <table border="0">
+            <tr>
+                <td width=""><b>제목</b>
+                <input type="text" name="title" width="200" placeholder="제목을 입력하시오.">
+                </td>
+            </tr>
+            <tr>
+                <td><b>내용</b><br>
+                <textarea type="text" name="content"
+                       style="width:200px; height:100px;"
+                          placeholder="내용을 입력하시오."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><b>첨부파일</b>
+                    <button type="button" name="uploadFile">파일선택</button>
+                    선택된 파일 없음
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="submit">
+                        <button type="submit" name="submit">작성하기</button>
+                    </div>
+                </td>
+            </tr>
+         </table>
+    </fieldset>
+</form>
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <tr bgcolor="#FFBF00">
+        <th align="center" width="40"><font color="white"> 번호 </font></th>
+        <th align="center" width="300" colspan="2"><font color="white">제목</font></th>
+        <th align="center" width="100"><font color="white">작성자</font></th>
+        <th align="center" width="150"><font color="white">작성일</font></th>
+        <th align="center" width="50"><font color="white">조회수</font></th>
+    </tr>
+    <tr bgcolor="#F3E2A9">
+        <td align="left">9</td>
+        <td align="left" width="230">공지사항 제목 9</td>
+        <td><button type="button" id="goOn1">바로가기</button> </td>
+        <td align="left">user01</td>
+        <td align="left">2021-03-29</td>
+        <td align="left">34</td>
+    </tr>
+    <tr bgcolor="#F3E2A9">
+        <td align="left">6</td>
+        <td align="left" width="230">공지사항 제목 6</td>
+        <td><button type="button" id="goOn2">바로가기</button> </td>
+        <td align="left">answ445</td>
+        <td align="left">2021-03-12</td>
+        <td align="left">67</td>
+    </tr>
+    <tr bgcolor="#F3E2A9">
+        <td align="left">3</td>
+        <td align="left" width="230">공지사항 제목 3</td>
+        <td><button type="button" id="goOn3">바로가기</button> </td>
+        <td align="left">testg12</td>
+        <td align="left">2021-03-01</td>
+        <td align="left">98</td>
+    </tr>
+    <tr bgcolor="#F3E2A9">
+        <td align="left">2</td>
+        <td align="left" width="230">공지사항 제목 2</td>
+        <td><button type="button" id="goOn4">바로가기</button> </td>
+        <td align="left">palwe3</td>
+        <td align="left">2021-01-02</td>
+        <td align="left">85</td>
+    </tr>
+    <tr bgcolor="#F3E2A9">
+        <td align="left">1</td>
+        <td align="left" width="230">공지사항 제목 1</td>
+        <td><button type="button" id="goOn5">바로가기</button> </td>
+        <td align="left">xml23</td>
+        <td align="left">2020-12-24</td>
+        <td align="left">124</td>
+    </tr>
+    <tr bgcolor="#FFBF00">
+        <th align="center" colspan="4"><font color="white">전체공지사항 갯수</font></th>
+        <th align="center" colspan="2"><font color="white">5개</font></th>
+    </tr>
+
+</table>
+</body>
+</html>

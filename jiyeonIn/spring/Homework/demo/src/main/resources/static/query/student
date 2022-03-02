@@ -1,0 +1,17 @@
+학생번호 student_no
+이름 student_name
+국어 / 영어 / 수학 : korean, english, math
+평균 : student_avg
+등록일
+
+
+use non_jpa_db;
+create table student(
+student_no int not null auto_increment,
+student_name varchar(50) not null,
+korean int null,
+english int null,
+math int null,
+reg_date timestamp not null default now(),
+primary key(student_no)
+);
