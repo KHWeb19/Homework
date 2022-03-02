@@ -56,6 +56,8 @@ function BoolTest (){
 
     console.log("fruit prototype getName: " + fruit.getName())
     console.log("fruit.toString: " + fruit.toString())
+    //let을 사용해도 그냥 object파일이라고만 함(뭐가있지만 뭐가 있는지는 모름)
+    //--->타입스크립트가 도입됨(모호성때문에)
 
 
 }

@@ -21,5 +21,13 @@ public class JsController39th {
 
         return "/39th/jsBoolTest";
     }
+    //객체자체가 참거짓을 판정 할 수 있다는 것을 확인
+
+    @GetMapping("/equalTest")
+    public String equalTest () {
+        log.info("equalTest()");
+
+        return "/39th/equalTest";
+    }
 
 }

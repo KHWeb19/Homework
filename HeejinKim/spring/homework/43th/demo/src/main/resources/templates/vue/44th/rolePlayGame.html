@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    이름: <input v-model="name"> <!-- v-model의 역할 vue에 있는 내용과 html에 있는 내용이 연동이 됨
+                                     input의 name을 막 적어넣으면(화면상에서) js에 연동이 되어서 name에 들어감
+                                     양방향으로 데이터를 전송이 가능함-->
+    <button v-on:click="addMonster">몬스터 추가</button>
+
+    <ul>
+        <li v-for="(item, index) in list"
+            v-bind:key="item.id">
+            ID: {{ item.id }} {{ item.name }} HP: {{ item.hp }}
+
+
+            <button v-on:click="attackMonster(index)"> 공격 </button>
+            <!--
+            <button v-on:click="removeMonster(index)">몬스터 삭제</button>-->
+
+         </li>
+    </ul>
+
+
+    <!--(index)리스트에서 아이템을 가져올때 몇번째 인덱스 인지도 가져옴-->
+<!--
+1. for문을 돌면서 list에 있는 아이템값을 가져옴.
+2. v-bind:key="item.id"는 유니크한 키값을 있어야 하기 때문에 id 를 설정해둠
+   id값은 고유해야 하기 때문에 중복이 발생하면 안됨
+3. 아이템이있는 id,name,hp를 가져옴
+4. 마지막으로 알아서 for문을 돌면서 list로 뿌려라-->
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="/js/vue/44th/rolePlayGame.js"></script>
+</body>
+</html>
