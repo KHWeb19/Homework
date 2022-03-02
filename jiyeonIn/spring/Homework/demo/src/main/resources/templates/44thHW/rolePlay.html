@@ -6,20 +6,32 @@
 </head>
 <body>
     <div id="app">
+        <p> 랜덤 숫자 테스트 : {{ randomNumber }}</p>
+        <button v-on:click="genarateRandom">랜덤 숫자 발생!</button><br>
+
+        몬스터도감<br>
+        <ul>
+            <li v-for="(monster, index) in monsterBook" v-bind::key="index">
+                ID: {{ monster.monsterId }} name: {{ monster.name }} hp: {{ monster.hp }}
+                exp: {{ monster.exp }} drop money: {{ monster.dropMoney }}
+            </li>
+        </ul>
+
         이름: <input v-model="name">
         <button v-on:click="addMonster">몬스터 추가</button>
+        <button v-on:click="addManyMonster">몬스터 군단 추가</button><br><br>
+
+        <button v-on:click="manyAttack">광역공격</button>
 
         <ul>
-            <li v-for="(item, index) in list"
-                    v-bind:key="item.id">
+            <li v-for="(item, index) in list" v-bind:key="index">
                 ID: {{ item.id }} {{ item.name }} HP: {{ item.hp }}
                 <button v-on:click="attackMonster(index)">공격</button>
             </li>
         </ul>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<script src="/js/44th/rolePlayGame.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="/js/44th/rolePlayGame.js"></script>
 </body>
 </html>

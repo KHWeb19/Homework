@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class VueController {
 
     @GetMapping("/rolePlay")
-    public String rolePlay(){
+    public String rolePlay (){
         log.info("rolePlay");
 
         return "44thHW/rolePlay";
