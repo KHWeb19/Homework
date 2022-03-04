@@ -5,7 +5,6 @@
     <title>Title</title>
 </head>
 
-<!-- ↓ 이건 스크립트 안의 내용을 javascript 형식으로 쓰기 위한 명령어? 같은 건가 -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() { //jquery를 쓸 때 제일 처음에 써주는 구문이다.
@@ -13,32 +12,27 @@
         var formObj = $("#market"); //<<<--- HTML상 form id="board"에 해당하는 객체
 
          //btnRegister라는 click기능을 만들겠다.
-        $("#btnRegister").on("click", function() {
-            formObj.attr("action", "/10th/market/register"); //기능1. /32th/board/register 작동
+        $("#btnModify").on("click", function() {
+            formObj.attr("action", "/10th/market/modify"); //기능1. /32th/board/register 작동
             formObj.attr("method", "post"); //기능2. POST형식으로 전송하라는 뜻
             formObj.submit(); //기능3.제출 = 실제 URL 요청이 날아감
         });
 
          //btnlist라는 click기능을 만들겠다.
          $("#btnList").on("click", function() {
-            self.location = "/10th/market/list";
+            self.location = "/10th/market/list"; // /10th/market/list로 이동시킨다.
         });
+
     });
+
 </script>
 
 <body>
-  <h2> 상품 등록 페이지 </h2>
 
-  <!-- html form 이란?
-        폼 안에 입력된 내용(즉, 데이터)을 한 번에 웹 서버로 전송하는 데 사용한다. //register페이지에 정보(제목, 본문, 작성자)를 입력
-        -웹 서버는 받은 폼 데이터를 처리하기 위해 웹 프로그램으로 넘긴다. //DB로 전송?
-                                                  //Get과 Post 두 Mapping이 [상품등록] 버튼을 누르는 이벤트에 함께 작동하여서
-                                                  //Get은 Form을 불러내고
-                                                  //Post는 Form에 작성된 내용을 등록하면 DB로 보내고?
-        -웹 프로그램의 처리가 끝나면 그 결과에 따른 새로운 html페이지를 웹 서버에 보낸다.
-                                                  //새로운 html 페이지 = 우리 수업 기준으로 Success 페이지
-        -웹 서버는 받은 html 페이지를 브라우저에 보내주고, 브라우저가 이를 보여준다.-->
-  <form id="market" th:object="${market}">
+  <h2> 상품 정보 수정 </h2>
+
+  <form id="market" th:object="${market}" method="post">
+      <input type="hidden" name="productNo" th:field="*{productNo}">
       <!-- form에 제출할 때, form의 데이터가 th:object에 설정해준 객체로 받아진다. 객체화된 상태로 보면 되나-->
       <table>
           <tr>
@@ -53,7 +47,8 @@
           <tr>
               <td>판매자</td>
               <td>
-                  <input type="text" name="seller" th:field="*{seller}"/>
+                  <!--판매자명이 readonly : 판매자명은 변경 불가! -->
+                  <input type="text" name="seller" th:field="*{seller}" readonly="readonly"/>
               </td>
           </tr>
 
@@ -64,16 +59,16 @@
               </td>
           </tr>
       </table>
-      </form>
+  </form>
 
   <!-- div란? Division의 약자. 웹사이트의 레이아웃(전체적인 틀)을 만들때 주로 사용한다.
               그럼 button은 button 스타일을 만들도록 태그 스타일을 지정해준 거라고 볼 수 있겠네
               html이라기보다 css? Bootstrap?? 인가? -->
   <div>
-      <button type="submit" id="btnRegister">등록</button>
+      <button type="submit" id="btnModify">수정완료</button>
       <!-- 등록?제출?을 하기 위해 만든 버튼 / 무엇을 제출할 것인가? Register를? -->
       <button type="submit" id="btnList">돌아가기</button>
   </div>
 
-    </body>
-    </html>
+</body>
+</html>
