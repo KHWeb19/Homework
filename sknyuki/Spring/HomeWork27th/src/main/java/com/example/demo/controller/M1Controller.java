@@ -20,6 +20,6 @@ public class M1Controller {
 
         return "27th/M1Html";
 
-        //push해보고 안되면 다시 말씀드리겠습니다.
+
     }
 }

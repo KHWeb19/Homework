@@ -7,7 +7,7 @@ public class M2Class {
 
     int studentNum;
     int sum;
-    double averageScore;
+    private double averageScore;
     int[] studentScore;
 
     public M2Class(int studentNum){
@@ -15,8 +15,9 @@ public class M2Class {
     }
 
     public double getstudendAver(){
+        studentScore=new int[studentNum];
         sum=0;
-        for(int i=0; i<studentNum; i++){
+        for(int i=0; i<studentScore.length; i++){
             studentScore[i]=(int)(Math.random()*range+MIN);
             sum+=studentScore[i];
         }
