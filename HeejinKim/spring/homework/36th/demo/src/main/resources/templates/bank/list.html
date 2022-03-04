@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>회원 관리 목록</h2>
+
+<a th:href="@{/bank/page/register}">회원 가입</a>
+
+<table border="1">
+
+    <tr>
+
+        <th align="center" width="80">회원번호</th>
+        <th align="center" width="100">ID</th>
+        <th align="center" width="150">PASSWORD</th>
+        <th align="center" width="250">주소</th>
+        <th align="center" width="230">전화번호</th>
+    </tr>
+
+    <tr th:if="${#lists.isEmpty(list)}">
+        <td colspan="5">
+            회원 목록이 없습니다!
+        </td>
+    </tr>
+
+    <tr th:each="bankBoard : ${list}">
+        <td align="center" th:text="${bankBoard.memberNo}">
+        </td>
+
+        <td align="center">
+            <a th:href="@{|/bank/page/read?memberNo=${bankBoard.memberNo}|}" th:text="${bankBoard.bank_Id}">
+            </a>
+        </td>
+
+        <td align="center" th:text="${bankBoard.bankPassword}">
+        </td>
+
+        <td align="left" th:text="${bankBoard.address}">
+        </td>
+
+        <td align="left" th:text="${bankBoard.phoneNum}">
+        </td>
+
+    </tr>
+</table>
+
+
+
+</body>
+</html>

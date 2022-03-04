@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Main</h3>
+
+<form th:action="@{/29th/board/third/registerGet}">
+    <input type="submit" value="register(GET)">
+</form>
+
+<form th:action="@{/29th/board/third/registerPost}" method="post">
+    <input type="submit" value="register(POST)">
+</form>
+
+
+<form th:action="@{/29th/board/third/modifyGet}">
+    <input type="submit" value="modify(GET)">
+</form>
+
+<form th:action="@{/29th/board/third/modifyPost}" method="post">
+    <input type="submit" value="modify(POST)">
+</form>
+
+<form th:action="@{/29th/board/third/removePost}" method="post">
+    <input type="submit" value="remove(POST)">
+</form>
+
+</body>
+</html>

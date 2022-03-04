@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f894d1a0-0b27-487d-a75b-40ffb9c14df3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../java/homework/25th_1/src/Adventurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../java/homework/25th_1/src/Skill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/Bank7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/utility/ThreadWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/26th/homework7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/package.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/utility/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/28th.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/controller/Bank8Num1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/controller/Controller29th.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/controller/SecondController29th.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/entity/order29/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/entity/package-info.tet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/utility/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/utility/sequence/KindOfSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/java/com/example/demo/utility/sequence/MySeqence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/28th/homework1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/board/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/board/modifyGet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/board/modifyPost.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/board/registerGet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/board/registerPost.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/board/removePost.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/29th/read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../28th/demo/src/main/resources/templates/hohoho.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../29th/demo/src/main/java/com/example/demo/controller/GetPostBoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../29th/demo/src/main/java/com/example/demo/controller/PathVariableBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../java/homework/25th_1/src/Snaiper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/homework/25th_1/src/Snaiper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../java/teacher" beforeDir="false" afterPath="$PROJECT_DIR$/../../../java/teacher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Bank8_2/Average.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/Bank8_2/Average.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/Bank7.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/Bank7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/Bank8Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/Bank8Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

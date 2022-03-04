@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.utility.Dice;
 import com.example.demo.utility.ThreadWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,5 +22,15 @@ public class Bank7 {
 
     return "26th/homework7";
     }
+    @RequestMapping("/homework33")
+    public String bank7Homework1 (Model model) {
+        Dice dice = new Dice();
+        dice.rollDice();
+
+        model.addAttribute("diceNum", dice.getDiceNum());
+
+        return "26th/homework1";
+    }
+
 
 }

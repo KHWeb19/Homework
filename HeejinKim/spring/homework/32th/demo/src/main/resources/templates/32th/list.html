@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>게시물 보기</h2>
+<a th:href="@{/32th/play/register}">글쓰기(하이퍼링크)</a>
+<table border="2">
+    <tr>  <!-- tr -> row로 가로 --> <!-- th (or) td는 세로  -->
+        <th align="center" width="80">번호</th>
+        <th align="center" width="320">제목</th>
+        <th align="center" width="100">작성자</th>
+        <th align="center" width="100">등록일자</th>
+    </tr>
+    <tr th:if="${#lists.isEmpty(list)}">
+
+    <td colspan="4">
+    딸기 블루베리 포도
+    </td>
+    </tr>
+    <tr th:each="board : ${list}">
+    <td align="center" th:text="${board.boardNo}">
+        ${board.boardNo}
+    </td>
+        <td align="left" th:text="${board.title}">
+            ${board.title}
+        </td>
+        <td align="right" th:text="${board.writer}">
+            ${board.writer}
+        </td>
+
+        <td align="center"
+            th:text="${#dates.format(board.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+            ${board.regDate}
+        </td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>
