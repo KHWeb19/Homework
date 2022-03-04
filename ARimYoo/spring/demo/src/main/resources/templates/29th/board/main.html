@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Main</h1>
+
+<!-- th:action은 Spring의 Controller URL과
+       input type="submit"에 대한 부분을 연결시킨다.
+       즉 버튼 누르면 해당 URL로 연결시킴을 의미한다. -->
+
+<!-- 기본적으로 form은 Get 요청을 함 -->
+<form th:action="@{/29th/board/registerGet}">
+    <input type="submit" value="Get register">
+</form>
+
+<!-- 그러므로 아래와 같이 Post는 별도 요청을 해야한다 -->
+<form th:action="@{/29th/board/registerPost}" method="post">
+    <input type="submit" value="Post register">
+</form>
+
+<form th:action="@{/29th/board/modifyGet}">
+    <input type="submit" value="Get modify">
+</form>
+
+<form th:action="@{/29th/board/modifyPost}" method="post">
+    <input type="submit" value="Post modify">
+</form>
+</body>
+</html>

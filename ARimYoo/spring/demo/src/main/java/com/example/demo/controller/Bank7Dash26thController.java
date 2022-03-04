@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.utility.Dice;
-import com.example.demo.utility.Test;
+import com.example.demo.utility.Thread.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

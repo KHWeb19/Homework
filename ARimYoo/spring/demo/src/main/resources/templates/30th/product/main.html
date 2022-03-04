@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>AR Game Store</h1>
+<h3>게임 스토어에 오신 것을 환영합니다 !</h3>
+<h5>보유 게임 종류</h5>
+<p th:text="${kindOfGame}"></p>
+<form th:action="@{/30th/product/todayGame}" method="post">
+    <input type="submit" value="오늘의 추천 게임">
+</form>
+</body>
+</html>
