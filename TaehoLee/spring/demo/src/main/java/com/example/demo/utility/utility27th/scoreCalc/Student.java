@@ -1,4 +1,4 @@
-package com.example.demo.utility27th.scoreCalc;
+package com.example.demo.utility.utility27th.scoreCalc;
 
 public class Student{
     Subject subject = new Subject();

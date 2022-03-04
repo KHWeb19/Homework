@@ -1,4 +1,4 @@
-package com.example.demo.utility26th;
+package com.example.demo.utility.utility26th;
 
 import java.util.Random;
 
