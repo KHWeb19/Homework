@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+     $(document).ready(function() {
+        var formObj = $("#product");
+
+        $("#btnRegister").on("click", function() {
+            formObj.attr("action", "/pro-bank10th/product/register");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/pro-bank10th/product/list";
+        });
+    });
+</script>
+<body>
+    <h2>상품 등록 페이지</h2>
+
+    <form id="product" th:object="${product}">
+        <table>
+            <tr>
+                <td>상품명</td>
+                <td>
+                    <input type="text" name="prodName" th:field="*{prodName}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>가격</td>
+                <td>
+                    <input type="text" name="prodPrice" th:field="*{prodPrice}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+        <div>
+            <button type="submit" id="btnRegister">등록</button>
+            <button type="submit" id="btnList">돌아가기</button>
+        </div>
+    </br>
+</body>
+</html>
