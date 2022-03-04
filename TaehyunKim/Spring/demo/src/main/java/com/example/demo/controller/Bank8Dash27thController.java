@@ -26,7 +26,7 @@ public class Bank8Dash27thController {
     @RequestMapping("PB0302")
     public String bank8Homework2(Model model){
 
-        Student myStudent = new Student();
+        Student myStudent = new Student ();
 
         model.addAttribute("studentAvg", myStudent.getAverage());
 
