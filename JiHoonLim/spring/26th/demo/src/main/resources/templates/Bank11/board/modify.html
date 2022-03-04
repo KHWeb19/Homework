@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var formObj = $("#member");
+
+        $("#btnModify").on("click", function() {
+            formObj.attr("action", "/Bank11/board/modify");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnMain").on("click", function() {
+            self.location = "/Bank11/board/main";
+        });
+    });
+    </script>
+<body>
+    <h2>개인정보 수정</h2>
+
+    <form id="member" th:object="${memberManage}">
+        <input type="hidden" name="memberNo" th:field="*{memberNo}">
+
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="id" th:field="*{id}" />
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="password" name="pw" th:field="*{pw}" />
+                </td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="name" th:field="*{name}" readonly="readonly"/>
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>
+                    <input type="text" name="birth" th:field="*{birth}" readonly="readonly"/>
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td>
+                    <input type="text" name="phone" th:field="*{phone}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnModify">수정</button>
+        <button type="submit" id="btnMain">메인화면</button>
+    </div>
+</body>
+</html>

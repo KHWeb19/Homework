@@ -1,0 +1,20 @@
+ul{
+    list-style: none;
+}
+
+li{
+    width: 120px;
+    display: inline-block;
+    margin: 10px;
+}
+
+li a{
+    padding: 5px 20px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: blue;
+}
+
+a[href] {
+    background: yellow;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#member");
+
+        $("#btnMain").on("click", function() {
+            self.location = "/Bank11/board/main";
+        });
+
+    });
+</script>
+<body>
+    <h2>회원정보 보기</h2>
+
+    <form id="member" th:object="${memberManage}">
+    <a th:href="@{/Bank11/board/register}">회원가입하기</a>
+
+    <table border="1">
+        <tr>
+            <th align="center" width="100">회원번호</th>
+            <th align="center" width="100">아이디</th>
+            <th align="center" width="100">이름</th>
+            <th align="center" width="100">생년월일</th>
+            <th align="center" width="100">전화번호</th>
+            <th align="center" width="160">가입일자</th>
+        </tr>
+
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="6">
+            가입 회원 없음
+            </td>
+        </tr>
+
+        <tr th:each="memberManage : ${list}">
+            <td align="center" th:text="${memberManage.memberNo}">
+            </td>
+            <td align="center">
+                <a th:href="@{|/Bank11/board/read?memberNo=${memberManage.memberNo}|}"
+                   th:text="${memberManage.id}">
+                </a>
+            </td>
+            <td align="center" th:text="${memberManage.name}">
+            </td>
+            <td align="center" th:text="${memberManage.birth}">
+            </td>
+            </td>
+            <td align="center" th:text="${memberManage.phone}">
+            </td>
+            <td align="center"
+                th:text="${#dates.format(memberManage.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+            </td>
+        </tr>
+    </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnMain">메인화면</button>
+    </div>
+</body>
+</html>

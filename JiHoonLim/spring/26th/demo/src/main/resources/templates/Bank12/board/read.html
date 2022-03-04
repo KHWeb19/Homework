@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#grade");
+
+        $("#btnModify").on("click", function() {
+            var studentNo = $("#studentNo");
+            var studentNoVal = studentNo.val();
+
+            self.location = "/Bank12/board/modify?studentNo=" + studentNoVal;
+        });
+
+        $("#btnRemove").on("click", function() {
+            formObj.attr("action", "/Bank12/board/remove");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnMain").on("click", function() {
+            self.location = "/Bank12/board/main";
+        });
+    });
+</script>
+<body>
+<h2>성적 보기</h2>
+
+<form id="grade" th:object="${gradeManage}">
+    <input type="hidden" name="studentNo" th:field="*{studentNo}">
+
+    <table>
+        <tr>
+            <td>이름</td>
+            <td>
+                <input type="text" name="name" th:field="*{name}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>학년</td>
+            <td>
+                <input type="text" name="level" th:field="*{level}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>국어</td>
+            <td>
+                <input type="text" name="korean" th:field="*{korean}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>
+                <input type="text" name="english" th:field="*{english}" readonly="readonly"/>
+            </td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td>
+                <input type="text" name="math" th:field="*{math}" readonly="readonly"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<div>
+    <button type="submit" id="btnModify">수정</button>
+    <button type="submit" id="btnRemove">삭제</button>
+    <button type="submit" id="btnMain">메인화면</button>
+</div>
+</body>
+</html>
