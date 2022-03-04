@@ -14,7 +14,7 @@ let app = new Vue({
                 return a > b.id ? a : b.id
             }, 0)
 
-            let rand = Math.floor(Math.random()*5)
+            let rand = Math.floor(Math.random()*this.list.length)
 
             this.list.push({
                 id: max + 1,
@@ -28,5 +28,7 @@ let app = new Vue({
                 this.list.splice(index, 1)
             }
         }
+        // 광역 스킬 사용시 몬스터가 반씩없어짐
+        // 스킬사용이랑 hp업데이트가 스레드이기때문
     }
 })
