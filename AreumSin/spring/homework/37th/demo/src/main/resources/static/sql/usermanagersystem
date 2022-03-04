@@ -1,0 +1,8 @@
+create table userManagerSystem(
+   user_no int not null auto_increment,
+   user_id varchar(20) not null,
+   user_passwd varchar(20) not null,
+   user_name varchar(5) not null,
+   reg_date timestamp not null default now(),
+   primary key(user_no)
+);

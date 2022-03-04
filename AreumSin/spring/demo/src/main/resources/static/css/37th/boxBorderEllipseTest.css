@@ -1,0 +1,17 @@
+div{
+    width: 259px;
+    height: 300px;
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 70px/70px;
+}
+.kai{
+    border: 2px solid gray;
+    background:url(../../img/kai.JPG) no-repeat;
+    background-size: cover;
+}
+#rs{
+    background:url(../../img/kai.JPG) no-repeat;
+    background-size: cover;
+}

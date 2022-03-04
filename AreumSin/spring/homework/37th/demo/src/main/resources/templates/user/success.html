@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            var formObj = $("#user");
+
+            $("#btnList").on("click", function() {
+                self.location = "/user/list";
+            });
+        });
+    </script>
+<body>
+성공했습니다!
+    <button type="submit" id="btnList">리스트보기</button>
+</body>
+</html>

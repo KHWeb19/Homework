@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+        var formObj = $("#user");
+
+        $("#btnLogin").on("click", function() {
+            self.location = "/user/login";
+        });
+    });
+</script>
+<body>
+다시 로그인하세요
+<button type="submit" id="btnLogin">다시 로그인</button>
+</body>
+</html>

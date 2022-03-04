@@ -1,0 +1,8 @@
+.round{
+    border: 2px solid skyblue;
+    border-radius: 20px;
+}
+#kai{
+    background:url(../../img/kai.JPG) no-repeat;
+    background-size: cover;
+}

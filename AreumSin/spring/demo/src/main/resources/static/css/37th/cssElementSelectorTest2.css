@@ -1,0 +1,6 @@
+
+#container > ul{
+    border: 1px dotted skyblue;
+    /*즉 ul이 들어간 녀석들은 적용됨을 의미함*/
+
+}

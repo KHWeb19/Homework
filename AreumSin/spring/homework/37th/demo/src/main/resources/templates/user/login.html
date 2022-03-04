@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var formObj = $("#user");
+
+            $("#btnLogin").on("click", function() {
+                formObj.attr("action", "/user/login");
+                formObj.attr("method", "post");
+                formObj.submit();
+            });
+
+        });
+    </script>
+
+<body>
+    <h2>로그인</h2>
+    <form id="user" th:object="${user}" method="post">
+        아이디<input type="text" name="id" th:feild="*{id}"><br/>
+        비밀번호<input type="text" name="passwd" th:feild="*{passwd}">
+    </form>
+
+    <button type="submit" id="btnLogin">로그인</button>
+</body>
+</html>

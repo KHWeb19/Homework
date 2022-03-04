@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id ="app">
+
+        <input v-model="name">
+        <button v-on:click="addMonster">몬스터 추가</button>
+        <ul>
+            <li v-for="(item, index) in list" v-bind:key="item.id">
+                id: {{item.id}}, name: {{item.name}}, hp: {{item.hp}}
+                <button v-on:click="hitMonster(index)">클릭!</button>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="/vue/vueEx.js"></script>
+</body>
+</html>

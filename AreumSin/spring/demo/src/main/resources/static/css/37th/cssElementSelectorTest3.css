@@ -1,0 +1,9 @@
+#container > ul{
+    border: 1px dotted skyblue;
+    /*즉 ul이 들어간 녀석들은 적용됨을 의미함*/
+}
+h1+p{
+/* h1과 p사이 가장 가까운 하나만 선택해서 값을 나타냄*/
+    color: pink;
+    font-weight: bold;
+}

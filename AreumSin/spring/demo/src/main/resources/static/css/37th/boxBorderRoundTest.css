@@ -1,0 +1,14 @@
+div{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block; /*가로 배치*/
+}
+.round{
+    border: 2px solid skyblue;
+    border-radius: 20px;
+}
+#bg{
+    background:url(../../img/kai.JPG) no-repeat;
+    background-size: cover;
+}
