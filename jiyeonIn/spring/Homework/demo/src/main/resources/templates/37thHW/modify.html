@@ -4,58 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
     $(document).ready(function() {
-        var formObj = $("#productList");
+        var formObj = $("#member");
 
         $("#btnModify").on("click", function() {
-            formObj.attr("action", "/bank10/modify");
+            formObj.attr("action", "/bank11/modify");
             formObj.attr("method", "post");
             formObj.submit();
         });
 
-        $("#btnList").on("click", function() {
-            self.location = "/bank10/list";
+        $("#btnList").on("click", function(){
+            self.location = "/bank11/list";
         });
     });
 </script>
-
 <body>
-    <h2>상품 수정하기</h2>
-
-    <form id="productList" th:object="${productList}">
-        <input type="hidden" name="board_no" th:field="*{board_no}">
+    <h2>회원 정보 수정</h2>
+    <form id="member" th:object="${member}">
+        <input type="hidden" name="memberNo" th:field="*{memberNo}"/>
 
         <table>
             <tr>
-                <td>제품명</td>
+                <td>아이디</td>
                 <td>
-                    <input type="text" name="product_name" th:field="*{product_name}"/>
+                    <input type="text" name="id" th:field="*{id}" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
-                <td>업체명</td>
+                <td>비밀번호</td>
                 <td>
-                    <input type="text" name="writer" th:field="*{writer}"/>
+                    <input type="text" id="password" th:field="*{password}"/>
                 </td>
             </tr>
             <tr>
-                <td>상품설명</td>
+                <td>이름</td>
                 <td>
-                    <input type="text" name="content" th:field="*{content}"/>
+                    <input type="text" id="name" th:field="*{name}" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
-                <td>가격</td>
+                <td>이메일</td>
                 <td>
-                    <input type="text" name="price" th:field="*{price}"/>
+                    <input type="email" id="email" th:field="*{email}"/>
                 </td>
             </tr>
         </table>
     </form>
-
+    <p>
+        * 아이디 & 이름 수정 불가 *</p>
     <div>
         <button type="submit" id="btnModify">수정완료</button>
         <button type="submit" id="btnList">돌아가기</button>

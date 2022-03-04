@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#student");
+
+        $("#btnRegister").on("click", function() {
+            formObj.attr("action", "/bank12/register");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function(){
+            self.location = "/bank12/list";
+        });
+    });
+</script>
+<body>
+    <h2>학생 성적 추가하기</h2>
+    <form id="student" th:object="${student}">
+        <table>
+            <tr>
+                <td>학생 이름</td>
+                <td>
+                    <input type="text" name="student_name" th:field="*{student_name}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>국어 성적</td>
+                <td>
+                    <input type="text" id="korean" th:field="*{korean}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>영어 성적</td>
+                <td>
+                    <input type="text" id="english" th:field="*{english}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>수학 성적</td>
+                <td>
+                    <input type="text" id="math" th:field="*{math}"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div>
+        <button type="submit" id="btnRegister">등록 하기</button>
+        <button type="submit" id="btnList">리스트 가기</button>
+    </div>
+</body>
+</html>

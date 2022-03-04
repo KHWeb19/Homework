@@ -1,6 +1,6 @@
 package com.example.demo.controller34HW;
 
-import com.example.demo.entity.order34.Product34th;
+import com.example.demo.entity.order34.ProductList;
 import com.example.demo.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,23 +19,23 @@ public class Bank10Product {
     private ProductService productService;
 
     @GetMapping("/register")
-    public String registerForm(Product34th product34th){
+    public String registerForm(ProductList productList){
         log.info("registerForm");
 
         return "/34thHW/register";
     }
 
     @PostMapping("/register")
-    public String register(Product34th product34th){
+    public String register(ProductList productList){
         log.info("registerPost");
 
-        productService.register(product34th);
+        productService.register(productList);
 
         return "/34thHW/success";
     }
 
     @GetMapping("/list")
-    public String list(Product34th product34th, Model model){
+    public String list(ProductList productList, Model model){
         log.info("list");
 
         model.addAttribute("list",productService.list());
@@ -53,19 +53,19 @@ public class Bank10Product {
     }
 
     @GetMapping("/modify")
-    public String modifyForm(int boardNo,Model model){
+    public String modifyForm(int board_no,Model model){
         log.info("modifyForm");
 
-        model.addAttribute(productService.read(boardNo));
+        model.addAttribute(productService.read(board_no));
 
         return "/34thHW/modify";
     }
 
     @PostMapping("/modify")
-    public String modify(Product34th product34th, Model model){
+    public String modify(ProductList productList, Model model){
         log.info("modify");
 
-        productService.modify(product34th);
+        productService.modify(productList);
 
         return "/34thHW/success";
     }

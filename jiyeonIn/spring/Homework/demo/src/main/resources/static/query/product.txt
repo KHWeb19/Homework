@@ -1,0 +1,32 @@
+1. DB에 PRODUCT테이블을 만든다. non_jpa 어쩌구 스키마에서 만들어야함.
+2. 그걸 연결하는 repository 클래스를 만든다.
+3. 상품 구현 인터페이스 / 그걸 연결하는 서비스 클래스 만든다.
+4. 연동 가능한 컨트롤러 만든다.
+=====================================================================
+
+
+ui->들여쓰기 가능
+
+
+*상품 등록
+
+* 상품 삭제
+
+* 상품 리스트
+
+* 상품 수정
+
+* 상품 상세보기
+
+상품
+: 보드넘버 / 상품명 / 상품 설명 / 가격 / 등록시간
+
+create table product(
+
+board_no int not null auto_increment,
+product_name varchar(200) not null,
+content text null,
+price int not null,
+writer varchar(50) not null,
+reg_date timestamp not null default now(),
+primary key(board_no)

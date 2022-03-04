@@ -1,0 +1,47 @@
+회원관리 시스템
+id / pw / 이름 / 이메일주소
+
+회원 관리 시스템을 만들어보자!
+
+1. 회원 가입 (id, pw 등을 입력 받도록 한다)
+   필요하다면 다른 여러가지 내용들을 추가해도 무방하다.
+--> register
+
+2. 가입된 회원 리스트 보기
+->list
+
+3. 회원 정보 수정
+->modify
+
+4. 회원 탈퇴
+->remove
+
+5. 회원 상세 정보 보기
+-> read
+
+6. 로그인 기능 (id, pw 입력해서 일치하면 Boolean 리턴해서 체크하도록 한다)
+-> 링크 -> 로그인하기 -> 아이디 비밀번호 입력 하기 -> 폼 css 에서 했던 것.
+일치하면 -> db랑 연동된 상태에서 맞는지 체크 -> script로 해야하는듯.
+
+
+위와 같은 6가지 기능을 구현하도록 해보자!
+
+---------------------------------------------------------------------
+회원번호 member_no
+아이디 id
+비밀번호 password
+이름 name
+이메일 email
+등록일
+
+
+use non_jpa_db;
+create table member(
+member_no int not null auto_increment,
+id varchar(200) not null,
+password varchar(200) not null,
+name varchar(50) not null,
+email text null,
+reg_date timestamp not null default now(),
+primary key(member_no)
+);

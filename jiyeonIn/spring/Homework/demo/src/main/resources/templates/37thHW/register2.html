@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#member");
+
+        $("#btnRegister").on("click", function() {
+            formObj.attr("action", "/bank11/register2");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function(){
+            self.location = "/bank11/list";
+        });
+    });
+</script>
+<body>
+<form id="member" th:object="${member}">
+    <div class="container">
+        <h1>회원가입</h1>
+        <div class="form-group">
+            <label for="inputEmail4">아이디</label>
+            <input type="text" class="form-control" id="inputId" name="userId" placeholder="아이디 작성">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword4">비밀번호</label>
+            <input type="password" class="form-control" id="inputPassword4" name="userPw" placeholder="비밀번호 작성">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">이름</label>
+            <input type="text" class="form-control" id="inputAddress" name="userName" placeholder="이름 작성">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail4">이메일</label>
+            <input type="text" class="form-control" id="inputEmail4" name="useremail" placeholder="이메일 작성">
+        </div>
+        <button type="submit" class="btnRegister">가입 완료</button>
+        <button type="submit" id="btnList">돌아가기</button>
+    </div>
+</form>
+</body>
+</html>

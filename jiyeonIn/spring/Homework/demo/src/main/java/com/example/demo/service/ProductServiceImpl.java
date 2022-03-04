@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.order34.Product34th;
+import com.example.demo.entity.order34.ProductList;
 import com.example.demo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,24 +14,24 @@ public class ProductServiceImpl implements ProductService{
     ProductRepository repository;
 
     @Override
-    public void register(Product34th product) {
-        repository.create(product);
+    public void register(ProductList productList) {
+        repository.create(productList);
     }
 
 
     @Override
-    public List<Product34th> list() {
+    public List<ProductList> list() {
         return repository.list();
     }
 
     @Override
-    public Product34th read(Integer board_no) {
+    public ProductList read(Integer board_no) {
         return repository.read(board_no);
     }
 
     @Override
-    public void modify(Product34th product) {
-        repository.modify(product);
+    public void modify(ProductList productList) {
+        repository.modify(productList);
     }
 
     @Override
