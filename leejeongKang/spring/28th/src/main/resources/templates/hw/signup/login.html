@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label {
+            font-size:14px;
+            line-height: 25px;
+    </style>
+</head>
+<script type="text/javascript" src = "http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var formObj = $("#member");
+
+    $("#btnRegister").on("click", function(){
+        self.location = "/hw/signup/register"
+    });
+
+     $("#btnList").on("click", function() {
+        self.location = "/hw/signup/list";
+        });
+     });
+
+</script>
+<body>
+<h1>LogIn</h1>
+<form>
+    <fieldset>
+        <label>ID: <input type="text" name="id" size="16"> </label>
+        <label>pw: <input type="text" name="password" size="16"> </label>
+        <input type="submit" value="LogIn">
+    </fieldset>
+</form>
+<div>
+    <button type="submit" id="btnRegister">회원가입</button>
+    <button type="submit" id="btnList">회원목록 보러가기</button>
+</div>
+</body>
+</html>
