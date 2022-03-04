@@ -1,13 +1,15 @@
 package com.example.demo;
 
-import com.example.demo.controller.Homework2;
+import com.example.demo.utility.thread.ThreadWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-	public static void main(String[] args) throws Exception {SpringApplication.run(DemoApplication.class, args);
-		Homework2 myThread = new Homework2();
-		myThread.start();
+	public static void main(String[] args) {
+		Thread tw = new ThreadWorker();
+		tw.start();
+
+		SpringApplication.run(DemoApplication.class, args);
 	}
 }

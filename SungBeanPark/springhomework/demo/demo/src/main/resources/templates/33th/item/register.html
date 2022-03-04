@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Register Item</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  color: #2b292d;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.w-100.btn.btn-primary.btn-lg {
+  width: 145px;
+  height: 48px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3040c4;
+  margin-right: 4px;
+  font-weight: 700;
+}
+
+.w-100.btn.btn-primary.btn-lg:hover {
+  opacity: 0.75;
+}
+
+.w-100.btn.btn-secondary.btn-lg {
+  width: 145px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #7b7b7e;
+  font-weight: 700;
+  color: #fff;
+}
+
+.text-center {
+  height: 200;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px;
+}
+
+.my-4 {
+  margin-top: 15px;
+}
+
+.col {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.formcontrol {
+  display: block;
+  width: 300px;
+  height: 25px;
+  margin-top: 4px;
+
+}
+
+.form-control {
+  display: block;
+  width: 300px;
+  height: 25px;
+  margin-top: 4px;
+
+}
+
+.item-price {
+  margin-top: 15px;
+}
+
+.item-price {
+  margin-top: 15px;
+}
+
+.item-name {
+  font-size: 16px;
+}
+
+.item-price {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.item-quantity {
+  font-size: 16px;
+  margin-top: 4px;
+}
+    </style>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#item");
+
+        $("#btnRegister").on("click", function() {
+            formObj.attr("action", "/33th/item/register");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/33th/item/list";
+        });
+    });
+</script>
+<body>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>상품 등록</h2>
+    </div>
+    <form id="item" th:object="${item}">
+        <div class="head-item-name">
+            <label for="name" class="item-name">
+                상품명
+            </label>
+            <input type="text" id="name" name="name" th:field="*{name}" class="formcontrol"
+                   placeholder="상품을 입력하세요." required="required" >
+        </div>
+        <div class="head-item-price">
+            <label for="price" class="item-price">
+                가격
+            </label>
+            <input type="text" id="price" name="price" th:field="*{price}" class="form-control"
+                   placeholder="가격을 입력하세요." required="required" >
+        </div>
+        <div class="head-item-quantity">
+            <label for="quantity" class="item-quantity">
+                수량
+            </label>
+            <input type="text" id="quantity" name="quantity" th:field="*{quantity}" class="formcontrol"
+                   placeholder="수량을 입력하세요." required="required" >
+        </div>
+
+        <hr class="my-4">
+        <div class="col">
+            <button class="w-100 btn btn-primary btn-lg" type="submit"
+                    id="btnRegister" aria-label="register-item" >
+                상품 등록
+            </button>
+        </div>
+        <div class="col">
+            <button class="w-100 btn btn-secondary btn-lg" type="submit"
+                    id="btnList" aria-label="cancel-item">
+                취소
+            </button>
+        </div>
+</form>
+</div>
+</body>
+</html>

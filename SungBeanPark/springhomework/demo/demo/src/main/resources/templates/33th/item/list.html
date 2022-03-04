@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Item List</title>
+</head>
+<body>
+    <h2>상품 리스트</h2>
+    <a th:href="@{/33th/item/register}">악! 제발!</a>
+
+    <table border="1">
+        <tr>
+            <th align="center" width="50">ID</th>
+            <th align="center" width="150">상품명</th>
+            <th align="center" width="120">가격</th>
+            <th align="center" width="100">수량</th>
+            <th align="center" width="120">등록일자</th>
+        </tr>
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="4">
+                상품이 없습니다!
+            </td>
+        </tr>
+        <tr th:each="item : ${list}">
+            <td align="center" th:text="${item.itemId}">
+                ${item.itemId}
+            </td>
+            <td align="center">
+                <a th:href="@{|/33th/item/read?itemId=${item.itemId}|}" th:text="${item.name}">
+                </a>
+            </td>
+            <td align="right" th:text="${item.price}">
+            </td>
+            <td align="right" th:text="${item.quantity}">
+            </td>
+            <td align="center"
+                th:text="${#dates.format(item.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

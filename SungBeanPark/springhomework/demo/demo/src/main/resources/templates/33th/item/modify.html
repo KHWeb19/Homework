@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Modify</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var formObj = $("#item");
+
+        $("#btnModify").on("click", function() {
+            formObj.attr("action", "/33th/item/modify");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+        $("#btnList").on("click", function() {
+            self.location = "/33th/item/list";
+        });
+    });
+</script>
+<body>
+    <h2>상품 수정</h2>
+    <form id="item" th:object="${item}" method="post">
+        <input type="hidden" name="itemId" th:field="*{itemId}">
+        <table>
+            <tr>
+                <td>상품명</td>
+                <td>
+                    <input type="text" name="name" th:field="*{name}" />
+                </td>
+            </tr>
+            <tr>
+                <td>가격</td>
+                <td>
+                    <input type="text" name="price" th:field="*{price}" readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td>수량</td>
+                <td>
+                    <input type="text" name="quantity" th:field="*{quantity}" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div>
+        <button type="submit" id="btnModify">수정완료</button>
+        <button type="submit" id="btnList">들어가기</button>
+    </div>
+</body>
+</html>
