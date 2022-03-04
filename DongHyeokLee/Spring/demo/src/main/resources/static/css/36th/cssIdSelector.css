@@ -1,0 +1,14 @@
+* {
+    margin:20px auto;
+}
+body {
+  color: blue;
+}
+#container {
+        width: 600px;
+        padding: 15px;
+        border: 2px dotted blue;
+}
+h2 {
+    color: yellow !important;
+}
