@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- form은 디폴트로 get을 요청함 -->
+    <!--
+        th:action (thymeleaf를 활용한 부분)
+        input type을 통해 컨트롤러의 url과 연결시킴
+    -->
+    <form th:action="@{/29th/board/registerGet}">
+        <input type="submit" value="레지스터겟">
+    </form>
+
+    <form th:action="@{/29th/board/registerPost}" method="post">
+        <input type="submit" value="레지스터포스트">
+    </form>
+</body>
+</html>
