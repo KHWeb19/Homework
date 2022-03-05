@@ -36,7 +36,7 @@ let app = new Vue({
         attackMonster: function(index) {
                 this.list[index].hp -= 10
                   }
-            //여기 밑에서 음수로는 못내려감은 여러몬스터에 상대할수 없음
+            //여기에서 메소드를 사용하면 (음수로는 못내려가는) 여러몬스터에 상대할수 없음
 
         },
         beforeUpdate (){ //여기서는 처리가 다 같이 가능
