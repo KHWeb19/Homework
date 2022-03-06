@@ -8,10 +8,15 @@ let app = new Vue({
             {  id: 4, name:'리본돼지', hp:250 }
 
         ],
-        name:'고정값:슬라임'
+        name:'고정값:슬라임',
+        randomNumber: 0
     },
 
    methods: {
+
+        generateRandom: function (){
+            this.randomNumber = Math.floor(Math.random() * 10) + 1;
+        }
         addMonster: function () { //let max를 reduce를 통해 현재 id값이 뭐가 제일 높은지 찾음--push 해서 특정 이름이 오게 집어넣음
             let max = this.list.reduce(function(a, b){
                 return a > b.id ? a : b.id
