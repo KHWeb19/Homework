@@ -1,5 +1,5 @@
 let app = new Vue({
-    el: "#app",
+    el: '#app',
     data: {
         monsterBook: [
             { monsterId: 1, name: '슬라임', hp: 50, exp: 10, dropMoney: 5 },
