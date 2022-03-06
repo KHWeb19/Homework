@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--이름: <input v-model="name"> -->
+        <p>상점</p>
+        <label>
+            <input type="checkbox" v-model="shopView" v-on:click="shuffleShopList()">
+            판매목록
+        </label>
+        <button v-on:click="calcBuy()">구매 확정!</button>
+        <table border="1" v-if="shopView">
+            <tr>
+                <th align="center" width="40">번호</th>
+                <th align="center" width="120">아이템명</th>
+                <th align="center" width="160">가격</th>
+                <th align="center" width="320">아이템 설명</th>
+                <th align="center" width="40">구매</th>
+            </tr>
+
+            <tr v-for="(item, idx) in shopList" v-bind:key="item.idx">
+                <th align="center" width="40">{{ idx + 1 }}</th>
+                <th align="center" width="120">{{ item.name }}</th>
+                <th align="center" width="160">{{ item.price }}</th>
+                <th align="center" width="320">{{ item.effect.desc }}</th>
+                <th allign="center" width="40">
+                    <label>
+                        <input type="checkbox"
+                               v-model="shopListValue"
+                               v-bind:value="idx">
+                    </label>
+                </th>
+
+            </tr>
+        </table>
+        <p>캐릭터</p>
+        <p>LEVEL : {{ characterStatus.level }} CLASS : {{ characterStatus.selectJob }}</p>
+        <p>HP : {{ Math.floor(characterStatus.hp) }} MP : {{ Math.floor(characterStatus.mp) }}
+            pAtk: {{ characterStatus.pAtk }} mAtk : {{ characterStatus.mAtk }}</p>
+        <p>STR : {{ characterStatus.str }} DEX : {{ characterStatus.dex }}
+            INT : {{ characterStatus.int }} WIS : {{ characterStatus.wis }}</p>
+        <p>EXP : {{ characterStatus.currentExp }} / {{ characterStatus.requestExp }} MONEY : {{ characterStatus.money }}</p>
+
+        <p>인벤토리</p>
+        <label>
+            <input type="checkbox" v-model="inventoryView">
+            소지품 보기
+        </label>
+        <button v-on:click="equipItem()">아이템 장착</button>
+        <table border="1" v-if="inventoryView">
+            <tr>
+                <th align="center" width="40">번호</th>
+                <th align="center" width="120">아이템명</th>
+                <th align="center" width="320">아이템 설명</th>
+                <th align="center" width="40">장착</th>
+            </tr>
+            <tr v-for="(myItem, idx) in myInventory" v-bind:key="myItem.idx">
+                <th align="center" width="40">{{ idx + 1 }}</th>
+                <th align="center" width="120">{{ myItem.name }}</th>
+                <th align="center" width="320">{{ myItem.effect.desc }}</th>
+                <th align="center" width="40">
+                    <label>
+                        <input type="checkbox"
+                               v-model="myInventoryValue"
+                               v-bind:value="idx">
+                    </label>
+                </th>
+            </tr>
+
+        </table>
+        <p>사냥터</p>
+
+        <button v-on:click="addMonster">몬스터추가</button>
+        <button v-on:click="addManyMonster">몬스터 군단 추가</button><br><br>
+
+        <button v-on:click="wideAttackMonster">광역공격</button>
+        <ul>
+            <li v-for="(monster, index) in filedMonster"
+                    v-bind:key="monster.id">
+                ID: {{ monster.id }} {{ monster.name }} HP: {{ monster.hp }}
+                <!--<button v-on:click="removeMonster(index)">몬스터 삭제</button> -->
+                <button v-on:click="attackMonster(index)">공격</button>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="/js/vue/43th/rolePlayGame.js"></script>
+</body>
+</html>

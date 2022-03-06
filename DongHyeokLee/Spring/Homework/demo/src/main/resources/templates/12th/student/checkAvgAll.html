@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border ="1">
+
+    <tr>
+        <td align = "center" width="120">반 평균 점수</td>
+        <td align ="center" width="80" th:text="${classAvg}"></td>
+
+    </tr>
+
+    <tr>
+        <td align = "center" width="120">국어 평균 점수</td>
+        <td align ="center" width="80" th:text="${koreanAvg}"></td>
+    </tr>
+
+    <tr>
+        <td align = "center" width="120">영어 평균 점수</td>
+        <td align ="center" width="80" th:text="${englishAvg}"></td>
+    </tr>
+
+    <tr>
+        <td align = "center" width="120">수학 평균 점수</td>
+        <td align ="center" width="80" th:text="${mathAvg}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.example.demo.controller.entity.order2;
+package com.example.demo.entity.order2;
 
 
 import lombok.Data;

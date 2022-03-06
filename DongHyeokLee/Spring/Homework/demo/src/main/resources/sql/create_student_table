@@ -1,0 +1,8 @@
+create table student(
+    student_no int not null auto_increment,
+    student_name varchar(10) not null,
+    korean_score int null,
+    english_score int null,
+    math_score int null,
+    primary key(student_no)
+);

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    $(document).ready(function(){
+          var formObj = $("#student");
+
+          $("#btnRegister").on("click", function(){
+            formObj.attr("action","/12th/student/register");
+            formObj.attr("method", "post");
+            formObj.submit();
+        });
+
+         $("#btnCheckAvgAll").on("click", function(){
+                formObj.attr("action","/12th/student/checkAvgAll");
+                formObj.attr("method", "get");
+                formObj.submit();
+            });
+
+        $("#btnScoreList").on("click", function(){
+            formObj.attr("action","/12th/student/scoreList");
+            formObj.attr("method", "get");
+            formObj.submit();
+        });
+
+
+    });
+
+    </script>
+
+</head>
+<body>
+
+<form id="student" th:object="${student}">
+    <table>
+        <tr>
+            <td>이름</td>
+            <td>
+                <input type="text" name="name" th:field="*{name}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>국어점수</td>
+            <td>
+                <input type="number" name="koreanScore" th:field="*{koreanScore}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>영어점수</td>
+            <td>
+                <input type="number" name="englishScore" th:filed="*{englishScore}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>수학점수</td>
+            <td>
+                <input type="number" name="mathScore" th:filed="*{mathScore}"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+        <button type="submit" id="btnRegister">등록</button>
+        <button type="submit" id="btnCheckAvgAll">모든 평균 확인</button>
+        <button type="submit" id="btnScoreList">성적 리스트</button>
+
+</body>
+</html>
