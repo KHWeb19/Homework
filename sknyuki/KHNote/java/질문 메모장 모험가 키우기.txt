@@ -1,0 +1,31 @@
+((knight)member.get(i))라고 표기가 되어있는 이유.
+
+raidMember가 {kni,wiz,sin}를 받았다고 가정해보자.
+
+첫번째 루프에서 get(i)에 엘리멘트인 kni(아마 객체명)가 올 것이며 (knight)라고 미리 클래스를 써놓은 것.
+
+
+객체화를 하기위해 대비해놨지만 만일 kni가 아닌 sin와 같은 다른 객체명이 오면 변수명(객체명)만 달라지게 되는 것인가 아니면 컴파일 에러가 나는것인가? 
+
+
+
+나중에 fenryl클래스의 raidTurnStart 메서드부분 어떻게 돌아가는지 순차적으로 천천히 설명 해주실수있나요? 
+
+fenryl클래스의 raidTurnStart 메서드부분
+((knight)member.get(i)).qskill(this)의 의미 
+
+1)member.get(i)) -> raidMember의 i번째 엘리먼트를 받음 -> 기사를 선택했다고 가정하면->(kni)를 받음 
+
+2)((knight)kni.qSkill(this);가 됨(this는 아마 데미지)
+
+3)이작업에서 객체화된 kni를 받고 qskill의 데미지까지 불러올려는 작업으로 이해하는게 맞나요?
+
+1. raidTurnStart의 매개변수를 list로 받고 생긴 메리트
+=>궁극적으로 하고자 하는것은 각 클래스의 qskill들 데미지를
+
+예를 들어 다이스 게임때 dice라는 클래스에 MAX값이나 rollDice();등을 넣어주신 후 클래스를 배열화 시켜서 객체의 주소를 2개로 늘려주셨습니다.  
+
+이번 list의 경우도 개념은 같은거죠?
+
+매개변수로 객체의 주소를 던져준다는게 잘 머리에 안 그려집니다. 
+

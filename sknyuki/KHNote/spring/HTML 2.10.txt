@@ -1,0 +1,132 @@
+HTML 태그 실험
+
+<li></li>태그-list
+<ul></ul>태그-항목구분
+
+이미지 첨부
+<img src="URL">
+*단 resources>static>img내부에 해당 이미지가 있어야함
+
+H태그 
+<h1>내가</h1>
+      :
+      :
+<h5>유우키다</h5>
+
+->이런식으로 글자 크기의 조정이 가능하다
+
+p태그
+<p>그냥 글씨 출력<br>띄어쓰기는 요렇게</p>
+->
+그냥 글씨 출력
+띄어쓰기는 요렇게
+
+-><br>은 뛰어쓰기
+
+
+강조 글씨 font태그
+<p><strong>이거랑</strong>,<b>이거 동일</b></p>
+<p><em>이건 기울림 글씨</em>,<i>얘도 기울림</i></p>
+
+strong =b ->굵은 글씨체
+em=i -> 기울린 글씨체
+
+
+형광팬 태그
+<p><mark>형광팬 출력</mark></p>
+<p><span style="color:blue;">파란색 글씨</span></p>
+
+
+table작성
+
+우선 head에 <style>태그를 만들어줘서 table의 테두리 굵기,넓이 등을 설정
+ex)
+<style>
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        td {
+            width: 100px;   /* 셀 너비 */
+            height: 30px;   /* 셀 높이 */
+        }
+    </style>
+
+다음으로 
+<table>을 만들어준다
+
+<caption>테이블이름</caption>
+<colgroup>
+<col>->세로열 속성 부여
+<span="2">->2개 합침
+<style="blackground-color:blue"> 색입힘
+</colgroup>
+=>표의 속성
+
+ <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+ </tr>
+=>표의 형태
+
+EX)
+<table>
+        <caption>커스텀 테이블</caption>->제목
+        <colgroup>->세로열의 특징 속성값부여 툴
+            <col>
+            <col span="2" style="background-color: blue;">
+            <col style="background-color: yellow">
+        </colgroup>
+        <tr>->세로열 갯수
+            <td></td>->가로열 갯수 
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+check box
+<ul>
+<li><input type="checkbox" value="grammer">영문법</li>
+<li><input type="checkbox" value="read">읽기</li>
+<li><input type="checkbox" value="listening">듣기</li>
+</ul>
+
+radiobox
+<ul>
+<li><input type="radio" name="subject" value="grammer">영문법</li>
+<li><input type="radio" name="subject" value="read">읽기</li>
+<li><input type="radio" name="subject" value="listening">듣기</li>
+<li><input type="radio" name="test" value="test">test</li>
+</ul>
+
+=>둘 차이점
+1.버튼의 모양이 다름
+2.name이 같은 것 들은 중복 선택이 불가능 
+3.뭐였드라
+
+
+로그인 형식 만들기
+<fieldset>
+<label>아 이 디: <input type="text" id="user_id" size="16"></label>
+<label>비밀번호: <input type="password" id="user_pw" size="16"></label>
+<label></label>
+<input type="submit" value="로그인">
+</fieldset>
+
+
+그 이때까지 add.attribute해서 value값 HTML로 넘겨줄때 <p th:text=></p>에서 th도 세로열이라는 뜻이었나요?

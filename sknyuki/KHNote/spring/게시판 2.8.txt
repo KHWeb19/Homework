@@ -1,0 +1,76 @@
+
+컬럼 명이란?
+명령어 desc board:
+보드의 열람이 가능함
+field내부의 하나하나가 컬럼
+
+GetMapping
+하위 public String선언부 소괄호에 Board board가 추가
+
+@Autowired?
+
+Class영역
+Board를 생성
+사용할 데이터들 다 private로 선언
+
+
+service패키지에 interface를 생성
+public void register(Board board);로 선언 
+public List<Board> list();
+->보드를 리스트화해줌
+
+
+@Autowired와 @Service는 세트
+
+@repository와 연동? 무엇과 연동?
+
+->repository와 service를 연동시킴 
+
+
+신개념 보드랑 연결 
+
+jdbcTemplate.query(A, B)
+-> // A에 해당하는 DB Query를 실행함
+        // B에는 A에 배치될 정보들이 들어감
+
+mapRow(a,b)
+
+
+
+
+HTML구간
+list HTML파일을 만들어줌
+
+
+신개념
+body에 a태그 링크 걸기
+
+표만들기
+<table border="1">
+<tr> 가로
+<th></th> 세로
+</tr>
+<td colspan="4">
+4개를 병합
+
+align는?
+
+href?
+
+
+
+질문1
+ (Model model)만 쓰는경우랑
+(Board board, Model model)을 쓰는경우
+
+질문2
+<tr th:if="${#lists.isEmpty(list)}">
+비어있는지 확인하는 부분? 무슨말
+<td colspan="4">
+        현재 게시물이 없습니다!
+</td>
+</tr>
+
+-> 만약 list가 비어있으면 td내부를 실행하라?
+
+

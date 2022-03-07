@@ -1,0 +1,143 @@
+신개념
+Mapping을 두개 찔러 넣어줄수가 있음
+두개를 중복해서 넣어줄 시 
+->"디폴트URL/28th/homework1"이런 식으로 "/"를 하나 더 낑겨 넣어주는 식으로 주소를 부를수있다.  
+
+신개념1/28
+Pathvariable(Board)
+
+
+Mapping(URL) 의 소괄호 내부에 "/{boardNo}"를 뒷 부분에 같이 입력해주는 경우->뒤에 '1","2"와 같은 번호도 "/"뒤에 추가적으로 입력해야함. 
+->기대효과: 같은 코드를 여러개를 실행 시킬수가 있음 (재이용가능)  
+
+기본형태:
+@RequestMapping("/read/{boardNo}")
+
+public String read(@PathVariable("boradNo")int boradNo){
+log.info("read:"+board);
+
+지울때
+@PostMapping
+
+신개념
+GetPost
+@RequsetMapping을->getMapping으로 써줌 
+
+log.info("registerGetFrom");과 같이 뒤에 Form을 붙여주는게 바람직함
+양식은 공개되어도 되지만 양식 내부의 내용은 공개 되어서는 안됨 
+
+@RequsetMapping을->PostMapping으로 써줌 
+
+Get을 사용해서 정보를 요청하면 URL정보가 노출됨->public와 유사 
+Post를 사용하면 URL정보가 노출되지 않음->private와 유사
+
+사용사례
+Get:일반 회원이 회원 관리를 할 때(정해진 양식)
+Post:
+
+추가:post는 URL을 사용자가 접근(호출)할 수 없기에 get으로 main을 만들어줘서 들어갈수 있게끔 하는게 기본 원칙 
+
+
+HTML에서 호출법 (사용예시)
+
+1)우선 main에 HTML을 만들어줌 거기서 <body>내부에 이하와 같은 정보를 기입함 
+
+Get인 경우
+(기본적으로 form은 GET을 요청함 디폴트가 GET이기에 아무것도 기입안함)
+<form th:action="@{/29th/borad/registerGet}">  -> 받고 날라갈 URL기입
+	<input type="submit" value="register(GET)">
+Post인 경우(method="post"기입 GET이 아니기에)
+<form th:action="@{/29th/borad/registerPost}" method="post">  ->
+	<input type="submit" value="register(POST)">
+
+2)이후 버튼을 누르고 날라갈 HTML주소도 만들어주고 거기에 해당 내용도 만들어준다
+
+
+신개념 
+Entity
+
+JSON을 하기 위해 @ResponseBody를 써줌
+post가 JSON을 본다..?
+
+
+사용예제
+
+Class영역
+class에서 Member라는 클래스를 만든다
+userName과 passWord라는 private 변수를 만들어 준다.
+
+Controller영역
+@ResponseBody
+@GetMapping("/view-info")
+public Member viewInfo(){
+log.info("viewInfo()");
+
+Member member=new Member();
+return member;
+}
+
+HTML만들어줄 필요없이 바로 URL로 날라가면 실행 화면을 볼 수가있음 
+
+
+
+신개념 RestController
+
+RestController : 데이터 전송이 많은 경우 많이 사용(알아서 JSON 활용함)
+
+Controller : 실제 HTML로 페이지를 넘겨주어야 할 경우 많이 사용
+
+페이지를 넘기는 것과 데이터를 넘기는것은 다름
+
+Restcontroll로 작성하면 HTML로 못 넘기고 그대로 웹상에 "29th/HTML"이런식으로 출력함
+
+reponseBody를 써야하는 이유 : controller로 실행하다가 일부 데이터만 넘겨야할경우
+
+
+
+사용예제
+ 
+멤버로 list를 3개 만듦
+return list
+
+->json실행
+직관적으로 나옴
+
+
+public void
+public String
+public Blooean 인경우들의 return했을때 JSON이 보여주는 값 형태 정리 
+
+
+
+질문
+1.get이 URL을 그대로 노출한다고 하셨는데 그러면 그냥RequestMapping과 차이점이 어떻게 되는거죠?
+RequestMapping과 get의 사용할때 용도를 어떻게 구분 하면 될까요
+
+->답: 앞으로 가급적이면 get을써라 request랑 get은 유사하기는 하다
+ 
+
+2.지금 json이 나타내고있는 member가 post형태라는거죠? 
+post는 주소가 노출이 안 된다고 하셨는데 지금 URL주소가 전부 노출되어있는 상태가 아닌가요?
+
+
+3.
+흐름1:
+post는 데이터 값이 body에 저장되기 때문에 responseBody로 post Member의 값을 호출함
+
+->json veiwer가 이를 받아내서 화면상에 표시함
+
+흐름2: 일반적으로 post은 URL주소를 사용자가 입력하는 것으로는 접근이 불가능하다.
+열람이 불가능한 이유:body에 저장이 되었기 때문에. 
+하지만 열람을 가능케 하는것이 @responseBody이다.
+
+질문1)위 흐름이 맞나요?
+
+질문2)post 송출방식과 json 송출방식은 동일한 개념으로 받아들여도 괜찮을까요?
+
+질문3)Member를 일반적으로 저희가 해왔던 방식으로 객체화를 해주셨는데, 그러면 저희가 이때까지 해왔던 객체화 방식은 다 메모리에 저장이 된다고 하셨는데 그러면 메모리와 body와 동일한가요?
+
+질문 4) getMapping했다고 get이 아니다
+->get은 단지 사용자가 post의 URL주소를 못 받기 때문에 호출하기 위해 걸어둔것이다
+-> 그러면 post와 get의 식별은 어떻게 해야하는가?
+
+ 

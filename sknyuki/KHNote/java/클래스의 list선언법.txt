@@ -1,0 +1,41 @@
+m
+object알아보기 
+
+object을 통한 클래스의 데이터타입화
+테이터타입화 되는 과정에서 데이터 타입화된 클래스 내부의 메소드들 전부 구현 가능 
+
+
+class의 list선언법 과정=>
+private ArrayList<SelectedCharacter> member;
+ public ChracterManager () {
+        member = new ArrayList<>();
+    }
+//SelectedCharacter을 리스트로 선언
+
+SelectedCharacter sc;
+
+//SelectedCharacter를 객체화 변수로 sc로 선언
+
+
+
+
+
+ sc = new SelectedCharacter(
+ CharacterNumber.KNIGHT, kni);
+  member.add(sc);
+
+//SelectedCharacter내부에 캐릭터 넘버로 kni라는 캐릭터 값 인풋
+//그러한 형태의 SelectedCharacter를 member라는 리스트에 추가
+
+
+호출법
+=>
+
+object와 연동 시킬때 getter와 연동 19th방식
+object미사용 18th방식
+
+
+
+
+
+

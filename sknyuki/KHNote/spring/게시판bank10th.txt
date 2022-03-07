@@ -1,0 +1,14 @@
+2.14 게시판 문제은해 10번 확인
+
+1.DB테이블의 설정 작성 
+리소스에 SQL이라는 디렉토리 작성
+create_product_table파일 생성
+
+**product_borad라는 프로잭트로 생성**
+
+여기에 table의 내용을 작성 (DB)
+
+정보가 있을것이기에 not null
+작성 후 mysql에 복붙
+으로 기본 설정을 세팅 
+

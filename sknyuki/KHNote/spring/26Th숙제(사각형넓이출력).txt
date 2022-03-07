@@ -1,0 +1,187 @@
+논 쓰레드 버전 해설
+사각형 
+0~2의 크기의 가로를 4등분해서 각각 thred를 돌린다.
+
+ThreadRectangle의 생성자에 4번루프(4등분하기에)마다의 start포이트와 end포인트를 자동으로 나눠서 실행 할 수 있게끔 세팅 
+
+realTotal=2000
+total=500
+
+realtotal/total한 값을 threadId로 배치=>자동적으로 4등분 하게끔
+
+배열을 만들어줄때 ThreadRectangle를 그 자체를 배열로 만들어줌
+
+run내부에 0.001*Y의 루프를 돌게하고 그것을 네번을 실행 해주는것으로 thread를 실행한다. 
+
+여기서 critical section은?
+각자 계산을 하고 있는 구조로 한곳에 더하지는 않고 있다?
+그럼 소스는?
+2000을 500으로 나눈 값을 공유는하고있나?
+제어권의 다툼
+lock을 안 써줬기에 없다
+thread에서 critical section이 의무는 아니다 
+단지 분할해서 돌려주면 연산 속도가 빠르기 때문인다.
+
+run()에 메소드들을 묶어서 넣어 버리면 안된다 .
+각각의 run에 thred에 해당되는 함수들을 각개로 객체화 시켜준 후 실행 시켜줘야한다.<-라고 정리하면 될까요
+
+객체1.run();
+객체2.run();
+
+객체1.start();
+객체2.start();
+
+thread 구조를 하고 있어도 
+
+
+package controller;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.logging.Logger;
+
+@Controller
+public class First25thController {
+
+    private static final Logger logger = (Logger) LoggerFactory.getLogger(First25thController.class);
+
+    @RequestMapping("/")
+    public String home(Model model) {
+        logger.info("client entered/(home)");
+
+        Date date=new Date();
+        DateFormat dateFormat=DateFormat.getDateInstance(DateFormat.LONG);
+
+        String formattedDate=dateFormat.format(date);
+        model.addAttribute("servTime",formattedDate);
+
+        return "home";
+서비스는 기본적으로 두가지의 개념이 반영됨 
+->server와 CLient 공급자와 수요자
+
+server:구동시킨 springBoot는 서버(수요자)에 해당된다.
+ CLient:서버에 접속하는 이용자들 
+
+Logger 상태값을 확인 할 수 있는 기록을 남기는 녀석
+
+Logger.info 이하의 부분이 인출된다 통해 요청이 제대로 실행이 되었는지 확인을 할 수 있다.
+하단 스크롤->client entered->로 요청이 되었는지 상태 확인 가능 
+
+Date date= new date();
+->날짜를 구해옴 
+
+String formattedDate=dateFormat.format(date);
+->문자열로 변경 
+
+model.addAttibute특정한 속성닶에 특정한 값을 저장 
+->문자열로 변경된 formattedDate를 저장 
+servTime->key
+formattedDate->value
+
+return "25th/home"
+->요청한 URL을 처리 
+
+<p th:text="${servTime}">Server Time:${servTime}</p>
+
+에서 <>내부는 value값을 호출하는 명령어라는 것은 알겠습니다.
+그렇다면 Server Time:${servTime}이 부분은 무엇을 의미하는건가요?
+
+
+
+
+HTML
+주석처리 <!-- -->로 처리
+h1~h6으로 글자 크기 조정
+
+java에서 map선언
+model.addAttribute("key값입력",value입력);
+
+HTML에서 호출
+th:text는 호출자 servTime의 value값을 호출 
+ex)<p th:text="${servTime}"> </p>
+
+
+26th 숙제 문제 1
+
+기본 설정후 utillity패키지 생성
+1)DICE클래스 생성 
+2)lombok.Data(기능?)
+3)@controll이 아닌 @Data를 해준후 Dice함수 선언
+4)private로 기본 다이스의 설정(눈금 range등)
+6)public void rollDice(){
+diceNum=(int)(Mate.random()*6)
+
+7)controllor로 복귀 
+8)Dice클래스 인스턴스 생성 
+9)dice.rollDice로 메소드 호출 
+10)model.addAttribute("key값입력",value입력);으로 선언해줌 
+#주의 value값 dice.getdiceNum으로 getter사용
+
+HTML파일
+<p th:text="${DiceNum}"> </p>
+->DiceNum호출
+
+문제1
+신개념1 lombok.Data
+->@Getter,@Setter @toString등등을 자동으로 만들어줌
+6)<--에서 getter를 바로 끌고 올 수 있었던 이유 
+
+신개념2 새로운 클래스를 만들때 
+controller패키치가 아닌 com.example.demo
+밑에 새로운 패키치를 만들어줘서 거기다가 클래스를 만들어 줘야함
+
+문제2 
+1)utillity패키치에 thread패키치 생성
+2)ThreadWorker클래스 생성 
+3)Thread를 extends해줌 
+4)private static으로 test값을 선언해줌
+5)private Lock lock;선언
+6)public Thread worker(){
+test=0;
+lock= new RenntrantLock();}으로 초기화해줌 
+
+7)controller에서 test의 값을 빼내오기 위한 메소드를 만들어줌
+##주의점 뺴내올때 test의 값을 tmp로 변환해주는데 이때 lock으로 감싸누어야함 
+이유->spring은 거대한 Thread라는 개념이라서 값을 꺼내올때도 lock을 걸어주어야함 
+하지만, 이번경우는 변수의 변환이 일어나지 않으니까 생략해도 됨.
+
+@Override구간
+try~catch메소드에 Thread.Sleep(3000)을 넣어주어 test값을 매 3초마다 1씩 증가 하게끔 코드를 만들어 준다. 
+주의점 Lock을 걸어주어야함(Spring이 거대한 Thread 개념이라서)  
+main에
+ThreadWorker tw=new ThreadWorker();
+tw.start();를 빼줌 
+
+이유->controller에서 실행 해버릴경우 net상에서 URL을 호출 할 떄마다 새롭게 초기화가 되기에 값을 저장하지 못하고 계속 1만 찍히게 된다.
+그렇기 때문에 main에 인스턴스를 빼 놓은 것으로 초기화가 처음 한번만 일어나게 해준다. 
+
+
+controller구간
+main에서 Threadclass를 초기화후 실행 해주고 있기에 model.addAttribute("key값입력",value입력);을 통해서 value값을 HTML에 넘겨주기 위한 기틀을 마련해준다. 
+
+
+HTML구간
+
+body에서 호출 끝
+
+
+
+
+
+
+
+문제 2 
+질문1
+main으로 Thread 생성자를 빼준이유
+->URL받을 때 마다 생성되면 매 루프마다 test의 값이 초기화가 되나요? 
+
+질문 2
+run내부에 test의 증진에 대한 코드가 이미 있는데 getSynncLockTest메소드를 만들어서 test값을 tmp값으로 변환 후 따로 호출한 이유?
+->그냥 그대로 vlaue에서 test값을 호출하면 안되는 거인가요? 
+
+

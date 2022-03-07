@@ -1,0 +1,77 @@
+컨트롤러
+입력 서비스구현(입력 정보 저장)
+boardService.register(board)
+register을 가동하게 해서 어제 만들었던 코드(board)가 구현 하게 시킴
+어제 구현 못한 이유
+->HTML register가 없었기 때문에
+
+
+
+read의 구현
+interface에서 
+public Board read(Integer boardNo); 보드에 있는 넘버를 읽기에
+public void modify(Boaed board); 수정을 객체에서 이루어지기에 보드가 아닌 보이드
+public void remove(Integer boardNo);
+
+
+controller
+getmapping으로 read생성
+
+
+HTML에서 read생성
+list의 내용 끌고옴 
+수정 hidden
+
+질문1
+ read를 구현하실때 controller분분
+
+th:object의 경우는 th:text랑은 달리 attributed에 key값의 입력이 불필요한건가요?
+key값의 입력이 불필요해지는건 어떤 경우인가요?
+그부분이 아직 잘 이해가 안 갑니다.
+
+질문2
+read의 HTML에서 div내부 버튼 생성하실때
+ <button type="submit" id="btnModify">수정</button>처럼 매우 간략하게 코드를 짜셨는데 이것은 이때까지 해오던 방식인
+<form th:action="@호출할URL">
+< input type="submit" value="버튼명">
+ 이것과 역할은 동일한건가요?
+새로추가된 id값이 URL와 관련있는건가요?
+
+
+
+질문3
+
+객체를 연동할때 th:object단일로도 연동이 되는건가요?
+controller에서 add.attribute을 통해서 연동이 되는 건가요?
+
+리포지토리 ??의 역할
+?에 해당하는 녀석 ->boardNo
+-> 넘버에 해당하는 녀석의 보드를 전부 보여달라
+
+
+
+
+
+HTML
+register
+
+<div>?-> 특정 영역을 만듦
+
+처음 접하는 코드가 많아서 헷갈려서 그러는데 코드가 어떻게 작동이 되는지 DB부분부터 흐름을 한번 브리핑 해주실수있을까요?
+
+
+
+질문
+<div>내부
+1<button tupe "summit">
+input type="summit" value="버튼명"
+<--이거랑 다른건가요?
+
+2summit은 버튼 타입이라는 것 그럼 id는?
+
+3contrlloer에서 (Board board)를 써주는 이유 
+->HTML에서 th:object을 연동해주기 위해?
+
+form ht부분
+th:object를 추가 해준건 뭔가요?
+->Board에 전송할게 있을때?
