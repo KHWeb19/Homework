@@ -40,7 +40,6 @@ public class Fifteen45thProbBank12Controller {
         log.info("probBank12List()");
 
         model.addAttribute("list", studentService.list());
-        model.addAttribute("list2", studentService.list2());
 
         return "/45th/probBank12/list";
     }
