@@ -1,4 +1,5 @@
-package com.example.demo.repository.Bank10;
+
+/*package com.example.demo.repository.Bank10;
 
 import com.example.demo.entity.Bank10.Product;
 
@@ -98,3 +99,6 @@ public class BoardRepository {
         jdbcTemplate.update(query, product.getName(), product.getContent(), product.getDetail(),product.getBoardNo());
     }
 }
+
+
+ */

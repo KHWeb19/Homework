@@ -1,3 +1,4 @@
+/*
 package com.example.demo.entity.Bank10;
 
 import lombok.Data;
@@ -13,3 +14,7 @@ public class Product {
     private int price;
     private Date regDate;
 }
+
+
+
+ */

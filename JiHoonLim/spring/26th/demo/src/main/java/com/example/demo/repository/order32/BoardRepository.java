@@ -1,4 +1,3 @@
-/*
 package com.example.demo.repository.order32;
 
 import com.example.demo.entity.order32.Board;
@@ -112,6 +111,3 @@ public class BoardRepository {
         jdbcTemplate.update(query, board.getTitle(), board.getContent(), board.getBoardNo());
     }
 }
-
-
- */

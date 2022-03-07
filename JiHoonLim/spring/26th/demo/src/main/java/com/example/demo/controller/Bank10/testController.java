@@ -1,4 +1,4 @@
-package com.example.demo.controller.Bank10;
+/*package com.example.demo.controller.Bank10;
 
 
 import com.example.demo.entity.Bank10.Product;
@@ -87,3 +87,6 @@ public class testController {
         return "/ex10/board/success";
     }
 }
+
+
+ */

@@ -1,3 +1,4 @@
+/*
 package com.example.demo.service.Bank10;
 
 import com.example.demo.entity.Bank10.Product;
@@ -12,3 +13,6 @@ public interface BoardService {
     public void modify (Product product);
     public void remove (Integer boardNo);
 }
+
+
+ */

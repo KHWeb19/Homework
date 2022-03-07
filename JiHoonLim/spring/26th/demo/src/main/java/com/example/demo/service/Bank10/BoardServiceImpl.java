@@ -1,3 +1,4 @@
+/*
 package com.example.demo.service.Bank10;
 
 
@@ -39,3 +40,6 @@ public class BoardServiceImpl implements BoardService {
         repository.delete(boardNo);
     }
 }
+
+
+ */

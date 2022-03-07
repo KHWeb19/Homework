@@ -1,4 +1,4 @@
-/*
+
 package com.example.demo.controller.order32;
 
 import com.example.demo.entity.order32.Board;
@@ -138,4 +138,3 @@ public class BoardController {
 }
 
 
- */
