@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>개인 성적 리스트</h1>
+
+<table border="1">
+
+    <tr>
+        <th align="center" width="80">번호</th>
+        <th align="center" width="150">이름</th>
+        <th align="center" width="150">국어</th>
+        <th align="center" width="150">영어</th>
+        <th align="center" width="150">수학</th>
+        <th align="center" width="150">평균</th>
+    </tr>
+    <tr th:if="${#lists.isEmpty(list)}">
+        <td colspan="6">
+            등록된 학생이 없습니다.
+        </td>
+    </tr>
+
+    <tr th:each="student : ${list}">
+        <td align="center" th:text="${student.studentNo}">
+        </td>
+        <td align="center" th:text="${student.name}">
+        </td>
+        <td align="center" th:text="${student.koreanScore}">
+        </td>
+        <td align="center" th:text="${student.englishScore}">
+        </td>
+        <td align="center" th:text="${student.mathScore}">
+        </td>
+        <td align="center" th:text="${student.myAvg}">
+        </td>
+    </tr>
+
+</table>
+
+    <div>
+        <form th:action="@{/12th/student/register}">
+            <input type="submit" value="돌아가기">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -7,16 +7,14 @@ import com.example.demo.service.proBank11.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
 @RequestMapping("/11th")
-public class proBank11Controller {
+public class ProBank11Controller {
 
     @Autowired
     private UserService userService;

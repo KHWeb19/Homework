@@ -40,5 +40,22 @@ public class Second29thController {
         return "29th/read";
     }
 
+    @RequestMapping("/problem")
+    public String problem () {
+        log.info("problem");
+
+        return "29th/board/problem";
+    }
+
+    @RequestMapping("/insert.no")
+    public String insert () {
+        log.info("insert.so");
+
+        return "29th/board/insert.no";
+    }
+
+
+
+
 
 }

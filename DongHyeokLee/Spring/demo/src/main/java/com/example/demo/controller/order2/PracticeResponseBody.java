@@ -1,7 +1,7 @@
 package com.example.demo.controller.order2;
 
 
-import com.example.demo.controller.entity.order2.Member;
+import com.example.demo.entity.order2.Member;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

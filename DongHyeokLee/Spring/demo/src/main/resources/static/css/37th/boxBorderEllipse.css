@@ -1,9 +1,9 @@
 div {
-    width: 125px;
-    height: 150px;
+    width: 500px;
+    height: 300px;
     margin: 20px;
     display: inline-block;
-    border: 2px solid #ccc;
+    border: 5px solid #ccc;
     border-radius: 75px/100px;
 }
 #mario {
@@ -11,6 +11,6 @@ div {
     background-size: cover;
 }
 #akmu {
-    background:url(../../img/akmu.jpg) no-repeat;
+    background:url(../../img/akmu3.gif) no-repeat;
     background-size: cover;
 }
