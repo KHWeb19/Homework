@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bank5/bank5.iml" filepath="$PROJECT_DIR$/bank5/bank5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank6/bank6.iml" filepath="$PROJECT_DIR$/bank6/bank6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fifth/fifth.iml" filepath="$PROJECT_DIR$/fifth/fifth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/homework.iml" filepath="$PROJECT_DIR$/.idea/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second/second.iml" filepath="$PROJECT_DIR$/second/second.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selfPractice/selfPractice.iml" filepath="$PROJECT_DIR$/selfPractice/selfPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tenth/tenth.iml" filepath="$PROJECT_DIR$/tenth/tenth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tenth2/tenth2.iml" filepath="$PROJECT_DIR$/tenth2/tenth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/third/third.iml" filepath="$PROJECT_DIR$/third/third.iml" />
+    </modules>
+  </component>
+</project>

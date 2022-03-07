@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td{
+          border: 1px solid #ccc;
+        }
+        div{
+          width: 740px;
+        }
+    </style>
+</head>
+<body>
+
+  <h1>  포트폴리오 문제 </h1>
+
+<!-- 공지사항 작성하기 -->
+
+
+  <div style="border:1px solid black">
+      <!-- 영역에 글자(공지사항 작성하기)가 걸쳐져있는데
+      이걸 넣는 방법은 배우지 않은 것 같습니다. 우선은 caption을 활용해봤습니다. -->
+    <table style="border:1px solid #fff !important">
+        <caption align="left"> 공지사항 작성하기 </caption>
+        <tr style="border:1px solid #fff !important">
+            <td style="border:1px solid #fff !important">제목</td>
+            <td style="border:1px solid #fff !important">
+                <input type="text" name="title" th:field="*{title}" placeholder="제목을 입력하시오."/>
+            </td>
+        </tr>
+        <tr style="border:1px solid #fff !important">
+            <td style="border:1px solid #fff !important">내용</td>
+            <td style="border:1px solid #fff !important">
+                <input type="text" name="content" th:field="*{content}" placeholder="내용을 입력하시오."/>
+            </td>
+        </tr>
+
+        <tr style="border:1px solid #fff !important">
+            <td style="border:1px solid #fff !important">첨부파일</td>
+            <td style="border:1px solid #fff !important">
+                <input type="file" name="uploadFile" th:field="*{uploadFile}"/>
+            </td>
+        </tr>
+        <tr style="border:1px solid #fff !important">
+            <td colspan="2" align="center" style="border:1px solid #fff !important">
+                <button type="submit">작성하기</button>
+            </td>
+        </tr>
+    </table>
+
+  </div>
+
+  <hr>
+
+<!-- 표 만들기 -->
+
+  <div>
+      <table>
+          <tr style="font-weight:bold; color:white; background-color:#ff9e6e">
+              <td align="center">번호</td>
+              <td colspan="2" align="center">제목</td>
+              <td align="center">작성자</td>
+              <td align="center">작성일</td>
+              <td align="center">조회수</td>
+          </tr>
+
+          <tr style="background-color:#fffbcf">
+              <td>9</td>
+              <td width="400">공지사항 제목9</td>
+              <td>
+                  <button type="submit">바로가기</button>
+              </td>
+              <td>user01</td>
+              <td>2021-03-29</td>
+              <td>34</td>
+          </tr>
+
+          <tr style="background-color:#fffbcf">
+              <td>6</td>
+              <td width="400">공지사항 제목6</td>
+              <td>
+                  <button type="submit">바로가기</button>
+              </td>
+              <td>answ445</td>
+              <td>2021-03-12</td>
+              <td>67</td>
+          </tr>
+
+          <tr style="background-color:#fffbcf">
+              <td>3</td>
+              <td width="400">공지사항 제목3</td>
+              <td>
+                  <button type="submit">바로가기</button>
+              </td>
+              <td>testg12</td>
+              <td>2021-03-01</td>
+              <td>98</td>
+          </tr>
+
+          <tr style="background-color:#fffbcf">
+              <td>2</td>
+              <td width="400">공지사항 제목2</td>
+              <td>
+                  <button type="submit">바로가기</button>
+              </td>
+              <td>palwe3</td>
+              <td>2021-01-02</td>
+              <td>85</td>
+          </tr>
+
+          <tr style="background-color:#fffbcf">
+              <td>1</td>
+              <td width="400">공지사항 제목1</td>
+              <td>
+                  <button type="submit">바로가기</button>
+              </td>
+              <td>xml23</td>
+              <td>2020-12-24</td>
+              <td>124</td>
+          </tr>
+
+          <tr style="font-weight:bold; color:white; background-color:#ff9e6e">
+              <td colspan="4" align="center">전체공지사항 갯수</td>
+              <td colspan="2" align="center"> 5개 </td>
+          </tr>
+
+      </table>
+  </div>
+
+</body>
+</html>

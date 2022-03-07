@@ -1,0 +1,12 @@
+use non_jpa_db;
+create table member(
+    member_no int not null auto_increment,
+    name varchar(50) not null,
+    age int not null,
+    title varchar(200) not null,
+    selfPR text null,
+    primary key(member_no)
+);
+
+alter table `member` add `id` varchar(50) not null after `name`;
+alter table `member` add `pw` varchar(50) not null after `id`;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() { //jquery를 쓸 때 제일 처음에 써주는 구문이다.
+                              //자세히는 모르겠는데 jquery요소들을 다운받는...다는 뜻인 것 같다.
+        var formObj = $("#member"); //<<<--- HTML상 form id="board"에 해당하는 객체
+
+//수정
+        $("#btnModify").on("click", function() {
+            //boardNo에 대한 객체를 획득
+            var memberNo = $("#memberNo");
+
+            //해당 정보를 숫자로 만듦
+            var memberNoVal = memberNo.val();
+
+            self.location = "/11th/member/modify?memberNo=" + memberNoVal;
+        });
+
+//삭제
+        $("#btnRemove").on("click", function() {
+            formObj.attr("action", "/11th/member/remove");
+            formObj.submit();
+        });
+
+//돌아가기
+         $("#btnList").on("click", function() {
+            self.location = "/11th/member/list";
+        });
+    });
+</script>
+
+
+<body>
+
+<h2> 상품 상세보기</h2>
+
+<!-- modelAttribute() 하는 부분에 리턴 형식에 따라 th:object 가 달라짐에 유의! -->
+<form id = "member" th:object="${member}" method="post">
+    <!-- hidden 눈에 보이지 않음: 그러나 board 객체와는 연동됨 -->
+    <!-- 최상단의 productNo를 보이지 않도록 가려준 것임. -->
+    <input type="hidden" name="memberNo" th:field="*{memberNo}">
+
+    <table>
+        <tr>
+            <td>회원 이름</td>
+            <td>
+                <input type="text" name="name" th:field="*{name}" readonly="readonly"/>
+            </td>
+        </tr>
+
+        <td>회원 아이디</td>
+        <td>
+            <input type="text" name="id" th:field="*{id}"/>
+        </td>
+        </tr>
+
+        <td>회원 비밀번호</td>
+        <td>
+            <input type="text" name="pw" th:field="*{pw}"/>
+        </td>
+        </tr>
+
+        <tr>
+            <td>회원 나이</td>
+            <td>
+                <input type="number" name="age" th:field="*{age}" readonly="readonly"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>가입 글 제목</td>
+            <td>
+                <input type="text" name="title" th:field="*{title}" readonly="readonly"/>
+                <!-- th:field란? 각각의 필드들을 매핑해주는 역할을 한다.
+                     설정해준 값으로, th:object에 설정해준 객체의 내부와 매칭해준다.-->
+            </td>
+        </tr>
+
+        <tr>
+            <td>자기 소개</td>
+            <td>
+                <input type="text" name="selfPR" th:field="*{selfPR}" readonly="readonly"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+</form>
+
+<div>
+    <button type="submit" id="btnModify">수정</button>
+    <button type="submit" id="btnRemove">삭제</button>
+    <button type="submit" id="btnList">돌아가기</button>
+</div>
+
+</body>
+</html>
