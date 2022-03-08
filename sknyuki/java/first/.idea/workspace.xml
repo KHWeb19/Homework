@@ -1,84 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4aacd51-5478-4d4e-ab08-89f58470ffb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/HomeWork.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FirstJavaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/HomeWork.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/JavaVariable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/HomeWork/M9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/out/production/second/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/out/production/second/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/out/production/second/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/out/production/second/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/out/production/second/HomeWork.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second/second.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/.idea/HomeWork.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/first/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/first/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/first/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/first/first.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/first/src/FirstJavaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/HomeWork.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/JavaVariable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/HomeWork/M9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/out/production/second/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/out/production/second/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/out/production/second/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/out/production/second/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/out/production/second/HomeWork.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork/second/second.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../second/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../second/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e4aacd51-5478-4d4e-ab08-89f58470ffb3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../second" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager">
     <configuration name="FirstJavaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
