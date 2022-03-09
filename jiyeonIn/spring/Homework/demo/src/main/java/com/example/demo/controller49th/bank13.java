@@ -1,7 +1,7 @@
-package com.example.demo.controller48th;
+package com.example.demo.controller49th;
 
-import com.example.demo.entity.order32.Board;
-import com.example.demo.service.order32.BoardService;
+import com.example.demo.entity.order34.ProductList;
+import com.example.demo.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,16 +15,17 @@ import java.util.List;
 
 @Slf4j
 @Controller
-@RequestMapping("/vue")
-@CrossOrigin(origins = "http://localhost:8081", allowedHeaders = "*")
-public class controller48th {
+@RequestMapping("/vueproduct")
+@CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
+public class bank13 {
+
     @Autowired
-    private BoardService service;
+    private ProductService productService;
 
     @GetMapping("/list")
-    public ResponseEntity<List<Board>> getVueBoardList () {
-        log.info("getVueBoardList()");
+    public ResponseEntity<List<ProductList>> getVueProductList () {
+        log.info("getVueProductList ()");
 
-        return new ResponseEntity<>(service.list(), HttpStatus.OK);
+        return new ResponseEntity<>(productService.list(), HttpStatus.OK);
     }
 }

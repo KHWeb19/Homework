@@ -8,7 +8,7 @@ import axios from 'axios'
 
 export default {
     fetchBoardList ({ commit }) {
-        return axios.get('http://localhost:7777/48th/vueboard/list')
+        return axios.get('http://localhost:7777/vue/list')
                 .then((res) => {
                     commit(FETCH_BOARD_LIST, res.data)
                 })
