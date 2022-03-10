@@ -16,7 +16,14 @@
           {{ board.boardNo }}
         </td>
         <td align="left">
-          {{ board.title }}
+          <router-link
+            :to="{
+              name: 'BoardReadPage',
+              params: { boardNo: board.boardNo.toString() },
+            }"
+          >
+            {{ board.title }}
+          </router-link>
         </td>
         <td align="right">
           {{ board.writer }}
