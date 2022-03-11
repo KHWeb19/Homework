@@ -16,6 +16,11 @@
                    active-class="active">
         BoardListPage
       </router-link>
+      <router-link :to="{ name: 'Concave' }"
+                   class="nav-link"
+                   active-class="active">
+        &nbsp;이것이 삼목이닷!&nbsp;
+      </router-link>
     </div>
 
   </div>
