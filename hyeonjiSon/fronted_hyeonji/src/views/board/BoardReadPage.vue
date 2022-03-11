@@ -19,6 +19,9 @@ import axios from 'axios'
 import { mapActions, mapState } from 'vuex'
 import BoardRead from '@/components/board/BoardRead.vue'
 
+//v-bind가 없어도 props를 통해 값이 넘어오고 있음.
+//이것이 가능한 이유는? props가 defalt(true)로 승인되고 있기 때문
+
 export default {
     name: 'BoardReadPage',
     props: {

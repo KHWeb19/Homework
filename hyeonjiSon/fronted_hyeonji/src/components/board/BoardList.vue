@@ -14,6 +14,7 @@
                 </td>
             </tr>
             <tr v-else v-for="board in boards" :key="board.boardNo">
+                <!-- for each 문으로 하나씩 넘겨준다. -->
                 <td align="center">
                     {{ board.boardNo }}
                 </td>
@@ -39,7 +40,7 @@
 export default {
     name: 'BoardList',
     props: {
-        boards: {
+        boards: { //boards에 들어온 값은 boardlist
             type: Array
         }
     },
