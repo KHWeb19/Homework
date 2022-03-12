@@ -5,6 +5,9 @@ import HomeView from '@/views/HomeView.vue'
 import ProductListPage from '@/views/product/ProductListPage.vue'
 import ProductRegisterPage from '@/views/product/ProductRegisterPage.vue'
 import ProductReadPage from '@/views/product/ProductReadPage.vue'
+import ProductModifyPage from '@/views/product/ProductModifyPage.vue'
+
+import EventBusTestPage from '@/views/eventbus/EventBusTestPage.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +37,21 @@ const routes = [
       default: true
     }
   },
+  {
+    path: '/eventbusTest',
+    name: 'EventBusTestPage',
+    component: EventBusTestPage
+  },
+  {
+    path: '/productModify/:board_no',
+    name: 'ProductModifyPage',
+    components: {
+      default: ProductModifyPage
+    },
+    props: {
+      default: true
+    }
+  }
 
 ]
 
