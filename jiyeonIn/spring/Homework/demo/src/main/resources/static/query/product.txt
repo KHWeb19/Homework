@@ -30,3 +30,4 @@ price int not null,
 writer varchar(50) not null,
 reg_date timestamp not null default now(),
 primary key(board_no)
+);
