@@ -21,6 +21,9 @@
                    active-class="active">
         &nbsp;이것이 삼목이닷!&nbsp;
       </router-link>
+      <router-link style="text-decoration: none;" :to="{ name: 'EventBusTestPage' }">
+        &nbsp;이것이 eventbus닷!&nbsp;
+      </router-link>
     </div>
 
   </div>
@@ -29,11 +32,9 @@
 <script>
 // @ is an alias to /src
 //import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'HomeView',
   components: {
-
   }
 }
 </script>
