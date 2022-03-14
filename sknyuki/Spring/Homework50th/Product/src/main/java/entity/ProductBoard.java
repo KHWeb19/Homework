@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class ProductBoard {
+
    private int productNo;
    private String title;
    private String description;
