@@ -16,7 +16,7 @@ import java.util.List;
 @Slf4j
 @Controller
 @RequestMapping("/48th/vueboard")
-@CrossOrigin(origins = "http://localhost:8081", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
 public class Eighteenth48thVueBoardController {
 
     @Autowired
