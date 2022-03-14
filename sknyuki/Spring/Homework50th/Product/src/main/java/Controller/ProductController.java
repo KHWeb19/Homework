@@ -6,9 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import service.productService;
 
 import java.util.List;
@@ -28,5 +26,38 @@ public class ProductController {
 
             return service.list();
        // return new ResponseEntity<>(service.list(), HttpStatus.OK);
+    }
+
+    @GetMapping("/{productNo}")
+    public ResponseEntity<ProductBoard> getVueBoardRead(
+            @PathVariable("boardNo") Integer productNo) {
+        log.info("getVueBoardRead()");
+
+        ProductBoard board = service.read(productNo);
+
+        return new ResponseEntity<>(board, HttpStatus.OK);
+    }
+
+
+    @DeleteMapping("/{productNo}")
+    public ResponseEntity<Void> vueBoardRemove(
+            @PathVariable("productNo") Integer productNo) {
+        log.info("vueBoardRemove()");
+
+        service.remove(productNo);
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PutMapping("/{productNo}")
+    public ResponseEntity<ProductBoard> vueBoardModify(
+            @PathVariable("productNo") Integer productNo,
+            @RequestBody ProductBoard productboard) {
+        log.info("vueBoardModify()");
+
+        productboard.setProductNo(productNo);
+        service.modify(productboard);
+
+        return new ResponseEntity<>(productboard, HttpStatus.OK);
     }
 }
