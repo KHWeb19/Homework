@@ -2,6 +2,8 @@ package entity;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class ProductBoard {
 
@@ -10,6 +12,6 @@ public class ProductBoard {
    private String description;
    private int price;
    private String Writer;
-   private java.util.Date Date;
+   private Date Date;
 
 }
