@@ -14,7 +14,7 @@ export default {
                 })
     },
     fetchMarket ({ commit }, productNo) {
-        return axios.get(`http://localhost:7777/13th/market/list/${productNo}`)
+        return axios.get(`http://localhost:7777/13th/market/${productNo}`)
                 .then((res) => {
                     commit(FETCH_MARKET, res.data)
                 })

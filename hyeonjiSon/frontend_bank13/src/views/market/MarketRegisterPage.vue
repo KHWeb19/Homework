@@ -1,12 +1,12 @@
 <template>
     <div align="center">
         <h2>게시물 작성</h2>
-        <board-register-form @submit="onSubmit"/>
+        <market-register-form @submit="onSubmit"/>
     </div>
 </template>
 
 <script>
-import BoardRegisterForm from '@/components/market/MarketRegisterForm.vue'
+import MarketRegisterForm from '@/components/market/MarketRegisterForm.vue'
 import axios from 'axios'
 export default {
     name: 'MarketRegisterPage',
@@ -15,8 +15,8 @@ export default {
     },
     methods: {
         onSubmit (payload) {
-            const { title, content, writer } = payload
-            axios.post('http://localhost:7777/13th/market/register', { title, content, seller })
+            const { title, content, seller } = payload
+            axios.post('http://localhost:7777/13th/market/register', { title, seller, content })
                     .then(() => {
                         alert('게시물 등록 성공!')
                         this.$router.push({

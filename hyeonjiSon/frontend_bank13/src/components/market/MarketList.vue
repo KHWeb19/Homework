@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2>상품 게시판 보기</h2>
 <!-- table은 표 만들기, border는 두께 -->
         <table border="1">
             <!-- tr -> row로 가로 -->

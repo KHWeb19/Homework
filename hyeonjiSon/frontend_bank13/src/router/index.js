@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 
 import MarketListPage from '@/views/market/MarketListPage.vue'
+import MarketRegisterPage from '@/views/market/MarketRegisterPage.vue'
 
 Vue.use(VueRouter)
 

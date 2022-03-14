@@ -2,6 +2,7 @@
     <div id="market">
         <h2> Market 게시판 </h2>
         <router-link :to="{ name: 'MarketRegisterPage' }">
+            상품 등록
         </router-link>
         <market-list :markets="markets"/>
     </div>
