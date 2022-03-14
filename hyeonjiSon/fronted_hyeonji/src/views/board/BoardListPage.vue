@@ -39,7 +39,7 @@ export default {
     }
 }
 
-</script>
-
 // web에서 Mapping이란? 해당 값이 다른 값을 가리키도록 하는 것이다.
 // 이를 통해 url이 그대로 노출되는 것을 방지하고 보안성을 높이는 것이다.
+
+</script>
