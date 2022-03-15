@@ -22,6 +22,15 @@
       >
         &nbsp;이것이 EventBusTestPage닷!&nbsp;
       </router-link>
+      <router-link
+        style="text-decoration: none"
+        :to="{ name: 'ProductBoardListPage' }"
+      >
+        &nbsp;ProductBoardListPage&nbsp;
+      </router-link>
+      <router-link style="text-decoration: none" :to="{ name: 'Vuetify' }">
+        &nbsp;Vuetify&nbsp;
+      </router-link>
     </div>
   </div>
 </template>

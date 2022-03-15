@@ -1,6 +1,8 @@
 import {
     FETCH_BOARD_LIST,
-    FETCH_BOARD
+    FETCH_BOARD,
+    FETCH_PRODUCT_BOARD_LIST,
+    FETCH_PRODUCT_BOARD
 } from './mutation-types'
 
 import axios from 'axios'
@@ -17,6 +19,18 @@ export default {
         return axios.get(`http://localhost:7777/49th/vueboard/${boardNo}`)
             .then((res) => {
                 commit(FETCH_BOARD, res.data)
+            })
+    },
+    fetchProductBoardList({ commit }) {
+        return axios.get('http://localhost:7777/Bank13/product/list')
+            .then((res) => {
+                commit(FETCH_PRODUCT_BOARD_LIST, res.data)
+            })
+    },
+    fetchProductBoard({ commit }, productNo) {
+        return axios.get(`http://localhost:7777/Bank13/product/${productNo}`)
+            .then((res) => {
+                commit(FETCH_PRODUCT_BOARD, res.data)
             })
     }
 }
