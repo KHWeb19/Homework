@@ -1,7 +1,7 @@
 <template>
     <div align="center">
         <h2>Vue + Spring 게시물 수정</h2>
-        <board-modify-form v-if="board" :board="board" @submit="onSubmit"/>
+        <product-board-modify-form v-if="productBoard" :productBoard="productBoard" @submit="onSubmit"/>
         <p v-else>로딩중 .......</p>
     </div>
 </template>
@@ -9,33 +9,33 @@
 <script>
 import axios from 'axios'
 import { mapActions, mapState } from 'vuex'
-import BoardModifyForm from '@/components/board/BoardModifyForm.vue'
+import ProductBoardModifyForm from '@/components/productBoard/ProductBoardModifyForm.vue'
 
 export default {
-    name: 'BoardModifyPage',
+    name: 'ProductBoardModifyPage',
     components: {
-        BoardModifyForm
+        ProductBoardModifyForm
     },
     props: {
-        boardNo: {
+        productNo: {
             type: String,
             required: true
         }
     },
     computed: {
-        ...mapState(['board'])
+        ...mapState(['productBoard'])
     },
     methods: {
-        ...mapActions(['fetchBoard']),
+        ...mapActions(['fetchProductBoard']),
         onSubmit (payload) {
-            const { title, content } = payload
+            const { title, price, description } = payload
 
-            axios.put(`http://localhost:7777/49th/vueboard/${this.boardNo}`, { title, content })
+            axios.put(`http://localhost:7777/53th/vueproduct/${this.productNo}`, { title, price, description })
                     .then(res => {
                         alert('게시물 수정 성공!')
                         this.$router.push({
-                            name: 'BoardReadPage',
-                            params: { boardNo: res.data.boardNo.toString() }
+                            name: 'ProductBoardReadPage',
+                            params: { productNo: res.data.productNo.toString() }
                         })
                     })
                     .catch(() => {
@@ -44,7 +44,7 @@ export default {
         }
     },
     created () {
-        this.fetchBoard(this.boardNo)
+        this.fetchProductBoard(this.productNo)
                 .catch(() => {
                     alert('게시물 DB 조회 실패!')
                     this.$router.back()

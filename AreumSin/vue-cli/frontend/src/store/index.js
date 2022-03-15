@@ -9,21 +9,9 @@ import getters from './getters'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state,
-    actions,
-    mutations,
-    getters,
-  /*
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  },
-
-   */
+  /* state에는 복수형을 사용하지 맙시다 */
+  state,
+  actions,
+  mutations,
+  getters
 })

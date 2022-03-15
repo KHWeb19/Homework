@@ -1,11 +1,21 @@
-// states에서 넘어온 정보만 세팅
 import {
-    FETCH_BOARD_LIST, // 그냥 타입 지정, 없어도 문제는 없다.
-    //FETCH_BOARD
+    FETCH_BOARD_LIST,
+    FETCH_BOARD,
+    FETCH_PRODUCT_BOARD_LIST,
+    FETCH_PRODUCT_BOARD
 } from './mutation-types'
 
 export default {
     [FETCH_BOARD_LIST] (state, boards) {
-        state.boards = boards // 넘어온 정보를 state.boards에 저장
-    }
+        state.boards = boards
+    },
+    [FETCH_BOARD] (state, board) {
+        state.board = board
+    },
+    [FETCH_PRODUCT_BOARD_LIST] (state, productBoards) {
+        state.productBoards = productBoards
+    },
+    [FETCH_PRODUCT_BOARD] (state, productBoard) {
+        state.productBoard = productBoard
+    },
 }
