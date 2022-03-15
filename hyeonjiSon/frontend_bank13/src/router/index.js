@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 
 import MarketListPage from '@/views/market/MarketListPage.vue'
 import MarketRegisterPage from '@/views/market/MarketRegisterPage.vue'
+import MarketReadPage from '@/views/market/MarketReadPage.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,16 @@ const routes = [
     path: '/marketRegister',
     name: 'MarketRegisterPage',
     component: MarketRegisterPage
+  },
+  {
+    path: '/marketRead/:productNo',
+    name: 'MarketReadPage',
+    components: {
+      default: MarketReadPage
+    },
+    props: {
+      default: true
+    }
   }
 ]
 

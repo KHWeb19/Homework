@@ -12,6 +12,8 @@ import Concave from '@/views/game/Concave.vue'
 
 import EventBusTestPage from '@/views/eventbus/EventBusTestPage.vue'
 
+import VuetifyAllInOneTestPage from '@/views/ui/VuetifyAllInOneTestPage.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -64,6 +66,11 @@ const routes = [
     path: '/eventbusTest',
     name: 'EventBusTestPage',
     component: EventBusTestPage
+  },
+  {
+    path: '/vuetifyTest',
+    name: 'VuetifyAllInOneTestPage',
+    component: VuetifyAllInOneTestPage
   }
 ]
 
