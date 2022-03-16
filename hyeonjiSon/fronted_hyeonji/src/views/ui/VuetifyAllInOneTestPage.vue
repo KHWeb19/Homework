@@ -266,9 +266,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-.v-application p {
-    margin-bottom: 0px;
-}
-</style>

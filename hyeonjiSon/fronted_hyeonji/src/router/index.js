@@ -13,6 +13,9 @@ import Concave from '@/views/game/Concave.vue'
 import EventBusTestPage from '@/views/eventbus/EventBusTestPage.vue'
 
 import VuetifyAllInOneTestPage from '@/views/ui/VuetifyAllInOneTestPage.vue'
+import VuetifyImageTestPage from '@/views/ui/VuetifyImageTestPage.vue'
+import CoverFlowTestPage from '@/views/ui/CoverFlowTestPage.vue'
+import AwesomeSwiperTestPage from '@/views/ui/AwesomeSwiperTestPage.vue'
 
 Vue.use(VueRouter)
 
@@ -71,6 +74,25 @@ const routes = [
     path: '/vuetifyTest',
     name: 'VuetifyAllInOneTestPage',
     component: VuetifyAllInOneTestPage
+  },
+  {
+    path: '/vuetifyImageTest',
+    name: 'VuetifyImageTestPage',
+    component: VuetifyImageTestPage
+  },
+  {
+    path: '/coverFlowTest',
+    name: 'CoverFlowTestPage',
+    components: {
+      default: CoverFlowTestPage
+    }
+  },
+  {
+    path: '/awesomeSwiperTest',
+    name: 'AwesomeSwiperTestPage',
+    components: {
+      default: AwesomeSwiperTestPage
+    }
   }
 ]
 
