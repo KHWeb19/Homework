@@ -92,7 +92,7 @@ public class ProductRepository {
 
     public void upDate(Product product){
 
-        String query = "update product set product_name= ?, registrant = ? where board_no = ?";
+        String query = "update product set product_name= ?, view_details = ? where board_no = ?";
 
         jdbcTemplate.update(query, product.getProductName(), product.getViewDetails(), product.getBoardNo());
 

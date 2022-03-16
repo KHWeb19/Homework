@@ -2,18 +2,39 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+import ConcaveGame from '@/views/game/ConcaveGame.vue'
+
 import ProductListPage from '@/views/product/ProductListPage.vue'
 import ProductRegisterPage from '@/views/product/ProductRegisterPage.vue'
 import ProductReadPage from '@/views/product/ProductReadPage.vue'
 import ProductModifyPage from '@/views/product/ProductModifyPage.vue'
+
+import CoverFlowTestPage from '@/views/ui/CoverFlowTestPage.vue'
+
+import VuetifyTest from '@/views/ui/VuetifyTest.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomeView
+  },
+  {
+    path: '/coverFlowTest',
+    name: 'CoverFlowTestPage',
+    component: CoverFlowTestPage
+  },
+  {
+    path: '/ui/vutifytest',
+    name: 'VuetifyTest',
+    component: VuetifyTest
+  },
+  {
+    path: '/game/concave',
+    name: 'Concave',
+    component: ConcaveGame
   },
   {
     path: '/productRead/:boardNo',
