@@ -1,24 +1,15 @@
 <template>
-  <div class="home">
-    <div id="header">
-      <router-link :to="{ name: 'Home' }"
-                   class="nav-link"
-                   active-class="active">
+  <div class="app">
+      <router-link :to="{ name: 'HomeView' }">
         Home
       </router-link>
-      <router-link :to="{ name: 'Test' }"
-                   class="nav-link"
-                   active-class="active">
+      <router-link :to="{ name: 'TestView' }">
         Test
       </router-link>
-      <router-link :to="{ name: 'BoardListPage' }"
-                   class="nav-link"
-                   active-class="active">
+      <router-link :to="{ name: 'BoardListPage' }">
         BoardListPage
       </router-link>
-      <router-link :to="{ name: 'Concave' }"
-                   class="nav-link"
-                   active-class="active">
+      <router-link :to="{ name: 'Concave' }">
         &nbsp;이것이 삼목이닷!&nbsp;
       </router-link>
       <router-link style="text-decoration: none;" :to="{ name: 'EventBusTestPage' }">
@@ -27,10 +18,12 @@
       <router-link style="text-decoration: none;" :to="{ name: 'ProductBoardListPage' }">
         &nbsp;상품게시판(문제은행13번)&nbsp;
       </router-link>
-      <router-link style="text-decoration: none;" :to="{ name: 'VuetifyAllInOneTestPage' }">
-        &nbsp;Vuetify UI Test&nbsp;
+      <router-link style="text-decoration: none;" :to="{ name: 'CoverFlowTestPage' }">
+        &nbsp;CoverFlowTestPage UI Test&nbsp;
       </router-link>
-    </div>
+    <router-link style="text-decoration: none;" :to="{ name: 'AwesomeSwiperTestPage' }">
+      &nbsp;AwesomeSwiperTestPage
+    </router-link>
 
   </div>
 </template>

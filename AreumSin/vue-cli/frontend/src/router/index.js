@@ -15,6 +15,9 @@ import ProductBoardReadPage from '@/views/productBoard/ProductBoardReadPage.vue'
 import ProductBoardModifyPage from '@/views/productBoard/ProductBoardModifyPage.vue'
 
 import VuetifyAllInOneTestPage from "@/views/ui/VuetifyAllInOneTestPage";
+import VuetifyImageTestPage from "@/views/ui/VuetifyImageTestPage";
+import CoverFlowTestPage from "@/views/ui/CoverFlowTestPage";
+import AwesomeSwiperTestPage from "@/views/ui/AwesomeSwiperTestPage";
 
 Vue.use(VueRouter)
 
@@ -26,7 +29,7 @@ const routes = [
   },
   {
     path: '/testView',
-    name: 'Test',
+    name: 'TestView',
     component: TestView
   },
   {
@@ -50,10 +53,10 @@ const routes = [
     }
   },
   {
-    path: 'boardModify/:boardNo',
+    path: '/boardModify/:boardNo',
     name: 'BoardModifyPage',
-    component: {
-      default: BoardModifyPage,
+    components: {
+      default: BoardModifyPage
     },
     props: {
       default: true
@@ -103,7 +106,23 @@ const routes = [
     path: '/vuetify',
     name: 'VuetifyAllInOneTestPage',
     component: VuetifyAllInOneTestPage
+  },
+  {
+    path: '/vuetifyImageTest',
+    name: 'VuetifyImageTestPage',
+    component: VuetifyImageTestPage
+  },
+  {
+    path: '/coverFlowTestPage',
+    name: 'CoverFlowTestPage',
+    component: CoverFlowTestPage
+  },
+  {
+    path: '/awesomeSwiper',
+    name: 'AwesomeSwiperTestPage',
+    component: AwesomeSwiperTestPage
   }
+
 ]
 
 const router = new VueRouter({
