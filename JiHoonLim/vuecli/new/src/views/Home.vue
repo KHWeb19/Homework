@@ -31,6 +31,15 @@
       <router-link style="text-decoration: none" :to="{ name: 'Vuetify' }">
         &nbsp;Vuetify&nbsp;
       </router-link>
+      <router-link style="text-decoration: none" :to="{ name: 'Vuetify2' }">
+        &nbsp;Vuetify2&nbsp;
+      </router-link>
+      <router-link style="text-decoration: none" :to="{ name: 'Vuetify3' }">
+        &nbsp;Vuetify3&nbsp;
+      </router-link>
+      <router-link style="text-decoration: none" :to="{ name: 'Vuetify4' }">
+        &nbsp;Vuetify4&nbsp;
+      </router-link>
     </div>
   </div>
 </template>

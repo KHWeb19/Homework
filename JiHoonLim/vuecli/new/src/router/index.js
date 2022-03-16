@@ -18,6 +18,9 @@ import ProductBoardReadPage from '@/views/productBoard/ProductBoardReadPage.vue'
 import ProductBoardModifyPage from '@/views/productBoard/ProductBoardModifyPage.vue'
 
 import Vuetify from '@/views/ui/Vuetify.vue'
+import Vuetify2 from '@/views/ui/Vuetify2.vue'
+import Vuetify3 from '@/views/ui/Vuetify3.vue'
+import Vuetify4 from '@/views/ui/Vuetify4.vue'
 
 Vue.use(VueRouter)
 
@@ -106,6 +109,21 @@ const routes = [
     path: '/vuetify',
     name: 'Vuetify',
     component: Vuetify
+  },
+  {
+    path: '/vuetify2',
+    name: 'Vuetify2',
+    component: Vuetify2
+  },
+  {
+    path: '/Vuetify3',
+    name: 'Vuetify3',
+    component: Vuetify3
+  },
+  {
+    path: '/Vuetify4',
+    name: 'Vuetify4',
+    component: Vuetify4
   }
 ]
 
