@@ -5,6 +5,9 @@ import Test from '@/views/Test.vue'
 
 import BoardListPage from '@/views/board/BoardListPage.vue'
 import BoardRegisterPage from '@/views/board/BoardRegisterPage.vue'
+import CoverFlowTestPage from '@/views/ui/CoverFlowTestPage.vue'
+import AwesomeSwiperTestPage from '@/views/ui/AwesomeSwiperTestPage.vue'
+
 
 Vue.use(VueRouter)
 
@@ -28,6 +31,18 @@ const routes = [
       path: '/boardRegister',
       name: 'BoardRegisterPage',
       component: BoardRegisterPage
+    },
+    {
+      path: '/coverFlowTest',
+      name: 'CoverFlowTestPage',
+      component: CoverFlowTestPage
+    },
+    {
+      path: '/awesomeSwiperTest',
+      name: 'AwesomeSwiperTestPage',
+      components: {
+        default: AwesomeSwiperTestPage
+      }
     }
   ]
 
