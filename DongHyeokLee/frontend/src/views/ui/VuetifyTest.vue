@@ -117,7 +117,7 @@
             </v-toolbar-items>
         </v-toolbar>
 
-         <v-toolbar dense dark>
+         <v-toolbar dense dark> <!-- dense 안쓰면 그냥 툴바가 네모난데 쓰면 좀 동글동글 됨-->
             <v-app-bar-nav-icon @click="nav_drawer = !nav_drawer">
             </v-app-bar-nav-icon> <!-- 옆에 목록 아이콘 클릭하면 목록 뜨게하는것 -->
             
@@ -133,8 +133,8 @@
             </v-toolbar-items>
         </v-toolbar>
        
-        <v-navigation-drawer app v-model="nav_drawer" temporary> <!-- 목록 안에 들어있는 것 -->
-            <v-list >
+        <v-navigation-drawer app v-model="nav_drawer" temporary> <!-- 목록 안에 들어있는 것 temporary안쓰면 화면 밀어내고 칸 하나생김 -->
+            <v-list nav dense> <!-- dense에 따라 글씨 모양이 다름 -->
                 <v-list-item v-for="link in links" :key="link.name" router :to="link.route">
                     <v-list-item-action>
                         <v-icon left>
@@ -147,7 +147,7 @@
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                 
+                  
                   <v-list-item v-for="link in links" :key="link.name" router :to="link.route"> 
                     <v-list-item-action>
                         <v-icon left>
@@ -164,7 +164,7 @@
         </v-navigation-drawer> 
 
         <div>
-            <v-menu offset-y>
+            <v-menu offset-y> <!-- offset-y없으면 제목가리고 목록 뜨는데 있으면 제목 밑으로 메뉴 뜨게함 -->
                 <template v-slot:activator="{ on }">
                     <v-btn color='teal darken-1' class="white--text ma-5" v-on="on">
                         마! 이거시 Drop Down!

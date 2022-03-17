@@ -51,9 +51,3 @@ export default {
 </script>
 
 <style>
-
-div {
-    display: inline;
-}
-
-</style>

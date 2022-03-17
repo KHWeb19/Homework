@@ -1,6 +1,7 @@
 <template>
     <div>
-        <coverflow :coverList="coverList" :coverWidth="260" :index="2"/>
+        <coverflow :coverList="coverList" :coverWidth="500" :index="2"/> 
+        <!-- index는 메인으로 나오는 사진말고 나머지 뒤에 남아있는것들인거같음, 처음에만 적용-->
     </div>
 </template>
 
@@ -13,23 +14,19 @@ export default {
     data () {
         return {
             coverList: [
-               
-               
                 {
-                    cover: 'http://1.bp.blogspot.com/-mVAqnKw_lW8/VL9V6fhewNI/AAAAAAAAAco/-eTiP5HF40I/s1600/3034007-slide-s-3-whats-the-difference-between-a-logo-and-a-symbol.jpg',
-                    title: '스타벅스'
-                },
-             
-             
-                {
-                    cover: 'http://1.bp.blogspot.com/-mVAqnKw_lW8/VL9V6fhewNI/AAAAAAAAAco/-eTiP5HF40I/s1600/3034007-slide-s-3-whats-the-difference-between-a-logo-and-a-symbol.jpg',
-                    title: '스타벅스'
+                    cover: require('@/assets/img/akmu.gif'), //gif도 된다!
+                    title: '움짤'
                 },
                 {
-                    cover: require('@/assets/logo.png'),
-                    title: '듄'
+                    cover: 'https://cdn.kbmaeil.com/news/photo/202101/867040_872793_634.jpg',
+                    title: '에일리언'
+                },
+                {
+                    cover: require('@/assets/img/akmu2.jpg'),
+                    title: '사진'
                 }
-              
+                
             ]
         }
     },
@@ -39,3 +36,4 @@ export default {
 }
 
 </script>
+

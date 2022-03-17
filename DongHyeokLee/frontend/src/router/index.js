@@ -10,8 +10,12 @@ import ProductReadPage from '@/views/product/ProductReadPage.vue'
 import ProductModifyPage from '@/views/product/ProductModifyPage.vue'
 
 import CoverFlowTestPage from '@/views/ui/CoverFlowTestPage.vue'
+import AwesomeSwiperTestPage from '@/views/ui/AwesomeSwiperTestPage.vue'
 
 import VuetifyTest from '@/views/ui/VuetifyTest.vue'
+import VuetifyImageTestPage from'@/views/ui/VuetifyImageTestPage.vue'
+
+import CalendarTestPage from '@/views/ui/CalendarTestPage.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +24,23 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomeView
+  },
+  {
+    path: '/awesomeSwiperTest',
+    name: 'AwesomeSwiperTestPage',
+    component: AwesomeSwiperTestPage
+  },
+  {
+    path: '/calendarTest',
+    name: 'CalendarTestPage',
+    components: {
+      default: CalendarTestPage
+    }
+  },
+  {
+    path: '/vuetifyImageTest',
+    name: 'VuetifyImageTestPage',
+    component: VuetifyImageTestPage
   },
   {
     path: '/coverFlowTest',
