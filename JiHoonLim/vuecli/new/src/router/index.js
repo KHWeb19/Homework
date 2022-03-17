@@ -21,6 +21,8 @@ import Vuetify from '@/views/ui/Vuetify.vue'
 import Vuetify2 from '@/views/ui/Vuetify2.vue'
 import Vuetify3 from '@/views/ui/Vuetify3.vue'
 import Vuetify4 from '@/views/ui/Vuetify4.vue'
+import Vuetify5 from '@/views/ui/Vuetify5.vue'
+import Calender from '@/views/ui/Calender.vue'
 
 Vue.use(VueRouter)
 
@@ -124,6 +126,16 @@ const routes = [
     path: '/Vuetify4',
     name: 'Vuetify4',
     component: Vuetify4
+  },
+  {
+    path: '/Vuetify5',
+    name: 'Vuetify5',
+    component: Vuetify5
+  },
+  {
+    path: '/Calender',
+    name: 'Calender',
+    component: Calender
   }
 ]
 

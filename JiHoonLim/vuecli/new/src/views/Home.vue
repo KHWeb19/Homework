@@ -40,6 +40,12 @@
       <router-link style="text-decoration: none" :to="{ name: 'Vuetify4' }">
         &nbsp;Vuetify4&nbsp;
       </router-link>
+      <router-link style="text-decoration: none" :to="{ name: 'Vuetify5' }">
+        &nbsp;Vuetify5&nbsp;
+      </router-link>
+      <router-link style="text-decoration: none" :to="{ name: 'Calender' }">
+        &nbsp;Calender&nbsp;
+      </router-link>
     </div>
   </div>
 </template>
