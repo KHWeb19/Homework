@@ -41,9 +41,14 @@
       <router-view/>
     </v-main>
     -->
+
+    <v-main>
+      <router-view/>
+    </v-main>
+    <!--
     <div id="app">
       <router-view/>
-    </div>
+    </div> -->
   </v-app>
 </template>
 

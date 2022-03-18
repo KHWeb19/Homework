@@ -24,6 +24,12 @@
     <router-link style="text-decoration: none;" :to="{ name: 'AwesomeSwiperTestPage' }">
       &nbsp;AwesomeSwiperTestPage
     </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'ImageGalleryTestPage' }">
+      &nbsp;ImageGalleryTestPage
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'CalendarTestPage' }">
+      &nbsp;CalendarTestPage
+    </router-link>
 
   </div>
 </template>

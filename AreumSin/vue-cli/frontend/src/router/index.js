@@ -18,6 +18,8 @@ import VuetifyAllInOneTestPage from "@/views/ui/VuetifyAllInOneTestPage";
 import VuetifyImageTestPage from "@/views/ui/VuetifyImageTestPage";
 import CoverFlowTestPage from "@/views/ui/CoverFlowTestPage";
 import AwesomeSwiperTestPage from "@/views/ui/AwesomeSwiperTestPage";
+import ImageGalleryTestPage from "@/views/ui/ImageGalleryTestPage";
+import CalendarTestPage from "@/views/ui/CalendarTestPage";
 
 Vue.use(VueRouter)
 
@@ -121,7 +123,19 @@ const routes = [
     path: '/awesomeSwiper',
     name: 'AwesomeSwiperTestPage',
     component: AwesomeSwiperTestPage
+  },
+  {
+    path: '/imageGallery',
+    name: 'ImageGalleryTestPage',
+    component: ImageGalleryTestPage
+  },
+  {
+    path: '/calendar',
+    name: 'CalendarTestPage',
+    component: CalendarTestPage
   }
+
+
 
 ]
 
