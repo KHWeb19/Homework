@@ -30,6 +30,9 @@
     <router-link style="text-decoration: none;" :to="{ name: 'CalendarTestPage' }">
       &nbsp;CalendarTestPage
     </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'VueFileUploadTestPage' }">
+      &nbsp;VueFileUploadTestPage
+    </router-link>
 
   </div>
 </template>

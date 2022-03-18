@@ -20,6 +20,7 @@ import CoverFlowTestPage from "@/views/ui/CoverFlowTestPage";
 import AwesomeSwiperTestPage from "@/views/ui/AwesomeSwiperTestPage";
 import ImageGalleryTestPage from "@/views/ui/ImageGalleryTestPage";
 import CalendarTestPage from "@/views/ui/CalendarTestPage";
+import VueFileUploadTestPage from "@/views/fileUpload/VueFileUploadTestPage";
 
 Vue.use(VueRouter)
 
@@ -133,6 +134,11 @@ const routes = [
     path: '/calendar',
     name: 'CalendarTestPage',
     component: CalendarTestPage
+  },
+  {
+    path: '/vueFileUpload',
+    name: 'VueFileUploadTestPage',
+    component: VueFileUploadTestPage
   }
 
 
