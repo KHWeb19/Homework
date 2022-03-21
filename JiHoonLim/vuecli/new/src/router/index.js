@@ -24,6 +24,11 @@ import Vuetify4 from '@/views/ui/Vuetify4.vue'
 import Vuetify5 from '@/views/ui/Vuetify5.vue'
 import Calender from '@/views/ui/Calender.vue'
 
+import VueFileUpload from '@/views/fileUpload/VueFileUpload'
+
+import MemberRegisterPage from '@/views/jpaMember/MemberRegisterPage.vue'
+import MemberJoinColumnTestPage from '@/views/jpaMember/MemberJoinColumnTestPage.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -136,6 +141,21 @@ const routes = [
     path: '/Calender',
     name: 'Calender',
     component: Calender
+  },
+  {
+    path: '/VueFileUpload',
+    name: 'VueFileUpload',
+    component: VueFileUpload
+  },
+  {
+    path: '/MemberRegisterPage',
+    name: 'MemberRegisterPage',
+    component: MemberRegisterPage
+  },
+  {
+    path: '/MemberJoinColumnTestPage',
+    name: 'MemberJoinColumnTestPage',
+    component: MemberJoinColumnTestPage
   }
 ]
 
