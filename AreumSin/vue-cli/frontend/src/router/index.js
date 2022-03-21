@@ -21,6 +21,8 @@ import AwesomeSwiperTestPage from "@/views/ui/AwesomeSwiperTestPage";
 import ImageGalleryTestPage from "@/views/ui/ImageGalleryTestPage";
 import CalendarTestPage from "@/views/ui/CalendarTestPage";
 import VueFileUploadTestPage from "@/views/fileUpload/VueFileUploadTestPage";
+import VuetifyMemberRegisterPage from "@/views/jpaMember/VuetifyMemberRegisterPage";
+import VuetifyMemberJoinColumnTestPage from "@/views/jpaMember/VuetifyMemberJoinColumnTestPage";
 
 Vue.use(VueRouter)
 
@@ -139,7 +141,18 @@ const routes = [
     path: '/vueFileUpload',
     name: 'VueFileUploadTestPage',
     component: VueFileUploadTestPage
+  },
+  {
+    path: '/vuetifyMemberRegisterTest',
+    name: 'VuetifyMemberRegisterPage',
+    component: VuetifyMemberRegisterPage
+  },
+  {
+    path: '/vuetifyMemberJoinColumnTest',
+    name: 'VuetifyMemberJoinColumnTestPage',
+    component: VuetifyMemberJoinColumnTestPage
   }
+
 
 
 
