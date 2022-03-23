@@ -2,7 +2,7 @@
     <ul>
         <li v-for="product in products" :key="product.pcode"
                 v-on:click="sendCode(product.pcode, $event)">
-            {{ product.pname }}
+          {{ product.pname }}
         </li>
     </ul>
 </template>
@@ -27,7 +27,7 @@ export default {
     methods: {
         sendCode(incode, $event) {
             const payload = [ incode, $event.target.innerHTML ]
-            EventBus.$emit('sendCode', payload) //이벤트 발행
+            EventBus.$emit('sendCode', payload)
         }
     }
 }

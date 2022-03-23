@@ -18,8 +18,16 @@ import CoverFlowTestPage from '@/views/ui/CoverFlowTestPage.vue'
 import AwesomeSwiperTestPage from '@/views/ui/AwesomeSwiperTestPage.vue'
 
 import ImageGalleryTestPage from '@/views/ui/ImageGalleryTestPage.vue'
-
 import CalenderTestPage from '@/views/ui/CalenderTestPage.vue'
+
+import VueFileUploadTestPage from '@/views/fileUpload/VueFileUploadTestPage.vue'
+
+import VuetifyMemberRegisterPage from '@/views/jpaMember/VuetifyMemberRegisterPage.vue'
+import VuetifyMemberJoinColumnTestPage from '@/views/jpaMember/VuetifyMemberJoinColumnTestPage.vue'
+
+import MemberRegisterTestPage from '@/views/jpaMember/MemberRegisterTestPage.vue'
+
+import LoginTestPage from '@/views/jpaMember/LoginTestPage.vue'
 
 Vue.use(VueRouter)
 
@@ -112,6 +120,43 @@ const routes = [
       default: CalenderTestPage
     }
   }
+  ,
+  {
+    path: '/vueFileUploadTest',
+    name: 'VueFileUploadTestPage',
+    components: {
+      default: VueFileUploadTestPage
+    }
+  },
+  {
+    path: '/vuetifyMemberRegisterTest',
+    name: 'VuetifyMemberRegisterPage',
+    components: {
+      default: VuetifyMemberRegisterPage
+    }
+  },
+  {
+    path: '/vuetifyMemberJoinColumnTest',
+    name: 'VuetifyMemberJoinColumnTestPage',
+    components: {
+      default: VuetifyMemberJoinColumnTestPage
+    }
+  },
+  {
+    path: '/memberRegisterTest',
+    name: 'MemberRegisterTestPage',
+    components: {
+      default: MemberRegisterTestPage
+    }
+  },
+  {
+    path: '/login',
+    name: 'LoginTestPage',
+    components: {
+      default: LoginTestPage
+    }
+  }
+
 ]
 
 const router = new VueRouter({

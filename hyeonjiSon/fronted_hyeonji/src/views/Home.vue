@@ -33,6 +33,21 @@
         <router-link style="text-decoration: none;" :to="{ name: 'CalenderTestPage' }">
             &nbsp;Calender Test&nbsp;
         </router-link>
+        <router-link style="text-decoration: none;" :to="{ name: 'VueFileUploadTestPage' }">
+            &nbsp;File Upload Test&nbsp;
+        </router-link>
+        <router-link style="text-decoration: none;" :to="{ name: 'VuetifyMemberRegisterPage' }">
+        &nbsp;Vuetify Member Register Test&nbsp;
+        </router-link>
+        <router-link style="text-decoration: none;" :to="{ name: 'VuetifyMemberJoinColumnTestPage' }">
+        &nbsp;Vuetify Member Join Column Test&nbsp;
+        </router-link>
+        <router-link style="text-decoration: none;" :to="{ name: 'MemberRegisterTestPage' }">
+        &nbsp;MemberRegisterTestPage&nbsp;
+        </router-link>
+        <router-link style="text-decoration: none;" :to="{ name: 'LoginTestPage' }">
+        &nbsp;Login Test&nbsp;
+        </router-link>
   </div>
 </template>
 
