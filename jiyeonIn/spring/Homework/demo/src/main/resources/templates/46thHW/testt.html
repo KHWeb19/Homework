@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    input {
+        border-style:none;
+        border-bottom:dashed 1px #cacaca;
+        border-collapse:collapse;
+    }
+
+    .underlineEmail {
+        width: 70px;
+    }
+
+    #notion {
+        font-size: x-small;
+    }
+
+    .signUp {
+        border: solid; 1px; #C7C6C6;
+        height: 250px;
+	    width: 300px;
+	    margin: 0% 20% 0% 20%;
+	    padding: 3%;
+	    background-color: #E5E5E5;
+        }
+
+    .sumbit {
+        width: 200px;
+        background-color: #81c147;
+    }
+
+    $(function() {
+        $("button[type=button]").click(function() {
+            var result = $("input[type=password]").val();
+            if (!result) {
+                alert("입력하십시오");
+            }
+        })
+    })
+
+</style>
+<body>
+<div class="signUp" align="center">
+    <table>
+        <tr>
+            <td>아이디</td>
+            <td>
+                <input class="id" type="text"/>
+            </td>
+        </tr>
+        <tr>
+            <td>패스워드</td>
+            <td>
+                <input class="password" type="password" onclick="onDisplay()"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p id="notion" hidden>영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>패스워드 확인</td>
+            <td>
+                <input class="passwordCheck" type="password"/>
+            </td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td colspan="2">
+                <input class="underlineEmail" type="email"/>@<input class="underlineEmail" type="email"/>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">주소</td>
+            <td>
+                <input class="address1" type="text"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="address2" type="text"/>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="sumbit" type="button">가입</button>
+</div>
+<script type="text/javascript">
+     function onDisplay() {
+      document.getElementById("notion").style.display = "block";
+     }
+
+</script>
+
+</body>
+</html>

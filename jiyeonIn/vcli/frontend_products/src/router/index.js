@@ -9,6 +9,16 @@ import ProductModifyPage from '@/views/product/ProductModifyPage.vue'
 
 import EventBusTestPage from '@/views/eventbus/EventBusTestPage.vue'
 
+import VuetifyAllInOneTestPage from '@/views/ui/VuetifyAllInOneTestPage.vue'
+import VuetifyImageTestPage from '@/views/ui/VuetifyImageTestPage.vue'
+import CovorFlowTestPage from '@/views/ui/CovorFlowTestPage.vue'
+import AwesomeSwiperTestPage from '@/views/ui/AwesomeSwiperTestPage.vue'
+
+import ImageGalleryTestPage from '@/views/ui/ImageGalleryTestPage.vue'
+import CalendarTestPage from '@/views/ui/CalendarTestPage.vue'
+
+import VueFileUploadPage from '@/views/fileUpload/VueFileUploadPage.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -51,8 +61,50 @@ const routes = [
     props: {
       default: true
     }
+  },
+  {
+    path: '/vuetifyTest',
+    name: 'VuetifyAllInOneTestPage',
+    component: VuetifyAllInOneTestPage
+  },
+  {
+    path: '/vuetifyImageTest',
+    name: 'VuetifyImageTestPage',
+    component: VuetifyImageTestPage
+  },
+  {
+    path: '/coverflowPage',
+    name: 'CovorFlowTestPage',
+    component: CovorFlowTestPage
+  },
+  {
+    path: '/awesomeSwiperTest',
+    name: 'AwesomeSwiperTestPage',
+    components: {
+      default: AwesomeSwiperTestPage
+    }
+  },
+  {
+    path: '/imageGalleryTest',
+    name: 'ImageGalleryTestPage',
+    components: {
+      default: ImageGalleryTestPage
+    }
+  },
+  {
+    path: '/calendarTest',
+    name: 'CalendarTestPage',
+    components: {
+      default: CalendarTestPage
+    }
+  },
+  {
+    path: '/vueFileUploadTest',
+    name: 'VueFileUploadPage',
+    components: {
+      default: VueFileUploadPage
+    }
   }
-
 ]
 
 const router = new VueRouter({
