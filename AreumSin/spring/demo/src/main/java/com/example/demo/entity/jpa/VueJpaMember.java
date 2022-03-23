@@ -17,7 +17,7 @@ public class VueJpaMember {
     @Column(length = 20, nullable = false)
     private String id;
 
-    @Column(length = 20, nullable = false)
+    @Column(length = 128, nullable = false)
     private String pw;
 
     @CreationTimestamp

@@ -38,7 +38,10 @@
       &nbsp;VuetifyMemberRegisterPage
     </router-link>
     <router-link style="text-decoration: none;" :to="{ name: 'VuetifyMemberJoinColumnTestPage' }">
-      &nbsp;Vuetify Member Join Column Test&nbsp;
+      &nbsp;VuetifyMemberJoinColumnTestPage
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'LoginTestPage' }">
+      &nbsp;LoginTestPage
     </router-link>
 
   </div>

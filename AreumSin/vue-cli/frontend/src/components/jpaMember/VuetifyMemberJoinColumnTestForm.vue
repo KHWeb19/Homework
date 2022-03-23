@@ -25,7 +25,7 @@
 
       <div>
         <button type="submit">등록</button>
-        <router-link :to="{ name: 'Home' }">
+        <router-link :to="{ name: 'HomeView' }">
           취소
         </router-link>
       </div>

@@ -23,6 +23,7 @@ import CalendarTestPage from "@/views/ui/CalendarTestPage";
 import VueFileUploadTestPage from "@/views/fileUpload/VueFileUploadTestPage";
 import VuetifyMemberRegisterPage from "@/views/jpaMember/VuetifyMemberRegisterPage";
 import VuetifyMemberJoinColumnTestPage from "@/views/jpaMember/VuetifyMemberJoinColumnTestPage";
+import LoginTestPage from "@/views/jpaMember/LoginTestPage";
 
 Vue.use(VueRouter)
 
@@ -151,6 +152,11 @@ const routes = [
     path: '/vuetifyMemberJoinColumnTest',
     name: 'VuetifyMemberJoinColumnTestPage',
     component: VuetifyMemberJoinColumnTestPage
+  },
+  {
+    path: '/login',
+    name: 'LoginTestPage',
+    component: LoginTestPage
   }
 
 

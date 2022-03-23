@@ -20,7 +20,7 @@ public class VueJPAMemberController {
     public VueJpaMember register (@Validated @RequestBody VueJpaMember member){
         log.info("register request from vue" + member);
 
-        //service.register(member);
+        service.register(member);
         return member;
     }
 }
