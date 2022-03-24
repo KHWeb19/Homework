@@ -46,14 +46,29 @@
       <router-link style="text-decoration: none" :to="{ name: 'Calender' }">
         &nbsp;Calender&nbsp;
       </router-link>
-      <router-link style="text-decoration: none" :to="{ name: 'VueFileUpload' }">
+      <router-link
+        style="text-decoration: none"
+        :to="{ name: 'VueFileUpload' }"
+      >
         &nbsp;VueFileUpload&nbsp;
       </router-link>
-      <router-link style="text-decoration: none" :to="{ name: 'MemberRegisterPage' }">
+      <router-link
+        style="text-decoration: none"
+        :to="{ name: 'MemberRegisterPage' }"
+      >
         &nbsp;MemberRegister&nbsp;
       </router-link>
-      <router-link style="text-decoration: none" :to="{ name: 'MemberJoinColumnTestPage' }">
+      <router-link
+        style="text-decoration: none"
+        :to="{ name: 'MemberJoinColumnTestPage' }"
+      >
         &nbsp;MemberJoinColumn&nbsp;
+      </router-link>
+      <router-link
+        style="text-decoration: none"
+        :to="{ name: 'LoginTestPage' }"
+      >
+        &nbsp;LoginTestPage&nbsp;
       </router-link>
     </div>
   </div>

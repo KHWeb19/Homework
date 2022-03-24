@@ -1,6 +1,7 @@
 package com.example.demo.entity.jpa;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -9,7 +10,8 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name= "jpa_member_auth")
+@NoArgsConstructor
+@Table(name = "jpa_member_auth")
 public class VueJpaMemberAuth {
 
     @Id
@@ -28,7 +30,7 @@ public class VueJpaMemberAuth {
     @UpdateTimestamp
     private Date updDate;
 
-    public VueJpaMemberAuth(String auth){
+    public VueJpaMemberAuth (String auth) {
         this.auth = auth;
     }
 }

@@ -1,6 +1,5 @@
 package com.example.demo.controller.jpa.order58;
 
-
 import com.example.demo.controller.jpa.order58.request.MemberRequest;
 import com.example.demo.service.jpa.order58.JpaMemberService;
 import lombok.extern.slf4j.Slf4j;
@@ -18,11 +17,26 @@ public class VueJpaMemberAuthController {
     private JpaMemberService service;
 
     @PostMapping("/register")
-    public void jpaMemberAuthRegister (@Validated @RequestBody MemberRequest memberRequest){
-        log.info("jpaMemberAuthRegister():" + memberRequest.getId() + "," +
-                memberRequest.getPw() + "," +
+    public void jpaMemberAuthRegister (@Validated @RequestBody MemberRequest memberRequest) {
+        log.info("jpaMemberAuthRegister(): " + memberRequest.getId() + ", " +
+                memberRequest.getPw() + ", " +
                 (memberRequest.getAuth().equals("사업자") ? "ROLE_BUSINESS" : "ROLE_INDIVIDUAL"));
 
         service.register(memberRequest);
+    }
+
+    @PostMapping("/login")
+    public MemberRequest jpaMemberLogin (@RequestBody MemberRequest memberRequest) {
+        log.info("jpaMemberLogin(): " + memberRequest);
+
+        MemberRequest memberResponse = service.login(memberRequest);
+
+        if (memberResponse != null) {
+            log.info("Login Succ!");
+        } else {
+            log.info("Login Fail!");
+        }
+
+        return memberResponse;
     }
 }
