@@ -45,7 +45,7 @@ public class JpaMemberServiceImpl implements JpaMemberService {
 
         Optional<VueJpaMemberWithAuth> maybeMember = memberRepository.findByUserId(memberRequest.getId());
 
-        if(maybeMember == null) {
+        if(maybeMember.equals(Optional.empty())) {
             log.info("이런 사람은 없습니다.");
             return null;
         }
@@ -59,7 +59,7 @@ public class JpaMemberServiceImpl implements JpaMemberService {
 
         Optional<VueJpaMemberAuth> maybeMemberAuth = memberAuthRepository.findByMemberNo(loginMember.getMemberNo());
 
-        if(maybeMemberAuth == null) {
+        if(maybeMemberAuth.equals(Optional.empty())) {
             log.info("auth 없음");
             return null;
         }
