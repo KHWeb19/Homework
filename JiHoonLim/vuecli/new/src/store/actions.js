@@ -2,7 +2,9 @@ import {
     FETCH_BOARD_LIST,
     FETCH_BOARD,
     FETCH_PRODUCT_BOARD_LIST,
-    FETCH_PRODUCT_BOARD
+    FETCH_PRODUCT_BOARD,
+    FETCH_JPA_BOARD_LIST,
+    FETCH_JPA_BOARD,
 } from './mutation-types'
 
 import axios from 'axios'
@@ -31,6 +33,18 @@ export default {
         return axios.get(`http://localhost:7777/Bank13/product/${productNo}`)
             .then((res) => {
                 commit(FETCH_PRODUCT_BOARD, res.data)
+            })
+    },
+    fetchJpaBoardList ({ commit }) {
+        return axios.get('http://localhost:7777/62th/board/list')
+            .then((res) => {
+                commit(FETCH_JPA_BOARD_LIST, res.data)
+            })
+    },
+    fetchJpaBoard ({ commit }, boardNo) {
+        return axios.get(`http://localhost:7777/62th/board/${boardNo}`)
+            .then((res) => {
+                commit(FETCH_JPA_BOARD, res.data)
             })
     }
 }

@@ -70,6 +70,12 @@
       >
         &nbsp;LoginTestPage&nbsp;
       </router-link>
+      <router-link
+        style="text-decoration: none"
+        :to="{ name: 'JpaBoardListPage' }"
+      >
+        &nbsp;JpaBoardListPage&nbsp;
+      </router-link>
     </div>
   </div>
 </template>
