@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping("/vueJpaMember")
+@RequestMapping("/vueJpaMemberShj")
 @CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
 public class VueJPAMemberController {
 
