@@ -1,0 +1,8 @@
+create table product(
+    board_no int not null auto_increment,
+    product_name varchar(10) null,
+    view_details varchar(100) null,
+    registrant varchar(10) null,
+    reg_date timestamp not null default now(),
+    primary key(board_no)
+);
