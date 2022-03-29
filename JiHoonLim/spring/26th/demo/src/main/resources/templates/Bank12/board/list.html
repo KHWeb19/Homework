@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>학생 성적 보기</h2>
+
+<form id="grade" th:object="${gradeManage}">
+    <a th:href="@{/Bank12/board/register}">성적 등록</a>
+
+    <table border="1">
+        <tr>
+            <th align="center" width="100">학생번호</th>
+            <th align="center" width="100">이름</th>
+            <th align="center" width="100">학년</th>
+            <th align="center" width="100">국어</th>
+            <th align="center" width="100">영어</th>
+            <th align="center" width="100">수학</th>
+            <th align="center" width="100">평균</th>
+        </tr>
+
+        <tr th:if="${#lists.isEmpty(list)}">
+            <td colspan="7">
+                등록된 성적 없음
+            </td>
+        </tr>
+
+        <tr th:each="gradeManage : ${list}">
+            <td align="center" th:text="${gradeManage.studentNo}">
+            </td>
+            <td align="center">
+                <a th:href="@{|/Bank12/board/read?studentNo=${gradeManage.studentNo}|}"
+                   th:text="${gradeManage.name}">
+                </a>
+            </td>
+            <td align="center" th:text="${gradeManage.level}">
+            </td>
+            <td align="center" th:text="${gradeManage.korean}">
+            </td>
+            </td>
+            <td align="center" th:text="${gradeManage.english}">
+            </td>
+            </td>
+            <td align="center" th:text="${gradeManage.math}">
+            </td>
+            </td>
+            <td align="center" th:text="${gradeManage.avg}">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+<div>
+    <button type="submit" id="btnMain">메인화면</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+package com.example.demo.controller.AnswerBank9;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+@Slf4j
+@Controller
+@RequestMapping("/Bank9")
+public class Bank9Answer {
+
+    //사용자 Get요청
+    @GetMapping("/prob")
+    public String getBank9Prob() {
+        log.info("getBank9Prob()");
+
+        return "Bank9/prob";
+    }
+
+
+    @ResponseBody
+    @PostMapping("/prob1")
+    public Product postBank9Prob1 (){
+        log.info("postBank9Prob1()");
+
+        Product prod = new Product();
+
+        return prod;
+    }
+
+    @ResponseBody
+    @PostMapping("/prob2")
+    public LottoResponse postBank9Prob2() {
+        log.info("postBank9Prob2()");
+
+        Lotto lotto = new Lotto(100,5);
+        lotto.raffle();
+
+        LottoResponse lr = new LottoResponse(lotto);
+        return lr;
+    }
+
+    @ResponseBody
+    @PostMapping("/prob3tri")
+    public PolygonResponse postBank9Prob3Triangle() {
+        log.info("postBank9Prob3Triangle()");
+
+        RegularPolygon rp = new RegularPolygon(2.0f * (float) Math.pow(3.0f, 0.25f));
+        rp.calcTriangleArea();
+
+        PolygonResponse pr = new PolygonResponse(rp);
+
+        return pr;
+    }
+
+    @ResponseBody
+    @PostMapping("/prob3rect")
+    public PolygonResponse postBank9Prob3Rectangle() {
+        log.info("postBank9Prob3Rectangle()");
+
+        RegularPolygon rp = new RegularPolygon(1);
+        rp.calcRectangleArea();
+
+        PolygonResponse pr = new PolygonResponse(rp);
+
+        return pr;
+    }
+
+    @ResponseBody
+    @PostMapping("/prob3hexa")
+    public PolygonResponse postBank9Prob3Hexagon() {
+        log.info("postBank9Prob3Hexagon()");
+
+        RegularPolygon rp = new RegularPolygon(2.0f * (float) Math.sqrt(3.0f));
+        rp.calcHexagonArea();
+
+        PolygonResponse pr = new PolygonResponse(rp);
+
+        return pr;
+    }
+
+}

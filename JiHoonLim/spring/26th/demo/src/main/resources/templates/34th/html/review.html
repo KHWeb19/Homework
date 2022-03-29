@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        td {
+            width: 100px;
+            height: 30px;
+        }
+        label{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>liTag</h2>
+    <ul>
+        <li>1</li>
+        <li>12</li>
+        <li>123</li>
+        <li>1234</li>
+        <li>12345</li>
+        <li>123456</li>
+    </ul>
+
+
+    <h2>imgTag</h2>
+    <img src="/img/mario.png" >
+    <p>마리오 사진 </p>
+
+    <h2>h_p_br_Tag</h2>
+    <h1>1</h1>
+    <h2>2</h2>
+    <h3>3</h3>
+    <h4>4</h4>
+    <h5>5</h5>
+
+    <p>123
+        45</p>
+    <p>123 <br>
+    45</p>
+
+    <h2>font</h2>
+    <p><strong>123</strong> , 123, <b>123</b>, 123</p>
+    <p><em>456</em>, 456, <i>456</i> , 456</p>
+
+    <h2>markAndColor</h2>
+    <p>123 <mark>123</mark></p>
+    <p>456 <span style="color:blue;"> 456 </span> 456</p>
+
+    <h2>table</h2>
+    <table>
+        <caption>커스텀 테이블</caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: blue;">
+            <col style="background-color: yellow">
+        </colgroup>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    </table>
+
+    <h2>checkbox</h2>
+    <ul>
+        <li><input type="checkbox" value="one">1</li>
+        <li><input type="checkbox" value="two">2</li>
+        <li><input type="checkbox" value="three">3</li>
+    </ul>
+
+    <h2>radiobox</h2>
+    <ul>
+        <li><input type="radio" name="subject" value="one">1</li>
+        <li><input type="radio" name="subject" value="two">2</li>
+        <li><input type="radio" name="subject" value="three">3</li>
+        <li><input type="radio" name="test" value="four">4</li>
+    </ul>
+
+    <h2>login</h2>
+    <form>
+        <fieldset>
+            <label> 아이디: <input type="text" id="user_id" size="10"></label>
+            <label> 비밀번호: <input type="password" id="user_pw" size="12"></label>
+            <input type="submit" value="로그인">
+        </fieldset>
+    </form>
+
+</body>
+</html>
