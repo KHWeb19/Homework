@@ -11,6 +11,11 @@
                     active-class="active">
                 Test
             </router-link>
+             <router-link :to="{ name: 'BoardListPage' }"
+                    class="nav-link"
+                    active-class="active">
+                BoardList
+            </router-link>
         </div>
   </div>
 </template>

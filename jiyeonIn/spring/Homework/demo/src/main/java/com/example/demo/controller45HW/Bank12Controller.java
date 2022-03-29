@@ -51,7 +51,11 @@ public class Bank12Controller {
 
         return "/46thHW/sdsd";
     }
+    @GetMapping("/test2")
+    public String test2(){
+        log.info("list");
 
-
+        return "/46thHW/testt";
+    }
 
 }
