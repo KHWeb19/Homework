@@ -1,0 +1,94 @@
+let app = new Vue({
+    el: '#app',
+    data: { //data: 초기에 내재된 정보?
+        monsterBook: [
+            { monsterId: 1, name: '슬라임', hp: 50, exp: 10, dropMoney: 5 },
+            { monsterId: 2, name: '고블린', hp: 80, exp: 15, dropMoney: 10 },
+            { monsterId: 3, name: '사슴', hp: 100, exp: 25, dropMoney: 10 },
+            { monsterId: 4, name: '리본돼지', hp: 100, exp: 15, dropMoney: 25 },
+            { monsterId: 5, name: '오크', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 6, name: '멧돼지', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 7, name: '스켈레톤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 8, name: '고블린매지션', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 9, name: '소', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 10, name: '뱀', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 11, name: '곰', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 12, name: '토끼', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 13, name: '호랑이', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 14, name: '스켈레톤 아처', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 15, name: '리치', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 16, name: '죽음의 군주', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 17, name: '골렘', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 18, name: '와이번', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 19, name: '드레이크', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 20, name: '구울', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 21, name: '오우거', hp: 150, exp: 15, dropMoney: 25 },
+
+            { monsterId: 999, name: '드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1000, name: '옐로 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1001, name: '그린 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1002, name: '레드 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1003, name: '블루 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1004, name: '블랙 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1005, name: '골드 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1005, name: '데스 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+            { monsterId: 1007, name: '스텔스 드래곤', hp: 150, exp: 15, dropMoney: 25 },
+        ],
+        list: [
+            { id: 1, name: '슬라임', hp: 100 },
+            { id: 2, name: '고블린', hp: 200 },
+            { id: 3, name: '사슴', hp: 150 },
+            { id: 4, name: '리본돼지', hp: 250},
+            { id: 5, name: '슬라임', hp: 100 },
+        ],
+        name: '일단은 고정값: 키메라다!!!',
+        randomNumber: 0
+    },
+    methods: { //메서드를 추가하기 위해 사용하는 옵션. 아래 function이 붙은 것들은 모두 메서드임.
+        generateRandom: function () {
+            this.randomNumber = Math.floor(Math.random() * 10) + 1;
+        },
+        addMonster: function () { //몬스터를 추가하는 메서드
+            //reduce() : 누산기가 포함되어 있다. 배열의 요소에 함수를 실행하고 누적된 값을 출력할 때 용이하다.
+            let max = this.list.reduce(function(a, b) { //변수 max = list.누산된 값(a와 b를 인자로 입력)
+                //반환할 값 = a가 b의 id 숫자보다 큰가? 라는 답에 true인 경우 a를 출력, false라면 b의 id값을 출력
+                return a > b.id ? a : b.id
+                //큰일이다 a랑 b가 뭔지 모르겠다.
+            }, 0)
+
+            let randNum = Math.floor(Math.random() * this.monsterBook.length)
+            //변수 randNum = 몬스터북데이터의 길이의 숫자 내에서 랜덤으로 1개의 숫자를 뽑는다.(그리고 소수점 이하를 버림한다.)
+
+            this.list.push({
+                id: max + 1,
+                monsterId: randNum,
+                name: this.monsterBook[randNum].name,
+                hp: this.monsterBook[randNum].hp
+            })
+        },
+        removeMonster: function (index) {
+            this.list.splice(index, 1)
+        },
+        attackMonster: function (index) {
+            this.list[index].hp -= 10
+        },
+        myStealthDarkFlameDragonFear: function () {
+            console.log("내안의 보이지 않는 어둠의 흑염룡이 울부짖었다!!! " +
+                        "스텔스 다크 플레임 드래곤 피어!!!!!")
+
+            for (let i = 0; i < this.list.length; i++) {
+                this.list[i].hp = parseInt(this.list[i].hp - 1000)
+            }
+        }
+    },
+    beforeUpdate () { //업데이트 전에 실행
+        console.log('VDOM의 변화를 감지하는 루틴') //이건 콘솔(f12)에서 확인할 수 있는 메세지
+
+        let i //i라는 변수를 만들어 줌
+        for (i = 0; i < this.list.length; i++) { //list의 길이만큼 돌아가는 반복문
+            if (this.list[i].hp <= 0) { //list[i]번의 hp가 0보다 작거나 같은 경우
+                this.list.splice(i, 1) //list의 i번째 인덱스로부터 첫번째를 splice(삭제) 하시오.
+            }
+        }
+    }
+})
