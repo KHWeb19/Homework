@@ -33,6 +33,8 @@ public class VueJpaMemberWithAuth {
     private Date updDate;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+ //-------------------------------------- 상위 엔티티에서 하위 엔티티로 모든 작업을 전파
+ //여기에서 하위 엔티티는 JpaMemberAuthBoth
     @JoinColumn(name = "member_no")
     private List<VueJpaMemberAuth> authList;
 
