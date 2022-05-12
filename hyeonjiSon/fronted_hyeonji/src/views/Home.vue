@@ -54,6 +54,11 @@
         <router-link style="text-decoration: none;" :to="{ name: 'DaumNewsCrawlerPage' }">
         &nbsp;다음 뉴스 크롤링
         </router-link>
+        <!-- 절취선 -->
+        <router-link style="color: red; text-decoration: none;" :to="{ name: 'scoreTest' }">
+        &nbsp;스코어테스트
+        </router-link>
+
   </div>
 </template>
 

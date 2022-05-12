@@ -18,6 +18,8 @@ public class JpaMemberAuthBoth {
     private Long memberAuthNo;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+ //-------------------------------------- 상위 엔티티에서 하위 엔티티로 모든 작업을 전파
+ //여기에서 상위 엔티티는 VueJpaMemberWithAuth
     @JoinColumn(name = "jpa_member_both_member_no")
     private JpaMemberBoth jpaMemberBoth;
 

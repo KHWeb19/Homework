@@ -14,6 +14,10 @@
 
       <table>
         <tr>
+          <td>이름</td>
+          <td><input style="border: 1px solid black;" type="text" v-model="name"></td>
+        </tr>        
+        <tr>
           <td>아이디</td>
           <td><input style="border: 1px solid black;" type="text" v-model="id"></td>
         </tr>
@@ -21,10 +25,22 @@
           <td>비밀번호</td>
           <td><input style="border: 1px solid black;" type="password" v-model="pw"></td>
         </tr>
+        <tr>
+          <td>비밀번호 확인</td>
+          <td><input style="border: 1px solid black;" type="password" v-model="pwConfirm"></td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td><input style="border: 1px solid black;" type="text" v-model="email"></td>
+        </tr>
+        <tr> 
+          <td>전화번호</td>
+          <td><input style="border: 1px solid black;" type="text" v-model="phoneNum"></td>
+        </tr> 
       </table>
 
       <div>
-        <button type="submit">등록</button>
+        <button type="submit">확인</button>
         <router-link :to="{ name: 'Home' }">
           취소
         </router-link>
@@ -35,25 +51,13 @@
 
 <script>
 export default {
-  name: "VuetifyMemberRegisterForm.vue",
-  data () {
-    return {
-      radioGroup: 1,
-      kindsOfMember: [
-        '개인', //0
-        '사업자' //1
-      ],
-      id: '',
-      pw: ''
+  name: "VuetifyMemberModifyrForm.vue",
+    props: {
+        jpaMember: {
+            type: Object,
+            required: true
+        }
     }
-  },
-  methods: {
-    onSubmit () {
-      const { id, pw, radioGroup } = this
-      const auth = (radioGroup == '개인' ? '개인' : '사업자')
-      this.$emit('submit', { id, pw, auth })
-    }
-  }
 }
 </script>
 

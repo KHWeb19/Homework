@@ -34,17 +34,7 @@ export default {
   methods: {
     ...mapActions(['fetchBusinessMember']),
     /*
-    findBusinessMember () {
-      axios.get('http://localhost:7777/63th/jpaMember/checkBusiness')
-          .then(res => {
-            alert('처리 성공! - ' + res)
 
-            this.businessMembers = res.data
-          })
-          .catch(res => {
-            alert(res.response.data.message)
-          })
-    }
      */
   }
 }

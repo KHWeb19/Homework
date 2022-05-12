@@ -27,6 +27,8 @@ export default {
     onSubmit (payload) {
       const { id, pw, auth } = payload
       axios.post('http://localhost:7777/63th/jpaMember/register', { id, pw, auth })
+      //내용이 postMapping url 요청을 해서 내용이 등록되는거구나.
+      //그 다음으로 then catch의 내용이 수행됨
         .then(res => {
           alert('등록 성공! - ' + res)
         })

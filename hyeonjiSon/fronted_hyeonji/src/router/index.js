@@ -35,6 +35,8 @@ import JpaMemberAuthTestPage from '@/views/jpaMember/JpaMemberAuthTestPage.vue'
 
 import DaumNewsCrawlerPage from '@/views/crawl/DaumNewsCrawlerPage.vue'
 
+import ScoreTest from '@/views/test/ScoreTest.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -204,7 +206,14 @@ const routes = [
     props: {
       default: true
     }
-  }
+  },
+
+
+  {
+    path: '/scoreTest',
+    name: 'scoreTest',
+    component: ScoreTest
+  },
 ]
 
 const router = new VueRouter({
