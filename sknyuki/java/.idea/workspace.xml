@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3b87ef1-6ea1-4a9f-a558-575d429e2775" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/second/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-23__1_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/second/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-23__1_20__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/second/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d3b87ef1-6ea1-4a9f-a558-575d429e2775" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend_lecture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../practice/java" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
