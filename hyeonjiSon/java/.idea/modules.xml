@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/11th/11th.iml" filepath="$PROJECT_DIR$/11th/11th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13th/13th.iml" filepath="$PROJECT_DIR$/13th/13th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16th/16th.iml" filepath="$PROJECT_DIR$/16th/16th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17th/17th.iml" filepath="$PROJECT_DIR$/17th/17th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18th/18th.iml" filepath="$PROJECT_DIR$/18th/18th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19th/19th.iml" filepath="$PROJECT_DIR$/19th/19th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/23th/23th.iml" filepath="$PROJECT_DIR$/23th/23th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/24th/24th.iml" filepath="$PROJECT_DIR$/24th/24th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/bank5/bank5.iml" filepath="$PROJECT_DIR$/homework/bank5/bank5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/bank6/bank6.iml" filepath="$PROJECT_DIR$/homework/bank6/bank6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fifth/fifth.iml" filepath="$PROJECT_DIR$/fifth/fifth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/fifth/fifth1.iml" filepath="$PROJECT_DIR$/homework/fifth/fifth1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first/first.iml" filepath="$PROJECT_DIR$/first/first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fourth/fourth.iml" filepath="$PROJECT_DIR$/fourth/fourth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ninth/ninth.iml" filepath="$PROJECT_DIR$/ninth/ninth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/second/second.iml" filepath="$PROJECT_DIR$/homework/second/second.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second/second1.iml" filepath="$PROJECT_DIR$/second/second1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sixth/sixth.iml" filepath="$PROJECT_DIR$/sixth/sixth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/tenth/tenth.iml" filepath="$PROJECT_DIR$/homework/tenth/tenth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/tenth2/tenth2.iml" filepath="$PROJECT_DIR$/homework/tenth2/tenth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/third/third.iml" filepath="$PROJECT_DIR$/homework/third/third.iml" />
+      <module fileurl="file://$PROJECT_DIR$/third/third1.iml" filepath="$PROJECT_DIR$/third/third1.iml" />
+    </modules>
+  </component>
+</project>
